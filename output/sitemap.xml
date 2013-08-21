@@ -515,11 +515,6 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.damian.oquanta.info/es/posts/jjj.html</loc>
-  <lastmod>2013-08-21</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>http://www.damian.oquanta.info/es/posts/nikola-nbconvert.html</loc>
   <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
@@ -651,11 +646,6 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/ipython-plugin-for-nikola-updated.html</loc>
-  <lastmod>2013-08-21</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://www.damian.oquanta.info/posts/jjj.html</loc>
   <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
