@@ -136,7 +136,13 @@
 <p>If you are using <strong>Nikola</strong>, you can add some of this lines to the <code>DEPLOY_COMMANDS</code> in your conf.py file and just run <code>nikola deploy</code> after building your site/blog.</p>
 <p>More easier... impossible... ;-)</p>
 <p>Damián.</p>
-</div>
+<p><strong>UPDATE</strong>: Not enought happy with step 3 and 4 (esentially because of some <code>git</code> errors), I figured out a cleaner solution:</p>
+<p>New 3. Now, we will use a <strong>git-subtree</strong> technique to push the <code>build</code> or <code>output</code> content to the <code>gh-pages</code> branch. You will need to run the following lines every time you want to update your site/blog!</p>
+<ul><li><code>git checkout master</code> # you can avoid this line if you are in master...</li>
+<li><code>git subtree split --prefix output -b gh-pages</code> # create a local gh-pages branch containing the splitted output folder</li>
+<li><code>git push -f origin gh-pages:gh-pages</code> # force the push of the gh-pages branch to the remote gh-pages branch at origin</li>
+<li><code>git branch -D gh-pages</code> # delete the local gh-pages because you will need it: <a href="https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt#L203">ref</a></li>
+</ul></div>
     
     <ul class="pager"><li class="previous">
             <a href="ipython-plugin-for-nikola-updated.html">← Previous post</a>
