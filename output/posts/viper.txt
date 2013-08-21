@@ -1,0 +1,25 @@
+vIPer is an application specifically designed to work with 
+`IPython <http://ipython.org/>`__ notebooks.
+
+It is a Python project I have been developing for the last weeks...
+
+Here, you can see a video of one of my beloved features, a direct slide-show mode
+for working notebooks:
+
+.. TEASER_END
+
+.. raw:: html
+
+   <iframe width="420" height="315" src="http://www.youtube.com/embed/WMf_NiSlgT4" frameborder="0" allowfullscreen></iframe>
+
+vIPer was proposed for a talk for SciPy 2012, and it was accepted! But, I had to cancel the talk
+because I did not win the SciPy sponsorship and Texas is far from here (Argentina), 
+not only in miles, but also in money. So, most probably, I will show it in the next PyConAr. 
+
+Obviously, vIPer will be available soon...
+
+See you!
+
+Damián.
+
+
