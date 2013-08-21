@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Damian's blog (IPython)</title><link>http://www.damian.oquanta.info</link><description>My place to share some thoughts with the world.</description><lastBuildDate>Wed, 21 Aug 2013 16:12:03 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>IPython plugin for Nikola updated</title><link>http://www.damian.oquanta.info/es/posts/ipython-plugin-for-nikola-updated.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;strong&gt;I am pleased to announce the new version of the IPython plugin for Nikola.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This new version has been incorporated into Nikola master a few weeks ago, so it is now available in the last release of &lt;strong&gt;Nikola, 5.5.1.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Now that &lt;strong&gt;IPython&lt;/strong&gt; has achieved the &lt;strong&gt;1.0 release&lt;/strong&gt;, and with the incorporation of nbconvert as a part of the IPython machinery, the IPython plugin no longer needs to use a customized version of the old nbconvert, instead it is now using the the power of the new &lt;strong&gt;IPython.nbconvert&lt;/strong&gt; infrastructure to export the ipynb files to HTML pieces to be rendered by &lt;strong&gt;Nikola&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;With the simplification of the infrastructure, it is now easier to setup your blog to use the plugin following this five steps: &lt;/p&gt;&lt;p&gt;&lt;a href="/es/posts/ipython-plugin-for-nikola-updated.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/ipython-plugin-for-nikola-updated.html</guid><pubDate>Mon, 12 Aug 2013 16:40:29 GMT</pubDate></item><item><title>Teasers with the IPython notebook plugin</title><link>http://www.damian.oquanta.info/es/posts/teasers-with-the-ipython-notebook-plugin.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Just a little tip...&lt;/p&gt;
+&lt;p&gt;You know that Nikola support TEASERS... if not, you can read more about that here: &lt;a href="http://nikola.ralsina.com.ar/handbook.html#teasers"&gt;teasers_info&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In a few words, if you don't want to show the complete content of your posts at the index page, but instead display only the beginning of them, you only need to add a "magical comment" in a markdown cell:&lt;/p&gt;
+&lt;p&gt;&lt;a href="/es/posts/teasers-with-the-ipython-notebook-plugin.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/teasers-with-the-ipython-notebook-plugin.html</guid><pubDate>Fri, 02 Aug 2013 15:46:31 GMT</pubDate></item><item><title>SciPyCon Argentina 2013</title><link>http://www.damian.oquanta.info/es/posts/scipycon-argentina-2013.html</link><description>&lt;div&gt;&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;This is the first &lt;strong&gt;SciPy Conference in Argentina&lt;/strong&gt; (as far as I know, it is also the first one in Latin American).&lt;/p&gt;
+&lt;p&gt;It will be held from &lt;strong&gt;16 to 18th of May in Puerto Madryn&lt;/strong&gt;, at the Patagonia Argentina (more details at SciPyCon &lt;a href="http://scipycon.com.ar"&gt;homepage&lt;/a&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;a href="/es/posts/scipycon-argentina-2013.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/scipycon-argentina-2013.html</guid><pubDate>Sat, 04 May 2013 20:18:56 GMT</pubDate></item><item><title>Reveal converter mini-tutorial</title><link>http://www.damian.oquanta.info/es/posts/reveal-converter-mini-tutorial.html</link><description>&lt;div&gt;&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;After some weeks of work and a lot of useful colaboration with the IPython team, we now have the reveal converter merged in nbconvert (a conversion utilities for the IPython notebook format).&lt;/p&gt;
+&lt;p&gt;Currently nbconvert is being rewritten... but we also have a reveal converter in the new codebase, so you do not have problems if you begin to use it now, you will be able to use it tomorrow :-)&lt;/p&gt;
+&lt;p&gt;I wrote a little tutorial (a reveal-based notebook slideshow, of course) about how to use reveal converter option inside nbconvert&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;a href="/es/posts/reveal-converter-mini-tutorial.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/reveal-converter-mini-tutorial.html</guid><pubDate>Fri, 15 Feb 2013 15:05:21 GMT</pubDate></item><item><title>Blogging with Nikola and IPython</title><link>http://www.damian.oquanta.info/es/posts/blogging-with-nikola-and-ipython.html</link><description>&lt;div&gt;&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: Obviously, this post was written in the IPython notebook and was rendered by Nikola (helped by nbconvert).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;strong&gt;INGREDIENTS&lt;/strong&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/ralsina/nikola"&gt;Nikola&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;NOTE: The theme was tested with Nikola version &lt;a href="https://github.com/ralsina/nikola/tags"&gt;5.1&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[IPython]: https://github.com/ipython/ipython&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/damianavila/site-ipython-theme-for-Nikola.git"&gt;site-ipython&lt;/a&gt; theme for Nikola&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/damianavila/compile_ipynb-for-Nikola.git"&gt;compile_ipynb&lt;/a&gt; for Nikola&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;a href="/es/posts/blogging-with-nikola-and-ipython.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/blogging-with-nikola-and-ipython.html</guid><pubDate>Fri, 25 Jan 2013 16:46:46 GMT</pubDate></item><item><title>Slider for nbconvert...</title><link>http://www.damian.oquanta.info/es/posts/slider-for-nbconvert.html</link><description>&lt;div&gt;&lt;p&gt;I have implemented reveal.js slides for vIPer (I will publish a
+post about that the next days...).&lt;/p&gt;
+&lt;p&gt;Then, I showed the resulting slides &lt;a class="reference external" href="http://www.slideviper.oquanta.info/reveal/Example_new_slides.html"&gt;http://www.slideviper.oquanta.info/reveal/Example_new_slides.html&lt;/a&gt;
+to some IPython team members and one of them, Brian, says:&lt;/p&gt;
+&lt;blockquote&gt;
+"it would be great if nbcovert could output reveal.js slides."&lt;/blockquote&gt;
+&lt;p&gt;and then, Fernando (if you know what is IPython, you know these guys) replies:&lt;/p&gt;
+&lt;blockquote&gt;
+"we can certainly add that kind of functionality as output options..."&lt;/blockquote&gt;
+&lt;p&gt;So, keeping in mind the implementation in vIPer, I provided a dirty and basic
+new implementation to get reveal-based slides from nbconvert.&lt;/p&gt;
+&lt;p&gt;&lt;a href="/es/posts/slider-for-nbconvert.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/slider-for-nbconvert.html</guid><pubDate>Sun, 02 Dec 2012 21:40:56 GMT</pubDate></item><item><title>Mejorando el "styling" de las presentaciones generadas con vIPer</title><link>http://www.damian.oquanta.info/es/posts/improving-viper-slideshows-styling.html</link><description>&lt;div&gt;&lt;p&gt;Este último fin de semana tuve un ratito para trabajar en el "styling" de las presentaciones que provee vIPer
+(a partir de los notebooks de IPython).&lt;/p&gt;
+&lt;p&gt;A continuación pueden ver un ejemplo:&lt;/p&gt;
+&lt;p&gt;&lt;a href="/es/posts/improving-viper-slideshows-styling.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>nikola</category><category>python</category><category>IPython</category><category>vIPer</category><guid>http://www.damian.oquanta.info/es/posts/improving-viper-slideshows-styling.html</guid><pubDate>Mon, 08 Oct 2012 00:33:45 GMT</pubDate></item><item><title>Nikola + nbconvert</title><link>http://www.damian.oquanta.info/es/posts/nikola-nbconvert.html</link><description>&lt;div&gt;&lt;p&gt;Importando, en un posteo del blog, un html estático (obtenido con nbconvert)
+de un notebook (ejemplo) de IPython:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. raw:: html
+   :file: /home/damian/Desarrollos/To_PR/SITIOS/Github_Pages/damian_blog/files/Test.html
+&lt;/pre&gt;
+&lt;p&gt;&lt;a href="/es/posts/nikola-nbconvert.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>nikola</category><category>python</category><category>IPython</category><guid>http://www.damian.oquanta.info/es/posts/nikola-nbconvert.html</guid><pubDate>Thu, 20 Sep 2012 17:08:19 GMT</pubDate></item><item><title>Una pequeña demostración de vIPer</title><link>http://www.damian.oquanta.info/es/posts/a-simple-overview-of-viper.html</link><description>&lt;div&gt;&lt;p&gt;La idea de este post es mostrar, a través de un simple video, algunas de las
+principales funciones de vIPer.&lt;/p&gt;
+&lt;p&gt;Aquí va:&lt;/p&gt;
+&lt;p&gt;&lt;a href="/es/posts/a-simple-overview-of-viper.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>python</category><category>IPython</category><category>vIPer</category><guid>http://www.damian.oquanta.info/es/posts/a-simple-overview-of-viper.html</guid><pubDate>Fri, 29 Jun 2012 13:50:00 GMT</pubDate></item><item><title>vIPer</title><link>http://www.damian.oquanta.info/es/posts/viper.html</link><description>&lt;div&gt;&lt;p&gt;vIPer es una aplicación específicamente diseñada para trabajar
+con los notebooks the &lt;a class="reference external" href="http://ipython.org/"&gt;IPython&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Es un proyecto que he estado desarrollando durante las últimas semanas...&lt;/p&gt;
+&lt;p&gt;A continuación, pueden ver un video en el cual demuestro una de mis funciones predilectas:
+la posibilidad de tener una vista "presentación" para el notebook con el cual estoy trabajando
+(súper útil a la hora de exponer resultados o preparar charlas, por ejemplo).&lt;/p&gt;
+&lt;p&gt;&lt;a href="/es/posts/viper.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>python</category><category>IPython</category><category>vIPer</category><guid>http://www.damian.oquanta.info/es/posts/viper.html</guid><pubDate>Mon, 25 Jun 2012 00:44:00 GMT</pubDate></item></channel></rss>
