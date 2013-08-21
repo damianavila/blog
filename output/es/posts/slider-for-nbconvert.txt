@@ -1,0 +1,48 @@
+.. title: Slider for nbconvert...
+.. slug: slider-for-nbconvert
+.. date: 2012/12/02 21:40:56
+.. tags: python, IPython, nbconvert, reveal
+.. link: 
+.. description: 
+
+I have implemented reveal.js slides for vIPer (I will publish a 
+post about that the next days...).
+
+Then, I showed the resulting slides http://www.slideviper.oquanta.info/reveal/Example_new_slides.html
+to some IPython team members and one of them, Brian, says:
+
+    "it would be great if nbcovert could output reveal.js slides."
+
+and then, Fernando (if you know what is IPython, you know these guys) replies:
+
+    "we can certainly add that kind of functionality as output options..."
+
+So, keeping in mind the implementation in vIPer, I provided a dirty and basic
+new implementation to get reveal-based slides from nbconvert.
+
+.. TEASER_END
+
+To test it just go to:
+
+    https://github.com/damianavila/nbconvert.git
+
+switch to branch slider_converter, 
+
+and type:
+
+    python nbconvert.py -f slider example_slide.ipynb
+
+You can see a video showing the basic functionality here
+(big sorry for the quality, I will post a better one soon):
+
+.. raw:: html
+
+   <iframe width="420" height="315" src="http://www.youtube.com/embed/mNEAJvFDneE" frameborder="0" allowfullscreen></iframe>
+
+There is a lot of stuff to do with that... I will do it when I get some free time.
+
+Just my two cents!
+
+Enjoy!
+
+Damián.

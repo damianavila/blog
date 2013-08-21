@@ -1,0 +1,69 @@
+<p>Facu llegó... y ¡antes de lo esperado!</p>
+<p>Nació ayer, 7 de noviembre, a las 8:00 am en ciudad de La Plata.
+36 semanas de gestación (un mes antes de lo previsto), 2400 gr. y la altura, para la próxima...</p>
+<p>Toda la aventura fue <strong>muy</strong> rápida. Alrededor de las 4:30 am, Lore <strong>logró</strong> despertarme (me había dormido sólo un par de horas antes).
+Se sentía dolorida. Pero en ese momento, <strong>nada</strong> nos hacía pensar que estuviese comenzando con el trabajo de parto.
+Era un dolor leve, pero molesto. Pasaron los minutos. Los dolores aumentaron en intensidad y se hicieron regulares: <strong>contracciones</strong>.
+Empezamos a sospechar. Llamamos a la partera, quien nos recomendó esperar al menos dos horas más, cuantificando las contracciones
+en intensidad (fácilmente... a través de las <strong>caras</strong> que ponía Lore) y, sobre todo, la frecuencia. Hicimos caso. En parte...</p>
+<!-- TEASER_END -->
+<p>Al cabo de una hora, y con contracciones que duraban un minuto (e intervalos de relajación de dos minutos),
+llamamos nuevamente a la partera quien nos <strong>recomendó</strong>, amablemente, acercarnos a la clínica con la mayor <strong>celeridad</strong> posible.
+Por las dudas, tuve el tupé de armar el bolso de Facu (sí, deberíamos haberlo armado un tiempo antes),
+terminar de armar el bolso de Lore y preparar mi mochila.</p>
+<p>A las 6:30, sólo 2 horas después de las primeras molestias, Lore estaba realmente dolorida, al punto que me costó subirla al auto.
+Llegamos a la clínica. La partera nos estaba esperando. La llave de la sala de parto <strong>viajaba</strong> en el bolsillo de alguna enfermera.
+Tuvimos que esperar unos 15 minutos. Para Lore fue una espera de dos horas.</p>
+<p>Y entramos a la sala, sentamos a Lore en el sillón de parto y resulta que tenía dilatación <strong>completa</strong>. En criollo...
+<strong>&quot;Facu, aguantá que la obstetra todavía no llegó&quot;</strong>. Pasaron cinco minutos. O diez. Finalmente, llegó.
+Tres o cuatro pujes. Facu llorando. Yo también. <strong>El</strong> momento de mi vida.</p>
+<p>Facu estaba en perfectas condiciones. Lore estaba muy bien. El día avanzó entre visitas de los seres queridos.
+Entramos a la clínica el martes a 7:00 am, salimos al día siguiente (hoy) al mediodía.</p>
+<p>Ya estamos en casa. Acaban de dormirse. Yo, cocinando, ordenando y escribiendo.</p>
+<p>Sólo quería contarles...</p>
+<p>Damián.</p>
+<p>PD: algunas fotitos para que se deleiten... las primeras con el celu... las últimas con la cámara...</p>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.damian.oquanta.info/galleries/Facu_RN/Facu1.png"><img alt="http://www.damian.oquanta.info/galleries/Facu_RN/Facu1.png" src="http://www.damian.oquanta.info/galleries/Facu_RN/Facu1.png" /></a>
+<p class="caption">¡Qué largo y flaco que soy!</p>
+</div>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.damian.oquanta.info/galleries/Facu_RN/Facu2.png"><img alt="http://www.damian.oquanta.info/galleries/Facu_RN/Facu2.png" src="http://www.damian.oquanta.info/galleries/Facu_RN/Facu2.png" /></a>
+<p class="caption">Y ahora de costadete...</p>
+</div>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.damian.oquanta.info/galleries/Facu_RN/Facu3.png"><img alt="http://www.damian.oquanta.info/galleries/Facu_RN/Facu3.png" src="http://www.damian.oquanta.info/galleries/Facu_RN/Facu3.png" /></a>
+<p class="caption">Parece que tenía hambre...</p>
+</div>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.damian.oquanta.info/galleries/Facu_RN/Facu4.png"><img alt="http://www.damian.oquanta.info/galleries/Facu_RN/Facu4.png" src="http://www.damian.oquanta.info/galleries/Facu_RN/Facu4.png" /></a>
+<p class="caption">Durmiendo en brazos del papi.</p>
+</div>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.damian.oquanta.info/galleries/Facu_RN/Facu5.png"><img alt="http://www.damian.oquanta.info/galleries/Facu_RN/Facu5.png" src="http://www.damian.oquanta.info/galleries/Facu_RN/Facu5.png" /></a>
+<p class="caption">¡Uy! Me olvidé de avisar...</p>
+</div>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05901.JPG"><img alt="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05901.JPG" src="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05901.JPG" /></a>
+<p class="caption">¡Otra vez sopa... digo, teta!</p>
+</div>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05903.JPG"><img alt="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05903.JPG" src="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05903.JPG" /></a>
+<p class="caption">¡Qué lindo es dormir! Episodio I</p>
+</div>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05917.JPG"><img alt="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05917.JPG" src="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05917.JPG" /></a>
+<p class="caption">¡Qué lindo es dormir! Episodio II</p>
+</div>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05918.JPG"><img alt="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05918.JPG" src="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05918.JPG" /></a>
+<p class="caption">¡Qué lindo es dormir! Episodio III</p>
+</div>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05925.JPG"><img alt="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05925.JPG" src="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05925.JPG" /></a>
+<p class="caption">¡Cómo podría ser de otra manera... jeje!</p>
+</div>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05928.JPG"><img alt="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05928.JPG" src="http://www.damian.oquanta.info/galleries/Facu_RN/DSC05928.JPG" /></a>
+<p class="caption">Cuna improvisada... se nota que llegó un mes antes, ¿no? jeje!</p>
+</div>
