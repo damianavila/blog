@@ -187,8 +187,8 @@ CREATE_MONTHLY_ARCHIVE = True
 # "rsync -rav output/* joe@my.site:/srv/www/site"
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
-# DEPLOY_COMMANDS = ["git subtree push --prefix output origin gh-pages"]
-DEPLOY_COMMANDS = ["git push origin `git subtree split --prefix output gh-pages`:gh-pages --force"]
+DEPLOY_COMMANDS = ["git subtree push --prefix output origin gh-pages"]
+# DEPLOY_COMMANDS = ["git push origin `git subtree split --prefix output gh-pages`:gh-pages --force"]
 # http://stackoverflow.com/questions/12644855/how-do-i-reset-a-heroku-git-repository-to-its-initial-state/13403588#13403588
 
 # Where the output site should be located
