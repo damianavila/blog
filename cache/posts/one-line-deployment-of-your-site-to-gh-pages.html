@@ -30,7 +30,7 @@
 <p>If you are using <strong>Nikola</strong>, you can add some of this lines to the <code>DEPLOY_COMMANDS</code> in your conf.py file and just run <code>nikola deploy</code> after building your site/blog.</p>
 <p>More easier... impossible... ;-)</p>
 <p>Damián.</p>
-<p><strong>UPDATE</strong>: Not enought happy with step 3 and 4 (esentially because of some <code>git</code> errors), I figured out a cleaner solution:</p>
+<p><strong>UPDATE</strong>: Not enough happy with step 3 and 4 (essentially because of some <code>git</code> errors), I figured out a cleaner solution:</p>
 <p>New 3. Now, we will use a <strong>git-subtree</strong> technique to push the <code>build</code> or <code>output</code> content to the <code>gh-pages</code> branch. You will need to run the following lines every time you want to update your site/blog!</p>
 <ul>
 <li><code>git checkout master</code> # you can avoid this line if you are in master...</li>
