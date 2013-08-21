@@ -190,7 +190,9 @@ CREATE_MONTHLY_ARCHIVE = True
 DEPLOY_COMMANDS = ["git add .",
                    "git commit -am 'Update'",
                    "git push origin master",
-                   "git subtree push --prefix output origin gh-pages"]
+                   "git subtree split --prefix output -b gh-pages",
+                   "git push -f origin gh-pages:gh-pages",
+                   "git branch -D gh-pages"]
 # DEPLOY_COMMANDS = ["git push origin `git subtree split --prefix output gh-pages`:gh-pages --force"]
 # http://stackoverflow.com/questions/12644855/how-do-i-reset-a-heroku-git-repository-to-its-initial-state/13403588#13403588
 
