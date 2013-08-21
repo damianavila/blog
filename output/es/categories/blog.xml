@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Damian's blog (blog)</title><link>http://www.damian.oquanta.info</link><description>My place to share some thoughts with the world.</description><lastBuildDate>Wed, 21 Aug 2013 08:18:12 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>One line deployment of your site to gh-pages</title><link>http://www.damian.oquanta.info/es/posts/one-line-deployment-of-your-site-to-gh-pages.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Do you want to &lt;strong&gt;easily&lt;/strong&gt; deploy your site to Github pages?&lt;/p&gt;
+&lt;p&gt;OK, here we go...&lt;/p&gt;
+&lt;ol style="list-style-type: decimal"&gt;&lt;li&gt;&lt;p&gt;You have to upload your complete blog/site to a new Github repository (you know how to do it... if not, probably you need to learn some things before try this one, hehe). As a plus, now your blog/site is version-controlled!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Almost for sure, your site/blog lives in the master branch of the new repository, but you need to generated a &lt;code&gt;gh-pages&lt;/code&gt; branch to push your &lt;code&gt;build&lt;/code&gt; or &lt;code&gt;output&lt;/code&gt; folder, I mean your site/blog content to deploy... not all the machinery of your site/blog platform (&lt;strong&gt;Nikola&lt;/strong&gt; in my case):&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;git checkout -b gh-pages&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git rm -rf .&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit -am "First commit to gh-pages branch"&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push origin gh-pages&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;ol start="3" style="list-style-type: decimal"&gt;&lt;li&gt;Now, we will use a &lt;strong&gt;git-subtree&lt;/strong&gt; technique push the &lt;code&gt;build&lt;/code&gt; or &lt;code&gt;output&lt;/code&gt; content to the &lt;code&gt;gh-pages&lt;/code&gt; branch:&lt;/li&gt;
+&lt;/ol&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;git checkout master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push origin `git subtree split --prefix output gh-pages`:gh-pages --force&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;An this last &lt;strong&gt;sweet&lt;/strong&gt; line is the &lt;strong&gt;only one&lt;/strong&gt; you will need to use to run every time you want to update your site/blog!&lt;/p&gt;
+&lt;p&gt;In you are using &lt;strong&gt;Nikola&lt;/strong&gt;, you can add this line to the &lt;code&gt;DEPLOY_COMMANDS&lt;/code&gt; in your conf.py file and just run &lt;code&gt;nikola deploy&lt;/code&gt; after building your site/blog.&lt;/p&gt;
+&lt;p&gt;More easier... impossible... ;-)&lt;/p&gt;
+&lt;p&gt;Damián.&lt;/p&gt;
+&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/one-line-deployment-of-your-site-to-gh-pages.html</guid><pubDate>Wed, 21 Aug 2013 08:17:00 GMT</pubDate></item><item><title>Reveal converter mini-tutorial</title><link>http://www.damian.oquanta.info/es/posts/reveal-converter-mini-tutorial.html</link><description>&lt;div&gt;&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;After some weeks of work and a lot of useful colaboration with the IPython team, we now have the reveal converter merged in nbconvert (a conversion utilities for the IPython notebook format).&lt;/p&gt;
+&lt;p&gt;Currently nbconvert is being rewritten... but we also have a reveal converter in the new codebase, so you do not have problems if you begin to use it now, you will be able to use it tomorrow :-)&lt;/p&gt;
+&lt;p&gt;I wrote a little tutorial (a reveal-based notebook slideshow, of course) about how to use reveal converter option inside nbconvert&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;a href="/es/posts/reveal-converter-mini-tutorial.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/reveal-converter-mini-tutorial.html</guid><pubDate>Fri, 15 Feb 2013 15:05:21 GMT</pubDate></item><item><title>Blogging with Nikola and IPython</title><link>http://www.damian.oquanta.info/es/posts/blogging-with-nikola-and-ipython.html</link><description>&lt;div&gt;&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: Obviously, this post was written in the IPython notebook and was rendered by Nikola (helped by nbconvert).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;strong&gt;INGREDIENTS&lt;/strong&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/ralsina/nikola"&gt;Nikola&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;NOTE: The theme was tested with Nikola version &lt;a href="https://github.com/ralsina/nikola/tags"&gt;5.1&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[IPython]: https://github.com/ipython/ipython&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/damianavila/site-ipython-theme-for-Nikola.git"&gt;site-ipython&lt;/a&gt; theme for Nikola&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/damianavila/compile_ipynb-for-Nikola.git"&gt;compile_ipynb&lt;/a&gt; for Nikola&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;a href="/es/posts/blogging-with-nikola-and-ipython.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/blogging-with-nikola-and-ipython.html</guid><pubDate>Fri, 25 Jan 2013 16:46:46 GMT</pubDate></item><item><title>Hecho con Nikola...</title><link>http://www.damian.oquanta.info/es/posts/powered-by-nikola.html</link><description>&lt;p&gt;Nikola es un generador de sitios estáticos creado por uno de los miembros de la comunidad
+de &lt;a class="reference external" href="http://python.org.ar/pyar"&gt;PyAr&lt;/a&gt; (Roberto Alsina). Es un excelente proyecto y, también,
+la herramienta pythonica que he elegido para construir mi nuevo blog...&lt;/p&gt;
+&lt;p&gt;Espero poder con contribuir al proyecto en el futuro cercano (ya le prometí a Roberto que
+enviaría unas mejoras a través de github, pero aún no lo he hecho... lo haré pronto).&lt;/p&gt;
+&lt;p&gt;La página web del proyecto es &lt;a class="reference external" href="http://nikola.ralsina.com.ar"&gt;http://nikola.ralsina.com.ar&lt;/a&gt;, y fue construída utilizándose
+el mismo generador, desde luego.&lt;/p&gt;
+&lt;p&gt;¡Disfrútenlo!&lt;/p&gt;
+&lt;p&gt;Damián.&lt;/p&gt;
+&lt;p&gt;PD: El "tema" que están viendo ahora mismo en el blog no está incluído en Nikola,
+lo postearé pronto, cuando esté listo para "salir del horno"...&lt;/p&gt;</description><category>nikola</category><category>python</category><category>blog</category><guid>http://www.damian.oquanta.info/es/posts/powered-by-nikola.html</guid><pubDate>Wed, 20 Jun 2012 13:05:00 GMT</pubDate></item><item><title>Comienzo...</title><link>http://www.damian.oquanta.info/es/posts/beginning.html</link><description>&lt;p&gt;Durante 5 años, prácticamente todos los dias hábiles,
+he viajado desde La Plata hasta C.A.B.A. (ida y vuelta).
+He utilizado múltiples medios de locomoción: auto, colectivo, subte, tren...
+Muchas horas de transporte público han corrido "bajo el puente".
+Como podrán imaginar, durante estos "tiempos" he leído muchos papers, libros y diarios.
+He escuchado cientos de canciones. He charlado con varios amigos.
+También he dormido (mucho)... Pero no he escrito (en realidad, he escrito algunas cosas,
+pero esta actividad ha ocupado niveles de tiempo mínimos comparado con las
+actividades anteriormente mencionadas).
+Por lo tanto, he decidido que, desde este instante, y hasta que termine mi trabajo en C.A.B.A.,
+invertiré mis "tiempos" de viaje para escribir algunas "cosas" que luego publicaré en este blog.&lt;/p&gt;
+&lt;p&gt;Así que, ¡nos vemos pronto!&lt;/p&gt;
+&lt;p&gt;Damián.&lt;/p&gt;</description><category>blog</category><guid>http://www.damian.oquanta.info/es/posts/beginning.html</guid><pubDate>Tue, 19 Jun 2012 20:09:00 GMT</pubDate></item></channel></rss>
