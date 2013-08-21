@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="Damian Avila"><title>One line deployment of your site to gh-pages | Damian's blog</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="Damian Avila"><title>test | Damian's blog</title><!-- mathjax_config --><script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -68,7 +68,7 @@
                 
 
     <li>
-    <a href="one-line-deployment-of-your-site-to-gh-pages.ipynb" id="sourcelink">Source</a>
+    <a href="test.ipynb" id="sourcelink">Source</a>
     </li>
 
 
@@ -86,75 +86,28 @@
     
     <div class="postbox">
     
-    <h1>One line deployment of your site to gh-pages</h1>
+    <h1>test</h1>
     
 
     <hr><small>
-        Posted: <time class="published" datetime="2013-08-21T08:17:00">21-08-13 08:17</time>
-        
-    
-        
-            
-        
-            
-        
-    
-
-        
-    
-          |  More posts about
-        
-            <a class="tag" href="../categories/git.html"><span class="badge badge-info">git</span></a>
-        
-            <a class="tag" href="../categories/blog.html"><span class="badge badge-info">blog</span></a>
-        
-            <a class="tag" href="../categories/nikola.html"><span class="badge badge-info">nikola</span></a>
-        
-            <a class="tag" href="../categories/gh-pages.html"><span class="badge badge-info">gh-pages</span></a>
-        
-            <a class="tag" href="../categories/python.html"><span class="badge badge-info">python</span></a>
-        
-    
-
-    </small>
+        Posted: <time class="published" datetime="2013-08-21T16:00:41">21-08-13 16:00</time></small>
     <hr><div class="text_cell_render border-box-sizing rendered_html">
-<p>Do you want to <strong>easily</strong> deploy your site to Github pages?</p>
-<p>OK, here we go...</p>
-<ol style="list-style-type: decimal"><li><p>You have to upload your complete blog/site to a new Github repository (you know how to do it... if not, probably you need to learn some things before try this one, hehe). As a plus, now your blog/site is version-controlled!</p></li>
-<li><p>Almost for sure, your site/blog lives in the master branch of the new repository, but you need to generated a <code>gh-pages</code> branch to push your <code>build</code> or <code>output</code> folder, I mean your site/blog content to deploy... not all the machinery of your site/blog platform (<strong>Nikola</strong> in my case): <!-- TEASER_END --></p></li>
-</ol><ul><li><code>git checkout -b gh-pages</code></li>
-<li><code>git rm -rf .</code></li>
-<li><code>git commit -am "First commit to gh-pages branch"</code></li>
-<li><code>git push origin gh-pages</code></li>
-</ul><ol start="3" style="list-style-type: decimal"><li>Now, we will use a <strong>git-subtree</strong> technique to push the <code>build</code> or <code>output</code> content to the <code>gh-pages</code> branch:</li>
-</ol><ul><li><code>git checkout master</code></li>
-<li><p><code>git push origin `git subtree split --prefix output gh-pages`:gh-pages --force</code></p>
-<p><strong>Sweet</strong> line... uhh ;-)</p></li>
-</ul><ol start="4" style="list-style-type: decimal"><li>Finally, you will need to run the following line every time you want to update your site/blog!</li>
-</ol><ul><li><code>git subtree push --prefix output origin gh-pages</code></li>
-</ul><p><strong>Note</strong>: Are you getting <code>git</code> errors? Just use the <strong>sweet</strong> line again and <em>force</em> the update...</p>
-<p>If you are using <strong>Nikola</strong>, you can add some of this lines to the <code>DEPLOY_COMMANDS</code> in your conf.py file and just run <code>nikola deploy</code> after building your site/blog.</p>
-<p>More easier... impossible... ;-)</p>
-<p>Damián.</p>
+<p>Hi, I am testing Nikola deployment from IPython notebook</p>
 </div>
     
     <ul class="pager"><li class="previous">
-            <a href="ipython-plugin-for-nikola-updated.html">← Previous post</a>
+            <a href="one-line-deployment-of-your-site-to-gh-pages.html">← Previous post</a>
         </li>
     
-    
-        <li class="next">
-            <a href="test.html">Next post →</a>
-        </li>
     
     </ul><div id="disqus_thread"></div>
         <script type="text/javascript">
         var disqus_shortname ="damianblogcomments";
         
-            var disqus_url="http://www.damian.oquanta.info/posts/one-line-deployment-of-your-site-to-gh-pages.html";
+            var disqus_url="http://www.damian.oquanta.info/posts/test.html";
         
-        var disqus_title="One line deployment of your site to gh-pages";
-        var disqus_identifier="cache/posts/one-line-deployment-of-your-site-to-gh-pages.html";
+        var disqus_title="test";
+        var disqus_identifier="cache/posts/test.html";
         var disqus_config = function () {
             this.language = "";
         };

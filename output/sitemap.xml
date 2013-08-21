@@ -555,6 +555,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/posts/test.html</loc>
+  <lastmod>2013-08-21</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/posts/under-the-sea-en-la-plata.html</loc>
   <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
@@ -686,6 +691,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/teasers-with-the-ipython-notebook-plugin.html</loc>
+  <lastmod>2013-08-21</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/posts/test.html</loc>
   <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
