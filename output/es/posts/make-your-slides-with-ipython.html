@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="Damian Avila"><title>One line deployment of your site to gh-pages | Damian's blog</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="Damian Avila"><title>Make your slides with IPython | Damian's blog</title><!-- mathjax_config --><script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -68,7 +68,7 @@
                 
 
     <li>
-    <a href="../.././es/posts/one-line-deployment-of-your-site-to-gh-pages.ipynb" id="sourcelink">Código</a>
+    <a href="../.././es/posts/make-your-slides-with-ipython.ipynb" id="sourcelink">Código</a>
     </li>
 
 
@@ -86,17 +86,17 @@
     
     <div class="postbox">
     
-    <h1>One line deployment of your site to gh-pages</h1>
+    <h1>Make your slides with IPython</h1>
     
 
     <hr><small>
-        Publicado: <time class="published" datetime="2013-08-21T08:17:00">21-08-13 08:17</time>
+        Publicado: <time class="published" datetime="2013-08-23T09:17:44">23-08-13 09:17</time>
         
     
         
             
                   |  
-                <a href="../../posts/one-line-deployment-of-your-site-to-gh-pages.html">Read in English</a>
+                <a href="../../posts/make-your-slides-with-ipython.html">Read in English</a>
             
         
             
@@ -107,63 +107,119 @@
     
           |  Más posts sobre
         
-            <a class="tag" href="../.././es/categories/git.html"><span class="badge badge-info">git</span></a>
-        
-            <a class="tag" href="../.././es/categories/blog.html"><span class="badge badge-info">blog</span></a>
-        
-            <a class="tag" href="../.././es/categories/nikola.html"><span class="badge badge-info">nikola</span></a>
-        
-            <a class="tag" href="../.././es/categories/gh-pages.html"><span class="badge badge-info">gh-pages</span></a>
-        
             <a class="tag" href="../.././es/categories/python.html"><span class="badge badge-info">python</span></a>
+        
+            <a class="tag" href="../.././es/categories/ipython.html"><span class="badge badge-info">IPython</span></a>
+        
+            <a class="tag" href="../.././es/categories/nbconvert.html"><span class="badge badge-info">nbconvert</span></a>
+        
+            <a class="tag" href="../.././es/categories/slideshow.html"><span class="badge badge-info">slideshow</span></a>
+        
+            <a class="tag" href="../.././es/categories/reveal.html"><span class="badge badge-info">reveal</span></a>
         
     
 
     </small>
     <hr><div class="text_cell_render border-box-sizing rendered_html">
-<p>Do you want to <strong>easily</strong> deploy your site to Github pages?</p>
-<p>OK, here we go...</p>
-<ol style="list-style-type: decimal"><li><p>You have to upload your complete blog/site to a new Github repository (you know how to do it... if not, probably you need to learn some things before try this one, hehe). As a plus, now your blog/site is version-controlled!</p></li>
-<li><p>Almost for sure, your site/blog lives in the master branch of the new repository, but you need to generated a <code>gh-pages</code> branch to push your <code>build</code> or <code>output</code> folder, I mean your site/blog content to deploy... not all the machinery of your site/blog platform (<strong>Nikola</strong> in my case): <!-- TEASER_END --></p></li>
-</ol><ul><li><code>git checkout -b gh-pages</code></li>
-<li><code>git rm -rf .</code></li>
-<li><code>git commit -am "First commit to gh-pages branch"</code></li>
-<li><code>git push origin gh-pages</code></li>
-</ul><ol start="3" style="list-style-type: decimal"><li>Now, we will use a <strong>git-subtree</strong> technique to push the <code>build</code> or <code>output</code> content to the <code>gh-pages</code> branch:</li>
-</ol><ul><li><code>git checkout master</code></li>
-<li><p><code>git push origin `git subtree split --prefix output gh-pages`:gh-pages --force</code></p>
-<p><strong>Sweet</strong> line... uhh ;-)</p></li>
-</ul><ol start="4" style="list-style-type: decimal"><li>Finally, you will need to run the following line every time you want to update your site/blog!</li>
-</ol><ul><li><code>git subtree push --prefix output origin gh-pages</code></li>
-</ul><p><strong>Note</strong>: Are you getting <code>git</code> errors? Just use the <strong>sweet</strong> line again and <em>force</em> the update...</p>
-<p>If you are using <strong>Nikola</strong>, you can add some of this lines to the <code>DEPLOY_COMMANDS</code> in your conf.py file and just run <code>nikola deploy</code> after building your site/blog.</p>
-<p>More easier... impossible... ;-)</p>
-<p>Damián.</p>
-<p><strong>UPDATE</strong>: Not enough happy with step 3 and 4 (essentially because of some <code>git</code> errors), I figured out a cleaner solution:</p>
-<p>New 3. Now, we will use a <strong>git-subtree</strong> technique to push the <code>build</code> or <code>output</code> content to the <code>gh-pages</code> branch. You will need to run the following lines every time you want to update your site/blog!</p>
-<ul><li><code>git checkout master</code> # you can avoid this line if you are in master...</li>
-<li><code>git subtree split --prefix output -b gh-pages</code> # create a local gh-pages branch containing the splitted output folder</li>
-<li><code>git push -f origin gh-pages:gh-pages</code> # force the push of the gh-pages branch to the remote gh-pages branch at origin</li>
-<li><code>git branch -D gh-pages</code> # delete the local gh-pages because you will need it: <a href="https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt#L203">ref</a></li>
-</ul></div>
+<p>With the integration of nbconvert inside IPython, the last 1.0 release has the possibility to export the ipynb to other formats such as rst, markdown, latex, html and slides (<a href="http://ipython.org/ipython-doc/stable/interactive/nbconvert.html">info</a>).</p>
+<p>The slides option generates a Reveal.js-powered HTML slideshow, like this one: <!-- TEASER_END --></p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [1]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s">'&lt;iframe src="http://damianavila.github.io/scipy2013_talks/index.html" width=800 height=600&gt;&lt;/iframe&gt;'</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[1]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+<div class="output_html rendered_html">
+<iframe src="http://damianavila.github.io/scipy2013_talks/index.html" width="800" height="600"></iframe>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>These are my slides from the talk I gave at SciPy 2013 (Texas) featuring this exporter I previously developed in the old nbconvert project and now merged (and available) in the last release (1.0) of IPython.</p>
+<p>You can also see the video of the talk:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [2]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">'rBS6hmiK-H8'</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[2]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+<div class="output_html rendered_html">
+
+        <iframe width="400" height='300"' src="http://www.youtube.com/embed/rBS6hmiK-H8" frameborder="0" allowfullscreen></iframe>
+        
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As you can see, before I had to use an independent nbconvert library... now is easier ;-)</p>
+<p>Just one line:</p>
+<p><code>ipython nbconvert your_slides.ipynb --to slides</code></p>
+<p>But, the resulting slideshow has to be served by an HTTP server. Because, we care of you ;-), just add --post serve at the command-line:</p>
+<p><code>ipython nbconvert your_slides.ipynb --to slides --post serve</code></p>
+<p>And your browser will open a tab containing your slides...</p>
+<p>There is a lot of possibility from here... but I will write some of them later.</p>
+<p>Enjoy it!</p>
+<p>Damián</p>
+<p>PS: Please report any bug or give me you feedback to make this tool better!</p>
+</div>
     
     <ul class="pager"><li class="previous">
-            <a href="ipython-plugin-for-nikola-updated.html">← Post anterior</a>
+            <a href="one-line-deployment-of-your-site-to-gh-pages.html">← Post anterior</a>
         </li>
     
-    
-        <li class="next">
-            <a href="make-your-slides-with-ipython.html">Siguiente post →</a>
-        </li>
     
     </ul><div id="disqus_thread"></div>
         <script type="text/javascript">
         var disqus_shortname ="damianblogcomments";
         
-            var disqus_url="http://www.damian.oquanta.info/es/posts/one-line-deployment-of-your-site-to-gh-pages.html";
+            var disqus_url="http://www.damian.oquanta.info/es/posts/make-your-slides-with-ipython.html";
         
-        var disqus_title="One line deployment of your site to gh-pages";
-        var disqus_identifier="cache/posts/one-line-deployment-of-your-site-to-gh-pages.html";
+        var disqus_title="Make your slides with IPython";
+        var disqus_identifier="cache/posts/make-your-slides-with-ipython.html";
         var disqus_config = function () {
             this.language = "./es";
         };
