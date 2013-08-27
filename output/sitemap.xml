@@ -150,6 +150,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/categories/extension.html</loc>
+  <lastmod>2013-08-27</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/categories/facundo.html</loc>
   <lastmod>2013-08-27</lastmod>
   <priority>0.5000</priority>
@@ -186,6 +191,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/ipython.html</loc>
+  <lastmod>2013-08-27</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/categories/javascript.html</loc>
   <lastmod>2013-08-27</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -241,6 +251,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/viper.html</loc>
+  <lastmod>2013-08-27</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/categories/zenmode.html</loc>
   <lastmod>2013-08-27</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -385,6 +400,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/categories/extension.html</loc>
+  <lastmod>2013-08-27</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/categories/facundo.html</loc>
   <lastmod>2013-08-27</lastmod>
   <priority>0.5000</priority>
@@ -421,6 +441,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/ipython.html</loc>
+  <lastmod>2013-08-27</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/categories/javascript.html</loc>
   <lastmod>2013-08-27</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -476,6 +501,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/viper.html</loc>
+  <lastmod>2013-08-27</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/categories/zenmode.html</loc>
   <lastmod>2013-08-27</lastmod>
   <priority>0.5000</priority>
  </url>
