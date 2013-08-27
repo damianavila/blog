@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="Damian Avila"><title>Make your slides with IPython | Damian's blog</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="Damian Avila"><title>Zen mode extension for the IPython notebook | Damian's blog</title><!-- mathjax_config --><script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -68,7 +68,7 @@
                 
 
     <li>
-    <a href="../.././es/posts/make-your-slides-with-ipython.ipynb" id="sourcelink">Código</a>
+    <a href="../.././es/posts/zen-mode-extension-for-the-ipython-notebook.ipynb" id="sourcelink">Código</a>
     </li>
 
 
@@ -86,43 +86,46 @@
     
     <div class="postbox">
     
-    <h1>Make your slides with IPython</h1>
+    <h1>Zen mode extension for the IPython notebook</h1>
     
 
     <hr><small>
-        Publicado: <time class="published" datetime="2013-08-23T09:25:44">23-08-13 09:25</time>
+        Publicado: <time class="published" datetime="2013-08-26T23:23:30">26-08-13 23:23</time>
         
     
         
             
                   |  
-                <a href="../../posts/make-your-slides-with-ipython.html">Read in English</a>
+                <a href="../../posts/zen-mode-extension-for-the-ipython-notebook.html">Read in English</a>
             
         
             
         
     
 
-        
-    
-          |  Más posts sobre
-        
-            <a class="tag" href="../.././es/categories/python.html"><span class="badge badge-info">python</span></a>
-        
-            <a class="tag" href="../.././es/categories/ipython.html"><span class="badge badge-info">IPython</span></a>
-        
-            <a class="tag" href="../.././es/categories/nbconvert.html"><span class="badge badge-info">nbconvert</span></a>
-        
-            <a class="tag" href="../.././es/categories/slideshow.html"><span class="badge badge-info">slideshow</span></a>
-        
-            <a class="tag" href="../.././es/categories/reveal.html"><span class="badge badge-info">reveal</span></a>
         
     
 
     </small>
     <hr><div class="text_cell_render border-box-sizing rendered_html">
-<p>With the integration of nbconvert inside IPython, the last 1.0 release has the possibility to export the ipynb to other formats such as rst, markdown, latex, html and slides (<a href="http://ipython.org/ipython-doc/stable/interactive/nbconvert.html">info</a>).</p>
-<p>The slides option generates a Reveal.js-powered HTML slideshow, like this one: <!-- TEASER_END --></p>
+<p>I write a lot stuff inside the IPython notebook.</p>
+<p>And I thought it would be great to have a <em>sort</em> of <strong>Zen mode</strong> for the notebook...</p>
+<p>I mean, a <em>peaceful</em> user interface to write my blog posts (and other stuff, of course).</p>
+<p>So I wrote a little js extension which give me this <strong>Zen mode</strong>.</p>
+<p>You can see some screen shots below: <!-- TEASER_END --></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="figure">
+<img src="http://www.damian.oquanta.info/galleries/zenmode/pic1.png"><p class="caption"></p>
+</div>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="figure">
+<img src="http://www.damian.oquanta.info/galleries/zenmode/pic2.png"><p class="caption"></p>
+</div>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>And a little video showing the extension in action:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
@@ -130,8 +133,8 @@
 In [1]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="n">HTML</span><span class="p">(</span><span class="s">'&lt;iframe src="http://damianavila.github.io/scipy2013_talks/index.html" width=800 height=600&gt;&lt;/iframe&gt;'</span><span class="p">)</span>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">'eVi5aXEipBQ'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -146,44 +149,8 @@ In [1]:
 <div class="box-flex1 output_subarea output_pyout">
 
 <div class="output_html rendered_html">
-<iframe src="http://damianavila.github.io/scipy2013_talks/index.html" width="800" height="600"></iframe>
-</div>
 
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>These are my slides from the talk I gave at SciPy 2013 (Texas) featuring this exporter I previously developed in the old nbconvert project and now merged (and available) in the last release (1.0) of IPython.</p>
-<p>You can also see the video of the talk:</p>
-</div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In [2]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
-<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">'rBS6hmiK-H8'</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt output_prompt">
-    Out[2]:</div>
-<div class="box-flex1 output_subarea output_pyout">
-
-<div class="output_html rendered_html">
-
-        <iframe width="400" height='300"' src="http://www.youtube.com/embed/rBS6hmiK-H8" frameborder="0" allowfullscreen></iframe>
+        <iframe width="400" height='300"' src="http://www.youtube.com/embed/eVi5aXEipBQ" frameborder="0" allowfullscreen></iframe>
         
 </div>
 
@@ -195,35 +162,28 @@ In [2]:
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As you can see, before I had to use an independent nbconvert library... now is easier ;-)</p>
-<p>Just one line:</p>
-<p><code>ipython nbconvert your_slides.ipynb --to slides</code></p>
-<p>But, the resulting slideshow has to be served by an HTTP server. Because, we care of you ;-), just add --post serve at the command-line:</p>
-<p><code>ipython nbconvert your_slides.ipynb --to slides --post serve</code></p>
-<p>And your browser will open a tab containing your slides...</p>
-<p>There is a lot of possibility from here... but I will write some of them later.</p>
+<p>Do you want it? You can get it!</p>
+<p>It is available inside the IPython-notebook-extensions <a href="https://github.com/ipython-contrib/IPython-notebook-extensions">repo</a> under the IPython-contrib organization [1].</p>
+<p>In the custom.js file you can select which background image do you want to use (there are some available inside the extension, but you can also use your ow image ;-)).</p>
 <p>Enjoy it!</p>
 <p>Damián</p>
-<p>PS: Please report any bug or give me you feedback to make this tool better!</p>
+<p>PS: As usual, open any issue (bug or idea) at the Github repo (or report me here at the comments). Thanks!</p>
+<p>[1] <a href="https://github.com/ipython-contrib/IPython-notebook-extensions">https://github.com/ipython-contrib/IPython-notebook-extensions</a></p>
 </div>
     
     <ul class="pager"><li class="previous">
-            <a href="one-line-deployment-of-your-site-to-gh-pages.html">← Post anterior</a>
+            <a href="make-your-slides-with-ipython.html">← Post anterior</a>
         </li>
     
-    
-        <li class="next">
-            <a href="zen-mode-extension-for-the-ipython-notebook.html">Siguiente post →</a>
-        </li>
     
     </ul><div id="disqus_thread"></div>
         <script type="text/javascript">
         var disqus_shortname ="damianblogcomments";
         
-            var disqus_url="http://www.damian.oquanta.info/es/posts/make-your-slides-with-ipython.html";
+            var disqus_url="http://www.damian.oquanta.info/es/posts/zen-mode-extension-for-the-ipython-notebook.html";
         
-        var disqus_title="Make your slides with IPython";
-        var disqus_identifier="cache/posts/make-your-slides-with-ipython.html";
+        var disqus_title="Zen mode extension for the IPython notebook";
+        var disqus_identifier="cache/posts/zen-mode-extension-for-the-ipython-notebook.html";
         var disqus_config = function () {
             this.language = "./es";
         };
