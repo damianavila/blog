@@ -640,6 +640,16 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/galleries/Facu_RN/</loc>
+  <lastmod>2013-08-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/galleries/Facu_RN/index.html</loc>
+  <lastmod>2013-08-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/galleries/Inundacion/</loc>
   <lastmod>2013-08-29</lastmod>
   <priority>0.5000</priority>
@@ -651,6 +661,16 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/galleries/index.html</loc>
+  <lastmod>2013-08-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/galleries/zenmode/</loc>
+  <lastmod>2013-08-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/galleries/zenmode/index.html</loc>
   <lastmod>2013-08-29</lastmod>
   <priority>0.5000</priority>
  </url>
