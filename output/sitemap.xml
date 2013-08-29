@@ -575,6 +575,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/posts/ooo.html</loc>
+  <lastmod>2013-08-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/posts/paraguay.html</loc>
   <lastmod>2013-08-29</lastmod>
   <priority>0.5000</priority>
@@ -716,6 +721,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/one-line-deployment-of-your-site-to-gh-pages.html</loc>
+  <lastmod>2013-08-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/posts/ooo.html</loc>
   <lastmod>2013-08-29</lastmod>
   <priority>0.5000</priority>
  </url>
