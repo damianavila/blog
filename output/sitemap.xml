@@ -690,11 +690,6 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.damian.oquanta.info/posts/ggg.html</loc>
-  <lastmod>2013-08-29</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>http://www.damian.oquanta.info/posts/hello-world-again.html</loc>
   <lastmod>2013-08-29</lastmod>
   <priority>0.5000</priority>
@@ -725,22 +720,12 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.damian.oquanta.info/posts/ooo.html</loc>
-  <lastmod>2013-08-29</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>http://www.damian.oquanta.info/posts/paraguay.html</loc>
   <lastmod>2013-08-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/powered-by-nikola.html</loc>
-  <lastmod>2013-08-29</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://www.damian.oquanta.info/posts/prueba.html</loc>
   <lastmod>2013-08-29</lastmod>
   <priority>0.5000</priority>
  </url>
