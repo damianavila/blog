@@ -2,7 +2,7 @@
 de un notebook (ejemplo) de IPython:</p>
 <pre class="literal-block">
 .. raw:: html
-   :file: /home/damian/Desarrollos/To_PR/SITIOS/Github_Pages/damian_blog/files/Test.html
+   :file: /media/datos/Desarrollos/damian_blog/files/Test.html
 </pre>
 <!-- TEASER_END -->
 <p>Funciona! Pueden verlo a continuación... pronto estarán los themes disponibles.</p>

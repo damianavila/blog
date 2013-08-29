@@ -11,7 +11,7 @@
 </ul>
 <p><strong>NOTE: The theme was tested with Nikola version <a href="https://github.com/ralsina/nikola/tags">5.1</a></strong></p>
 <ul>
-<li>[IPython]: https://github.com/ipython/ipython</li>
+<li></li>
 <li><a href="https://github.com/damianavila/site-ipython-theme-for-Nikola.git">site-ipython</a> theme for Nikola</li>
 <li><a href="https://github.com/damianavila/compile_ipynb-for-Nikola.git">compile_ipynb</a> for Nikola</li>
 </ul>
@@ -583,8 +583,8 @@ In&nbsp;[4]:
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Courtesy of MathJax, you can include mathematical expressions both inline: \(e^{i\pi} + 1 = 0\) and displayed:</p>
-<p>\[e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i\]</p>
+<p>Courtesy of MathJax, you can include mathematical expressions both inline: <span class="math">\(e^{i\pi} + 1 = 0\)</span> and displayed:</p>
+<p><span class="math">\[e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i\]</span></p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">

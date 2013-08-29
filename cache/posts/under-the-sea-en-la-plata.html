@@ -8,7 +8,7 @@
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="http://1.bp.blogspot.com/-DbCAlLBC0aE/UWCjj2sV-4I/AAAAAAAA9nM/K9BrQc3TFIk/s1600/INUNDACION.jpg" /><p class="caption"></p>
+<img src="http://1.bp.blogspot.com/-DbCAlLBC0aE/UWCjj2sV-4I/AAAAAAAA9nM/K9BrQc3TFIk/s1600/INUNDACION.jpg" />
 </div>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -19,7 +19,7 @@
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="http://www.damian.oquanta.info/galleries/Inundacion/inundacion1.png" /><p class="caption"></p>
+<img src="http://www.damian.oquanta.info/galleries/Inundacion/inundacion1.png" />
 </div>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -27,7 +27,7 @@
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="http://www.damian.oquanta.info/galleries/Inundacion/inundacion2.png" /><p class="caption"></p>
+<img src="http://www.damian.oquanta.info/galleries/Inundacion/inundacion2.png" />
 </div>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">

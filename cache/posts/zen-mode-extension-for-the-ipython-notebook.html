@@ -8,12 +8,12 @@
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="http://www.damian.oquanta.info/galleries/zenmode/pic1.png" /><p class="caption"></p>
+<img src="http://www.damian.oquanta.info/galleries/zenmode/pic1.png" />
 </div>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="http://www.damian.oquanta.info/galleries/zenmode/pic2.png" /><p class="caption"></p>
+<img src="http://www.damian.oquanta.info/galleries/zenmode/pic2.png" />
 </div>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -66,5 +66,5 @@ In&nbsp;[1]:
 <p>Enjoy it!</p>
 <p>Damián</p>
 <p>PS: As usual, open any issue (bug or idea) at the Github repo (or report me here at the comments). Thanks!</p>
-<p>[1] <a href="https://github.com/ipython-contrib/IPython-notebook-extensions">https://github.com/ipython-contrib/IPython-notebook-extensions</a></p>
+<p>[1][https://github.com/ipython-contrib/IPython-notebook-extensions](https://github.com/ipython-contrib/IPython-notebook-extensions)</p>
 </div>
