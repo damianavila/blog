@@ -2,9 +2,9 @@
 <head>
     
     <meta charset="utf-8">
-    <meta name="description" content="My place to share some thoughts with the world.">
+    <meta name="description" content="">
     <meta name="author" content="Damian Avila">
-    <title>Posts about IPython | Damian's blog</title>
+    <title>A little hack to get a pdf from your IPython slides | Damian's blog</title>
     <!-- mathjax_config -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -46,11 +46,10 @@
     
 
     
-        
-            <link rel="alternate" type="application/rss+xml" title="RSS for tag IPython (en)" href="ipython.xml">
-        
-            <link rel="alternate" type="application/rss+xml" title="RSS for tag IPython (es)" href=".././es/categories/ipython.xml">
-        
+
+
+    
+
 
     
 </head>
@@ -80,7 +79,7 @@
         
     
         
-            </li><li><a href="index.html">Tags</a>
+            </li><li><a href="../categories/index.html">Tags</a>
         
     
         
@@ -118,6 +117,12 @@
                 
                 
                 
+
+    <li>
+    <a href="a-little-hack-to-get-a-pdf-from-your-ipython-slides.ipynb" id="sourcelink">Source</a>
+    </li>
+
+
                 
                 </ul>
             </div>
@@ -131,40 +136,105 @@
     <div class="span2"></div>
     <div class="span8">
     
-        <!--Body content-->
-        <div class="postbox">
-        <h1>Posts about IPython</h1>
-        <ul class="unstyled">
+    <div class="postbox">
+    
+    <h1>A little hack to get a pdf from your IPython slides</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2013-08-30T20:25:39">30-08-13 20:25</time>
         
-            <li><a href="../posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html">[30-08-13 20:25] A little hack to get a pdf from your IPython slides</a>
+    
         
-            </li><li><a href="../posts/zen-mode-extension-for-the-ipython-notebook.html">[27-08-13 00:21] Zen mode extension for the IPython notebook</a>
+            
         
-            </li><li><a href="../posts/make-your-slides-with-ipython.html">[23-08-13 09:25] Make your slides with IPython</a>
+            
         
-            </li><li><a href="../posts/ipython-plugin-for-nikola-updated.html">[12-08-13 16:40] IPython plugin for Nikola updated</a>
+    
+
         
-            </li><li><a href="../posts/teasers-with-the-ipython-notebook-plugin.html">[02-08-13 15:46] Teasers with the IPython notebook plugin</a>
+    
+          |  More posts about
         
-            </li><li><a href="../posts/scipycon-argentina-2013.html">[04-05-13 20:18] SciPyCon Argentina 2013</a>
+            <a class="tag" href="../categories/python.html"><span class="badge badge-info">python</span></a>
         
-            </li><li><a href="../posts/reveal-converter-mini-tutorial.html">[15-02-13 15:05] Reveal converter mini-tutorial</a>
+            <a class="tag" href="../categories/ipython.html"><span class="badge badge-info">IPython</span></a>
         
-            </li><li><a href="../posts/blogging-with-nikola-and-ipython.html">[25-01-13 16:46] Blogging with Nikola and IPython</a>
+            <a class="tag" href="../categories/nbconvert.html"><span class="badge badge-info">nbconvert</span></a>
         
-            </li><li><a href="../posts/slider-for-nbconvert.html">[02-12-12 21:40] Slider for nbconvert...</a>
+            <a class="tag" href="../categories/reveal.html"><span class="badge badge-info">reveal</span></a>
         
-            </li><li><a href="../posts/improving-viper-slideshows-styling.html">[08-10-12 00:33] Improving vIPer slideshows styling</a>
+            <a class="tag" href="../categories/slideshow.html"><span class="badge badge-info">slideshow</span></a>
         
-            </li><li><a href="../posts/nikola-nbconvert.html">[20-09-12 17:08] Nikola + nbconvert</a>
+            <a class="tag" href="../categories/pdf.html"><span class="badge badge-info">pdf</span></a>
         
-            </li><li><a href="../posts/a-simple-overview-of-viper.html">[29-06-12 13:50] A simple overview of vIPer</a>
+    
+
+    </small>
+    <hr>
+    <div class="text_cell_render border-box-sizing rendered_html">
+<p>A lot of users of the <code>slides</code> option in <code>IPython.nbconvert</code> asked me about how to get a pdf from the generated Reveal.js-based slideshow.</p>
+<p>To make the story short, here you have the detailed steps: <!-- TEASER_END --></p>
+<ul>
+<li>cd in the directory where your slideshow lives</li>
+<li>add this custom.css file: <a href="https://gist.github.com/damianavila/6211198">https://gist.github.com/damianavila/6211198</a></li>
+<li>run this little snippet: <a href="https://gist.github.com/damianavila/6211211">https://gist.github.com/damianavila/6211211</a></li>
+<li>run <code>python -m SimpleHTTPServer 8001</code></li>
+<li>open Mozilla Firefox browser and point to localhost:8001</li>
+<li>add ?print.pdf to the end of the url (ie, http://127.0.0.1:8001/your-ipynb.slides.html?print-pdf)</li>
+<li>print to pdf (use <em>Landscape</em> orientation)</li>
+</ul>
+<p>Do you want to get this little hack integrated to IPython? @fperez, the IPython BDFL does:</p>
+<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-partner="tweetdeck"><p>
+<a href="https://twitter.com/damian_avila">@damian_avila</a> <a href="https://twitter.com/profjsb">@profjsb</a> ultimately we should fold that into master though...
+</p>
+— Fernando Perez (@fperez_org) <a href="https://twitter.com/fperez_org/statuses/373190058326519808">August 29, 2013</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>So, time to write some code and do a PR... in the meantime use this hack ;-)</p>
+<p>Damián.</p>
+</div>
+    
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="zen-mode-extension-for-the-ipython-notebook.html">← Previous post</a>
+        </li>
+    
+    
+    </ul>
+
+    
         
-            </li><li><a href="../posts/viper.html">[25-06-12 00:44] vIPer</a>
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="damianblogcomments";
         
-        </li></ul>
-        </div>
-        <!--End of body content-->
+            var disqus_url="http://www.damian.oquanta.info/posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html";
+        
+        var disqus_title="A little hack to get a pdf from your IPython slides";
+        var disqus_identifier="cache/posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+    
+    
+
+    </div>
 
     </div>
     </div>
