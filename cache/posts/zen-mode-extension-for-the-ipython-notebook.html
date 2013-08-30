@@ -62,7 +62,7 @@ In&nbsp;[1]:
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Do you want it? You can get it!</p>
 <p>It is available inside the IPython-notebook-extensions <a href="https://github.com/ipython-contrib/IPython-notebook-extensions">repo</a> under the IPython-contrib organization [1].</p>
-<p>In the custom.js file you can select which background image do you want to use (there are some available inside the extension, but you can also use your ow image ;-)).</p>
+<p>In the custom.js file you can select which background image do you want to use (there are some available inside the extension, but you can also use your own image ;-)).</p>
 <p>Enjoy it!</p>
 <p>Damián</p>
 <p>PS: As usual, open any issue (bug or idea) at the Github repo (or report me here at the comments). Thanks!</p>

@@ -180,12 +180,12 @@
 <p>A lot of users of the <code>slides</code> option in <code>IPython.nbconvert</code> asked me about how to get a pdf from the generated Reveal.js-based slideshow.</p>
 <p>To make the story short, here you have the detailed steps: <!-- TEASER_END --></p>
 <ul>
-<li>cd in the directory where your slideshow lives</li>
-<li>add this custom.css file: <a href="https://gist.github.com/damianavila/6211198">https://gist.github.com/damianavila/6211198</a></li>
+<li><code>cd</code> in the directory where your slideshow lives</li>
+<li>add this <code>custom.css</code> file: <a href="https://gist.github.com/damianavila/6211198">https://gist.github.com/damianavila/6211198</a></li>
 <li>run this little snippet: <a href="https://gist.github.com/damianavila/6211211">https://gist.github.com/damianavila/6211211</a></li>
 <li>run <code>python -m SimpleHTTPServer 8001</code></li>
-<li>open Mozilla Firefox browser and point to localhost:8001</li>
-<li>add ?print.pdf to the end of the url (ie, http://127.0.0.1:8001/your-ipynb.slides.html?print-pdf)</li>
+<li>open Mozilla Firefox browser and point to <code>localhost:8001</code></li>
+<li>add <code>?print.pdf</code> to the end of the url (ie, <code>http://127.0.0.1:8001/your-ipynb.slides.html?print-pdf</code>)</li>
 <li>print to pdf (use <em>Landscape</em> orientation)</li>
 </ul>
 <p>Do you want to get this little hack integrated to IPython? @fperez, the IPython BDFL does:</p>
