@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Damian's blog (reveal)</title><link>http://www.damian.oquanta.info</link><description>My place to share some thoughts with the world.</description><lastBuildDate>Tue, 03 Sep 2013 19:18:06 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Customizing your IPython slides</title><link>http://www.damian.oquanta.info/es/posts/customizing-your-ipython-slides.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+<rss version="2.0"><channel><title>Damian's blog (css)</title><link>http://www.damian.oquanta.info</link><description>My place to share some thoughts with the world.</description><lastBuildDate>Tue, 03 Sep 2013 19:18:05 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Customizing your IPython slides</title><link>http://www.damian.oquanta.info/posts/customizing-your-ipython-slides.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Some days ago, I received this message on G+:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;In a future release, would be handy to add custom classes to slides so that you can use CSS rules to choose certain layouts for image slides, text, multiple charts, etc.&lt;/p&gt;
@@ -172,19 +172,4 @@ In [4]:
 &lt;p&gt;You can change more fundamental things and make crazy stuff... just go ahead and let me know.&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
 &lt;p&gt;Damián.&lt;/p&gt;
-&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/customizing-your-ipython-slides.html</guid><pubDate>Tue, 03 Sep 2013 16:08:16 GMT</pubDate></item><item><title>A little hack to get a pdf from your IPython slides</title><link>http://www.damian.oquanta.info/es/posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;A lot of users of the &lt;code&gt;slides&lt;/code&gt; option in &lt;code&gt;IPython.nbconvert&lt;/code&gt; asked me about how to get a pdf from the generated Reveal.js-based slideshow.&lt;/p&gt;
-&lt;p&gt;To make the story short, here you have the detailed steps: &lt;/p&gt;&lt;p&gt;&lt;a href="/es/posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html</guid><pubDate>Fri, 30 Aug 2013 20:25:39 GMT</pubDate></item><item><title>Make your slides with IPython</title><link>http://www.damian.oquanta.info/es/posts/make-your-slides-with-ipython.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;With the integration of nbconvert inside IPython, the last 1.0 release has the possibility to export the ipynb to other formats such as rst, markdown, latex, html and slides (&lt;a href="http://ipython.org/ipython-doc/stable/interactive/nbconvert.html"&gt;info&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;The slides option generates a Reveal.js-powered HTML slideshow, like this one: &lt;/p&gt;&lt;p&gt;&lt;a href="/es/posts/make-your-slides-with-ipython.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/make-your-slides-with-ipython.html</guid><pubDate>Fri, 23 Aug 2013 09:25:44 GMT</pubDate></item><item><title>Slider for nbconvert...</title><link>http://www.damian.oquanta.info/es/posts/slider-for-nbconvert.html</link><description>&lt;div&gt;&lt;p&gt;I have implemented reveal.js slides for vIPer (I will publish a
-post about that the next days...).&lt;/p&gt;
-&lt;p&gt;Then, I showed the resulting slides &lt;a class="reference external" href="http://www.slideviper.oquanta.info/reveal/Example_new_slides.html"&gt;http://www.slideviper.oquanta.info/reveal/Example_new_slides.html&lt;/a&gt;
-to some IPython team members and one of them, Brian, says:&lt;/p&gt;
-&lt;blockquote&gt;
-"it would be great if nbcovert could output reveal.js slides."&lt;/blockquote&gt;
-&lt;p&gt;and then, Fernando (if you know what is IPython, you know these guys) replies:&lt;/p&gt;
-&lt;blockquote&gt;
-"we can certainly add that kind of functionality as output options..."&lt;/blockquote&gt;
-&lt;p&gt;So, keeping in mind the implementation in vIPer, I provided a dirty and basic
-new implementation to get reveal-based slides from nbconvert.&lt;/p&gt;
-&lt;p&gt;&lt;a href="/es/posts/slider-for-nbconvert.html"&gt;Leer más...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/slider-for-nbconvert.html</guid><pubDate>Sun, 02 Dec 2012 21:40:56 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>python</category><category>IPython</category><category>nbconvert</category><category>reveal</category><category>slideshow</category><category>css</category><guid>http://www.damian.oquanta.info/posts/customizing-your-ipython-slides.html</guid><pubDate>Tue, 03 Sep 2013 16:08:16 GMT</pubDate></item></channel></rss>

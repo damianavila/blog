@@ -160,6 +160,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/categories/css.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/categories/extension.html</loc>
   <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
@@ -421,6 +426,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/blog.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/categories/css.html</loc>
   <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
