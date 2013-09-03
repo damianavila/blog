@@ -1,10 +1,10 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="es">
 <head>
     
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="My place to share some thoughts with the world.">
     <meta name="author" content="Damian Avila">
-    <title>A little hack to get a pdf from your IPython slides | Damian's blog</title>
+    <title>Damian's blog (posts antiguos página 2) | Damian's blog</title>
     <!-- mathjax_config -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -46,11 +46,7 @@
     
 
     
-
-
     
-
-
     
 </head>
 <body>
@@ -75,27 +71,27 @@
                     
     
         
-            <li><a href="../archive.html">Archives</a>
+            <li><a href="archive.html">Archivos</a>
         
     
         
-            </li><li><a href="../categories/index.html">Tags</a>
+            </li><li><a href="categories/index.html">Etiquetas</a>
         
     
         
-            </li><li><a href="../rss.xml">RSS</a>
+            </li><li><a href="rss.xml">RSS</a>
         
     
         
-            </li><li><a href="../portfolio/portfolio.slides.html">Portfolio</a>
+            </li><li><a href="portfolio/portfolio.slides.html">Portafolio</a>
         
     
         
-            </li><li><a href="../stories/about-me.html">About me</a>
+            </li><li><a href="stories/about-me.html">Sobre mi...</a>
         
     
         
-            </li><li><a href="http://nikola.ralsina.com.ar">Powered by Nikola!</a>
+            </li><li><a href="http://nikola.ralsina.com.ar">Hecho con Nikola!</a>
         
     
 
@@ -107,9 +103,9 @@
                     <li>
     
         
-    
+            <a href="../index.html">English</a>
         
-            <a href=".././es/index.html">Español</a>
+    
         
     
 </li>
@@ -117,12 +113,6 @@
                 
                 
                 
-
-    <li>
-    <a href="a-little-hack-to-get-a-pdf-from-your-ipython-slides.ipynb" id="sourcelink">Source</a>
-    </li>
-
-
                 
                 </ul>
             </div>
@@ -136,109 +126,55 @@
     <div class="span2"></div>
     <div class="span8">
     
-    <div class="postbox">
     
-    <h1>A little hack to get a pdf from your IPython slides</h1>
-    
-
-    <hr>
-    <small>
-        Posted: <time class="published" datetime="2013-08-30T20:25:39">30-08-13 20:25</time>
-        
-    
-        
-            
-        
-            
-        
-    
-
-        
-    
-          |  More posts about
-        
-            <a class="tag" href="../categories/python.html"><span class="badge badge-info">python</span></a>
-        
-            <a class="tag" href="../categories/ipython.html"><span class="badge badge-info">IPython</span></a>
-        
-            <a class="tag" href="../categories/nbconvert.html"><span class="badge badge-info">nbconvert</span></a>
-        
-            <a class="tag" href="../categories/reveal.html"><span class="badge badge-info">reveal</span></a>
-        
-            <a class="tag" href="../categories/slideshow.html"><span class="badge badge-info">slideshow</span></a>
-        
-            <a class="tag" href="../categories/pdf.html"><span class="badge badge-info">pdf</span></a>
-        
-    
-
-    </small>
-    <hr>
-    <div class="text_cell_render border-box-sizing rendered_html">
-<p>A lot of users of the <code>slides</code> option in <code>IPython.nbconvert</code> asked me about how to get a pdf from the generated Reveal.js-based slideshow.</p>
-<p>To make the story short, here you have the detailed steps: <!-- TEASER_END --></p>
-<ul>
-<li><code>cd</code> in the directory where your slideshow lives</li>
-<li>add this <code>custom.css</code> file: <a href="https://gist.github.com/damianavila/6211198">https://gist.github.com/damianavila/6211198</a></li>
-<li>run this little snippet: <a href="https://gist.github.com/damianavila/6211211">https://gist.github.com/damianavila/6211211</a></li>
-<li>run <code>python -m SimpleHTTPServer 8001</code></li>
-<li>open Mozilla Firefox browser and point to <code>localhost:8001</code></li>
-<li>add <code>?print.pdf</code> to the end of the url (ie, <code>http://127.0.0.1:8001/your-ipynb.slides.html?print-pdf</code>)</li>
-<li>print to pdf (use <em>Landscape</em> orientation)</li>
-</ul>
-<p>Do you want to get this little hack integrated to IPython? @fperez, the IPython BDFL does:</p>
-<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-partner="tweetdeck"><p>
-<a href="https://twitter.com/damian_avila">@damian_avila</a> <a href="https://twitter.com/profjsb">@profjsb</a> ultimately we should fold that into master though...
-</p>
-— Fernando Perez (@fperez_org) <a href="https://twitter.com/fperez_org/statuses/373190058326519808">August 29, 2013</a>
-</blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p>So, time to write some code and do a PR... in the meantime use this hack ;-)</p>
-<p>Damián.</p>
+        <div class="postbox">
+        <h1><a href="posts/blogging-with-nikola-and-ipython.html">Blogging with Nikola and IPython</a></h1>
+        <p style="text-align:right"><big>
+             Publicado: 25-01-13 16:46
+        </big></p>
+        <hr>
+        <div><div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>NOTE</strong>: Obviously, this post was written in the IPython notebook and was rendered by Nikola (helped by nbconvert).</p>
 </div>
-    
-    <ul class="pager">
-    
-        <li class="previous">
-            <a href="zen-mode-extension-for-the-ipython-notebook.html">← Previous post</a>
-        </li>
-    
-    
-        <li class="next">
-            <a href="customizing-your-ipython-slides.html">Next post →</a>
-        </li>
-    
-    </ul>
-
-    
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>INGREDIENTS</strong>:</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="https://github.com/ralsina/nikola">Nikola</a></li>
+</ul>
+<p><strong>NOTE: The theme was tested with Nikola version <a href="https://github.com/ralsina/nikola/tags">5.1</a></strong></p>
+<ul>
+<li>
+</li><li><a href="https://github.com/damianavila/site-ipython-theme-for-Nikola.git">site-ipython</a> theme for Nikola</li>
+<li><a href="https://github.com/damianavila/compile_ipynb-for-Nikola.git">compile_ipynb</a> for Nikola</li>
+</ul>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="posts/blogging-with-nikola-and-ipython.html">Leer más...</a></p></div></div>
+        <p>
         
-    
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-        var disqus_shortname ="damianblogcomments";
+            <a href="posts/blogging-with-nikola-and-ipython.html#disqus_thread" data-disqus-identifier="cache/posts/blogging-with-nikola-and-ipython.html">Comments</a>
         
-            var disqus_url="http://www.damian.oquanta.info/posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html";
-        
-        var disqus_title="A little hack to get a pdf from your IPython slides";
-        var disqus_identifier="cache/posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html";
-        var disqus_config = function () {
-            this.language = "";
-        };
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+        </p></div>
     
-
-    
-    
-    
+    <div>
+<ul class="pager">
+  
+    <li class="previous">
+        <a href="index.html">← Posts posteriores</a>
+  
+  
+    </li><li class="next">
+        <a href="index-1.html">Posts anteriores  →</a>
+  
+</li></ul>
 
     </div>
+    <hr>
+    
+        <script type="text/javascript"> var disqus_shortname = 'damianblogcomments'; (function () { var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = 'http://' + disqus_shortname + '.disqus.com/count.js'; (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s); }()); </script>
+    
 
     </div>
     </div>

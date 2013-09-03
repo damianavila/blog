@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="Damian Avila">
-    <title>A little hack to get a pdf from your IPython slides | Damian's blog</title>
+    <title>Customizing your IPython slides | Damian's blog</title>
     <!-- mathjax_config -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -119,7 +119,7 @@
                 
 
     <li>
-    <a href="../.././es/posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.ipynb" id="sourcelink">Código</a>
+    <a href="../.././es/posts/customizing-your-ipython-slides.ipynb" id="sourcelink">Código</a>
     </li>
 
 
@@ -138,78 +138,210 @@
     
     <div class="postbox">
     
-    <h1>A little hack to get a pdf from your IPython slides</h1>
+    <h1>Customizing your IPython slides</h1>
     
 
     <hr>
     <small>
-        Publicado: <time class="published" datetime="2013-08-30T20:25:39">30-08-13 20:25</time>
+        Publicado: <time class="published" datetime="2013-09-03T16:08:16">03-09-13 16:08</time>
         
     
         
             
                   |  
-                <a href="../../posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html">Read in English</a>
+                <a href="../../posts/customizing-your-ipython-slides.html">Read in English</a>
             
         
             
         
     
 
-        
-    
-          |  Más posts sobre
-        
-            <a class="tag" href="../.././es/categories/python.html"><span class="badge badge-info">python</span></a>
-        
-            <a class="tag" href="../.././es/categories/ipython.html"><span class="badge badge-info">IPython</span></a>
-        
-            <a class="tag" href="../.././es/categories/nbconvert.html"><span class="badge badge-info">nbconvert</span></a>
-        
-            <a class="tag" href="../.././es/categories/reveal.html"><span class="badge badge-info">reveal</span></a>
-        
-            <a class="tag" href="../.././es/categories/slideshow.html"><span class="badge badge-info">slideshow</span></a>
-        
-            <a class="tag" href="../.././es/categories/pdf.html"><span class="badge badge-info">pdf</span></a>
         
     
 
     </small>
     <hr>
     <div class="text_cell_render border-box-sizing rendered_html">
-<p>A lot of users of the <code>slides</code> option in <code>IPython.nbconvert</code> asked me about how to get a pdf from the generated Reveal.js-based slideshow.</p>
-<p>To make the story short, here you have the detailed steps: <!-- TEASER_END --></p>
-<ul>
-<li><code>cd</code> in the directory where your slideshow lives</li>
-<li>add this <code>custom.css</code> file: <a href="https://gist.github.com/damianavila/6211198">https://gist.github.com/damianavila/6211198</a></li>
-<li>run this little snippet: <a href="https://gist.github.com/damianavila/6211211">https://gist.github.com/damianavila/6211211</a></li>
-<li>run <code>python -m SimpleHTTPServer 8001</code></li>
-<li>open Mozilla Firefox browser and point to <code>localhost:8001</code></li>
-<li>add <code>?print.pdf</code> to the end of the url (ie, <code>http://127.0.0.1:8001/your-ipynb.slides.html?print-pdf</code>)</li>
-<li>print to pdf (use <em>Landscape</em> orientation)</li>
-</ul>
-<p>Do you want to get this little hack integrated to IPython? @fperez, the IPython BDFL does:</p>
-<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-partner="tweetdeck"><p>
-<a href="https://twitter.com/damian_avila">@damian_avila</a> <a href="https://twitter.com/profjsb">@profjsb</a> ultimately we should fold that into master though...
-</p>
-— Fernando Perez (@fperez_org) <a href="https://twitter.com/fperez_org/statuses/373190058326519808">August 29, 2013</a>
+<p>Some days ago, I received this message on G+:</p>
+<blockquote>
+<p>In a future release, would be handy to add custom classes to slides so that you can use CSS rules to choose certain layouts for image slides, text, multiple charts, etc.</p>
 </blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>But... we already support this kind of customization! And it is clearly my fault that you don't know about this feature... so:</p>
+<ol style="list-style-type: decimal">
+<li>I am very sorry for the lack of proper documentation (I am working on that ;-)).</li>
+<li>In the meantime, you can look at this blog where I am documenting some important things for this slideshow platform.</li>
+<li>You can also ask me whatever you want by twitter, G+, open issues at <a href="https://github.com/ipython/ipython">Github</a> or make comments here, in my blog.</li>
+</ol>
+<p>Using this message as a trigger (and following with the serie of blog posts explaining some of the IPython slides features), I will explain you how to customize your IPython slides in just two steps:</p>
+<p><strong>NOTE</strong>: I will use, as a starting point, the following slides of a talk I gave to journalist and designers at <a href="http://www.mediaparty.info">Hacks/HackersBs</a>, a story to write in another blog post...</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [1]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s">'&lt;iframe src="http://damianavila.github.io/hackperiodismo" width=800 height=600&gt;&lt;/iframe&gt;'</span><span class="p">)</span>
+</pre></div>
 
-<p>So, time to write some code and do a PR... in the meantime use this hack ;-)</p>
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[1]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+<div class="output_html rendered_html">
+<iframe src="http://damianavila.github.io/hackperiodismo" width="800" height="600"></iframe>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Step 1</strong>. Create a <code>custom.css</code> file containing your css rules.</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [2]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="o">!</span>cat /media/datos/Desarrollos/hackperiodismo/custom.css
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+/*Some css fixes to use night theme with IPython slides*/
+body {
+background-color: #111111;
+}
+.reveal p {
+color: white;
+}
+.reveal ul, ol {
+color: white;
+}
+div.output_area pre {
+color: white;
+}
+div.output_stderr {
+background: #F00;
+}
+.reveal table th, .reveal table td {
+color: white;
+}
+
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Step 2</strong>. Put this <code>custom.css</code> file in the same <code>dir</code> where your slides lives.</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [3]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="o">!</span>ls /media/datos/Desarrollos/hackperiodismo
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+custom.css  figs  index2.html  index.html
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>NOTE</strong>: Here, I previously renamed my <code>notebook.slides.html</code> to <code>index.html</code> but it is not necessary for the customization.</p>
+<p>And you are done!</p>
+<p><em>The slideshow will read the <code>custom.css</code> file at last and overwrite the css rules according to your desires.</em></p>
+<p>Pretty easy! ;-)</p>
+<p>And now, the example slides rendered with a new darker style...</p>
+<p><strong>NOTE</strong>: In this case I applied the NIGHT reveal theme (adding <code>?theme=night</code> to the url) and used the <code>custom.css</code> file to adjust some details ;-) (darker reveal themes need this kind of customization to be rendered OK).</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [4]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s">'&lt;iframe src="http://damianavila.github.io/hackperiodismo/index2.html?theme=night" width=800 height=600&gt;&lt;/iframe&gt;'</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[4]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+<div class="output_html rendered_html">
+<iframe src="http://damianavila.github.io/hackperiodismo/index2.html?theme=night" width="800" height="600"></iframe>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can change more fundamental things and make crazy stuff... just go ahead and let me know.</p>
+<p>Enjoy!</p>
 <p>Damián.</p>
 </div>
     
     <ul class="pager">
     
         <li class="previous">
-            <a href="zen-mode-extension-for-the-ipython-notebook.html">← Post anterior</a>
+            <a href="a-little-hack-to-get-a-pdf-from-your-ipython-slides.html">← Post anterior</a>
         </li>
     
-    
-        <li class="next">
-            <a href="customizing-your-ipython-slides.html">Siguiente post →</a>
-        </li>
     
     </ul>
 
@@ -220,10 +352,10 @@
         <script type="text/javascript">
         var disqus_shortname ="damianblogcomments";
         
-            var disqus_url="http://www.damian.oquanta.info/es/posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html";
+            var disqus_url="http://www.damian.oquanta.info/es/posts/customizing-your-ipython-slides.html";
         
-        var disqus_title="A little hack to get a pdf from your IPython slides";
-        var disqus_identifier="cache/posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html";
+        var disqus_title="Customizing your IPython slides";
+        var disqus_identifier="cache/posts/customizing-your-ipython-slides.html";
         var disqus_config = function () {
             this.language = "./es";
         };
