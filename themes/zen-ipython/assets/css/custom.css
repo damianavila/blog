@@ -1,0 +1,33 @@
+.social {
+float: left;
+min-height: 100%;
+background: url('../images/blue-mocha-grunge.jpg') rgba(32, 115, 221, 0.1);
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+width: 180px;
+}
+
+.social ul {
+position: fixed;
+margin-bottom: 1em;
+display: table;
+width: 150px;
+}
+
+.social ul li {
+display: block;
+padding: 0.5em;
+margin-left: 2em;
+}
+
+.page-content {
+margin-left: 180px;
+}
+
+.page-content>.content {
+max-width: 890px;
+}
+

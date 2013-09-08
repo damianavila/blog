@@ -1,22 +1,19 @@
-
 # -*- coding: utf-8 -*-
+
 from __future__ import unicode_literals
 import time
 
-##############################################
 # Configuration, please edit
-##############################################
-
 
 # Data about this site
 BLOG_AUTHOR = "Damian Avila"
 BLOG_TITLE = "Damian's blog"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://www.damian.oquanta.info"
+SITE_URL = "http://www.damian.oquanta.info/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://nikola.ralsina.com.ar"
+# BASE_URL = "http://getnikola.com/"
 BLOG_EMAIL = "damianavila82@yahoo.com.ar"
 BLOG_DESCRIPTION = "My place to share some thoughts with the world."
 
@@ -53,36 +50,39 @@ TRANSLATIONS = {
 
 # Links for the sidebar / navigation bar.
 # You should provide a key-value pair for each used language.
-SIDEBAR_LINKS = {
+NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/archive.html', 'Archives'),
-        ('/categories/index.html', 'Tags'),
-        ('/rss.xml', 'RSS'),
-        ('/portfolio/portfolio.slides.html', 'Portfolio'),
-        ('/stories/about-me.html', 'About me'),
-        ('http://nikola.ralsina.com.ar', 'Powered by Nikola!'),
-        ),
+        ('/index.html', 'Home', 'icon-home'),
+        ('/archive.html', 'Archives', 'icon-folder-open-alt'),
+        ('/categories/index.html', 'Tags', 'icon-tags'),
+        ('/rss.xml', 'RSS', 'icon-rss'),
+        ('/portfolio/portfolio.slides.html', 'Portfolio', 'icon-briefcase'),
+        ('/stories/about-me.html', 'About me', 'icon-user'),
+        ('https://twitter.com/damian_avila', 'My Twitter', 'icon-twitter'),
+        ('https://github.com/damianavila', 'My Github', 'icon-github'),
+        ('https://plus.google.com/u/0/106896109587369688379/posts', 'My Google+', 'icon-google-plus'),
+    ),
     'es': (
-        ('/es/archive.html', 'Archivos'),
-        ('/es/categories/index.html', 'Etiquetas'),
-        ('/es/rss.xml', 'RSS'),
-        ('/es/portfolio/portfolio.slides.html', 'Portafolio'),        
-        ('/es/stories/about-me.html', 'Sobre mi...'),
-        ('http://nikola.ralsina.com.ar', 'Hecho con Nikola!'),
-        ),
+        ('/es/index.html', 'Inicio', 'icon-home'),
+        ('/es/archive.html', 'Archivos', 'icon-folder-open-alt'),
+        ('/es/categories/index.html', 'Etiquetas', 'icon-tags'),
+        ('/es/rss.xml', 'RSS', 'icon-rss'),
+        ('/es/portfolio/portfolio.slides.html', 'Portafolio', 'icon-briefcase'),
+        ('/es/stories/about-me.html', 'Sobre mi...', 'icon-user'),
+        ('https://twitter.com/damian_avila', 'Mi Twitter', 'icon-twitter'),
+        ('https://github.com/damianavila', 'Mi Github', 'icon-github'),
+        ('https://plus.google.com/u/0/106896109587369688379/posts', 'Mi Google+', 'icon-google-plus'),
+    ),
 }
 
-
-##############################################
 # Below this point, everything is optional
-##############################################
 
-
-# post_pages contains (wildcard, destination, template, use_in_feed) tuples.
+# POSTS and PAGES contains (wildcard, destination, template) tuples.
 #
 # The wildcard is used to generate a list of reSt source files
 # (whatever/thing.txt).
-# That fragment must have an associated metadata file (whatever/thing.meta),
+#
+# That fragment could have an associated metadata file (whatever/thing.meta),
 # and opcionally translated files (example for spanish, with code "es"):
 #     whatever/thing.txt.es and whatever/thing.meta.es
 #
@@ -93,17 +93,22 @@ SIDEBAR_LINKS = {
 # pages, which will be placed at
 # output / TRANSLATIONS[lang] / destination / pagename.html
 #
-# where "pagename" is specified in the metadata file.
+# where "pagename" is the "slug" specified in the metadata file.
 #
-# if use_in_feed is True, then those posts will be added to the site's
-# rss feeds.
+# The difference between POSTS and PAGES is that POSTS are added
+# to feeds and are considered part of a blog, while PAGES are
+# just independent HTML pages.
 #
 
-post_pages = (
-    ("posts/*.txt", "posts", "post.tmpl", True),
-    ("stories/*.txt", "stories", "story.tmpl", False),
-    ("posts/*.ipynb", "posts", "post.tmpl", True),
-    ("stories/*.ipynb", "stories", "story.tmpl", False),
+POSTS = (
+    ("posts/*.txt", "posts", "post.tmpl"),
+    ("posts/*.rst", "posts", "post.tmpl"),
+    ("posts/*.ipynb", "posts", "post.tmpl"),
+)
+PAGES = (
+    ("stories/*.txt", "stories", "story.tmpl"),
+    ("stories/*.rst", "stories", "story.tmpl"),
+    ("stories/*.ipynb", "stories", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -119,7 +124,7 @@ post_pages = (
 # 'rest' is reStructuredText
 # 'markdown' is MarkDown
 # 'html' assumes the file is html and just copies it
-post_compilers = {
+COMPILERS = {
     "rest": ('.txt', '.rst'),
     "markdown": ('.md', '.mdown', '.markdown'),
     "textile": ('.textile',),
@@ -127,12 +132,16 @@ post_compilers = {
     "bbcode": ('.bb',),
     "wiki": ('.wiki',),
     "ipynb": ('.ipynb',),
-    "html": ('.html', '.htm')
+    "html": ('.html', '.htm'),
+    # Pandoc detects the input from the source filename
+    # but is disabled by default as it would conflict
+    # with many of the others.
+    # "pandoc": ('.rst', '.md', '.txt'),
 }
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
-# ONE_FILE_POSTS = False
+# ONE_FILE_POSTS = True
 
 # If this is set to True, then posts that are not translated to a language
 # LANG will not be visible at all in the pages in that language.
@@ -169,6 +178,9 @@ CREATE_MONTHLY_ARCHIVE = True
 # output / TRANSLATION[lang] / RSS_PATH / rss.xml
 # RSS_PATH = ""
 
+# Number of posts in RSS feeds
+# FEED_LENGTH = 10
+
 # Slug the Tag URL easier for users to type, special characters are
 # often removed or replaced as well.
 # SLUG_TAG_PATH = True
@@ -193,8 +205,6 @@ DEPLOY_COMMANDS = ["git add .",
                    "git subtree split --prefix output -b gh-pages",
                    "git push -f origin gh-pages:gh-pages",
                    "git branch -D gh-pages"]
-# DEPLOY_COMMANDS = ["git push origin `git subtree split --prefix output gh-pages`:gh-pages --force"]
-# http://stackoverflow.com/questions/12644855/how-do-i-reset-a-heroku-git-repository-to-its-initial-state/13403588#13403588
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -253,26 +263,27 @@ DEPLOY_COMMANDS = ["git add .",
 # translated
 
 # Name of the theme to use.
-THEME = 'jinja-site-ipython_united'
+THEME = 'zen-ipython'
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
 # Can be any of autumn borland bw colorful default emacs friendly fruity manni
 # monokai murphy native pastie perldoc rrt tango trac vim vs
-# CODE_COLOR_SCHEME = default
+# CODE_COLOR_SCHEME = 'default'
 
 # If you use 'site-reveal' theme you can select several subthemes
-# THEME_REVEAL_CONGIF_SUBTHEME = 'sky'
+# THEME_REVEAL_CONFIG_SUBTHEME = 'sky'
 # You can also use: beige/serif/simple/night/default
 
 # Again, if you use 'site-reveal' theme you can select several transitions
 # between the slides
-# THEME_REVEAL_CONGIF_TRANSITION = 'cube'
+# THEME_REVEAL_CONFIG_TRANSITION = 'cube'
 # You can also use: page/concave/linear/none/default
 
 # date format used to display post dates.
 # (str used by datetime.datetime.strftime)
-DATE_FORMAT = '%d-%m-%y %H:%M'
+# DATE_FORMAT = '%Y-%m-%d %H:%M'
+# DATE_FORMAT = '%d-%m-%y %H:%M'
 
 # FAVICONS contains (name, file, size) tuples.
 # Used for create favicon link like this:
@@ -287,7 +298,16 @@ DATE_FORMAT = '%d-%m-%y %H:%M'
 # Show only teasers in the index pages? Defaults to False.
 INDEX_TEASERS = True
 
-# A HTML fragment describing the license, for the sidebar. Default is "".
+# A HTML fragment with the Read more... link.
+# The following tags exist and are replaced for you:
+# {link}        A link to the full post page.
+# {read_more}   The string “Read more” in the current language.
+# {{            A literal { (U+007B LEFT CURLY BRACKET)
+# }}            A literal } (U+007D RIGHT CURLY BRACKET)
+# READ_MORE_LINK = '<p class="more"><a href="{link}">{read_more}…</a></p>'
+
+# A HTML fragment describing the license, for the sidebar.
+# LICENSE = ""
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
 LICENSE = """
@@ -298,16 +318,24 @@ src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>'
+CONTENT_FOOTER = """Contents &copy; {date} <a href="mailto:{email}">{author}</a> - 
+Powered by <a href="http://getnikola.com">Nikola</a> - 
+Zen theme based in <a href="https://github.com/arusahni/website-template">Arusahni's website-template</a><br>
+{license}"""
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
                                        author=BLOG_AUTHOR,
-                                       date=time.gmtime().tm_year)
+                                       date=time.gmtime().tm_year,
+                                       license=LICENSE)
 
-# To enable comments via Disqus, you need to create a forum at
-# http://disqus.com, and set DISQUS_FORUM to the short name you selected.
-# If you want to disable comments, set it to False.
-# Default is "nikolademo", used by the demo sites
-DISQUS_FORUM = "damianblogcomments"
+# To use comments, you can choose between different third party comment
+# systems, one of "disqus", "livefyre", "intensedebate", "moot",
+#                 "googleplus" or "facebook"
+# COMMENT_SYSTEM = "disqus"
+# And you also need to add your COMMENT_SYSTEM_ID which
+# depends on what comment system you use. The default is
+# "nikolademo" which is a test account for Disqus. More information
+# is in the manual.
+COMMENT_SYSTEM_ID = "damianblogcomments"
 
 # Create index.html for story folders?
 # STORY_INDEX = False
@@ -344,36 +372,71 @@ DISQUS_FORUM = "damianblogcomments"
 # to the metadata
 # PRETTY_URLS = False
 
+# If True, publish future dated posts right away instead of scheduling them.
+# Defaults to False.
+# FUTURE_IS_NOW = False
+
+# If True, future dated posts are allowed in deployed output
+# Only the individual posts are published/deployed; not in indexes/sitemap
+# Generally, you want FUTURE_IS_NOW and DEPLOY_FUTURE to be the same value.
+# DEPLOY_FUTURE = False
+# If False, draft posts will not be deployed
+# DEPLOY_DRAFTS = True
+
+# Allows scheduling of posts using the rule specified here (new_post -s)
+# Specify an iCal Recurrence Rule: http://www.kanzaki.com/docs/ical/rrule.html
+# SCHEDULE_RULE = ''
+# If True, use the scheduling rule to all posts by default
+# SCHEDULE_ALL = False
+# If True, schedules post to today if possible, even if scheduled hour is over
+# SCHEDULE_FORCE_TODAY = False
+
 # Do you want a add a Mathjax config file?
 # MATHJAX_CONFIG = ""
 
 # If you are using the compile-ipynb plugin, just add this one:
-#MATHJAX_CONFIG = """
-#<script type="text/x-mathjax-config">
-#MathJax.Hub.Config({
-#    tex2jax: {
-#        inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
-#        displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ]
-#    },
-#    displayAlign: 'left', // Change this to 'center' to center equations.
-#    "HTML-CSS": {
-#        styles: {'.MathJax_Display': {"margin": 0}}
-#    }
-#});
-#</script>
-#"""
+MATHJAX_CONFIG = """
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ]
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script>
+"""
 
 # What MarkDown extensions to enable?
 # You will also get gist, nikola and podcast because those are
 # done in the code, hope you don't mind ;-)
 # MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite']
 
-# Enable Addthis social buttons?
-# Defaults to true
-# ADD_THIS_BUTTONS = True
+# Social buttons. This is sample code for AddThis (which was the default for a
+# long time). Insert anything you want here, or even make it empty.
+SOCIAL_BUTTONS_CODE = """
+ <!-- Social buttons -->
+ <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more"><i class="icon-share-sign icon-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Share</a>
+ <ul>
+ <li><a class="addthis_button_twitter"><i class="icon-twitter icon-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Twitter</a>
+ <li><a class="addthis_button_google_plusone_share"><i class="icon-google-plus-sign icon-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Google+</a>
+ <li><a class="addthis_button_linkedin"><i class="icon-linkedin icon-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Linkedin</a>
+ <li><a class="addthis_button_facebook"><i class="icon-facebook-sign icon-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Facebook</a>
+ </ul>
+ </div>
+ <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+ <!-- End of social buttons -->
+ """
 
 # Hide link to source for the posts?
 # HIDE_SOURCELINK = False
+# Copy the source files for your pages?
+# Setting it to False implies HIDE_SOURCELINK = True
+# COPY_SOURCES = True
 
 # Modify the number of Post per Index Page
 # Defaults to 10
@@ -429,7 +492,7 @@ DISQUS_FORUM = "damianblogcomments"
 # <input type="text" id="tipue_search_input">
 # </span>"""
 #
-# ANALYTICS = """
+# BODY_END = """
 # <script type="text/javascript" src="/assets/js/tipuesearch_set.js"></script>
 # <script type="text/javascript" src="/assets/js/tipuesearch.js"></script>
 # <script type="text/javascript">
@@ -455,15 +518,14 @@ DISQUS_FORUM = "damianblogcomments"
 # If this is True, jquery is served from the Google CDN and twitter-bootstrap
 # is served from the NetDNA CDN
 # Set this to False if you want to host your site without requiring access to
-# external resources.
-# USE_CDN = False
+# USE_CDN = True
 
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </HEAD>
 # EXTRA_HEAD_DATA = ""
 # Google analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
-ANALYTICS = """
+BODY_END = """
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -494,6 +556,9 @@ ANALYTICS = """
 # An example re is the following:
 # '(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)-(?P<title>.*)\.md'
 # FILE_METADATA_REGEXP = None
+
+# Additional metadata that is added to a post when creating a new_post
+# ADDITIONAL_METADATA = {}
 
 # Nikola supports Twitter Card summaries / Open Graph.
 # Twitter cards make it possible for you to attach media to Tweets
@@ -533,16 +598,19 @@ ANALYTICS = """
 # Experimental plugins - use at your own risk.
 # They probably need some manual adjustments - please see their respective
 # readme.
-# ENABLED_EXTRAS = ['ipynb']
+# ENABLED_EXTRAS = [
 #     'planetoid',
 #     'ipynb',
 #     'local_search',
-#     'mustache',
+#     'render_mustache',
 # ]
 
 # List of regular expressions, links matching them will always be considered
 # valid by "nikola check -l"
 # LINK_CHECK_WHITELIST = []
+
+# If set to True, enable optional hyphenation in your posts (requires pyphen)
+# HYPHENATE = False
 
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.

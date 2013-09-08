@@ -1,34 +1,34 @@
 <!DOCTYPE html><html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="Damian Avila">
     <title>Blogging with Nikola and IPython | Damian's blog</title>
-    <!-- mathjax_config -->
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
-        },
-        displayAlign: 'left', // Change this to 'center' to center equations.
-        "HTML-CSS": {
-            styles: {'.MathJax_Display': {"margin": 0}}
-        }
-    });
-    </script>
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script>
+
     
         
-            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bitter.css" rel="stylesheet" type="text/css">
         
-        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/main.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+            <link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
         
     
     <!--[if lt IE 9]>
@@ -47,104 +47,27 @@
 
     
 
-
     
+
 
 
     
 </head>
+
 <body>
-<!-- Menubar -->
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </a>
-
-            <a class="brand" href="../">
-            Damian's blog
-            </a>
-            <!-- Everything you want hidden at 940px or less, place within here -->
-            <div class="nav-collapse collapse">
-                <ul class="nav">
-                    
-    
-        
-            <li><a href="../archive.html">Archives</a>
-        
-    
-        
-            </li><li><a href="../categories/index.html">Tags</a>
-        
-    
-        
-            </li><li><a href="../rss.xml">RSS</a>
-        
-    
-        
-            </li><li><a href="../portfolio/portfolio.slides.html">Portfolio</a>
-        
-    
-        
-            </li><li><a href="../stories/about-me.html">About me</a>
-        
-    
-        
-            </li><li><a href="http://nikola.ralsina.com.ar">Powered by Nikola!</a>
-        
-    
-
-                </li></ul>
-                
-                <ul class="nav pull-right">
-                
-                
-                    <li>
-    
-        
-    
-        
-            <a href=".././es/index.html">Español</a>
-        
-    
-</li>
-                
-                
-                
-                
-
-    <li>
-    <a href="blogging-with-nikola-and-ipython.ipynb" id="sourcelink">Source</a>
-    </li>
-
-
-                
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End of Menubar -->
-<div class="container-fluid" id="container-fluid">
-    <!--Body content-->
-    <div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span8">
-    
-    <div class="postbox">
+    <section class="page-content">
+        <div class="content" rel="main">
+            
+    <div class="post">
     
     <h1>Blogging with Nikola and IPython</h1>
     
 
-    <hr>
-    <small>
-        Posted: <time class="published" datetime="2013-01-25T16:46:46">25-01-13 16:46</time>
-        
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2013-01-25T16:46:46">2013-01-25 16:46</time>
+            </div>
+            
     
         
             
@@ -153,25 +76,35 @@
         
     
 
-        
+            
     
-          |  More posts about
-        
-            <a class="tag" href="../categories/python.html"><span class="badge badge-info">python</span></a>
-        
-            <a class="tag" href="../categories/nikola.html"><span class="badge badge-info">nikola</span></a>
-        
-            <a class="tag" href="../categories/ipython.html"><span class="badge badge-info">IPython</span></a>
-        
-            <a class="tag" href="../categories/blog.html"><span class="badge badge-info">blog</span></a>
-        
-            <a class="tag" href="../categories/nbconvert.html"><span class="badge badge-info">nbconvert</span></a>
-        
+          |  
+        <a href="blogging-with-nikola-and-ipython.ipynb" id="sourcelink">Source</a>
     
 
-    </small>
-    <hr>
-    <div class="text_cell_render border-box-sizing rendered_html">
+            
+    
+    <div class="tags">
+        <ul>
+        More posts about:  
+        
+            <li><a class="tag" href="../categories/python.html">python</a></li>
+        
+            <li><a class="tag" href="../categories/nikola.html">nikola</a></li>
+        
+            <li><a class="tag" href="../categories/ipython.html">IPython</a></li>
+        
+            <li><a class="tag" href="../categories/blog.html">blog</a></li>
+        
+            <li><a class="tag" href="../categories/nbconvert.html">nbconvert</a></li>
+        
+        </ul>
+    </div>
+    
+
+        </div>
+        <div class="body">
+            <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>NOTE</strong>: Obviously, this post was written in the IPython notebook and was rendered by Nikola (helped by nbconvert).</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -474,7 +407,8 @@ In [6]:
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>OK, enough... see you soon!</p>
 </div>
-    
+        </div>
+        
     <ul class="pager">
     
         <li class="previous">
@@ -488,6 +422,8 @@ In [6]:
     
     </ul>
 
+        
+            
     
         
     
@@ -495,7 +431,7 @@ In [6]:
         <script type="text/javascript">
         var disqus_shortname ="damianblogcomments";
         
-            var disqus_url="http://www.damian.oquanta.info/posts/blogging-with-nikola-and-ipython.html";
+            var disqus_url="http://www.damian.oquanta.info//posts/blogging-with-nikola-and-ipython.html";
         
         var disqus_title="Blogging with Nikola and IPython";
         var disqus_identifier="cache/posts/blogging-with-nikola-and-ipython.html";
@@ -513,44 +449,117 @@ In [6]:
     
 
     
+
+        
+        
     
-    
 
     </div>
 
-    </div>
-    </div>
-    <!--End of body content-->
-</div>
-<div class="footerbox">
-    Contents © 2013         <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>
-</div>
+            Contents © 2013 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
+Powered by <a href="http://getnikola.com">Nikola</a> - 
+Zen theme based in <a href="https://github.com/arusahni/website-template">Arusahni's website-template</a><br>
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>
+            
+	
+ <!-- Social buttons -->
+ <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more"><i class="icon-share-sign icon-2x"></i>    Share</a>
+ <ul>
+ <li><a class="addthis_button_twitter"><i class="icon-twitter icon-2x"></i>    Twitter</a>
+ </li><li><a class="addthis_button_google_plusone_share"><i class="icon-google-plus-sign icon-2x"></i>    Google+</a>
+ </li><li><a class="addthis_button_linkedin"><i class="icon-linkedin icon-2x"></i>    Linkedin</a>
+ </li><li><a class="addthis_button_facebook"><i class="icon-facebook-sign icon-2x"></i>    Facebook</a>
+ </li></ul>
+ </div>
+ <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+ <!-- End of social buttons -->
+ 
 
-    <!-- Social buttons -->
-    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
-    <a class="addthis_button_more">Share</a>
-    <ul><li><a class="addthis_button_facebook"></a>
-    </li><li><a class="addthis_button_google_plusone_share"></a>
-    </li><li><a class="addthis_button_linkedin"></a>
-    </li><li><a class="addthis_button_twitter"></a>
-    </li></ul>
-    </div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
-    <!-- End of social buttons -->
-
-
-
+        </div>
+    </section>
+    <section class="social">
+        <ul>
+<!--        <h1 id="blog-title">
+            <a href="/" title="Damian's blog">Damian's blog</a>
+        </h1>
+        
+        
+        <small>
+            Also available in:&nbsp;
+            
     
         
-            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+    
         
-        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+            <a href="/./es/index.html">Español</a>
+        
+    
+
+        </small>
+        
+         -->
+        
+    
+        
+            <li><a href="../index.html" title="Home"><i class="icon-home"></i></a></li>
+        
+    
+        
+            <li><a href="../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+        
+    
+        
+            <li><a href="../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+        
+    
+        
+            <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+        
+    
+        
+            <li><a href="../portfolio/portfolio.slides.html" title="Portfolio"><i class="icon-briefcase"></i></a></li>
+        
+    
+        
+            <li><a href="../stories/about-me.html" title="About me"><i class="icon-user"></i></a></li>
+        
+    
+        
+            <li><a href="https://twitter.com/damian_avila" title="My Twitter"><i class="icon-twitter"></i></a></li>
+        
+    
+        
+            <li><a href="https://github.com/damianavila" title="My Github"><i class="icon-github"></i></a></li>
+        
+    
+        
+            <li><a href="https://plus.google.com/u/0/106896109587369688379/posts" title="My Google+"><i class="icon-google-plus"></i></a></li>
+        
+    
+
+<!--         -->
+        </ul>
+    </section>
+    
+    
+        
+            <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/jquery.timeago.js" type="text/javascript"></script>
+        
         <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
     
 
-
+    
+        <script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+    
+    
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -566,5 +575,5 @@ In [6]:
 
 </script>
     
-    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
-</body></html>
+</body>
+</html>
