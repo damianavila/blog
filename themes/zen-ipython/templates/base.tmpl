@@ -5,7 +5,6 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ arusahni.html_head() }}
     {% block extra_head %}
     {% endblock %}
@@ -13,13 +12,6 @@
 </head>
 
 <body>
-    <section class="page-content">
-        <div class="content" rel="main">
-            {% block content %}{% endblock %}
-            {{ content_footer }}
-            {{ base.html_social() }}
-        </div>
-    </section>
     <section class="social">
         <ul>
 <!--        <h1 id="blog-title">
@@ -36,6 +28,13 @@
         {{ arusahni.html_navigation_links() }}
 <!--        {{ search_form }} -->
         </ul>
+    </section>
+    <section class="page-content">
+        <div class="content" rel="main">
+            {% block content %}{% endblock %}
+            {{ content_footer }}
+            {{ base.html_social() }}
+        </div>
     </section>
     {{ arusahni.late_load_js() }}
     {% block extra_js %}

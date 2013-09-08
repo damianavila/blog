@@ -245,7 +245,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 350px;
+  width: 180px;
 }
 @media (max-width: 773px) {
   .social {
@@ -265,9 +265,9 @@ section {
 .social ul {
   position: fixed;
   margin: 0;
-  bottom: 0;
+  top: 50px;
   display: table;
-  width: 350px;
+  width: 180px;
 }
 @media (max-width: 773px) {
   .social ul {
@@ -277,6 +277,7 @@ section {
 @media (max-width: 773px) {
   .social ul {
     display: block;
+    top: 0px;
   }
 }
 @media (min-width: 774px) and (max-width: 1047px) {
@@ -284,20 +285,17 @@ section {
     width: 210px;
   }
 }
-@media (max-width: 773px) {
-  .social ul {
-    width: inherit;
-  }
-}
 .social ul li {
-  display: table-cell;
+  display: block;
   text-align: center;
+  margin-top: 10px;
 }
 @media (max-width: 773px) {
   .social ul li {
-    padding-left: 25%;
-    display: block;
+    padding-top: 5%;
+    padding-left: 3%;
     text-align: left;
+    display: table-cell;
   }
 }
 .social ul li a {
@@ -315,7 +313,7 @@ section {
 .page-content {
   min-height: 100%;
   padding: 48px 0 60px 42px;
-  margin-left: 360px;
+  margin-left: 180px;
 }
 @media (min-width: 774px) and (max-width: 1047px) {
   .page-content {
@@ -331,7 +329,7 @@ section {
   }
 }
 .page-content > .content {
-  max-width: 640px;
+  max-width: 890px;
 }
 @media (min-width: 774px) and (max-width: 1047px) {
   .page-content > .content {
@@ -2552,7 +2550,6 @@ pre.code {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: table;
-  width: 1%;
   margin: 0 auto 24px;
 }
 @media (max-width: 773px) {

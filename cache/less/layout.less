@@ -40,26 +40,26 @@ section {
             position: relative;
         }
         margin: 0;
-        bottom: 0;
+        top: 50px;
         display: table;
         @media @mobileLayout {
             display: block;
+            top: 0px;
         }
         width: @sidebarWidth;
         @media @tabletLayout {
             width: @sidebarNarrowWidth;
         }
-        @media @mobileLayout {
-            width: inherit;
-        }
 
         li {
-            display: table-cell;
+            display: block;
             text-align: center;
+            margin-top: 10px;
             @media @mobileLayout {
-                padding-left: 25%;
-                display: block;
+                padding-top: 5%;
+                padding-left: 3%;
                 text-align: left;
+                display: table-cell;
             }
 
             a {
