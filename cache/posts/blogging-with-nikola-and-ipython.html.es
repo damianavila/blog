@@ -11,7 +11,7 @@
 </ul>
 <p><strong>NOTE: The theme was tested with Nikola version <a href="https://github.com/ralsina/nikola/tags">5.1</a></strong></p>
 <ul>
-<li></li>
+<li><a href="https://github.com/ipython/ipython">IPython</a></li>
 <li><a href="https://github.com/damianavila/site-ipython-theme-for-Nikola.git">site-ipython</a> theme for Nikola</li>
 <li><a href="https://github.com/damianavila/compile_ipynb-for-Nikola.git">compile_ipynb</a> for Nikola</li>
 </ul>
@@ -74,7 +74,7 @@
 <p>Then, two files will be created by Nikola in the /posts folder of your_site: a meta file containing title, slug, time, tags (you can modified them with any text processor) and a <strong>naive</strong> ipynb file with the corresponding title.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You can init the **</p>
+<p>You can init the <code>ipython notebook</code> inside this folder and modified the <em>&quot;post&quot;</em> notebook as you wish (do not forget to save the changes inside your notebook).</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>

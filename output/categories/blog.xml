@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Damian's blog (blog)</title><link>http://www.damian.oquanta.info/</link><description>My place to share some thoughts with the world.</description><atom:link href="http://www.damian.oquanta.info/categories/blog.xml" type="application/rss+xml" rel="self"></atom:link><lastBuildDate>Sun, 08 Sep 2013 20:42:54 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>One line deployment of your site to gh-pages</title><link>http://www.damian.oquanta.info//posts/one-line-deployment-of-your-site-to-gh-pages.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Damian's blog (blog)</title><link>http://www.damian.oquanta.info/</link><description>My place to share some thoughts with the world.</description><atom:link href="http://www.damian.oquanta.info/categories/blog.xml" type="application/rss+xml" rel="self"></atom:link><lastBuildDate>Sun, 08 Sep 2013 20:50:50 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>One line deployment of your site to gh-pages</title><link>http://www.damian.oquanta.info//posts/one-line-deployment-of-your-site-to-gh-pages.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Do you want to &lt;strong&gt;easily&lt;/strong&gt; deploy your site to Github pages?&lt;/p&gt;
 &lt;p&gt;OK, here we go...&lt;/p&gt;
 &lt;ol style="list-style-type: decimal"&gt;
@@ -22,8 +22,8 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;NOTE: The theme was tested with Nikola version &lt;a href="https://github.com/ralsina/nikola/tags"&gt;5.1&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;/li&gt;&lt;li&gt;&lt;a href="https://github.com/damianavila/site-ipython-theme-for-Nikola.git"&gt;site-ipython&lt;/a&gt; theme for Nikola&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ipython/ipython"&gt;IPython&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/damianavila/site-ipython-theme-for-Nikola.git"&gt;site-ipython&lt;/a&gt; theme for Nikola&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/damianavila/compile_ipynb-for-Nikola.git"&gt;compile_ipynb&lt;/a&gt; for Nikola&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
