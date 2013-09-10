@@ -215,6 +215,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/categories/less.html</loc>
+  <lastmod>2013-09-09</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/categories/life.html</loc>
   <lastmod>2013-09-09</lastmod>
   <priority>0.5000</priority>
@@ -265,12 +270,22 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/categories/theme.html</loc>
+  <lastmod>2013-09-09</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/categories/tutorials.html</loc>
   <lastmod>2013-09-09</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/viper.html</loc>
+  <lastmod>2013-09-09</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/categories/zen.html</loc>
   <lastmod>2013-09-09</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -485,6 +500,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/categories/less.html</loc>
+  <lastmod>2013-09-09</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/categories/life.html</loc>
   <lastmod>2013-09-09</lastmod>
   <priority>0.5000</priority>
@@ -535,12 +555,22 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/categories/theme.html</loc>
+  <lastmod>2013-09-09</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/categories/tutorials.html</loc>
   <lastmod>2013-09-09</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/viper.html</loc>
+  <lastmod>2013-09-09</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/categories/zen.html</loc>
   <lastmod>2013-09-09</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -566,6 +596,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html</loc>
+  <lastmod>2013-09-09</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/posts/a-new-nikolas-theme-for-my-site-zen.html</loc>
   <lastmod>2013-09-09</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -736,6 +771,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/a-little-hack-to-get-a-pdf-from-your-ipython-slides.html</loc>
+  <lastmod>2013-09-09</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/posts/a-new-nikolas-theme-for-my-site-zen.html</loc>
   <lastmod>2013-09-09</lastmod>
   <priority>0.5000</priority>
  </url>
