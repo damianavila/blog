@@ -160,6 +160,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/categories/connectivity.html</loc>
+  <lastmod>2013-09-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/categories/css.html</loc>
   <lastmod>2013-09-13</lastmod>
   <priority>0.5000</priority>
@@ -221,6 +226,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/life.html</loc>
+  <lastmod>2013-09-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/categories/local.html</loc>
   <lastmod>2013-09-13</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -450,6 +460,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/categories/connectivity.html</loc>
+  <lastmod>2013-09-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/categories/css.html</loc>
   <lastmod>2013-09-13</lastmod>
   <priority>0.5000</priority>
@@ -511,6 +526,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/life.html</loc>
+  <lastmod>2013-09-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/categories/local.html</loc>
   <lastmod>2013-09-13</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -710,6 +730,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/posts/using-a-local-revealjs-library-with-your-ipython-slides.html</loc>
+  <lastmod>2013-09-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/posts/viper.html</loc>
   <lastmod>2013-09-13</lastmod>
   <priority>0.5000</priority>
@@ -886,6 +911,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/under-the-sea-en-la-plata.html</loc>
+  <lastmod>2013-09-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/posts/using-a-local-revealjs-library-with-your-ipython-slides.html</loc>
   <lastmod>2013-09-13</lastmod>
   <priority>0.5000</priority>
  </url>
