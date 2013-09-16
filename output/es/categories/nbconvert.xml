@@ -1,5 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Damian's blog (nbconvert)</title><link>http://www.damian.oquanta.info/</link><description>My place to share some thoughts with the world.</description><atom:link href="http://www.damian.oquanta.info/es/categories/nbconvert.xml" type="application/rss+xml" rel="self"></atom:link><lastBuildDate>Fri, 13 Sep 2013 18:54:34 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using a local Reveal.js library with your IPython slides.</title><link>http://www.damian.oquanta.info//es/posts/using-a-local-revealjs-library-with-your-ipython-slides.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Damian's blog (nbconvert)</title><link>http://www.damian.oquanta.info/</link><description>My place to share some thoughts with the world.</description><atom:link href="http://www.damian.oquanta.info/es/categories/nbconvert.xml" type="application/rss+xml" rel="self"></atom:link><lastBuildDate>Mon, 16 Sep 2013 19:49:34 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Change the IPython slides defaults with an IPython config file</title><link>http://www.damian.oquanta.info//es/posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Some people are asking me how to change the &lt;code&gt;IPython slides's&lt;/code&gt; defaults. You can see the description of the request &lt;a href="http://stackoverflow.com/questions/18820253/modifying-reveal-js-defaults-in-ipython-notebook-slide-generation"&gt;here&lt;/a&gt;. Essentially, he wants to change the default transition between the slides.&lt;/p&gt;
+&lt;p&gt;To solve this question, we introduce the notion of IPython config files, which let us easily change &lt;em&gt;things&lt;/em&gt; inside &lt;code&gt;Ipython.nbconvert&lt;/code&gt; (the library where the &lt;code&gt;IPython slides&lt;/code&gt; lives) to achieve our desires, at least in the slideshow generation issue ;-) teaser&lt;/p&gt;
+&lt;p&gt;First of all, you need to know some details:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;IPython slides&lt;/code&gt; are generated using a series of &lt;code&gt;Jinja&lt;/code&gt; templates, so we are going to modify one of the templates to render the slideshow accordingly with our own defaults.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;IPython.nbconvert&lt;/code&gt; library was developed taking into account the need from some users to use customized &lt;code&gt;things&lt;/code&gt; (where &lt;code&gt;thing&lt;/code&gt; will be a &lt;code&gt;template&lt;/code&gt; in this case, but we could modify other parts of &lt;code&gt;IPython.nbconvert&lt;/code&gt;, probably I will cover this ideas in other posts).&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;IPython&lt;/code&gt; machinery is very configurable through a &lt;code&gt;Traitlets&lt;/code&gt; system! And because of this feature, &lt;code&gt;IPython.nbconvert&lt;/code&gt; is able to take a custom config file and use it to render our &lt;code&gt;IPython slides&lt;/code&gt; (or any other &lt;code&gt;IPython.nbconvert&lt;/code&gt; &lt;em&gt;formats&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;OK, can you show me an example config file? Of course, here we go:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input hbox"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [1]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;!&lt;/span&gt;cat /media/datos/Ejemplos/slides_config.py
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="vbox output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
+&lt;pre&gt;
+c = get_config()
+
+c.Exporter.template_file = 'default_transition'
+
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;From the IPython docs:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A configuration file is simply a pure Python file that sets the attributes of a global, pre-created configuration object. This configuration object is a Config instance. While in a configuration file, to get a reference to this object, simply call the get_config() function. We inject this function into the global name-space that the configuration file is executed in,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So, we have to call the &lt;code&gt;get_config()&lt;/code&gt; function and then use a custom template called &lt;code&gt;'default_transition'&lt;/code&gt; and assign it to &lt;code&gt;c.Exporter.template_file&lt;/code&gt; attribute.&lt;/p&gt;
+&lt;p&gt;Oh, we need to write the &lt;code&gt;'default_transition'&lt;/code&gt; template yet, so here we go... again:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input hbox"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [2]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;!&lt;/span&gt;cat /media/datos/Ejemplos/default_transition.tpl
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="vbox output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
+&lt;pre&gt;
+{%- extends 'slides_reveal.tpl' -%}
+
+
+{% block body %}
+
+{{ super() }}
+
+&amp;lt;script&amp;gt;
+
+Reveal.initialize({
+
+    // Display controls in the bottom right corner
+    //controls: true,
+
+    // Display a presentation progress bar
+    //progress: true,
+
+    // Push each slide change to the browser history
+    //history: false,
+
+    // Enable keyboard shortcuts for navigation
+    //keyboard: true,
+
+    // Enable touch events for navigation
+    //touch: true,
+
+    // Enable the slide overview mode
+    //overview: true,
+
+    // Vertical centering of slides
+    //center: true,
+
+    // Loop the presentation
+    //loop: false,
+
+    // Change the presentation direction to be RTL
+    //rtl: false,
+
+    // Number of milliseconds between automatically proceeding to the
+    // next slide, disabled when set to 0, this value can be overwritten
+    // by using a data-autoslide attribute on your slides
+    //autoSlide: 0,
+
+    // Enable slide navigation via mouse wheel
+    //mouseWheel: false,
+
+    // Transition style
+    transition: 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Transition speed
+    //transitionSpeed: 'default', // default/fast/slow
+
+    // Transition style for full page backgrounds
+    //backgroundTransition: 'default', // default/linear/none
+
+    // Theme
+    theme: 'sky' // available themes are in /css/theme
+
+});
+
+&amp;lt;/script&amp;gt;
+
+&amp;lt;/body&amp;gt;
+{% endblock body %}
+
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;In the first line, &lt;code&gt;{%- extends 'slides_reveal.tpl' -%}&lt;/code&gt; we tell to the &lt;code&gt;Jinja&lt;/code&gt; system that we are going to extend &lt;code&gt;slides_reveal&lt;/code&gt; template (the default one, which &lt;code&gt;IPython.nbconvert&lt;/code&gt; uses to build our common slides by default). Then, inside the &lt;code&gt;{% block body %}&lt;/code&gt;, we call &lt;code&gt;super()&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;From the &lt;code&gt;Jinja&lt;/code&gt; docs:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Super Blocks It’s possible to render the contents of the parent block by calling super.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We did it in this way because we want to render all the parent content and, after that, add our own content, essentially a config script for Reveal.js, calling &lt;code&gt;Reveal.initialize&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;OK, I have written a lot of configurable options you can play with, but I only left uncommented (and hence, they will be applied) the &lt;code&gt;transition: 'concave'&lt;/code&gt; and &lt;code&gt;theme: 'sky'&lt;/code&gt; options with my new choices, you can use your own ones.&lt;/p&gt;
+&lt;p&gt;Finally, you have to use the &lt;code&gt;IPython.nbconvert&lt;/code&gt; library from command line, as usual, but pointing to the &lt;code&gt;IPython&lt;/code&gt; config file you pretend to apply:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ipython nbconvert your_talk.ipynb --to slides --post serve --config slides_config.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;And you are done!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: Don't forget to put your &lt;code&gt;ipynb&lt;/code&gt;, &lt;code&gt;slides_config.py&lt;/code&gt; and &lt;code&gt;default_transition.tpl&lt;/code&gt; files in the same folder where you will run the &lt;code&gt;Ipython.nbconvert&lt;/code&gt; command.&lt;/p&gt;
+&lt;p&gt;As you can see, the potentiality of this system (&lt;code&gt;Jinja&lt;/code&gt; templating plus a powerful config system) is really big! We can achieve awesome &lt;code&gt;things&lt;/code&gt; in a very easy way!&lt;/p&gt;
+&lt;p&gt;Any help, just let me know!&lt;/p&gt;
+&lt;p&gt;Damián&lt;/p&gt;
+&lt;/div&gt;</description><guid>http://www.damian.oquanta.info//es/posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.html</guid><pubDate>Mon, 16 Sep 2013 19:47:33 GMT</pubDate></item><item><title>Using a local Reveal.js library with your IPython slides</title><link>http://www.damian.oquanta.info//es/posts/using-a-local-revealjs-library-with-your-ipython-slides.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;IPython slides are powered by &lt;a href="https://github.com/hakimel/reveal.js/"&gt;Reveal.js&lt;/a&gt; library, you probably already know that.&lt;/p&gt;
 &lt;p&gt;But... you probably don't know that we use &lt;a href="http://www.jsdelivr.com/"&gt;jsdelivr&lt;/a&gt; CDN to load all the necessary js and css files. As a consequence, you don't need to download Reveal.js, but also, the speaker notes are not working by default.&lt;/p&gt;
 &lt;p&gt;But... what happens, if you have low connectivity in the place where you will be presenting your talk (or if you want to use the speaker notes feature)? &lt;/p&gt;&lt;p class="more"&gt;&lt;a href="http://www.damian.oquanta.info//es/posts/using-a-local-revealjs-library-with-your-ipython-slides.html"&gt;Leer más…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info//es/posts/using-a-local-revealjs-library-with-your-ipython-slides.html</guid><pubDate>Fri, 13 Sep 2013 18:50:22 GMT</pubDate></item><item><title>Customizing your IPython slides</title><link>http://www.damian.oquanta.info//es/posts/customizing-your-ipython-slides.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
