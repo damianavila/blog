@@ -1,12 +1,12 @@
 
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Some people are asking me how to change the <code>IPython slides's</code> defaults. You can see the description of the request <a href="http://stackoverflow.com/questions/18820253/modifying-reveal-js-defaults-in-ipython-notebook-slide-generation">here</a>. Essentially, he wants to change the default transition between the slides.</p>
-<p>To solve this question, we introduce the notion of IPython config files, which let us easily change <em>things</em> inside <code>Ipython.nbconvert</code> (the library where the <code>IPython slides</code> lives) to achieve our desires, at least in the slideshow generation issue ;-)</p>
+<p>Some people are asking me how to change the IPython slides's defaults. You can see the description of the request <a href="http://stackoverflow.com/questions/18820253/modifying-reveal-js-defaults-in-ipython-notebook-slide-generation">here</a>. Essentially, he wants to change the default transition between the slides.</p>
+<p>To solve this question, we introduce the notion of IPython config files, which let us easily change <em>things</em> inside <code>IPython.nbconvert</code> (the library where the IPython slides lives) to achieve our desires, at least in the slideshow generation issue ;-)</p>
 <p>First of all, you need to know some details: <!-- TEASER_END --></p>
 <ul>
-<li>The <code>IPython slides</code> are generated using a series of <code>Jinja</code> templates, so we are going to modify one of the templates to render the slideshow accordingly with our own defaults.</li>
-<li>The <code>IPython.nbconvert</code> library was developed taking into account the need from some users to use customized <code>things</code> (where <code>thing</code> will be a <code>template</code> in this case, but we could modify other parts of <code>IPython.nbconvert</code>, probably I will cover this ideas in other posts).</li>
-<li>The <code>IPython</code> machinery is very configurable through a <code>Traitlets</code> system! And because of this feature, <code>IPython.nbconvert</code> is able to take a custom config file and use it to render our <code>IPython slides</code> (or any other <code>IPython.nbconvert</code> <em>formats</em>).</li>
+<li>The IPython slides are generated using a series of <strong>Jinja</strong> templates, so we are going to modify one of the templates to render the slideshow accordingly with our own defaults.</li>
+<li>The <code>IPython.nbconvert</code> library was developed taking into account the need from some users to use customized <em>things</em> (where <em>thing</em> will be a <strong>template</strong> in this case, but we could modify other parts of <code>IPython.nbconvert</code>, probably I will cover this ideas in other posts).</li>
+<li>The <code>IPython</code> machinery is very configurable through a <strong>Traitlets</strong> system! And because of this feature, <code>IPython.nbconvert</code> is able to take a custom config file and use it to render our IPython slides (or any other <code>IPython.nbconvert</code> <em>formats</em>).</li>
 </ul>
 <p>OK, can you show me an example config file? Of course, here we go:</p>
 </div>
@@ -142,18 +142,18 @@ Reveal.initialize({
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the first line, <code>{%- extends 'slides_reveal.tpl' -%}</code> we tell to the <code>Jinja</code> system that we are going to extend <code>slides_reveal</code> template (the default one, which <code>IPython.nbconvert</code> uses to build our common slides by default). Then, inside the <code>{% block body %}</code>, we call <code>super()</code>:</p>
-<p>From the <code>Jinja</code> docs:</p>
+<p>In the first line, <code>{%- extends 'slides_reveal.tpl' -%}</code> tells to the <strong>Jinja</strong> system that we are going to extend <em>slides_reveal</em> template (the default one, which <code>IPython.nbconvert</code> uses to build our common slides by default). Then, inside the <code>{% block body %}</code>, we call <code>super()</code>:</p>
+<p>From the <em>Jinja</em> docs:</p>
 <blockquote>
 <p>Super Blocks It’s possible to render the contents of the parent block by calling super.</p>
 </blockquote>
 <p>We did it in this way because we want to render all the parent content and, after that, add our own content, essentially a config script for Reveal.js, calling <code>Reveal.initialize</code>.</p>
 <p>OK, I have written a lot of configurable options you can play with, but I only left uncommented (and hence, they will be applied) the <code>transition: 'concave'</code> and <code>theme: 'sky'</code> options with my new choices, you can use your own ones.</p>
-<p>Finally, you have to use the <code>IPython.nbconvert</code> library from command line, as usual, but pointing to the <code>IPython</code> config file you pretend to apply:</p>
+<p>Finally, you have to use the <code>IPython.nbconvert</code> library from command line, as usual, but pointing to the IPython config file you pretend to apply:</p>
 <p><code>ipython nbconvert your_talk.ipynb --to slides --post serve --config slides_config.py</code></p>
 <p>And you are done!</p>
-<p><strong>NOTE</strong>: Don't forget to put your <code>ipynb</code>, <code>slides_config.py</code> and <code>default_transition.tpl</code> files in the same folder where you will run the <code>Ipython.nbconvert</code> command.</p>
-<p>As you can see, the potentiality of this system (<code>Jinja</code> templating plus a powerful config system) is really big! We can achieve awesome <code>things</code> in a very easy way!</p>
+<p><strong>NOTE</strong>: Don't forget to put your <em>ipynb</em>, <em>slides_config.py</em> and <em>default_transition.tpl</em> files in the same folder where you will run the <code>IPython.nbconvert</code> command.</p>
+<p>As you can see, the potentiality of this system (<strong>Jinja</strong> templating plus a powerful config system) is really big! We can achieve awesome <em>things</em> in a very easy way!</p>
 <p>Any help, just let me know!</p>
 <p>Damián</p>
 </div>
