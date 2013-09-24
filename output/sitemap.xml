@@ -300,6 +300,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/categories/threads.html</loc>
+  <lastmod>2013-09-24</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/categories/tutorials.html</loc>
   <lastmod>2013-09-24</lastmod>
   <priority>0.5000</priority>
@@ -610,6 +615,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/categories/threads.html</loc>
+  <lastmod>2013-09-24</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/categories/tutorials.html</loc>
   <lastmod>2013-09-24</lastmod>
   <priority>0.5000</priority>
@@ -756,6 +766,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/posts/using-a-local-revealjs-library-with-your-ipython-slides.html</loc>
+  <lastmod>2013-09-24</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/posts/viper-is-now-using-ipythonnbconvert.html</loc>
   <lastmod>2013-09-24</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -946,6 +961,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/using-a-local-revealjs-library-with-your-ipython-slides.html</loc>
+  <lastmod>2013-09-24</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/posts/viper-is-now-using-ipythonnbconvert.html</loc>
   <lastmod>2013-09-24</lastmod>
   <priority>0.5000</priority>
  </url>
