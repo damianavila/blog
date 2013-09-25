@@ -117,6 +117,51 @@ MathJax.Hub.Config({
             
     
         <div class="post">
+            <h1 class="title"><a href="posts/nikolas-zen-theme-finally-released.html">Nikola's Zen theme finally released</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2013-09-25T19:20:45">2013-09-25 19:20</time>
+                </div>
+                <div class="stats">
+                
+                    
+    
+        
+    <p>
+    
+        <a href="posts/nikolas-zen-theme-finally-released.html#disqus_thread" data-disqus-identifier="cache/posts/nikolas-zen-theme-finally-released.html">Comments</a>
+    
+
+    
+
+                
+                </p></div>
+                
+    
+    <div class="tags">
+        <ul>
+        More posts about:  
+        
+            <li><a class="tag" href=".././es/categories/python-nikola-zen-blog-theme-less-ipython.html">python nikola zen blog theme less IPython</a></li>
+        
+        </ul>
+    </div>
+    
+
+            </div>
+            <div class="body">
+                <div class="text_cell_render border-box-sizing rendered_html">
+<p>Just a quick update... Some weeks ago I <a href="http://www.damian.oquanta.info/posts/a-new-nikolas-theme-for-my-site-zen.html">blogged</a> about my new <strong>Nikola</strong>'s theme family called <strong>Zen</strong>. In fact, you are seeing the <code>zen-ipython</code> theme powering my blog right now.</p>
+<p>I have used them for several days without any remarkable issue, so I decided to release them at the <strong>Nikola</strong>'s <a href="https://github.com/getnikola/nikola-themes">theme repository</a>.</p>
+<p>There, you will see three <strong>Zen</strong> themes:</p>
+<ul>
+<li><code>zen</code>, based in <em>mako</em> templates</li>
+<li><code>zen-jinja</code>, the same <em>zen</em> theme but based (obviously) in <em>jinja</em> templates</li>
+<li><code>zen-ipython</code>, a <em>jinja</em>-based <em>zen</em> theme suited to be used with the IPython notebooks. <p class="more"><a href="posts/nikolas-zen-theme-finally-released.html">Leer más…</a></p></li></ul></div>
+            </div>
+        </div>
+    
+        <div class="post">
             <h1 class="title"><a href="posts/viper-is-now-using-ipythonnbconvert.html">vIPer is now using IPython.nbconvert</a></h1>
             <div class="meta">
                 <div class="authordate">
@@ -164,7 +209,7 @@ MathJax.Hub.Config({
 <li>a plain static html</li>
 <li>a slideshow powered by Landslide</li>
 </ul>
-<p>With the last release, <strong>IPython</strong> support this kind of exportation using the well designed and easily extensible <code>IPython.nbconvert</code> library. Now, it is very easier to incorporate the IPython machinery inside vIPer and support the exportation to several formats. </p><p class="more"><a href="posts/viper-is-now-using-ipythonnbconvert.html">Leer más…</a></p></div>
+<p>With the last release, <strong>IPython</strong> support this kind of exportation using the well designed and easily extensible <code>IPython.nbconvert</code> library. Now, it is easier to incorporate the IPython machinery inside vIPer and support the exportation to several formats. </p><p class="more"><a href="posts/viper-is-now-using-ipythonnbconvert.html">Leer más…</a></p></div>
             </div>
         </div>
     
@@ -570,57 +615,6 @@ MathJax.Hub.Config({
                 <div class="text_cell_render border-box-sizing rendered_html">
 <p>With the integration of nbconvert inside IPython, the last 1.0 release has the possibility to export the ipynb to other formats such as rst, markdown, latex, html and slides (<a href="http://ipython.org/ipython-doc/stable/interactive/nbconvert.html">info</a>).</p>
 <p>The slides option generates a Reveal.js-powered HTML slideshow, like this one: </p><p class="more"><a href="posts/make-your-slides-with-ipython.html">Leer más…</a></p></div>
-            </div>
-        </div>
-    
-        <div class="post">
-            <h1 class="title"><a href="posts/one-line-deployment-of-your-site-to-gh-pages.html">One line deployment of your site to gh-pages</a></h1>
-            <div class="meta">
-                <div class="authordate">
-                    <time class="timeago" datetime="2013-08-21T08:17:00">2013-08-21 08:17</time>
-                </div>
-                <div class="stats">
-                
-                    
-    
-        
-    <p>
-    
-        <a href="posts/one-line-deployment-of-your-site-to-gh-pages.html#disqus_thread" data-disqus-identifier="cache/posts/one-line-deployment-of-your-site-to-gh-pages.html">Comments</a>
-    
-
-    
-
-                
-                </p></div>
-                
-    
-    <div class="tags">
-        <ul>
-        More posts about:  
-        
-            <li><a class="tag" href=".././es/categories/git.html">git</a></li>
-        
-            <li><a class="tag" href=".././es/categories/blog.html">blog</a></li>
-        
-            <li><a class="tag" href=".././es/categories/nikola.html">nikola</a></li>
-        
-            <li><a class="tag" href=".././es/categories/gh-pages.html">gh-pages</a></li>
-        
-            <li><a class="tag" href=".././es/categories/python.html">python</a></li>
-        
-        </ul>
-    </div>
-    
-
-            </div>
-            <div class="body">
-                <div class="text_cell_render border-box-sizing rendered_html">
-<p>Do you want to <strong>easily</strong> deploy your site to Github pages?</p>
-<p>OK, here we go...</p>
-<ol style="list-style-type: decimal">
-<li><p>You have to upload your complete blog/site to a new Github repository (you know how to do it... if not, probably you need to learn some things before try this one, hehe). As a plus, now your blog/site is version-controlled!</p></li>
-<li><p>Almost for sure, your site/blog lives in the master branch of the new repository, but you need to generated a <code>gh-pages</code> branch to push your <code>build</code> or <code>output</code> folder, I mean your site/blog content to deploy... not all the machinery of your site/blog platform (<strong>Nikola</strong> in my case): </p><p class="more"><a href="posts/one-line-deployment-of-your-site-to-gh-pages.html">Leer más…</a></p></li></ol></div>
             </div>
         </div>
     

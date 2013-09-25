@@ -5,7 +5,7 @@
 <li>a plain static html</li>
 <li>a slideshow powered by Landslide</li>
 </ul>
-<p>With the last release, <strong>IPython</strong> support this kind of exportation using the well designed and easily extensible <code>IPython.nbconvert</code> library. Now, it is very easier to incorporate the IPython machinery inside vIPer and support the exportation to several formats. <!-- TEASER_END --></p>
+<p>With the last release, <strong>IPython</strong> support this kind of exportation using the well designed and easily extensible <code>IPython.nbconvert</code> library. Now, it is easier to incorporate the IPython machinery inside vIPer and support the exportation to several formats. <!-- TEASER_END --></p>
 <p><strong>Note</strong>: if you want to know more about vIPer, just see the following talk I gave about it at <strong>SciPy 2013</strong>.</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
