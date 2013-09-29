@@ -270,11 +270,6 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.damian.oquanta.info/categories/python-nikola-zen-blog-theme-less-ipython.html</loc>
-  <lastmod>2013-09-29</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>http://www.damian.oquanta.info/categories/python.html</loc>
   <lastmod>2013-09-29</lastmod>
   <priority>0.5000</priority>
@@ -586,11 +581,6 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/politics.html</loc>
-  <lastmod>2013-09-29</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://www.damian.oquanta.info/es/categories/python-nikola-zen-blog-theme-less-ipython.html</loc>
   <lastmod>2013-09-29</lastmod>
   <priority>0.5000</priority>
  </url>

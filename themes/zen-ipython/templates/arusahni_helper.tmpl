@@ -97,5 +97,7 @@
     {% if not post.meta('password') %}
         &nbsp;&nbsp;|&nbsp;&nbsp;
         <a href="{{ post.source_link() }}" id="sourcelink">{{ messages("Source") }}</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        Note: Just click on any IPython input cell to see the output.
     {% endif %}
 {% endmacro %}
