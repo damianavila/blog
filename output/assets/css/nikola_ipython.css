@@ -111,3 +111,14 @@ padding: 3px;
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+/* toggle-specific */
+
+div.output_wrapper {
+  margin-top: 0px;
+}
+.output_hidden {
+  display: none;
+  margin-top: 5px;
+}
+

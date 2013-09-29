@@ -22,6 +22,10 @@ In&nbsp;[1]:
 </div>
 </div>
 
+<div class="output_hidden">
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
 <div class="vbox output_wrapper">
 <div class="output vbox">
 
@@ -37,6 +41,10 @@ c.Exporter.template_file = &apos;default_transition&apos;
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
 </div>
 </div>
 
@@ -60,6 +68,10 @@ In&nbsp;[2]:
 
 </div>
 </div>
+
+<div class="output_hidden">
+<div class="vbox output_wrapper">
+<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -137,6 +149,10 @@ Reveal.initialize({
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
 </div>
 </div>
 

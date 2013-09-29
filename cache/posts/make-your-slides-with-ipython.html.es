@@ -16,6 +16,10 @@ In&nbsp;[1]:
 </div>
 </div>
 
+<div class="output_hidden">
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
 <div class="vbox output_wrapper">
 <div class="output vbox">
 
@@ -31,6 +35,10 @@ In&nbsp;[1]:
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
 </div>
 </div>
 
@@ -51,6 +59,10 @@ In&nbsp;[2]:
 
 </div>
 </div>
+
+<div class="output_hidden">
+<div class="vbox output_wrapper">
+<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -75,6 +87,10 @@ In&nbsp;[2]:
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
 </div>
 </div>
 

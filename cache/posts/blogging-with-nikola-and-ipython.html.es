@@ -109,6 +109,10 @@ In&nbsp;[1]:
 </div>
 </div>
 
+<div class="output_hidden">
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
 <div class="vbox output_wrapper">
 <div class="output vbox">
 
@@ -129,6 +133,10 @@ u&apos;/home/damian/Desarrollos/To_PR/SITIOS/Damian_blog_nikola/posts&apos;
 </div>
 
 </div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
@@ -140,6 +148,10 @@ In&nbsp;[2]:
 
 </div>
 </div>
+
+<div class="output_hidden">
+<div class="vbox output_wrapper">
+<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -160,6 +172,10 @@ For more information, type &apos;help(pylab)&apos;.
 </div>
 
 </div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
@@ -173,6 +189,10 @@ In&nbsp;[3]:
 
 </div>
 </div>
+
+<div class="output_hidden">
+<div class="vbox output_wrapper">
+<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -546,6 +566,10 @@ RU5ErkJggg==
 </div>
 
 </div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
@@ -559,6 +583,10 @@ In&nbsp;[4]:
 
 </div>
 </div>
+
+<div class="output_hidden">
+<div class="vbox output_wrapper">
+<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -582,6 +610,10 @@ In&nbsp;[4]:
 </div>
 
 </div>
+</div>
+</div>
+
+</div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Courtesy of MathJax, you can include mathematical expressions both inline: <span class="math">\(e^{i\pi} + 1 = 0\)</span> and displayed:</p>
 <p><span class="math">\[e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i\]</span></p>
@@ -598,6 +630,10 @@ In&nbsp;[5]:
 
 </div>
 </div>
+
+<div class="output_hidden">
+<div class="vbox output_wrapper">
+<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -618,6 +654,10 @@ In&nbsp;[5]:
 </div>
 
 </div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
@@ -632,6 +672,10 @@ In&nbsp;[6]:
 
 </div>
 </div>
+
+<div class="output_hidden">
+<div class="vbox output_wrapper">
+<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -656,6 +700,10 @@ In&nbsp;[6]:
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
 </div>
 </div>
 
