@@ -305,6 +305,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/categories/toggle.html</loc>
+  <lastmod>2013-09-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/categories/tutorials.html</loc>
   <lastmod>2013-09-29</lastmod>
   <priority>0.5000</priority>
@@ -620,6 +625,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/categories/toggle.html</loc>
+  <lastmod>2013-09-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/categories/tutorials.html</loc>
   <lastmod>2013-09-29</lastmod>
   <priority>0.5000</priority>
@@ -716,6 +726,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/posts/make-your-slides-with-ipython.html</loc>
+  <lastmod>2013-09-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/posts/mimic-the-ipython-notebook-cell-execution.html</loc>
   <lastmod>2013-09-29</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -916,6 +931,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/make-your-slides-with-ipython.html</loc>
+  <lastmod>2013-09-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/posts/mimic-the-ipython-notebook-cell-execution.html</loc>
   <lastmod>2013-09-29</lastmod>
   <priority>0.5000</priority>
  </url>
