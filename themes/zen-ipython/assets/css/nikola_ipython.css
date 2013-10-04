@@ -1,5 +1,5 @@
 body {
-position: static;
+position: static; /* needed also for minimap */
 }
 
 pre {
