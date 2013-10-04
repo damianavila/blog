@@ -2,8 +2,8 @@
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Some days ago, I presented a way to mimic the execution of <em>nbconverted</em> <strong>IPython</strong> notebooks (<em>ipynb</em>). Today, I will show you how to add a simple <em>minimap</em> to these static html documents.</p>
 <p>But, what is a <em>minimap</em>? Do you know <strong>SublimeText</strong> or <strong>Ninja-IDE</strong>? They are IDEs with a thin column to the right (of the main window) which provides an overview of the code we are working on... OK, you don't have an idea what am I talking about? Just go ahead and you will see... <!-- TEASER_END --></p>
+<p><strong>Addendum note</strong>: There are some <em>performance issues</em> with <strong>Firefox</strong>, but in <strong>Chromium</strong> it is working OK! Simplicity comes with some hidden costs ;-)</p>
 <p><strong>NOTE</strong>: if you are impatient, just go the beginning of this post and press the <code>Minimap</code> link next to the <code>Source</code> link... and surprise!</p>
-<p><strong>Addendum note</strong>: There are <em>performance issues</em> with <strong>Firefox</strong>, but in <strong>Chromium</strong> it is working OK! Simplicity comes with some hidden costs ;-)</p>
 <p>Well, my first thought to develop this feature was to look if anybody had this same idea (a <em>minimap</em> for html-based documents) before, and obviously, there was somebody ;-)</p>
 <p>Mr. <strong>Google</strong> pointed me to a <a href="http://dropthebit.com/481/mini-page-navigation/">blog</a> where I found a nice js-based (working) solution.</p>
 <p>The implementation was very simple and we used the same strategy from the last blog posts: pass a template in the <code>IPython.nbconvert</code> call from the command line (but please, do not forget that you can also use a config file to pass the template name -and other things - to the <code>IPython.nbconvert</code> infrastructure).</p>
@@ -68,9 +68,7 @@ position: static;
 <p>And as a the final step, we just wrote:</p>
 <p><code>ipython nbconvert 3_NumPy.ipynb --to html --template minimap.tpl --post serve</code></p>
 <p>in our console, and we saw something like <a href="http://damianavila.github.io/Python-Cientifico-HCC/3_NumPy.html">THIS</a></p>
-<p><strong>Addendum note</strong>: There are <em>performance issues</em> with <strong>Firefox</strong>, but in <strong>Chromium</strong> it is working OK! Simplicity comes with some hidden costs ;-)</p>
-</div>
-<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Do not forget!</strong>: There are some <em>performance issues</em> with <strong>Firefox</strong>, but in <strong>Chromium</strong> it is working OK! Simplicity comes with some hidden costs ;-)</p>
 <p>Nice, don't you think?</p>
 <p>We also did the same (with minor modifications) with our <strong>Nikola</strong> <em>Zen</em> theme (probably you had already tested it because I assume you are impatient!).</p>
 <p>Now, with this simple feature, you not only can quickly get an idea of the length of your documents (blog post, article, lecture, whatever...) but also they are easier to scroll and navigate!</p>
