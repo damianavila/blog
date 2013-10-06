@@ -13,7 +13,7 @@ In&nbsp;[1]:
 <span class="n">HTML</span><span class="p">(</span><span class="s">&#39;&lt;iframe src=&quot;http://damianavila.github.io/scipy2013_talks/index.html&quot; width=800 height=600&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
 </pre></div>
 
-<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
 </div>
 </div>
 
@@ -58,7 +58,7 @@ In&nbsp;[2]:
 <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;rBS6hmiK-H8&#39;</span><span class="p">)</span>
 </pre></div>
 
-<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
 </div>
 </div>
 

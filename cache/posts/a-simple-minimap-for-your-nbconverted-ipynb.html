@@ -18,7 +18,7 @@ In&nbsp;[1]:
 <div class="highlight"><pre><span class="o">!</span>cat /media/datos/Ejemplos/minimap.tpl
 </pre></div>
 
-<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
 </div>
 </div>
 

@@ -29,7 +29,7 @@ In&nbsp;[1]:
 <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;eVi5aXEipBQ&#39;</span><span class="p">)</span>
 </pre></div>
 
-<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
 </div>
 </div>
 

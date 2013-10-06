@@ -15,7 +15,7 @@ In&nbsp;[1]:
 <div class="highlight"><pre><span class="o">!</span>sed -n 1,11p /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
-<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
 </div>
 </div>
 
@@ -67,7 +67,7 @@ In&nbsp;[2]:
 <div class="highlight"><pre><span class="o">!</span>sed -n 29,33p /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
-<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
 </div>
 </div>
 
@@ -114,7 +114,7 @@ In&nbsp;[3]:
 <div class="highlight"><pre><span class="o">!</span>sed -n 22,25p /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
-<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
 </div>
 </div>
 
@@ -158,7 +158,7 @@ In&nbsp;[4]:
 <div class="highlight"><pre><span class="o">!</span>cat -n /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
-<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
 </div>
 </div>
 
