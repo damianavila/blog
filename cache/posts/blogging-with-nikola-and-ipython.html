@@ -106,6 +106,7 @@ In&nbsp;[1]:
 <div class="highlight"><pre><span class="n">pwd</span>
 </pre></div>
 
+<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
 </div>
 </div>
 
@@ -146,6 +147,7 @@ In&nbsp;[2]:
 <div class="highlight"><pre><span class="o">%</span><span class="k">pylab</span> <span class="n">inline</span>
 </pre></div>
 
+<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
 </div>
 </div>
 
@@ -187,6 +189,7 @@ In&nbsp;[3]:
 <span class="n">title</span><span class="p">(</span><span class="s">&#39;A simple chirp&#39;</span><span class="p">);</span>
 </pre></div>
 
+<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
 </div>
 </div>
 
@@ -581,6 +584,7 @@ In&nbsp;[4]:
 <span class="n">z</span> <span class="o">=</span> <span class="n">y</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
+<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
 </div>
 </div>
 
@@ -628,6 +632,7 @@ In&nbsp;[5]:
 <span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">&#39;http://python.org/images/python-logo.gif&#39;</span><span class="p">)</span>
 </pre></div>
 
+<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
 </div>
 </div>
 
@@ -670,6 +675,7 @@ In&nbsp;[6]:
 <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;1j_HxD4iLn8&#39;</span><span class="p">)</span>
 </pre></div>
 
+<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
 </div>
 </div>
 

@@ -23,6 +23,7 @@ In&nbsp;[1]:
 <span class="n">HTML</span><span class="p">(</span><span class="s">&#39;&lt;iframe src=http://www.slideviper.oquanta.info/tutorial/slideshow_tutorial_slides.html?useformat=mobile width=700 height=350&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
 </pre></div>
 
+<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
 </div>
 </div>
 

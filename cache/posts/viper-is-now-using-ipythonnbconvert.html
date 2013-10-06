@@ -18,6 +18,7 @@ In&nbsp;[1]:
 <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;NVf_giNcNro&#39;</span><span class="p">)</span>
 </pre></div>
 
+<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
 </div>
 </div>
 

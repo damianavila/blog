@@ -121,4 +121,6 @@ div.output_wrapper {
   display: none;
   margin-top: 5px;
 }
-
+.highlight {
+float: left;
+}

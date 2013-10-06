@@ -19,6 +19,7 @@ In&nbsp;[1]:
 <div class="highlight"><pre><span class="o">!</span>cat /media/datos/Ejemplos/slides_config.py
 </pre></div>
 
+<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
 </div>
 </div>
 
@@ -66,6 +67,7 @@ In&nbsp;[2]:
 <div class="highlight"><pre><span class="o">!</span>cat /media/datos/Ejemplos/default_transition.tpl
 </pre></div>
 
+<i class="icon-hand-left icon-large" style="float:right; margin-top:8px; margin-right:10px"> Click me!</i>
 </div>
 </div>
 
