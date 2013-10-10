@@ -23,8 +23,6 @@ In&nbsp;[1]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -55,8 +53,6 @@ position: static;
 </div>
 </div>
 
-</div>
-</div>
 </div>
 
 </div>

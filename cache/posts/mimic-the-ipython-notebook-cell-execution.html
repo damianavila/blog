@@ -20,8 +20,6 @@ In&nbsp;[1]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -50,8 +48,6 @@ In&nbsp;[1]:
 </div>
 
 </div>
-</div>
-</div>
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -72,8 +68,6 @@ In&nbsp;[2]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -96,8 +90,6 @@ $(document).ready(function(){
 </div>
 
 </div>
-</div>
-</div>
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -119,8 +111,6 @@ In&nbsp;[3]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -142,8 +132,6 @@ In&nbsp;[3]:
 </div>
 
 </div>
-</div>
-</div>
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -163,8 +151,6 @@ In&nbsp;[4]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -217,8 +203,6 @@ In&nbsp;[4]:
 </div>
 </div>
 
-</div>
-</div>
 </div>
 
 </div>

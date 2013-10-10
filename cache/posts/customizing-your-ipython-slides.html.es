@@ -28,8 +28,6 @@ In&nbsp;[1]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -50,8 +48,6 @@ In&nbsp;[1]:
 </div>
 
 </div>
-</div>
-</div>
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -71,8 +67,6 @@ In&nbsp;[2]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -110,8 +104,6 @@ color: white;
 </div>
 
 </div>
-</div>
-</div>
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -131,8 +123,6 @@ In&nbsp;[3]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -150,8 +140,6 @@ custom.css  figs  index2.html  index.html
 </div>
 </div>
 
-</div>
-</div>
 </div>
 
 </div>
@@ -178,8 +166,6 @@ In&nbsp;[4]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -199,8 +185,6 @@ In&nbsp;[4]:
 </div>
 </div>
 
-</div>
-</div>
 </div>
 
 </div>

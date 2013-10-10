@@ -111,8 +111,6 @@ In&nbsp;[1]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -134,8 +132,6 @@ u&apos;/home/damian/Desarrollos/To_PR/SITIOS/Damian_blog_nikola/posts&apos;
 </div>
 
 </div>
-</div>
-</div>
 
 </div>
 <div class="cell border-box-sizing code_cell vbox">
@@ -152,8 +148,6 @@ In&nbsp;[2]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -174,8 +168,6 @@ For more information, type &apos;help(pylab)&apos;.
 </div>
 
 </div>
-</div>
-</div>
 
 </div>
 <div class="cell border-box-sizing code_cell vbox">
@@ -194,8 +186,6 @@ In&nbsp;[3]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -569,8 +559,6 @@ RU5ErkJggg==
 </div>
 
 </div>
-</div>
-</div>
 
 </div>
 <div class="cell border-box-sizing code_cell vbox">
@@ -589,8 +577,6 @@ In&nbsp;[4]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -614,8 +600,6 @@ In&nbsp;[4]:
 </div>
 
 </div>
-</div>
-</div>
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -637,8 +621,6 @@ In&nbsp;[5]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -659,8 +641,6 @@ In&nbsp;[5]:
 </div>
 
 </div>
-</div>
-</div>
 
 </div>
 <div class="cell border-box-sizing code_cell vbox">
@@ -680,8 +660,6 @@ In&nbsp;[6]:
 </div>
 
 <div class="output_hidden">
-<div class="vbox output_wrapper">
-<div class="output vbox">
 
 <div class="vbox output_wrapper">
 <div class="output vbox">
@@ -709,8 +687,6 @@ In&nbsp;[6]:
 </div>
 </div>
 
-</div>
-</div>
 </div>
 
 </div>
