@@ -750,6 +750,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/posts/hide-the-input-cells-from-your-ipython-slides.html</loc>
+  <lastmod>2013-10-10</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/posts/improving-viper-slideshows-styling.html</loc>
   <lastmod>2013-10-10</lastmod>
   <priority>0.5000</priority>
@@ -956,6 +961,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/hello-world-again.html</loc>
+  <lastmod>2013-10-10</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/posts/hide-the-input-cells-from-your-ipython-slides.html</loc>
   <lastmod>2013-10-10</lastmod>
   <priority>0.5000</priority>
  </url>

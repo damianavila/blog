@@ -12,7 +12,7 @@
 In&nbsp;[1]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre><span class="o">!</span>sed -n 1,11p /media/datos/Ejemplos/toggle.tpl
+<div class="highlight"><pre><span class="o">!</span>sed -n 1,7p /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
 <i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
@@ -32,11 +32,7 @@ In&nbsp;[1]:
 
 {% block output_group %}
 &lt;div class=&quot;output_hidden&quot;&gt;
-&lt;div class=&quot;vbox output_wrapper&quot;&gt;
-&lt;div class=&quot;output vbox&quot;&gt;
 {{ super() }}
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 {% endblock output_group %}
 
@@ -60,7 +56,7 @@ In&nbsp;[1]:
 In&nbsp;[2]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre><span class="o">!</span>sed -n 29,33p /media/datos/Ejemplos/toggle.tpl
+<div class="highlight"><pre><span class="o">!</span>sed -n 25,29p /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
 <i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
@@ -78,7 +74,7 @@ In&nbsp;[2]:
 <pre>
 $(document).ready(function(){
   $(&quot;.input&quot;).click(function(){
-      $(this).next(&apos;.output_hidden&apos;).slideToggle();            
+      $(this).next(&apos;.output_hidden&apos;).slideToggle();
   });
 })
 
@@ -103,7 +99,7 @@ $(document).ready(function(){
 In&nbsp;[3]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre><span class="o">!</span>sed -n 22,25p /media/datos/Ejemplos/toggle.tpl
+<div class="highlight"><pre><span class="o">!</span>sed -n 18,21p /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
 <i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
@@ -163,38 +159,34 @@ In&nbsp;[4]:
      2	
      3	{% block output_group %}
      4	&lt;div class=&quot;output_hidden&quot;&gt;
-     5	&lt;div class=&quot;vbox output_wrapper&quot;&gt;
-     6	&lt;div class=&quot;output vbox&quot;&gt;
-     7	{{ super() }}
-     8	&lt;/div&gt;
-     9	&lt;/div&gt;
-    10	&lt;/div&gt;
-    11	{% endblock output_group %}
-    12	
-    13	{%- block header -%}
-    14	{{ super() }}
-    15	
-    16	&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;
-    17	
-    18	&lt;style type=&quot;text/css&quot;&gt;
-    19	div.output_wrapper {
-    20	  margin-top: 0px;
+     5	{{ super() }}
+     6	&lt;/div&gt;
+     7	{% endblock output_group %}
+     8	
+     9	{%- block header -%}
+    10	{{ super() }}
+    11	
+    12	&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;
+    13	
+    14	&lt;style type=&quot;text/css&quot;&gt;
+    15	div.output_wrapper {
+    16	  margin-top: 0px;
+    17	}
+    18	.output_hidden {
+    19	  display: none;
+    20	  margin-top: 5px;
     21	}
-    22	.output_hidden {
-    23	  display: none;
-    24	  margin-top: 5px;
-    25	}
-    26	&lt;/style&gt;
-    27	
-    28	&lt;script&gt;
-    29	$(document).ready(function(){
-    30	  $(&quot;.input&quot;).click(function(){
-    31	      $(this).next(&apos;.output_hidden&apos;).slideToggle();            
-    32	  });
-    33	})
-    34	&lt;/script&gt;
-    35	{%- endblock header -%}
-    36	
+    22	&lt;/style&gt;
+    23	
+    24	&lt;script&gt;
+    25	$(document).ready(function(){
+    26	  $(&quot;.input&quot;).click(function(){
+    27	      $(this).next(&apos;.output_hidden&apos;).slideToggle();
+    28	  });
+    29	})
+    30	&lt;/script&gt;
+    31	{%- endblock header -%}
+    32	
 
 </pre>
 </div>
