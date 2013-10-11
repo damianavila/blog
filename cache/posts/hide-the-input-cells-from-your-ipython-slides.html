@@ -79,7 +79,7 @@ $(document).ready(function(){
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The code is simple, but for a detailed explanation see my previous [post]((http://www.damian.oquanta.info/posts/mimic-the-ipython-notebook-cell-execution.htm).</p>
+<p>The code is simple, but for a detailed explanation see my previous <a href="http://www.damian.oquanta.info/posts/mimic-the-ipython-notebook-cell-execution.htm">post</a>.</p>
 <p>Briefly, I just changed obvious things such as the encompassing of the <code>input_group</code> and the calling of <code>.prev()</code> method (instead of <code>.next(</code>) one) inside the little <em>javascript</em> snippet.</p>
 <p>Now, the second and last step was:</p>
 <p><code>ipython nbconvert your_slides.ipynb --to slides --template output_toggle --post serve</code></p>
