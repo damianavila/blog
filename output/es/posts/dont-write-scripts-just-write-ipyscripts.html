@@ -173,7 +173,7 @@ MathJax.Hub.Config({
             <div class="text_cell_render border-box-sizing rendered_html">
 <p>I usually have some repetitive tasks in my daily work-flow. You probably have some of those too. To save some minutes from your day, you probably write little scripts to do these jobs.</p>
 <p>I used to do that... but now I am only writing little IPython notebooks to do these simple jobs, I call them <em>ipyscripts</em> (yes, I won a prize for originality, he he!).</p>
-<p>This <em>ipyscript</em> are IPython-powered, so we can use all the IPython's machinery to do complex things in a simple way... <!-- TEASER_END --></p>
+<p>These <em>ipyscripts</em> are IPython-powered, so we can use all the IPython's machinery to do complex things in a simple way... <!-- TEASER_END --></p>
 <p>In fact, you are reading a example <em>ipyscript</em>, because this is an IPython notebook (and a blog post too), and the following example deal with a repetitive task I do frequently: the <em>git update</em> of some projects (I contribute to some of them, I follow some others).</p>
 <p>First, I load a simple list with the projects I want to update:</p>
 </div>
@@ -347,6 +347,14 @@ Already up-to-date.
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>ADDENDUM</strong>:</p>
+<pre><code>You can actually do:
+
+for i in list_of_projects: 
+    update(i)
+print "---------------------------------"
+
+But, this is an example, and I wanted to emphasize the fact that you can pass complex arguments inside the braces... Thanks Lex for your comment, I forgot to add this explanation!</code></pre>
 <p>And that's all! The next time you have to do this task, just run this notebook (properly customized for your projects) and you will get the job done!</p>
 <p><strong>NOTE</strong>: And now, the <em>icing on the cake</em>... if you are in IPython master, you do not even need to open the notebook to run it... just open an IPython console or notebook and write the next sentence:</p>
 <p><code>%run your_ipyscript.ipynb</code></p>
