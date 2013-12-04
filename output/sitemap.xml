@@ -165,6 +165,14 @@
   <lastmod>2013-12-03</lastmod>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/categories/ipyscript.html</loc>
+  <lastmod>2013-12-03</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/categories/ipyscript.xml</loc>
+  <lastmod>2013-12-03</lastmod>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/categories/ipython.html</loc>
   <lastmod>2013-12-03</lastmod>
  </url>
@@ -210,6 +218,14 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/local.xml</loc>
+  <lastmod>2013-12-03</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/categories/magic.html</loc>
+  <lastmod>2013-12-03</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/categories/magic.xml</loc>
   <lastmod>2013-12-03</lastmod>
  </url>
  <url>
@@ -557,6 +573,14 @@
   <lastmod>2013-12-03</lastmod>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/categories/ipyscript.html</loc>
+  <lastmod>2013-12-03</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/categories/ipyscript.xml</loc>
+  <lastmod>2013-12-03</lastmod>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/categories/ipython.html</loc>
   <lastmod>2013-12-03</lastmod>
  </url>
@@ -602,6 +626,14 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/local.xml</loc>
+  <lastmod>2013-12-03</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/categories/magic.html</loc>
+  <lastmod>2013-12-03</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/categories/magic.xml</loc>
   <lastmod>2013-12-03</lastmod>
  </url>
  <url>
@@ -885,6 +917,10 @@
   <lastmod>2013-12-03</lastmod>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/posts/dont-write-scripts-just-write-ipyscripts.html</loc>
+  <lastmod>2013-12-03</lastmod>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/posts/facundo.html</loc>
   <lastmod>2013-12-03</lastmod>
  </url>
@@ -1086,6 +1122,10 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/different-ways-to-lead-an-open-source-project.html</loc>
+  <lastmod>2013-12-03</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/posts/dont-write-scripts-just-write-ipyscripts.html</loc>
   <lastmod>2013-12-03</lastmod>
  </url>
  <url>
