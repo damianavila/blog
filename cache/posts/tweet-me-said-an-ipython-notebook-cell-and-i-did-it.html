@@ -69,3 +69,6 @@ function tweetMe(path) {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>New blog post! Tweet me... said an IPython notebook cell and I did it. http://goo.gl/ry9Umi</p>
 </div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Addendum: You can now send tweets from cells with multi-line content (my first implementation only worked with one-line strings).</p>
+</div>
