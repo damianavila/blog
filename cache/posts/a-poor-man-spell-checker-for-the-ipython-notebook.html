@@ -1,10 +1,10 @@
 
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>OK, today I will release another IPython js extension: Spellchecker, which obviously do what you are thinking... spell check the content of your IPython notebook cells.</p>
+<p>OK, today I will release another <strong>IPython</strong> <em>js</em> extension: <strong>Spellchecker</strong>, which obviously do what you are thinking... spell check the content of your <strong>IPython</strong> notebook cells.</p>
 <p>And why it is a <em>poor man</em> extension? Because it is a simple workaround to get the spell checker functionality and not a broad solution... but it works, and solve my spelling problems! <!-- TEASER_END --></p>
-<p>The main idea here is to use the spell checker functionality provided by your browser [yes, let to the others the complex things ;-)]. But, as you know, the spell checking functionality is disable inside the IPython notebook... and this is because each cell you actually see is a codemirror instance... and codemirror does not support spell checking by design... in fact, the codemirror text area (editor) is not a common html text area, hence the browser can actually run the spell checker in this new text area.</p>
-<p>So, are we prohibited to apply a spell checker functionality over a codemirror instance In fact, no... there is a way to do it applying something called codemirror layouts and using js spell checker libraries...</p>
-<p>But, I don't want to do this job yet (because of several causes which I do not describe here now), so I think workaround and use the IPython js machinery to get a simple, narrow but useful solution.</p>
+<p>The main idea here is to use the spell checker functionality provided by your browser [yes, let to the others the complex things ;-)]. But, as you know, the spell checking functionality is disable inside the <strong>IPython</strong> notebook... and this is because each cell you actually see is a <em>codemirror</em> instance... and <em>codemirror</em> does not support spell checking by design... in fact, the <em>codemirror</em> text area (editor) is not a common html text area, hence the browser can not actually run the spell checker in this new text area.</p>
+<p>So, are we prohibited to apply a spell checker functionality over a <em>codemirror</em> instance? In fact, no... there is a way to do it applying something called <em>codemirror layouts</em> and using <em>js</em> spell checker libraries...</p>
+<p>But, I don't want to do this job yet (because of several causes which I do not describe here now), so I thought workaround and use the <strong>IPython</strong> <em>js</em> machinery to get a simple, narrow but useful solution.</p>
 <p>The workaround is simple:</p>
 <ul>
 <li>The spell checker will do its job at the cell level.</li>
@@ -13,7 +13,7 @@
 <img src="http://www.damian.oquanta.info/galleries/spellchecker/1.png" />
 </div>
 <ul>
-<li><p>We need a way to get the content of the selected IPython notebook cell:</p>
+<li><p>We need a way to get the content of the selected <strong>IPython</strong> notebook cell:</p>
 <pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="dv">24</span>      <span class="kw">var</span> input = <span class="kw">IPython.notebook</span>.<span class="fu">get</span>_<span class="fu">selected</span>_<span class="fu">cell</span>().<span class="fu">get</span>_<span class="fu">text</span>()</code></pre></li>
 <li><p>Put the content in a common html text area, and use the spell checker capabilities from the browser:</p>
 <pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="dv">26</span>      <span class="kw">var</span> textarea = $(<span class="ch">&#39;&lt;textarea/&gt;&#39;</span>)
@@ -27,7 +27,7 @@
 <img src="http://www.damian.oquanta.info/galleries/spellchecker/2.png" />
 </div>
 <ul>
-<li><p>Get back the corrected content into the selected IPython notebook cell.</p>
+<li><p>Get back the corrected content into the selected <strong>IPython</strong> notebook cell.</p>
 <pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="dv">60</span>      <span class="kw">var</span> corr_input = `$`.<span class="fu">trim</span>(`$`(textarea).<span class="fu">val</span>()); <span class="co">// note: backticks to avoid mathjax rendering, sorry.</span>
 <span class="dv">61</span>      <span class="kw">console</span>.<span class="fu">log</span>(corr_input);
 <span class="dv">62</span>      <span class="kw">IPython.notebook</span>.<span class="fu">get</span>_<span class="fu">selected</span>_<span class="fu">cell</span>().<span class="fu">set</span>_<span class="fu">text</span>(corr_input);</code></pre></li>
@@ -159,9 +159,9 @@ In&nbsp;[1]:
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As you can see at the end of the code... you have not only a button but also a keyboard shortcut to activate the spell checker extension: ALT + S (remember that the same goes for the Tweet me extension, but with ALT + T).</p>
+<p>As you can see at the end of the code... you have not only a button but also a keyboard shortcut to activate the spell checker extension: <strong>ALT + S</strong> (remember that the same goes for the <strong>Tweet me</strong> extension, but with <strong>ALT + T</strong>).</p>
 <p>Again, the extension lives in this new repo: <a href="https://github.com/damianavila/mIPyex">mIPyex</a>, where I will upload the development versions of my own extensions. When I get them enough stable, I will make a copy of them in the <a href="https://github.com/ipython-contrib/IPython-notebook-extensions">IPython notebook extensions</a> repo where you can get a lot of and useful interesting extensions.</p>
-<p>OK, I hope you enjoy and use this extension... because the IPython notebook is not only for write code... it is also to write other things, such as this blog post, and we have to keep spelling mistakes as low as possible to make the read of our content pleasant...</p>
+<p>OK, I hope you enjoy and use this extension... because the <strong>IPython</strong> notebook is not only for write code... it is also powered to write other things, such as this blog post, and we have to keep spelling mistakes as low as possible to make the read of our content <em>pleasant</em>...</p>
 <p>See you...</p>
 <p>Damián</p>
 </div>
