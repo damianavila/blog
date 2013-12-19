@@ -72,3 +72,6 @@ function tweetMe(path) {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Addendum: You can now send tweets from cells with multi-line content (my first implementation only worked with one-line strings).</p>
 </div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Addendum 2: You have not only a button but also a keyboard shortcut to activate the Tweet me extension: ALT + T.</p>
+</div>

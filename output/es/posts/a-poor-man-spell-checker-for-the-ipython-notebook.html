@@ -1,0 +1,438 @@
+<!DOCTYPE html><html lang="es">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="Damian Avila">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A 'poor man' spell checker for the IPython notebook | Damian's blog</title>
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script>
+
+    
+        
+            <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            
+                <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+            
+                <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../.././es/rss.xml">
+            
+        
+    
+    
+
+    
+
+    
+
+
+
+    
+</head>
+
+<body>
+    <section class="social">
+        <ul>
+<!--        <h1 id="blog-title">
+            <a href="/" title="Damian's blog">Damian's blog</a>
+        </h1>
+        
+        
+        <small>
+            También disponible en:&nbsp;
+            
+    
+        
+            <a href="/index.html">English</a>
+        
+    
+        
+    
+
+        </small>
+        
+         -->
+        
+    
+        
+            <li><a href="../index.html" title="Inicio"><i class="icon-home"></i></a></li>
+        
+    
+        
+            <li><a href="../archive.html" title="Archivos"><i class="icon-folder-open-alt"></i></a></li>
+        
+    
+        
+            <li><a href="../categories/index.html" title="Etiquetas"><i class="icon-tags"></i></a></li>
+        
+    
+        
+            <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+        
+    
+        
+            <li><a href="../portfolio/portfolio.slides.html" title="Portafolio"><i class="icon-briefcase"></i></a></li>
+        
+    
+        
+            <li><a href="../stories/about-me.html" title="Sobre mi..."><i class="icon-user"></i></a></li>
+        
+    
+        
+            <li><a href="https://twitter.com/damian_avila" title="Mi Twitter"><i class="icon-twitter"></i></a></li>
+        
+    
+        
+            <li><a href="https://github.com/damianavila" title="Mi Github"><i class="icon-github"></i></a></li>
+        
+    
+        
+            <li><a href="https://plus.google.com/u/0/106896109587369688379/posts" title="Mi Google+"><i class="icon-google-plus"></i></a></li>
+        
+    
+
+<!--         -->
+        </ul>
+    </section>
+    <section class="page-content">
+        <div class="content" rel="main">
+            
+    <div class="post">
+    
+    <h1>A 'poor man' spell checker for the IPython notebook</h1>
+    
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2013-12-18T19:21:28-03:00">2013-12-18 19:21</time>
+            </div>
+            
+    
+        
+            
+                  |  
+                <a href="../../posts/a-poor-man-spell-checker-for-the-ipython-notebook.html">Read in English</a>
+            
+        
+            
+        
+    
+
+            
+    
+          |  
+        <a href="../.././es/posts/a-poor-man-spell-checker-for-the-ipython-notebook.ipynb" id="sourcelink">Código</a>
+          |  
+        <a href="javascript:%24.getScript(%22/assets/js/miniPageNav.js%22);">Minimap</a>
+          |  
+        Note: Just click on any IPython input cell to see the output.
+    
+
+            
+    
+    <div class="tags">
+        <ul>
+        More posts about:  
+        
+            <li><a class="tag" href="../.././es/categories/python.html">python</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/ipython.html">IPython</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/extension.html">extension</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/spellcheck.html">spellcheck</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/javascript.html">javascript</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/mipyex.html">mIPyex</a></li>
+        
+        </ul>
+    </div>
+    
+
+        </div>
+        <div class="body">
+            <div class="text_cell_render border-box-sizing rendered_html">
+<p>OK, today I will release another IPython js extension: Spellchecker, which obviously do what you are thinking... spell check the content of your IPython notebook cells.</p>
+<p>And why it is a <em>poor man</em> extension? Because it is a simple workaround to get the spell checker functionality and not a broad solution... but it works, and solve my spelling problems! <!-- TEASER_END --></p>
+<p>The main idea here is to use the spell checker functionality provided by your browser [yes, let to the others the complex things ;-)]. But, as you know, the spell checking functionality is disable inside the IPython notebook... and this is because each cell you actually see is a codemirror instance... and codemirror does not support spell checking by design... in fact, the codemirror text area (editor) is not a common html text area, hence the browser can actually run the spell checker in this new text area.</p>
+<p>So, are we prohibited to apply a spell checker functionality over a codemirror instance In fact, no... there is a way to do it applying something called codemirror layouts and using js spell checker libraries...</p>
+<p>But, I don't want to do this job yet (because of several causes which I do not describe here now), so I think workaround and use the IPython js machinery to get a simple, narrow but useful solution.</p>
+<p>The workaround is simple:</p>
+<ul>
+<li>The spell checker will do its job at the cell level.</li>
+</ul>
+<div class="figure">
+<img src="http://www.damian.oquanta.info/galleries/spellchecker/1.png">
+</div>
+<ul>
+<li><p>We need a way to get the content of the selected IPython notebook cell:</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="dv">24</span>      <span class="kw">var</span> input = <span class="kw">IPython.notebook</span>.<span class="fu">get</span>_<span class="fu">selected</span>_<span class="fu">cell</span>().<span class="fu">get</span>_<span class="fu">text</span>()</code></pre></li>
+<li><p>Put the content in a common html text area, and use the spell checker capabilities from the browser:</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="dv">26</span>      <span class="kw">var</span> textarea = $(<span class="ch">'&lt;textarea/&gt;'</span>)
+<span class="dv">27</span>          .<span class="fu">attr</span>(<span class="ch">'rows'</span>,<span class="ch">'15'</span>)
+<span class="dv">28</span>          .<span class="fu">attr</span>(<span class="ch">'cols'</span>,<span class="ch">'80'</span>)
+<span class="dv">29</span>          .<span class="fu">attr</span>(<span class="ch">'name'</span>,<span class="ch">'source'</span>)
+<span class="dv">30</span>          .<span class="fu">text</span>(input);</code></pre></li>
+<li><p>Make the corrections.</p></li>
+</ul>
+<div class="figure">
+<img src="http://www.damian.oquanta.info/galleries/spellchecker/2.png">
+</div>
+<ul>
+<li><p>Get back the corrected content into the selected IPython notebook cell.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="dv">60</span>      <span class="kw">var</span> corr_input = `$`.<span class="fu">trim</span>(`$`(textarea).<span class="fu">val</span>()); <span class="co">// note: backticks to avoid mathjax rendering, sorry.</span>
+<span class="dv">61</span>      <span class="kw">console</span>.<span class="fu">log</span>(corr_input);
+<span class="dv">62</span>      <span class="kw">IPython.notebook</span>.<span class="fu">get</span>_<span class="fu">selected</span>_<span class="fu">cell</span>().<span class="fu">set</span>_<span class="fu">text</span>(corr_input);</code></pre></li>
+</ul>
+<p>And that's all... the complete code below:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [1]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">cat</span> <span class="o">-</span><span class="n">n</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">datos</span><span class="o">/</span><span class="n">Desarrollos</span><span class="o">/</span><span class="n">mIPyex</span><span class="o">/</span><span class="n">custom</span><span class="o">/</span><span class="n">spellchecker</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">js</span>
+</pre></div>
+
+<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">  Click me!</i>
+</div>
+</div>
+
+<div class="output_hidden">
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+     1	/*
+     2	* ----------------------------------------------------------------------------
+     3	* Copyright (c) 2013 - Damián Avila
+     4	*
+     5	* Distributed under the terms of the Modified BSD License.
+     6	*
+     7	* A little extension to spell check the selected cell from the IPython notebook.
+     8	* ----------------------------------------------------------------------------
+     9	*/
+    10	
+    11	function spellCheckerCSS() {
+    12	    var link = document.createElement("link");
+    13	    link.type = "text/css";
+    14	    link.rel = "stylesheet";
+    15	    link.href = require.toUrl("./custom/spellchecker/main.css");
+    16	    document.getElementsByTagName("head")[0].appendChild(link);
+    17	}
+    18	
+    19	function spellChecker(dummy) {
+    20	    console.log(dummy);
+    21	
+    22	    spellCheckerCSS();
+    23	
+    24	    var input = IPython.notebook.get_selected_cell().get_text()
+    25	
+    26	    var textarea = $('&lt;textarea/&gt;')
+    27	        .attr('rows','15')
+    28	        .attr('cols','80')
+    29	        .attr('name','source')
+    30	        .text(input);
+    31	
+    32	    var dialogform = $('&lt;div/&gt;')
+    33	        .append(
+    34	            $('&lt;form/&gt;').append(
+    35	                $('&lt;fieldset/&gt;').append(
+    36	                    $('&lt;label/&gt;')
+    37	                    .attr('for','source')
+    38	                    .text("Now you can edit the cell content and use " +
+    39	                    "the spellchecker support of your browser over it. " +
+    40	                    "In Chromium, just focus in the text area and " +
+    41	                    "select the text you want to spell check. Then you will " +
+    42	                    "be able to use the contextual menu (right click) to get " +
+    43	                    "words suggestion and other configuration options (lang). " +
+    44	                    "Finally press OK to get the corrected cell content into " +
+    45	                    "your selected IPython notebook cell.")
+    46	                    )
+    47	                    .append($('&lt;br/&gt;'))
+    48	                    .append(
+    49	                        textarea
+    50	                    )
+    51	                )
+    52	        );
+    53	
+    54	    IPython.dialog.modal({
+    55	        title: "Edit and spell check your cell content",
+    56	        body: dialogform,
+    57	            buttons: {
+    58	                "OK": { class : "btn-primary",
+    59	                    click: function() {
+    60	                       var corr_input = $.trim($(textarea).val());
+    61	                       console.log(corr_input);
+    62	                       IPython.notebook.get_selected_cell().set_text(corr_input);
+    63	                }},
+    64	                Cancel: {}
+    65	            }
+    66	    });
+    67	
+    68	}
+    69	
+    70	define(function() {
+    71	  return {
+    72	    parameters: function setup(param1) {
+    73	      IPython.toolbar.add_buttons_group([
+    74	        {
+    75	        'label'   : 'Spell check your selected cell content',
+    76	        'icon'    : 'icon-check-sign',
+    77	        'callback': function(){spellChecker(param1)},
+    78	        'id'      : 'start_spellcheck'
+    79	        },
+    80	      ]);
+    81	      var document_keydown = function(event) {
+    82	        if (event.which == 83 &amp;&amp; event.altKey) {
+    83	          spellChecker(param1);
+    84	          return false;
+    85	        };
+    86	        return true;
+    87	      };
+    88	      $(document).keydown(document_keydown);
+    89	    }
+    90	  }
+    91	});
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As you can see at the end of the code... you have not only a button but also a keyboard shortcut to activate the spell checker extension: ALT + S (remember that the same goes for the Tweet me extension, but with ALT + T).</p>
+<p>OK, I hope you enjoy and use this extension... because the IPython notebook is not only for write code... it is also to write other things, such as this blog post, and we have to keep spelling mistakes as low as possible to make the read of our content pleasant...</p>
+<p>See you...</p>
+<p>Damián</p>
+</div>
+        </div>
+        
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="tweet-me-said-an-ipython-notebook-cell-and-i-did-it.html">← Post anterior</a>
+        </li>
+    
+    
+    </ul>
+
+        
+            
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="damianblogcomments";
+        
+            var disqus_url="http://www.damian.oquanta.info/es/posts/a-poor-man-spell-checker-for-the-ipython-notebook.html";
+        
+        var disqus_title="A 'poor man' spell checker for the IPython notebook";
+        var disqus_identifier="cache/posts/a-poor-man-spell-checker-for-the-ipython-notebook.html";
+        var disqus_config = function () {
+            this.language = "./es";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+
+        
+        
+    
+
+    </div>
+
+            Contents © 2013 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
+Powered by <a href="http://getnikola.com">Nikola</a> - 
+Zen theme based in <a href="https://github.com/arusahni/website-template">Arusahni's website-template</a><br>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>
+            
+	
+ <!-- Social buttons -->
+ <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more"><i class="icon-share-sign icon-2x"></i>    Share</a>
+ <ul>
+ <li><a class="addthis_button_twitter"><i class="icon-twitter icon-2x"></i>    Twitter</a>
+ </li><li><a class="addthis_button_google_plusone_share"><i class="icon-google-plus-sign icon-2x"></i>    Google+</a>
+ </li><li><a class="addthis_button_linkedin"><i class="icon-linkedin icon-2x"></i>    Linkedin</a>
+ </li><li><a class="addthis_button_facebook"><i class="icon-facebook-sign icon-2x"></i>    Facebook</a>
+ </li></ul>
+ </div>
+ <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+ <!-- End of social buttons -->
+ 
+
+        </div>
+    </section>
+    
+    
+        
+            <script src="../../assets/js/all-nocdn.js" type="text/javascript"></script>
+        
+    
+
+    
+        <script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+    
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33259189-1']);
+  _gaq.push(['_setDomainName', 'oquanta.info']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</body>
+</html>
