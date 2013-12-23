@@ -1,0 +1,357 @@
+<!DOCTYPE html><html lang="es">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="Damian Avila">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet me... said an IPython notebook cell and I did it | Damian's blog</title>
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script>
+
+    
+        
+            <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            
+                <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+            
+                <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../.././es/rss.xml">
+            
+        
+    
+    
+
+    
+
+    
+
+
+
+    
+</head>
+
+<body>
+    <section class="social">
+        <ul>
+<!--        <h1 id="blog-title">
+            <a href="/" title="Damian's blog">Damian's blog</a>
+        </h1>
+        
+        
+        <small>
+            También disponible en:&nbsp;
+            
+    
+        
+            <a href="/index.html">English</a>
+        
+    
+        
+    
+
+        </small>
+        
+         -->
+        
+    
+        
+            <li><a href="../index.html" title="Inicio"><i class="icon-home"></i></a></li>
+        
+    
+        
+            <li><a href="../archive.html" title="Archivos"><i class="icon-folder-open-alt"></i></a></li>
+        
+    
+        
+            <li><a href="../categories/index.html" title="Etiquetas"><i class="icon-tags"></i></a></li>
+        
+    
+        
+            <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+        
+    
+        
+            <li><a href="../portfolio/portfolio.slides.html" title="Portafolio"><i class="icon-briefcase"></i></a></li>
+        
+    
+        
+            <li><a href="../stories/about-me.html" title="Sobre mi..."><i class="icon-user"></i></a></li>
+        
+    
+        
+            <li><a href="https://twitter.com/damian_avila" title="Mi Twitter"><i class="icon-twitter"></i></a></li>
+        
+    
+        
+            <li><a href="https://github.com/damianavila" title="Mi Github"><i class="icon-github"></i></a></li>
+        
+    
+        
+            <li><a href="https://plus.google.com/u/0/106896109587369688379/posts" title="Mi Google+"><i class="icon-google-plus"></i></a></li>
+        
+    
+
+<!--         -->
+        </ul>
+    </section>
+    <section class="page-content">
+        <div class="content" rel="main">
+            
+    <div class="post">
+    
+    <h1>Tweet me... said an IPython notebook cell and I did it</h1>
+    
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2013-12-13T13:21:09-03:00">2013-12-13 13:21</time>
+            </div>
+            
+    
+        
+            
+                  |  
+                <a href="../../posts/tweet-me-said-an-ipython-notebook-cell-and-i-did-it.html">Read in English</a>
+            
+        
+            
+        
+    
+
+            
+    
+          |  
+        <a href="../.././es/posts/tweet-me-said-an-ipython-notebook-cell-and-i-did-it.ipynb" id="sourcelink">Código</a>
+          |  
+        <a href="javascript:%24.getScript(%22/assets/js/miniPageNav.js%22);">Minimap</a>
+          |  
+        Note: Just click on any IPython input cell to see the output.
+    
+
+            
+    
+    <div class="tags">
+        <ul>
+        More posts about:  
+        
+            <li><a class="tag" href="../.././es/categories/python.html">python</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/ipython.html">IPython</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/extension.html">extension</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/twitter.html">twitter</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/javascript.html">javascript</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/mipyex.html">mIPyex</a></li>
+        
+        </ul>
+    </div>
+    
+
+        </div>
+        <div class="body">
+            <div class="text_cell_render border-box-sizing rendered_html">
+<p>It is time to release some extensions I wrote the last weeks. And because it is <strong>Friday</strong>, and it is a great moment to begin with the "relax" and procrastination, I will release the tweet me extension... <!-- TEASER_END --></p>
+<p>You don't have any idea what I am talking about? OK, a few words... Probably you know that spend a lot of time inside <strong>IPython</strong> notebooks and I was tired to switch windows to send or answer a tweet. So, I wrote a little <em>js</em> extension to capture the input of the selected cell and tweet it just pressing the <em>twitter</em> icon at the <strong>IPython</strong> toolbar.</p>
+<div class="figure">
+<img src="http://www.damian.oquanta.info/galleries/twitter/1.png">
+</div>
+<p>But this <em>js</em> extension is <strong>IPython</strong>-powered itself, because I am using the <strong>IPython</strong> js machinery to execute <em>python</em> files calling the <em>python kernel</em>! Yes... it seems weird, but once you get the idea, you can achieve a <strong>lot</strong> of things. You can see the relevant part of the code below:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [1]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="o">!</span>sed -n 59,74p /media/datos/Desarrollos/mIPyex/custom/tweet_me/main.js
+</pre></div>
+
+<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">  Click me!</i>
+</div>
+</div>
+
+<div class="output_hidden">
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+function tweetMe(path) {
+  var entry = IPython.notebook.get_selected_cell().get_text();
+  if (entry.length == 0) {
+    zeroMessager(); 
+  }
+  if (entry.length &gt; 0 &amp;&amp; entry.length &lt;= 140) {
+    IPython.notebook.kernel.execute('%bookmark root');
+    IPython.notebook.kernel.execute('%cd ' + path);
+    IPython.notebook.kernel.execute('%run tweet_helper.py "' + entry + '"');
+    IPython.notebook.kernel.execute('%cd -b root');
+    sucessMessager();
+  }
+  if (entry.length &gt; 140) {
+    wrongMessager();
+  }
+}
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The secret is to use the <code>IPython.notebook.kernel.execute(whatever)</code> method and pass it whatever you want, even <strong>IPython</strong> <em>magics functions</em>! Yes again... too much <em>Inception</em> movie for the last weeks ;-)</p>
+<p>OK, the extension lives in this new repo: <a href="https://github.com/damianavila/mIPyex">mIPyex</a>, where I will upload the development versions of my own extensions. When I get them enough stable, I will make a copy of them in the <a href="https://github.com/ipython-contrib/IPython-notebook-extensions">IPython notebook extensions</a> repo where you can get a lot of and useful interesting extensions.</p>
+<p>Do you want to try it? It is easy... just follow the README to install all the necessary tools (I used the <a href="http://mike.verdone.ca/twitter/">PTT</a> library to deal with the Twitter API) and then just <em>click</em> the <em>twitter</em> button when you want to share something with the world!</p>
+<p>Hope you enjoy it a lot!</p>
+<p>Damián</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>PD: I will use the next cell to tweet about this new blog post! ;-)</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>New blog post! Tweet me... said an IPython notebook cell and I did it. http://goo.gl/ry9Umi</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Addendum: You can now send tweets from cells with multi-line content (my first implementation only worked with one-line strings).</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Addendum 2: You have not only a button but also a keyboard shortcut to activate the Tweet me extension: ALT + T.</p>
+</div>
+        </div>
+        <p class="gittip">Do you like the content? Great!</p>
+        <p class="gittip">Then help me to achieve a "Sustainable Crowdfunding":  
+        <script data-gittip-username="damianavila" data-gittip-widget="button" src="//gttp.co/v1.js"></script></p>
+        
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="dont-write-scripts-just-write-ipyscripts.html">← Post anterior</a>
+        </li>
+    
+    
+        <li class="next">
+            <a href="a-poor-man-spell-checker-for-the-ipython-notebook.html">Siguiente post →</a>
+        </li>
+    
+    </ul>
+
+        
+            
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="damianblogcomments";
+        
+            var disqus_url="http://www.damian.oquanta.info/es/posts/tweet-me-said-an-ipython-notebook-cell-and-i-did-it.html";
+        
+        var disqus_title="Tweet me... said an IPython notebook cell and I did it";
+        var disqus_identifier="cache/posts/tweet-me-said-an-ipython-notebook-cell-and-i-did-it.html";
+        var disqus_config = function () {
+            this.language = "./es";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+
+        
+        
+    
+
+    </div>
+
+            Contents © 2013 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
+Powered by <a href="http://getnikola.com">Nikola</a> - 
+Zen theme based in <a href="https://github.com/arusahni/website-template">Arusahni's website-template</a><br>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>
+            
+	
+ <!-- Social buttons -->
+ <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more"><i class="icon-share-sign icon-2x"></i>    Share</a>
+ <ul>
+ <li><a class="addthis_button_twitter"><i class="icon-twitter icon-2x"></i>    Twitter</a>
+ </li><li><a class="addthis_button_google_plusone_share"><i class="icon-google-plus-sign icon-2x"></i>    Google+</a>
+ </li><li><a class="addthis_button_linkedin"><i class="icon-linkedin icon-2x"></i>    Linkedin</a>
+ </li><li><a class="addthis_button_facebook"><i class="icon-facebook-sign icon-2x"></i>    Facebook</a>
+ </li></ul>
+ </div>
+ <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+ <!-- End of social buttons -->
+ 
+
+        </div>
+    </section>
+    
+    
+        
+            <script src="../../assets/js/all-nocdn.js" type="text/javascript"></script>
+        
+    
+
+    
+        <script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+    
+    
+<script data-gittip-username="damianavila" data-gittip-widget="button" src="//gttp.co/v1.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33259189-1']);
+  _gaq.push(['_setDomainName', 'oquanta.info']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</body>
+</html>

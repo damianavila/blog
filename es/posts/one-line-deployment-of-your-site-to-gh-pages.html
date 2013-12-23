@@ -1,0 +1,319 @@
+<!DOCTYPE html><html lang="es">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="Damian Avila">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One line deployment of your site to gh-pages | Damian's blog</title>
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script>
+
+    
+        
+            <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            
+                <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+            
+                <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../.././es/rss.xml">
+            
+        
+    
+    
+
+    
+
+    
+
+
+
+    
+</head>
+
+<body>
+    <section class="social">
+        <ul>
+<!--        <h1 id="blog-title">
+            <a href="/" title="Damian's blog">Damian's blog</a>
+        </h1>
+        
+        
+        <small>
+            También disponible en:&nbsp;
+            
+    
+        
+            <a href="/index.html">English</a>
+        
+    
+        
+    
+
+        </small>
+        
+         -->
+        
+    
+        
+            <li><a href="../index.html" title="Inicio"><i class="icon-home"></i></a></li>
+        
+    
+        
+            <li><a href="../archive.html" title="Archivos"><i class="icon-folder-open-alt"></i></a></li>
+        
+    
+        
+            <li><a href="../categories/index.html" title="Etiquetas"><i class="icon-tags"></i></a></li>
+        
+    
+        
+            <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+        
+    
+        
+            <li><a href="../portfolio/portfolio.slides.html" title="Portafolio"><i class="icon-briefcase"></i></a></li>
+        
+    
+        
+            <li><a href="../stories/about-me.html" title="Sobre mi..."><i class="icon-user"></i></a></li>
+        
+    
+        
+            <li><a href="https://twitter.com/damian_avila" title="Mi Twitter"><i class="icon-twitter"></i></a></li>
+        
+    
+        
+            <li><a href="https://github.com/damianavila" title="Mi Github"><i class="icon-github"></i></a></li>
+        
+    
+        
+            <li><a href="https://plus.google.com/u/0/106896109587369688379/posts" title="Mi Google+"><i class="icon-google-plus"></i></a></li>
+        
+    
+
+<!--         -->
+        </ul>
+    </section>
+    <section class="page-content">
+        <div class="content" rel="main">
+            
+    <div class="post">
+    
+    <h1>One line deployment of your site to gh-pages</h1>
+    
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2013-08-21T08:17:00-03:00">2013-08-21 08:17</time>
+            </div>
+            
+    
+        
+            
+                  |  
+                <a href="../../posts/one-line-deployment-of-your-site-to-gh-pages.html">Read in English</a>
+            
+        
+            
+        
+    
+
+            
+    
+          |  
+        <a href="../.././es/posts/one-line-deployment-of-your-site-to-gh-pages.ipynb" id="sourcelink">Código</a>
+          |  
+        <a href="javascript:%24.getScript(%22/assets/js/miniPageNav.js%22);">Minimap</a>
+          |  
+        Note: Just click on any IPython input cell to see the output.
+    
+
+            
+    
+    <div class="tags">
+        <ul>
+        More posts about:  
+        
+            <li><a class="tag" href="../.././es/categories/git.html">git</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/blog.html">blog</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/nikola.html">nikola</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/gh-pages.html">gh-pages</a></li>
+        
+            <li><a class="tag" href="../.././es/categories/python.html">python</a></li>
+        
+        </ul>
+    </div>
+    
+
+        </div>
+        <div class="body">
+            <div class="text_cell_render border-box-sizing rendered_html">
+<p>Do you want to <strong>easily</strong> deploy your site to Github pages?</p>
+<p>OK, here we go...</p>
+<ol style="list-style-type: decimal">
+<li><p>You have to upload your complete blog/site to a new Github repository (you know how to do it... if not, probably you need to learn some things before try this one, hehe). As a plus, now your blog/site is version-controlled!</p></li>
+<li><p>Almost for sure, your site/blog lives in the master branch of the new repository, but you need to generated a <code>gh-pages</code> branch to push your <code>build</code> or <code>output</code> folder, I mean your site/blog content to deploy... not all the machinery of your site/blog platform (<strong>Nikola</strong> in my case): <!-- TEASER_END --></p></li>
+</ol>
+<ul>
+<li><code>git checkout -b gh-pages</code></li>
+<li><code>git rm -rf .</code></li>
+<li><code>git commit -am "First commit to gh-pages branch"</code></li>
+<li><code>git push origin gh-pages</code></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Now, we will use a <strong>git-subtree</strong> technique to push the <code>build</code> or <code>output</code> content to the <code>gh-pages</code> branch:</li>
+</ol>
+<ul>
+<li><code>git checkout master</code></li>
+<li><p><code>git push origin `git subtree split --prefix output gh-pages`:gh-pages --force</code></p>
+<p><strong>Sweet</strong> line... uhh ;-)</p></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Finally, you will need to run the following line every time you want to update your site/blog!</li>
+</ol>
+<ul>
+<li><code>git subtree push --prefix output origin gh-pages</code></li>
+</ul>
+<p><strong>Note</strong>: Are you getting <code>git</code> errors? Just use the <strong>sweet</strong> line again and <em>force</em> the update...</p>
+<p>If you are using <strong>Nikola</strong>, you can add some of this lines to the <code>DEPLOY_COMMANDS</code> in your conf.py file and just run <code>nikola deploy</code> after building your site/blog.</p>
+<p>More easier... impossible... ;-)</p>
+<p>Damián.</p>
+<p><strong>UPDATE</strong>: Not enough happy with step 3 and 4 (essentially because of some <code>git</code> errors), I figured out a cleaner solution:</p>
+<p>New 3. Now, we will use a <strong>git-subtree</strong> technique to push the <code>build</code> or <code>output</code> content to the <code>gh-pages</code> branch. You will need to run the following lines every time you want to update your site/blog!</p>
+<ul>
+<li><code>git checkout master</code> # you can avoid this line if you are in master...</li>
+<li><code>git subtree split --prefix output -b gh-pages</code> # create a local gh-pages branch containing the splitted output folder</li>
+<li><code>git push -f origin gh-pages:gh-pages</code> # force the push of the gh-pages branch to the remote gh-pages branch at origin</li>
+<li><code>git branch -D gh-pages</code> # delete the local gh-pages because you will need it: <a href="https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt#L203">ref</a></li>
+</ul>
+</div>
+        </div>
+        <p class="gittip">Do you like the content? Great!</p>
+        <p class="gittip">Then help me to achieve a "Sustainable Crowdfunding":  
+        <script data-gittip-username="damianavila" data-gittip-widget="button" src="//gttp.co/v1.js"></script></p>
+        
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="ipython-plugin-for-nikola-updated.html">← Post anterior</a>
+        </li>
+    
+    
+        <li class="next">
+            <a href="make-your-slides-with-ipython.html">Siguiente post →</a>
+        </li>
+    
+    </ul>
+
+        
+            
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="damianblogcomments";
+        
+            var disqus_url="http://www.damian.oquanta.info/es/posts/one-line-deployment-of-your-site-to-gh-pages.html";
+        
+        var disqus_title="One line deployment of your site to gh-pages";
+        var disqus_identifier="cache/posts/one-line-deployment-of-your-site-to-gh-pages.html";
+        var disqus_config = function () {
+            this.language = "./es";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+
+        
+        
+    
+
+    </div>
+
+            Contents © 2013 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
+Powered by <a href="http://getnikola.com">Nikola</a> - 
+Zen theme based in <a href="https://github.com/arusahni/website-template">Arusahni's website-template</a><br>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>
+            
+	
+ <!-- Social buttons -->
+ <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more"><i class="icon-share-sign icon-2x"></i>    Share</a>
+ <ul>
+ <li><a class="addthis_button_twitter"><i class="icon-twitter icon-2x"></i>    Twitter</a>
+ </li><li><a class="addthis_button_google_plusone_share"><i class="icon-google-plus-sign icon-2x"></i>    Google+</a>
+ </li><li><a class="addthis_button_linkedin"><i class="icon-linkedin icon-2x"></i>    Linkedin</a>
+ </li><li><a class="addthis_button_facebook"><i class="icon-facebook-sign icon-2x"></i>    Facebook</a>
+ </li></ul>
+ </div>
+ <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+ <!-- End of social buttons -->
+ 
+
+        </div>
+    </section>
+    
+    
+        
+            <script src="../../assets/js/all-nocdn.js" type="text/javascript"></script>
+        
+    
+
+    
+        <script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+    
+    
+<script data-gittip-username="damianavila" data-gittip-widget="button" src="//gttp.co/v1.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33259189-1']);
+  _gaq.push(['_setDomainName', 'oquanta.info']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</body>
+</html>
