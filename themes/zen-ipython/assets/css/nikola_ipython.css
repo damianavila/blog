@@ -123,3 +123,15 @@ div.output_wrapper {
 .highlight {
 float: left;
 }
+
+/* gittip-specific */
+
+.post .body {
+  margin-bottom: 0px;
+}
+
+.gittip {
+  vertical-align: top;
+  font-weight: bold;
+  font-style: italic, oblique;
+}

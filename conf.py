@@ -532,6 +532,7 @@ SOCIAL_BUTTONS_CODE = """
 # Google analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 BODY_END = """
+<script data-gittip-username="damianavila" data-gittip-widget="button" src="//gttp.co/v1.js"></script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];

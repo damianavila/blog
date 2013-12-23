@@ -23,6 +23,11 @@
         <div class="body">
             {{ post.text() }}
         </div>
+        <p class="gittip">Do you like the content? Great!</p>
+        <p class="gittip">Then help me to achieve a "Sustainable Crowdfunding": &nbsp;
+        <script data-gittip-username="damianavila"
+        data-gittip-widget="button"
+        src="//gttp.co/v1.js"></script></p>
         {{ helper.html_pager(post) }}
         {% if not post.meta('nocomments') %}
             {{ comments.comment_form(post.permalink(absolute=True), post.title(), post.base_path) }}
