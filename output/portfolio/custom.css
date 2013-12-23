@@ -1,0 +1,31 @@
+@font-face {
+        font-family: "xkcd";
+        src: url('Humor-Sans.ttf');
+}
+div.cell {
+            border: 2px solid black;
+            margin-top: 10px;
+            margin-bottom: 10 px;
+}      
+.CodeMirror {font-family: xkcd; font-size: 120%}
+.rendered_html {font-family: xkcd; font-size: 120%}
+pre, code {font-family: xkcd; font-size: 120%}
+.rendered_html table {border: 2px solid black;}
+.rendered_html tr {border: 2px solid black;}
+.rendered_html th {border: 2px solid black; padding: 0.45em 1em;}
+.rendered_html td {border: 2px solid black; padding: 0.45em 1em;}     
+div.prompt {font-family: xkcd; font-size: 120%}
+div.input_area pre {font-family: xkcd; font-size: 120%}
+div.output_area pre {font-family: xkcd; font-size: 120%}
+div.text_cell_render {
+font-family: xkcd;
+}
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+font-family: xkcd;
+}
+.reveal a:not(.image) {
+font-family: xkcd;
+}
+.reveal {
+overflow-y: hidden;
+}
