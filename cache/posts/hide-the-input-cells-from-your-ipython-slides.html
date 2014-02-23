@@ -86,7 +86,7 @@ $(document).ready(function(){
 <p>and I got something like this (navigate and try it!):</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<iframe src="http://damianavila.github.io/Miscellaneus/Example_IPython_slides.slides.html#/" width="800" height="600"></iframe>
+<iframe src="http://damianavila.github.io/miscellaneus/test_slides.slides.html#/3/2" width="800" height="600"></iframe>
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">

@@ -1,5 +1,10 @@
 
 <div class="text_cell_render border-box-sizing rendered_html">
+<blockquote>
+<p><strong>Alert!</strong> This post is outdated, please <code>goto</code> ;-) this <a href="http://www.damian.oquanta.info/posts/ipython-plugin-for-nikola-updated.html">link</a> to get updated information.</p>
+</blockquote>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>NOTE</strong>: Obviously, this post was written in the IPython notebook and was rendered by Nikola (helped by nbconvert).</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">

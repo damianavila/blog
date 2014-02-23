@@ -33,7 +33,7 @@ MathJax.Hub.Config({
             
                 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../rss.xml">
             
-                <link rel="alternate" type="application/rss+xml" title="RSS (es)" href=".././es/rss.xml">
+                <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../es/rss.xml">
             
         
     
@@ -52,7 +52,7 @@ MathJax.Hub.Config({
     <section class="social">
         <ul>
 <!--        <h1 id="blog-title">
-            <a href="/" title="Damian's blog">Damian's blog</a>
+            <a href="http://www.damian.oquanta.info/" title="Damian's blog">Damian's blog</a>
         </h1>
         
         
@@ -63,7 +63,7 @@ MathJax.Hub.Config({
         
     
         
-            <a href="/./es/index.html">Español</a>
+            <a href="/es/index.html">Español</a>
         
     
 
@@ -308,7 +308,6 @@ Reveal.initialize({
 
 &lt;/script&gt;
 
-&lt;/body&gt;
 {% endblock body %}
 
 </pre>
@@ -335,6 +334,7 @@ Reveal.initialize({
 <p><strong>NOTE</strong>: Don't forget to put your <em>ipynb</em>, <em>slides_config.py</em> and <em>default_transition.tpl</em> files in the same folder where you will run the <code>IPython.nbconvert</code> command.</p>
 <p>As you can see, the potentiality of this system (<strong>Jinja</strong> templating plus a powerful config system) is really big! We can achieve awesome <em>things</em> in a very easy way!</p>
 <p>Any help, just let me know!</p>
+<p><strong>Addemdum</strong>: the use of <code>default_transition.tpl</code> generates an invalid but useful final html document. The cause behind this issue is the script containing the <code>Reveal.initialize</code> function, which is located after the closing <code>body</code> tag. All modern browser render this sort of invalid html witout any difficult. But a commenter arose this issue and I think is important to make it available in the post itself.</p>
 <p>Damián</p>
 </div>
         </div>
@@ -388,7 +388,7 @@ Reveal.initialize({
 
     </div>
 
-            Contents © 2013 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
+            Contents © 2014 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
 Powered by <a href="http://getnikola.com">Nikola</a> - 
 Zen theme based in <a href="https://github.com/arusahni/website-template">Arusahni's website-template</a><br>
 

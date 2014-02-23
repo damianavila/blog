@@ -138,7 +138,6 @@ Reveal.initialize({
 
 &lt;/script&gt;
 
-&lt;/body&gt;
 {% endblock body %}
 
 </pre>
@@ -165,5 +164,6 @@ Reveal.initialize({
 <p><strong>NOTE</strong>: Don't forget to put your <em>ipynb</em>, <em>slides_config.py</em> and <em>default_transition.tpl</em> files in the same folder where you will run the <code>IPython.nbconvert</code> command.</p>
 <p>As you can see, the potentiality of this system (<strong>Jinja</strong> templating plus a powerful config system) is really big! We can achieve awesome <em>things</em> in a very easy way!</p>
 <p>Any help, just let me know!</p>
+<p><strong>Addemdum</strong>: the use of <code>default_transition.tpl</code> generates an invalid but useful final html document. The cause behind this issue is the script containing the <code>Reveal.initialize</code> function, which is located after the closing <code>body</code> tag. All modern browser render this sort of invalid html witout any difficult. But a commenter arose this issue and I think is important to make it available in the post itself.</p>
 <p>Damián</p>
 </div>

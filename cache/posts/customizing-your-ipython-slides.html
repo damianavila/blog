@@ -13,41 +13,8 @@
 <p>Using this message as a trigger (and following with the serie of blog posts explaining some of the IPython slides features), I will explain you how to customize your IPython slides in just two steps:</p>
 <p><strong>NOTE</strong>: I will use, as a starting point, the following slides of a talk I gave to journalist and designers at <a href="http://www.mediaparty.info">Hacks/HackersBA</a>, a story to write in another blog post...</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[1]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="n">HTML</span><span class="p">(</span><span class="s">&#39;&lt;iframe src=&quot;http://damianavila.github.io/hackperiodismo&quot; width=800 height=600&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
-</pre></div>
-
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
-</div>
-</div>
-
-<div class="output_hidden">
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt output_prompt">
-    Out[1]:</div>
-<div class="box-flex1 output_subarea output_pyout">
-
-<div class="output_html rendered_html">
+<div class="text_cell_render border-box-sizing rendered_html">
 <iframe src="http://damianavila.github.io/hackperiodismo" width=800 height=600></iframe>
-</div>
-
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -151,41 +118,8 @@ custom.css  figs  index2.html  index.html
 <p>And now, the example slides rendered with a new darker style...</p>
 <p><strong>NOTE</strong>: In this case I applied the NIGHT reveal theme (adding <code>?theme=night</code> to the url) and used the <code>custom.css</code> file to adjust some details ;-) (darker reveal themes need this kind of customization to be rendered OK).</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[4]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="n">HTML</span><span class="p">(</span><span class="s">&#39;&lt;iframe src=&quot;http://damianavila.github.io/hackperiodismo/index2.html?theme=night&quot; width=800 height=600&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
-</pre></div>
-
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
-</div>
-</div>
-
-<div class="output_hidden">
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt output_prompt">
-    Out[4]:</div>
-<div class="box-flex1 output_subarea output_pyout">
-
-<div class="output_html rendered_html">
+<div class="text_cell_render border-box-sizing rendered_html">
 <iframe src="http://damianavila.github.io/hackperiodismo/index2.html?theme=night" width=800 height=600></iframe>
-</div>
-
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">

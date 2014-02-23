@@ -8,49 +8,8 @@
 <p>With the last release, <strong>IPython</strong> support this kind of exportation using the well designed and easily extensible <code>IPython.nbconvert</code> library. Now, it is easier to incorporate the IPython machinery inside vIPer and support the exportation to several formats. <!-- TEASER_END --></p>
 <p><strong>Note</strong>: if you want to know more about vIPer, just see the following talk I gave about it at <strong>SciPy 2013</strong>.</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[1]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
-<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;NVf_giNcNro&#39;</span><span class="p">)</span>
-</pre></div>
-
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
-</div>
-</div>
-
-<div class="output_hidden">
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt output_prompt">
-    Out[1]:</div>
-<div class="box-flex1 output_subarea output_pyout">
-
-<div class="output_html rendered_html">
-
-        <iframe
-            width="400"
-            height=300"
-            src="http://www.youtube.com/embed/NVf_giNcNro"
-            frameborder="0"
-            allowfullscreen
-        ></iframe>
-        
-</div>
-
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<iframe width="640" height="360" src="//www.youtube.com/embed/NVf_giNcNro" frameborder="0" allowfullscreen></iframe>
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
