@@ -5,7 +5,6 @@
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <!-- TEASER_END -->
-
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>I am very proud to have this kind of conference in my country, and I would like to <strong>thanks</strong> to the organizers (and the sponsors) for all their hard work to make it happens.</p>

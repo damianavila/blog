@@ -4,7 +4,6 @@
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <!-- TEASER_END -->
-
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">

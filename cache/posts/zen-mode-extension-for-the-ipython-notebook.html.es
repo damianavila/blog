@@ -21,7 +21,6 @@
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <iframe width="640" height="360" src="//www.youtube.com/embed/eVi5aXEipBQ" frameborder="0" allowfullscreen></iframe>
-
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Do you want it? You can get it!</p>

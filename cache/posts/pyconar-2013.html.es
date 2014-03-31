@@ -16,14 +16,12 @@
 <li>Introducción a Python Científico</li>
 </ul>
 <iframe width="640" height="360" src="//www.youtube.com/embed/17DPZlKQDk8" frameborder="0" allowfullscreen></iframe>
-
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>IPython-fu: el camino de la &quot;nbconversión&quot;</li>
 </ul>
 <iframe width="640" height="360" src="//www.youtube.com/embed/4-O5NZKD3hI" frameborder="0" allowfullscreen></iframe>
-
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Una vez más, participar en la PyConAr fue una gran experiencia, no sólo desde el punto de vista técnico, sino también, y más importante aún, desde el punto de vista humano.</p>

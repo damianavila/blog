@@ -623,3 +623,13 @@ TIMEZONE = 'America/Argentina/Buenos_Aires'
 # It can be anything, data, functions, modules, etc.
 
 GLOBAL_CONTEXT = {}
+
+# What will translated input files be named like?
+
+# If you have a page something.rst, then something.pl.rst will be considered
+# its Polish translation.
+#     (in the above example: path == "something", ext == "rst", lang == "pl")
+# this pattern is also used for metadata:
+#     something.meta -> something.pl.meta
+
+#TRANSLATIONS_PATTERN = "{path}.{ext}.{lang}"

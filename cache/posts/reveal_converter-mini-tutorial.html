@@ -11,7 +11,6 @@
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <!-- TEASER_END -->
-
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can access to it <a href="http://www.slideviper.oquanta.info/tutorial/slideshow_tutorial_slides.html">here</a> (recommended way).</p>
@@ -19,7 +18,6 @@
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <iframe src=http://www.slideviper.oquanta.info/tutorial/slideshow_tutorial_slides.html?useformat=mobile width=700 height=450></iframe>
-
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>I hope you use it and report any problem.</p>
