@@ -1,15 +1,37 @@
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <blockquote>
 <p><strong>Alert!</strong> This post is outdated, please <code>goto</code> ;-) this <a href="http://www.damian.oquanta.info/posts/ipython-plugin-for-nikola-updated.html">link</a> to get updated information.</p>
 </blockquote>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>NOTE</strong>: Obviously, this post was written in the IPython notebook and was rendered by Nikola (helped by nbconvert).</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>INGREDIENTS</strong>:</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li><a href="https://github.com/ralsina/nikola">Nikola</a></li>
@@ -17,148 +39,249 @@
 <p><strong>NOTE: The theme was tested with Nikola version <a href="https://github.com/ralsina/nikola/tags">5.1</a></strong></p>
 <ul>
 <li><a href="https://github.com/ipython/ipython">IPython</a></li>
-<li><a href="https://github.com/damianavila/site-ipython-theme-for-Nikola.git">site-ipython</a> theme for Nikola</li>
-<li><a href="https://github.com/damianavila/compile_ipynb-for-Nikola.git">compile_ipynb</a> for Nikola</li>
+<li><a href="https://github.com/damianavila/site-ipython-theme-for-Nikola.git">site-ipython</a> theme for Nikola </li>
+<li><a href="https://github.com/damianavila/compile_ipynb-for-Nikola.git">compile_ipynb</a> for Nikola </li>
 </ul>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <!-- TEASER_END -->
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>STEPS</strong>:</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Install Nikola and IPython (probably you have IPython installed if you are reading this post).</li>
 <li>Install the <a href="https://github.com/damianavila/site-ipython-theme-for-Nikola.git">site-ipython theme</a> in your Nikola instalation. You can see some the documentation about how to do it <a href="http://nikola.ralsina.com.ar/handbook.html">here</a>.</li>
 </ul>
-<p>NOTE: Another way to do it is copying the site-ipython theme inside the nikola/data/themes folder BEFORE installing Nikola.</p>
+<p>NOTE: Another way to do it is copying the site-ipython theme inside the nikola/data/themes folder BEFORE installing Nikola. </p>
 <p><strong>NOTE2: The recommended way to do it would be copying the site-ipython theme inside your_site after initialization of your_site. See below.</strong></p>
 <ul>
 <li>Initialize your_site:</li>
 </ul>
 <p><code>nikola init your_site</code></p>
-<p>you can ask for</p>
-<p><code>nikola --help</code></p>
+<p>you can ask for </p>
+<p><code>nikola --help</code> </p>
 <p>for other available options.</p>
 <ul>
 <li>Create a plugins folder inside your_site</li>
 <li>Copy the compile_ipynb plugin (compile_ipynb.plugin file and the compile_ipynb folder, which are is located inside the extra-plugins folder in the Nikola master) in your_site/plugins/ folder.</li>
 <li>Then, download the custom nbconvert and nbformat from <a href="https://github.com/damianavila/compile_ipynb-for-Nikola.git">here</a> and put them inside your_site/plugins/compile_ipynb/ folder.</li>
-<li>Finally, you have to put:</li>
+<li>Finally, you have to put: </li>
 </ul>
 <pre><code>post_pages = (
     (&quot;posts/*.ipynb&quot;, &quot;posts&quot;, &quot;post.tmpl&quot;, True),
     (&quot;stories/*.ipynb&quot;, &quot;stories&quot;, &quot;story.tmpl&quot;, False),
-)</code></pre>
-<p>and</p>
-<pre><code>THEME = &#39;site-ipython&#39;</code></pre>
-<p>in your conf.py file of your_site (you can modified the other pieces inside conf.py according to your needs).</p>
+)
+</code></pre><p>and</p>
+<pre><code>THEME = &#39;site-ipython&#39;
+</code></pre><p>in your conf.py file of your_site (you can modified the other pieces inside conf.py according to your needs).</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="NOTE:-This-setup-is-done-only-once-time-a-life...-hehe">NOTE: This setup is done only once time a life... hehe<a class="anchor-link" href="#NOTE:-This-setup-is-done-only-once-time-a-life...-hehe">&#182;</a></h3>
 </div>
+</div>
+</div>
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>USE</strong>:</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>First create a new post:</li>
+<li>First create a new post: </li>
 </ul>
 <p><code>nikola new_post -f ipynb</code></p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>NOTE</strong>: <strong>IGNORE</strong> the -2 option in nikola new_page (it is no sense with the current implementation).</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You will be asked for a title (you can also add the title and tags in the previous call).</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Then, two files will be created by Nikola in the /posts folder of your_site: a meta file containing title, slug, time, tags (you can modified them with any text processor) and a <strong>naive</strong> ipynb file with the corresponding title.</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can init the <code>ipython notebook</code> inside this folder and modified the <em>&quot;post&quot;</em> notebook as you wish (do not forget to save the changes inside your notebook).</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Finally, just:</li>
+<li>Finally, just: </li>
 </ul>
 <p><code>nikola build</code></p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>and deploy the output folder containing your_site... to see it locally:</p>
+<p>and deploy the output folder containing your_site... to see it locally: </p>
 <p><code>nikola serve</code></p>
 </div>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>That's it all, my friend!</strong></p>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>That&#39;s it all, my friend!</strong></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If you have any doubt, just tell me: <a href="https://twitter.com/damian_avila">@damianavila</a></p>
 <p>Cheers,</p>
 <p>Damián</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>PS: And now some cells to show you this is areal notebook...</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[1]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="n">pwd</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[1]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 u&apos;/home/damian/Desarrollos/To_PR/SITIOS/Damian_blog_nikola/posts&apos;
 </pre>
-
-</div>
-</div>
-
-</div>
 </div>
 
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[2]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="o">%</span><span class="k">pylab</span> <span class="n">inline</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
 Welcome to pylab, a matplotlib-based Python environment [backend: module://IPython.zmq.pylab.backend_inline].
@@ -172,33 +295,38 @@ For more information, type &apos;help(pylab)&apos;.
 </div>
 
 </div>
+</div>
 
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[3]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
 <span class="n">title</span><span class="p">(</span><span class="s">&#39;A simple chirp&#39;</span><span class="p">);</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
+<div class="output_wrapper">
+<div class="output">
 
 
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAX0AAAEICAYAAACzliQjAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJztfXl0VuWd/+fNwpawJZA9gJgwIaKgYG1p0VhBi0vqLo5F
 qpYyHWk7bU/n9HTOTPXM1MJ0etRzaC16phU6Vmn7q0JRcW2U1iKtIlqlslQ0C0sgC9nX+/vj8cl7
@@ -554,40 +682,46 @@ nn322ainFTlqamqsa665JuppRIq33nrLWrJkiXXeeedZ1113ndXS0hL1lCLDxo0bh1I2b7/9dqu3
 tzfqKYWGVatWWYWFhVZmZqZVUlJi/exnP7NOnz5tXXbZZVwpmwnLGuOmqYGBgcEYwthOjTAwMDAY
 YzCkb2BgYDCGYEjfwMDAYAzBkL6BgYHBGIIhfQMDA4MxBEP6BgYGBmMI/x+/EYpeAMQykQAAAABJ
 RU5ErkJggg==
-">
-
-</div>
-</div>
-
-</div>
+"
+>
 </div>
 
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[4]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">z</span> <span class="o">=</span> <span class="n">y</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_pyerr">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_pyerr">
 <pre>
 <span class="ansired">---------------------------------------------------------------------------</span>
 <span class="ansired">ZeroDivisionError</span>                         Traceback (most recent call last)
@@ -604,76 +738,90 @@ In&nbsp;[4]:
 </div>
 
 </div>
+</div>
 
 </div>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Courtesy of MathJax, you can include mathematical expressions both inline: <span class="math">\(e^{i\pi} + 1 = 0\)</span> and displayed:</p>
-<p><span class="math">\[e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i\]</span></p>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Courtesy of MathJax, you can include mathematical expressions both inline: 
+$e^{i\pi} + 1 = 0$  and displayed:</p>
+<p>$$e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i$$</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[5]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 <span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">&#39;http://python.org/images/python-logo.gif&#39;</span><span class="p">)</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[5]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html">
+<div class="output_html rendered_html output_subarea output_pyout">
 <img src="http://python.org/images/python-logo.gif" />
 </div>
 
 </div>
-</div>
 
 </div>
 </div>
 
 </div>
+</div>
 
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[6]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
 <span class="c"># a talk about IPython at Sage Days at U. Washington, Seattle.</span>
 <span class="c"># Video credit: William Stein.</span>
 <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;1j_HxD4iLn8&#39;</span><span class="p">)</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[6]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html">
+<div class="output_html rendered_html output_subarea output_pyout">
 
             <iframe
                 width="400"
@@ -686,14 +834,20 @@ In&nbsp;[6]:
 </div>
 
 </div>
-</div>
 
 </div>
 </div>
 
 </div>
+</div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>OK, enough... see you soon!</p>
+</div>
+</div>
 </div>

@@ -1,45 +1,57 @@
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>OK, a short post to give you some material to play with over the weekend ;-).</p>
 <p>Today, I woke up early and whereas I was drinking a <em>mate</em> (a native drink here in Argentina) for breakfast, I remember a tweet from <a href="https://twitter.com/nsonnad">Nikhil Sonnad</a> where I was mentioned:</p>
 <!-- TEASER_END -->
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p>
-Sent PR to base16 for IPython notebook colorschemes. Check them out at <a href="https://t.co/SBbwBfLGli">https://t.co/SBbwBfLGli</a> cc <a href="https://twitter.com/oceankidbilly">@oceankidbilly</a> <a href="https://twitter.com/damian_avila">@damian_avila</a>
-</p>
-— Nikhil Sonnad (@nsonnad) <a href="https://twitter.com/nsonnad/statuses/454996539992059905">April 12, 2014</a>
-</blockquote>
+<p><blockquote class="twitter-tweet" data-partner="tweetdeck"><p>Sent PR to base16 for IPython notebook colorschemes. Check them out at <a href="https://t.co/SBbwBfLGli"><a href="https://t.co/SBbwBfLGli">https://t.co/SBbwBfLGli</a></a> cc <a href="https://twitter.com/oceankidbilly">@oceankidbilly</a> <a href="https://twitter.com/damian_avila">@damian_avila</a></p>&mdash; Nikhil Sonnad (@nsonnad) <a href="https://twitter.com/nsonnad/statuses/454996539992059905">April 12, 2014</a></blockquote></p>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <p>Essentially, he made available 48 <strong>IPython notebook</strong> themes based in the <strong>base16</strong> color scheme generator. Thanks Nikhil for your work!!!</p>
 <p>Well, I want to try them all and quickly, so I wrote some little code to do it:</p>
 <p>First, some imports...</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[1]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">subprocess</span>
 <span class="kn">import</span> <span class="nn">urllib</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
+</div>
 </div>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Second, make a list with all the theme names...</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[2]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="n">theme_names</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;3024-dark&#39;</span><span class="p">,</span>
                <span class="s">&#39;3024-light&#39;</span><span class="p">,</span>
                <span class="s">&#39;atelierdune-dark&#39;</span><span class="p">,</span>
@@ -90,20 +102,30 @@ In&nbsp;[2]:
                <span class="s">&#39;twilight-light&#39;</span><span class="p">]</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
+</div>
 </div>
 </div>
 
 </div>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The themes are <code>css</code> files, so we can create a new profile for each theme and add the css content to the <code>custom.css</code> file inside each profile. To do it, I use some little magic <em>tricks</em> from <strong>IPython</strong>...</p>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The themes are <code>css</code> files, so we can create a new profile for each theme and add the css content to the <code>custom.css</code> file inside each profile.
+To do it, I use some little magic <em>tricks</em> from <strong>IPython</strong>...</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[3]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">theme_names</span><span class="p">:</span>
     <span class="err">!</span><span class="n">ipython</span> <span class="n">profile</span> <span class="n">create</span> <span class="err">$</span><span class="n">i</span>
     <span class="n">profile_dir</span> <span class="o">=</span> <span class="err">!</span><span class="n">ipython</span> <span class="n">locate</span> <span class="n">profile</span> <span class="err">$</span><span class="n">i</span>
@@ -112,18 +134,21 @@ In&nbsp;[3]:
     <span class="n">urllib</span><span class="o">.</span><span class="n">urlretrieve</span> <span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">tgt</span><span class="p">)</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
 [ProfileCreate] Generating default config file: u&apos;/home/damian/.ipython/profile_3024-dark/ipython_config.py&apos;
 [ProfileCreate] Generating default config file: u&apos;/home/damian/.ipython/profile_3024-dark/ipython_notebook_config.py&apos;
@@ -278,36 +303,53 @@ In&nbsp;[3]:
 </div>
 
 </div>
+</div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now, I want to try it... quickly... so I launch a new <strong>IPython</strong> server for each <em>profile</em> in specific <em>ports</em>. I also pass the <code>--no-browser</code> option to avoid opening 48 tabs in a row (depending of your computing power this can be problematic).</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[4]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">theme_names</span><span class="p">):</span>
     <span class="n">port</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">9000</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> 
     <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">([</span><span class="s">&quot;ipython&quot;</span><span class="p">,</span> <span class="s">&quot;notebook&quot;</span><span class="p">,</span> <span class="s">&quot;--profile=&quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">,</span> <span class="s">&quot;--port=&quot;</span> <span class="o">+</span> <span class="n">port</span><span class="p">,</span> <span class="s">&quot;--no-browser&quot;</span><span class="p">])</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
+</div>
 </div>
 </div>
 
 </div>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Finally, because I am lazy ;-), I build the urls to see this same notebook with each different theme (don't forget to use the <em>incognito mode</em> of your browser to avoid <code>css</code> caching and at least <strong>IPython 2.0</strong>).</p>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Finally, because I am lazy ;-), I build the urls to see this same notebook with each different theme (don&#39;t forget to use the <em>incognito mode</em> of your browser to avoid <code>css</code> caching and at least <strong>IPython 2.0</strong>).</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[5]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="n">base_url</span> <span class="o">=</span> <span class="s">&quot;http://127.0.0.1:&quot;</span>
 <span class="n">notebook</span> <span class="o">=</span> <span class="s">&quot;/notebooks/48-themes-for-your-ipython-notebook.ipynb&quot;</span>
 
@@ -317,18 +359,21 @@ In&nbsp;[5]:
     <span class="k">print</span> <span class="n">url</span><span class="p">,</span> <span class="n">name</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
 http://127.0.0.1:9000/notebooks/48-themes-for-your-ipython-notebook.ipynb 3024-dark
 http://127.0.0.1:9001/notebooks/48-themes-for-your-ipython-notebook.ipynb 3024-light
@@ -387,29 +432,45 @@ http://127.0.0.1:9047/notebooks/48-themes-for-your-ipython-notebook.ipynb twilig
 </div>
 
 </div>
+</div>
 
 </div>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Easy and quick, don't you think?</p>
-<p>OK, a lot of <strong>IPython</strong> servers opened, let's kill them all!!! I feel like <a href="http://en.wikipedia.org/wiki/George_R._R._Martin">George R. R. Martin</a> ;-).</p>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Easy and quick, don&#39;t you think?</p>
+<p>OK, a lot of <strong>IPython</strong> servers opened, let&#39;s kill them all!!! I feel like <a href="http://en.wikipedia.org/wiki/George_R._R._Martin">George R. R. Martin</a> ;-).</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="o">!</span>killall -9 ipython
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
+</div>
 </div>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Obviously, this command also killed the <em>current</em> notebook (remember, this post is in fact an <strong>IPython notebook</strong>, and you can get it from the <strong>source</strong> link at the top of the post)... but I am right with that... this is the end of this post.</p>
 <p>Final note: I did not like any <em>complete</em> theme, but I really like some <em>part</em> from several themes, so it worths to see them to take each nice part and make my own theme in the future.</p>
 <p>Good weekend!</p>
 <p>Damián</p>
+</div>
+</div>
 </div>

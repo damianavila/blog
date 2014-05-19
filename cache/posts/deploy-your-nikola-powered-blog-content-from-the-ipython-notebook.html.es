@@ -1,10 +1,13 @@
 
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Following the idea to release all the extensions I had working on in the last few weeks/months, today I will release an old but very useful <strong>IPython</strong> notebook extension for people blogging with <strong>Nikola</strong>: the <em>nikola_deploy</em> extension. <!-- TEASER_END --></p>
-<p>Yes, I am always very original picking the names of the extensions ;-). A pic to illustrate the extension button at the toolbar:</p>
-<div class="figure">
-<img src="http://www.damian.oquanta.info/galleries/deploy/1.png" />
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Following the idea to release all the extensions I had working on in the last few weeks/months, today I will release an old but very useful <strong>IPython</strong> notebook extension for people blogging with <strong>Nikola</strong>: the <em>nikola_deploy</em> extension.
+<!-- TEASER_END --></p>
+<p>Yes, I am always very original picking the names of the extensions ;-). A pic to illustrate the extension button at the toolbar:</p>
+<p><img src="http://www.damian.oquanta.info/galleries/deploy/1.png" alt=""></p>
 <blockquote>
 <p><strong>Note</strong>: Nikola supports the ipynb file as an input... and using the IPython.nbconvert machinery it is able to render the static HTML representation of your ipynbs inside the complete infrastructure of a powerful static site engine.</p>
 </blockquote>
@@ -14,35 +17,42 @@
 <li><a href="http://www.damian.oquanta.info/posts/one-line-deployment-of-your-site-to-gh-pages.html">One line deployment of your site to gh-pages</a></li>
 </ul>
 <p>OK, coming back to the extension, the idea behind this one is very simple: I will call the <code>nikola deploy</code> command from inside the <strong>IPython</strong> notebook using our beloved <code>IPython.notebook.kernel.execute</code> method, and also taking the advantage of <em>passing</em> commands to the underlying system just pre-pending with the <code>!</code> mark. The relevant lines are below:</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="dv">36</span>    <span class="kw">if</span> (clean==<span class="st">&quot;True&quot;</span>) {
-<span class="dv">37</span>      <span class="kw">IPython.notebook.kernel</span>.<span class="fu">execute</span>(<span class="ch">&#39;!nikola clean&#39;</span>);
-<span class="dv">38</span>    }
-<span class="dv">39</span>    <span class="kw">IPython.notebook.kernel</span>.<span class="fu">execute</span>(<span class="ch">&#39;!nikola build&#39;</span>);
-<span class="dv">40</span>    <span class="kw">IPython.notebook.kernel</span>.<span class="fu">execute</span>(<span class="ch">&#39;!nikola deploy&#39;</span>);</code></pre>
+<pre><code class="language-javascript"><span class="number">36</span>      <span class="keyword">if</span> (clean==<span class="string">"True"</span>) {
+<span class="number">37</span>        IPython.notebook.kernel.execute(<span class="string">'!nikola clean'</span>);
+<span class="number">38</span>      }
+<span class="number">39</span>      IPython.notebook.kernel.execute(<span class="string">'!nikola build'</span>);
+<span class="number">40</span>      IPython.notebook.kernel.execute(<span class="string">'!nikola deploy'</span>);
+</code></pre>
 <p>After writing the content of my post following the workflow explained in previous posts, I just click on the <em>nikola_deploy</em> extension button and the site is <em>cleaned</em> (if you choose this option to True in the config file, please set it to False if you want a quick building), <em>built</em> and <em>deployed</em> <strong>automagically</strong> ;-)</p>
-<p>And that's all... the complete code below:</p>
+<p>And that&#39;s all... the complete code below:</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[1]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="n">cat</span> <span class="o">-</span><span class="n">n</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">datos</span><span class="o">/</span><span class="n">Desarrollos</span><span class="o">/</span><span class="n">mIPyex</span><span class="o">/</span><span class="n">custom</span><span class="o">/</span><span class="n">nikola_deploy</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">js</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
      1	/*
      2	* ----------------------------------------------------------------------------
@@ -111,11 +121,18 @@ In&nbsp;[1]:
 </div>
 
 </div>
+</div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Again, the extension lives in this new repo: <a href="https://github.com/damianavila/mIPyex">mIPyex</a>, where I will upload the development versions of my own extensions. When I get them enough stable, I will make a copy of them in the <a href="https://github.com/ipython-contrib/IPython-notebook-extensions">IPython notebook extensions</a> repo where you can get a lot of and useful interesting extensions.</p>
 <p>OK, as you can see... it is very simple to blog with <strong>IPython</strong> and <strong>Nikola</strong>, so I invite you to try it <em>now</em> and let me know any ideas, comments or critics.</p>
 <p>Enjoy!</p>
 <p>Damián</p>
+</div>
+</div>
 </div>

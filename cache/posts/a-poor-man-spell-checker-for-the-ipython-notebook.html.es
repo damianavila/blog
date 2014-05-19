@@ -1,60 +1,74 @@
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>OK, today I will release another <strong>IPython</strong> <em>js</em> extension: <strong>Spellchecker</strong>, which obviously do what you are thinking... spell check the content of your <strong>IPython</strong> notebook cells.</p>
-<p>And why it is a <em>poor man</em> extension? Because it is a simple workaround to get the spell checker functionality and not a broad solution... but it works, and solve my spelling problems! <!-- TEASER_END --></p>
-<p>The main idea here is to use the spell checker functionality provided by your browser [yes, let to the others the complex things ;-)]. But, as you know, the spell checking functionality is disable inside the <strong>IPython</strong> notebook... and this is because each cell you actually see is a <em>codemirror</em> instance... and <em>codemirror</em> does not support spell checking by design... in fact, the <em>codemirror</em> text area (editor) is not a common html text area, hence the browser can not actually run the spell checker in this new text area.</p>
+<p>And why it is a <em>poor man</em> extension? Because it is a simple workaround to get the spell checker functionality and not a broad solution... but it works, and solve my spelling problems!
+<!-- TEASER_END --></p>
+<p>The main idea here is to use the spell checker functionality provided by your browser [yes, let to the others the complex things ;-)]. But, as you know, the spell checking functionality is disable inside the <strong>IPython</strong> notebook... and this is because each cell you actually see is a <em>codemirror</em> instance... and <em>codemirror</em> does not support spell checking by design... in fact, the <em>codemirror</em> text area (editor) is not a common html text area, hence the browser can not actually run the spell checker in this new text area. </p>
 <p>So, are we prohibited to apply a spell checker functionality over a <em>codemirror</em> instance? In fact, no... there is a way to do it applying something called <em>codemirror layouts</em> and using <em>js</em> spell checker libraries...</p>
-<p>But, I don't want to do this job yet (because of several causes which I do not describe here now), so I thought workaround and use the <strong>IPython</strong> <em>js</em> machinery to get a simple, narrow but useful solution.</p>
+<p>But, I don&#39;t want to do this job yet (because of several causes which I do not describe here now), so I thought workaround and use the <strong>IPython</strong> <em>js</em> machinery to get a simple, narrow but useful solution.</p>
 <p>The workaround is simple:</p>
 <ul>
 <li>The spell checker will do its job at the cell level.</li>
 </ul>
-<div class="figure">
-<img src="http://www.damian.oquanta.info/galleries/spellchecker/1.png" />
-</div>
+<p><img src="http://www.damian.oquanta.info/galleries/spellchecker/1.png" alt=""></p>
 <ul>
 <li><p>We need a way to get the content of the selected <strong>IPython</strong> notebook cell:</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="dv">24</span>      <span class="kw">var</span> input = <span class="kw">IPython.notebook</span>.<span class="fu">get</span>_<span class="fu">selected</span>_<span class="fu">cell</span>().<span class="fu">get</span>_<span class="fu">text</span>()</code></pre></li>
+<pre><code class="language-javascript">  <span class="number">24</span>        <span class="keyword">var</span> input = IPython.notebook.get_selected_cell().get_text()
+</code></pre>
+</li>
 <li><p>Put the content in a common html text area, and use the spell checker capabilities from the browser:</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="dv">26</span>      <span class="kw">var</span> textarea = $(<span class="ch">&#39;&lt;textarea/&gt;&#39;</span>)
-<span class="dv">27</span>          .<span class="fu">attr</span>(<span class="ch">&#39;rows&#39;</span>,<span class="ch">&#39;15&#39;</span>)
-<span class="dv">28</span>          .<span class="fu">attr</span>(<span class="ch">&#39;cols&#39;</span>,<span class="ch">&#39;80&#39;</span>)
-<span class="dv">29</span>          .<span class="fu">attr</span>(<span class="ch">&#39;name&#39;</span>,<span class="ch">&#39;source&#39;</span>)
-<span class="dv">30</span>          .<span class="fu">text</span>(input);</code></pre></li>
-<li><p>Make the corrections.</p></li>
+<pre><code class="language-javascript">  <span class="number">26</span>        <span class="keyword">var</span> textarea = $(<span class="string">'&lt;textarea/&gt;'</span>)
+  <span class="number">27</span>            .attr(<span class="string">'rows'</span>,<span class="string">'15'</span>)
+  <span class="number">28</span>            .attr(<span class="string">'cols'</span>,<span class="string">'80'</span>)
+  <span class="number">29</span>            .attr(<span class="string">'name'</span>,<span class="string">'source'</span>)
+  <span class="number">30</span>            .text(input);
+</code></pre>
+</li>
+<li><p>Make the corrections.</p>
+</li>
 </ul>
-<div class="figure">
-<img src="http://www.damian.oquanta.info/galleries/spellchecker/2.png" />
-</div>
+<p><img src="http://www.damian.oquanta.info/galleries/spellchecker/2.png" alt=""></p>
 <ul>
 <li><p>Get back the corrected content into the selected <strong>IPython</strong> notebook cell.</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="dv">60</span>      <span class="kw">var</span> corr_input = `$`.<span class="fu">trim</span>(`$`(textarea).<span class="fu">val</span>()); <span class="co">// note: backticks to avoid mathjax rendering, sorry.</span>
-<span class="dv">61</span>      <span class="kw">console</span>.<span class="fu">log</span>(corr_input);
-<span class="dv">62</span>      <span class="kw">IPython.notebook</span>.<span class="fu">get</span>_<span class="fu">selected</span>_<span class="fu">cell</span>().<span class="fu">set</span>_<span class="fu">text</span>(corr_input);</code></pre></li>
+<pre><code class="language-javascript">  <span class="number">60</span>        <span class="keyword">var</span> corr_input = `$`.trim(`$`(textarea).val()); <span class="comment">// note: backticks to avoid mathjax rendering, sorry.</span>
+  <span class="number">61</span>        console.log(corr_input);
+  <span class="number">62</span>        IPython.notebook.get_selected_cell().set_text(corr_input);
+</code></pre>
+</li>
 </ul>
-<p>And that's all... the complete code below:</p>
+<p>And that&#39;s all... the complete code below:</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[1]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="n">cat</span> <span class="o">-</span><span class="n">n</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">datos</span><span class="o">/</span><span class="n">Desarrollos</span><span class="o">/</span><span class="n">mIPyex</span><span class="o">/</span><span class="n">custom</span><span class="o">/</span><span class="n">spellchecker</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">js</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">&nbsp;&nbsp;Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
      1	/*
      2	* ----------------------------------------------------------------------------
@@ -156,12 +170,19 @@ In&nbsp;[1]:
 </div>
 
 </div>
+</div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>As you can see at the end of the code... you have not only a button but also a keyboard shortcut to activate the spell checker extension: <strong>ALT + S</strong> (remember that the same goes for the <strong>Tweet me</strong> extension, but with <strong>ALT + T</strong>).</p>
 <p>Again, the extension lives in this new repo: <a href="https://github.com/damianavila/mIPyex">mIPyex</a>, where I will upload the development versions of my own extensions. When I get them enough stable, I will make a copy of them in the <a href="https://github.com/ipython-contrib/IPython-notebook-extensions">IPython notebook extensions</a> repo where you can get a lot of and useful interesting extensions.</p>
 <p>OK, I hope you enjoy and use this extension... because the <strong>IPython</strong> notebook is not only for write code... it is also powered to write other things, such as this blog post, and we have to keep spelling mistakes as low as possible to make the read of our content <em>pleasant</em>...</p>
 <p>See you...</p>
 <p>Damián</p>
+</div>
+</div>
 </div>

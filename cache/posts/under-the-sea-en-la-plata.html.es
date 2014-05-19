@@ -1,44 +1,84 @@
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Han pasado casi tres semanas... El 2 de abril cayeron sobre la ciudad de La Plata casi 400 mm de agua en 24 hs, concentrándose la mayor parte de dicho caudal en dos o tres horas por la tarde, lo que dio lugar a la más grande inundación que la ciudad haya registrado en toda su historia.</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <!-- TEASER_END -->
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="figure">
-<img src="http://1.bp.blogspot.com/-DbCAlLBC0aE/UWCjj2sV-4I/AAAAAAAA9nM/K9BrQc3TFIk/s1600/INUNDACION.jpg" />
+<p><img src="http://1.bp.blogspot.com/-DbCAlLBC0aE/UWCjj2sV-4I/AAAAAAAA9nM/K9BrQc3TFIk/s1600/INUNDACION.jpg" alt=""></p>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Impresionante, no les parece?</p>
-<p>Lamentablemente, en casa el agua llego a 1,60 mts.</p>
+<p>Lamentablemente, en casa el agua llego a 1,60 mts. </p>
 <p>Obviamente, la mayoría de las pertenencias quedaron bajo el agua: muebles, electrodomesticos, ropa, biblioteca, documentos, etc.</p>
 <p>Aca pueden ver la imagen con la que me encontré al día siguiente de la inundación:</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="figure">
-<img src="http://www.damian.oquanta.info/galleries/Inundacion/inundacion1.png" />
+<p><img src="http://www.damian.oquanta.info/galleries/Inundacion/inundacion1.png" alt=""></p>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Y Lore tratando de esbozar una sonrisa que obviamente enmascaraba una gran tristeza al ver la pieza de Facu en esas condiciones.</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="figure">
-<img src="http://www.damian.oquanta.info/galleries/Inundacion/inundacion2.png" />
+<p><img src="http://www.damian.oquanta.info/galleries/Inundacion/inundacion2.png" alt=""></p>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Gracias a Dios, no tuvimos que vivir la inundación &quot;in situ&quot; ya que estábamos volviendo de Córdoba (nos habíamos tomado unos días para descansar) en el momento en el que la tormenta se desató con mayor intensidad. Hubiese sido un momento complicadísimo, probablemente subiendo al techo con Facu a cuestas... mejor no imaginarlo, o si... para estar preparado.</p>
-<p>Hemos podido salvar algunos muebles, algunos electrodomésticos, muchas fotos y la mayoría de la ropa y el calzado. Pero hemos pérdido otras tantas cosas, por ejemplo, la biblioteca, muchos documentos y las computadoras.</p>
-<p>Ya han pasado tres semanas desde la tormenta, y aún no pudimos volver a casa. Los hongos se hacen un festín en estas situaciones y todavía quedan algunos creciendo en las paredes a pesar de la limpieza a diario. Probablemente estemos volviendo a fines de esta semana.</p>
+<p>Hemos podido salvar algunos muebles, algunos electrodomésticos, muchas fotos y la mayoría de la ropa y el calzado. Pero hemos pérdido otras tantas cosas, por ejemplo, la biblioteca, muchos documentos y las computadoras. </p>
+<p>Ya han pasado tres semanas desde la tormenta, y aún no pudimos volver a casa. Los hongos se hacen un festín en estas situaciones y todavía quedan algunos creciendo en las paredes a pesar de la limpieza a diario. Probablemente estemos volviendo a fines de esta semana. </p>
 <p>Y después... viene la recontrucción, la albañilería, la pintura, arreglar estufas, etc y comprar todo lo que se perdió y es necesario para la vida diaria. Para los arreglos, todas las manos son bienvenidas, jeje...</p>
 <p>Quisiera aprovechar este espacio para agradecer a todos aquellos que se preocuparon por nosotros. A todos aquellos que nos dieron una mano, no sólo física, poniendo el hombro a la hora de la limpieza, sino también dándonos su apoyo constante:</p>
 <ul>
 <li>Melisa, Diego y Flavio.</li>
 <li>Romi y las hijas de Lore: Clarita y Marina.</li>
-<li>Cintia y Pedro.</li>
+<li>Cintia y Pedro. </li>
 <li>Michelle y Lucas.</li>
 <li>Todo el grupo de amigos del IBYME: Xime, Carito, Norber, Evan, Andre, Nico, Ger, Mer, Gaby y los Galectinos.</li>
 <li>David y la gente del LISIN.</li>
@@ -47,12 +87,14 @@
 </ul>
 <p>Y unos últimos agradecimientos adicionales:</p>
 <ul>
-<li>Papi y Mami, que siempre están al pie del cañon.<br /></li>
+<li>Papi y Mami, que siempre están al pie del cañon.    </li>
 <li>Dan, gracias por estar pendiente en todo momento... y por ser un apoyo constante.</li>
-<li>Lore, que puedo decir que no te haya dicho... Gracias por aguantarme, por apoyarme, por todo tu esfuerzo y sacrificio.</li>
+<li>Lore, que puedo decir que no te haya dicho... Gracias por aguantarme, por apoyarme, por todo tu esfuerzo y sacrificio. </li>
 <li>Facu, gracias por existir y ser el sol que alumbra y alumbrará todos mis días.</li>
 </ul>
 <p>Gracias totales!</p>
 <p>Nos vemos en el próximo post!</p>
 <p>Damián.</p>
+</div>
+</div>
 </div>
