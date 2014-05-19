@@ -1,11 +1,22 @@
-<!DOCTYPE html><html lang="es">
-<head>
-    
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="es">
+    <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="author" content="Damian Avila">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change the IPython slides defaults with an IPython config file | Damian's blog</title>
+    <meta name="viewport" content="width=device-width">
+    <title>Change the IPython slides defaults with an IPython config file | El blog de Damian</title>
+
+                <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+
+                    <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+                <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../rss.xml">
+
+      <link rel="canonical" href="http://www.damian.oquanta.info/es/posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.html">
+
+
+
     
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -20,162 +31,80 @@ MathJax.Hub.Config({
 });
 </script>
 
-    
-        
-            <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-        
-    
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]-->
-    
-        
-            
-                <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
-            
-                <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../rss.xml">
-            
-        
-    
-    
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
 
     
 
     
-
-
+    <meta name="author" content="Damian Avila">
+            <meta name="og:title" content="Change the IPython slides defaults with an IPython config file">
+        <meta name="og:url" content="http://www.damian.oquanta.info/es/posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.html">
+            <meta name="og:description" content="Some people are asking me how to change the IPython slides's defaults. You can see the description of the request here. Essentially, he wants to change the default transition between the slides.
+To so">
+        <meta name="og:site_name" content="El blog de Damian">
+        <meta name="og:type" content="article">
 
     
+                    <link rel="alternate" hreflang="en" href="../../posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.html">
+
+
 </head>
-
 <body>
     <section class="social">
         <ul>
-<!--        <h1 id="blog-title">
-            <a href="http://www.damian.oquanta.info/" title="Damian's blog">Damian's blog</a>
-        </h1>
-        
-        
-        <small>
-            También disponible en:&nbsp;
-            
-    
-        
-            <a href="/index.html">English</a>
-        
-    
-        
-    
-
-        </small>
-        
-         -->
-        
-    
-        
-            <li><a href="../index.html" title="Inicio"><i class="icon-home"></i></a></li>
-        
-    
-        
+                    <li><a href="../index.html" title="Inicio"><i class="icon-home"></i></a></li>
             <li><a href="../archive.html" title="Archivos"><i class="icon-folder-open-alt"></i></a></li>
-        
-    
-        
             <li><a href="../categories/index.html" title="Etiquetas"><i class="icon-tags"></i></a></li>
-        
-    
-        
             <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
-        
-    
-        
             <li><a href="../portfolio/portfolio.slides.html" title="Portafolio"><i class="icon-briefcase"></i></a></li>
-        
-    
-        
             <li><a href="../stories/about-me.html" title="Sobre mi..."><i class="icon-user"></i></a></li>
-        
-    
-        
             <li><a href="https://twitter.com/damian_avila" title="Mi Twitter"><i class="icon-twitter"></i></a></li>
-        
-    
-        
             <li><a href="https://github.com/damianavila" title="Mi Github"><i class="icon-github"></i></a></li>
-        
-    
-        
             <li><a href="https://plus.google.com/u/0/106896109587369688379/posts" title="Mi Google+"><i class="icon-google-plus"></i></a></li>
-        
-    
 
-<!--         -->
         </ul>
     </section>
     <section class="page-content">
         <div class="content" rel="main">
-            
     <div class="post">
-    
-    <h1>Change the IPython slides defaults with an IPython config file</h1>
-    
+        <h1 class="p-name entry-title" itemprop="headline name">Change the IPython slides defaults with an IPython config file</h1>
 
         <div class="meta">
             <div class="authordate">
                 <time class="timeago" datetime="2013-09-16T19:47:33-03:00">2013-09-16 19:47</time>
-            </div>
-            
-    
-        
-            
-                  |  
-                <a href="../../posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.html">Read in English</a>
-            
-        
-            
-        
-    
+                            <a href="../../posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.html" rel="alternate" hreflang="en">
+                English</a>
 
-            
-    
-          |  
+                      |  
         <a href="../.././es/posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.ipynb" id="sourcelink">Código</a>
           |  
         <a href="javascript:%24.getScript(%22/assets/js/miniPageNav.js%22);">Minimap</a>
-          |  
-        Note: Just click on any IPython input cell to see the output.
-    
 
-            
-    
-    <div class="tags">
+            </div>
+                    <div itemprop="keywords" class="tags">
         <ul>
-        More posts about:  
-        
-            <li><a class="tag" href="../categories/python.html">python</a></li>
-        
-            <li><a class="tag" href="../categories/ipython.html">IPython</a></li>
-        
-            <li><a class="tag" href="../categories/nbconvert.html">nbconvert</a></li>
-        
-            <li><a class="tag" href="../categories/reveal.html">reveal</a></li>
-        
-            <li><a class="tag" href="../categories/slideshow.html">slideshow</a></li>
-        
-            <li><a class="tag" href="../categories/config.html">config</a></li>
-        
-            <li><a class="tag" href="../categories/jinja.html">jinja</a></li>
-        
+        Tags : 
+           <li><a class="tag p-category" href="../categories/ipython.html" rel="tag">IPython</a></li>
+           <li><a class="tag p-category" href="../categories/config.html" rel="tag">config</a></li>
+           <li><a class="tag p-category" href="../categories/jinja.html" rel="tag">jinja</a></li>
+           <li><a class="tag p-category" href="../categories/nbconvert.html" rel="tag">nbconvert</a></li>
+           <li><a class="tag p-category" href="../categories/python.html" rel="tag">python</a></li>
+           <li><a class="tag p-category" href="../categories/reveal.html" rel="tag">reveal</a></li>
+           <li><a class="tag p-category" href="../categories/slideshow.html" rel="tag">slideshow</a></li>
         </ul>
-    </div>
-    
+        </div>
 
         </div>
         <div class="body">
-            <div class="text_cell_render border-box-sizing rendered_html">
+            <div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Some people are asking me how to change the IPython slides's defaults. You can see the description of the request <a href="http://stackoverflow.com/questions/18820253/modifying-reveal-js-defaults-in-ipython-notebook-slide-generation">here</a>. Essentially, he wants to change the default transition between the slides.</p>
 <p>To solve this question, we introduce the notion of IPython config files, which let us easily change <em>things</em> inside <code>IPython.nbconvert</code> (the library where the IPython slides lives) to achieve our desires, at least in the slideshow generation issue ;-)</p>
-<p>First of all, you need to know some details: <!-- TEASER_END --></p>
+<p>First of all, you need to know some details:
+<!-- TEASER_END --></p>
 <ul>
 <li>The IPython slides are generated using a series of <strong>Jinja</strong> templates, so we are going to modify one of the templates to render the slideshow accordingly with our own defaults.</li>
 <li>The <code>IPython.nbconvert</code> library was developed taking into account the need from some users to use customized <em>things</em> (where <em>thing</em> will be a <strong>template</strong> in this case, but we could modify other parts of <code>IPython.nbconvert</code>, probably I will cover this ideas in other posts).</li>
@@ -183,27 +112,34 @@ MathJax.Hub.Config({
 </ul>
 <p>OK, can you show me an example config file? Of course, here we go:</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In [1]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="o">!</span>cat /media/datos/Ejemplos/slides_config.py
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">  Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+  Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
 c = get_config()
 
@@ -217,8 +153,13 @@ c.Exporter.template_file = 'default_transition'
 </div>
 
 </div>
+</div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>From the IPython docs:</p>
 <blockquote>
@@ -227,27 +168,34 @@ c.Exporter.template_file = 'default_transition'
 <p>So, we have to call the <code>get_config()</code> function and then use a custom template called <code>'default_transition'</code> and assign it to <code>c.Exporter.template_file</code> attribute.</p>
 <p>Oh, we need to write the <code>'default_transition'</code> template yet, so here we go... again:</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In [2]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="o">!</span>cat /media/datos/Ejemplos/default_transition.tpl
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">  Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+  Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
 {%- extends 'slides_reveal.tpl' -%}
 
@@ -321,114 +269,82 @@ Reveal.initialize({
 </div>
 
 </div>
+</div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In the first line, <code>{%- extends 'slides_reveal.tpl' -%}</code> tells to the <strong>Jinja</strong> system that we are going to extend <em>slides_reveal</em> template (the default one, which <code>IPython.nbconvert</code> uses to build our common slides by default). Then, inside the <code>{% block body %}</code>, we call <code>super()</code>:</p>
 <p>From the <em>Jinja</em> docs:</p>
 <blockquote>
-<p>Super Blocks It’s possible to render the contents of the parent block by calling super.</p>
+<p>Super Blocks
+It’s possible to render the contents of the parent block by calling super. </p>
 </blockquote>
 <p>We did it in this way because we want to render all the parent content and, after that, add our own content, essentially a config script for Reveal.js, calling <code>Reveal.initialize</code>.</p>
 <p>OK, I have written a lot of configurable options you can play with, but I only left uncommented (and hence, they will be applied) the <code>transition: 'concave'</code> and <code>theme: 'sky'</code> options with my new choices, you can use your own ones.</p>
 <p>Finally, you have to use the <code>IPython.nbconvert</code> library from command line, as usual, but pointing to the IPython config file you pretend to apply:</p>
 <p><code>ipython nbconvert your_talk.ipynb --to slides --post serve --config slides_config.py</code></p>
 <p>And you are done!</p>
-<p><strong>NOTE</strong>: Don't forget to put your <em>ipynb</em>, <em>slides_config.py</em> and <em>default_transition.tpl</em> files in the same folder where you will run the <code>IPython.nbconvert</code> command.</p>
+<p><strong>NOTE</strong>: Don't forget to put your <em>ipynb</em>, <em>slides_config.py</em> and <em>default_transition.tpl</em> files in the same folder where you will run the <code>IPython.nbconvert</code> command. </p>
 <p>As you can see, the potentiality of this system (<strong>Jinja</strong> templating plus a powerful config system) is really big! We can achieve awesome <em>things</em> in a very easy way!</p>
 <p>Any help, just let me know!</p>
 <p><strong>Addemdum</strong>: the use of <code>default_transition.tpl</code> generates an invalid but useful final html document. The cause behind this issue is the script containing the <code>Reveal.initialize</code> function, which is located after the closing <code>body</code> tag. All modern browser render this sort of invalid html witout any difficult. But a commenter arose this issue and I think is important to make it available in the post itself.</p>
 <p>Damián</p>
 </div>
+</div>
+</div>
         </div>
-        <p class="gittip">Do you like the content? Great! Then help me to achieve a "Sustainable Crowdfunding"!</p>
+        <p><b>Don't forget this blog post is an ipynb file itself! So, you can download it from the "Source" link
+        at the top of the post if you want to play with it ;-)</b></p>
+        <p class="gittip"> Btw, do you like the content? Great! Then help me to achieve a
+        "Sustainable Crowdfunding"!</p>
         <script data-gittip-username="damianavila" src="//gttp.co/v1.js"></script>
-        
-    <ul class="pager">
-    
-        <li class="previous">
-            <a href="using-a-local-revealjs-library-with-your-ipython-slides.html">← Post anterior</a>
-        </li>
-    
-    
-        <li class="next">
-            <a href="viper-is-now-using-ipythonnbconvert.html">Siguiente post →</a>
-        </li>
-    
-    </ul>
+                <ul class="pager">
+            <li class="previous">
+                <a href="using-a-local-revealjs-library-with-your-ipython-slides.html" rel="prev" title="Using a local Reveal.js library with your IPython slides">Post anterior</a>
+            </li>
+            <li class="next">
+                <a href="viper-is-now-using-ipythonnbconvert.html" rel="next" title="vIPer is now using IPython.nbconvert">Siguiente post</a>
+            </li>
+        </ul>
 
-        
-            
-    
-        
-    
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-        var disqus_shortname ="damianblogcomments";
-        
-            var disqus_url="http://www.damian.oquanta.info/es/posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.html";
-        
-        var disqus_title="Change the IPython slides defaults with an IPython config file";
-        var disqus_identifier="cache/posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.html";
-        var disqus_config = function () {
+                            <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="damianblogcomments",
+            disqus_url="http://www.damian.oquanta.info/es/posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.html",
+        disqus_title="Change the IPython slides defaults with an IPython config file",
+        disqus_identifier="cache/posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.html",
+        disqus_config = function () {
             this.language = "./es";
         };
         (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
-    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
-    
 
         
-        
-    
-
     </div>
-
-            Contents © 2014 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
+                    <footer id="footer" role="contentinfo">
+            <p>Contents © 2014 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
 Powered by <a href="http://getnikola.com">Nikola</a> - 
 Zen theme based in <a href="https://github.com/arusahni/website-template">Arusahni's website-template</a><br>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
-<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a></p>
             
-	
- <!-- Social buttons -->
- <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
- <a class="addthis_button_more"><i class="icon-share-sign icon-2x"></i>    Share</a>
- <ul>
- <li><a class="addthis_button_twitter"><i class="icon-twitter icon-2x"></i>    Twitter</a>
- </li><li><a class="addthis_button_google_plusone_share"><i class="icon-google-plus-sign icon-2x"></i>    Google+</a>
- </li><li><a class="addthis_button_linkedin"><i class="icon-linkedin icon-2x"></i>    Linkedin</a>
- </li><li><a class="addthis_button_facebook"><i class="icon-facebook-sign icon-2x"></i>    Facebook</a>
- </li></ul>
- </div>
- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
- <!-- End of social buttons -->
- 
+        </footer>
 
         </div>
     </section>
-    
-    
-        
-            <script src="../../assets/js/all-nocdn.js" type="text/javascript"></script>
-        
-    
-
-    
-        <script type="text/javascript">
-            $(function(){
-                $('.timeago').timeago();
-            });
-        </script>
-    
     
 <script data-gittip-username="damianavila" data-gittip-widget="button" src="//gttp.co/v1.js"></script>
 <script type="text/javascript">
@@ -446,5 +362,35 @@ Zen theme based in <a href="https://github.com/arusahni/website-template">Arusah
 
 </script>
     
+    
+                <script src="../../assets/js/all-nocdn.js" type="text/javascript"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more"><i class="icon-share-sign icon-2x"></i>    Share</a>
+<ul>
+<li>
+<a class="addthis_button_twitter"><i class="icon-twitter icon-2x"></i>    Twitter</a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"><i class="icon-google-plus-sign icon-2x"></i>    Google+</a>
+</li>
+<li>
+<a class="addthis_button_linkedin"><i class="icon-linkedin icon-2x"></i>    Linkedin</a>
+</li>
+<li>
+<a class="addthis_button_facebook"><i class="icon-facebook-sign icon-2x"></i>    Facebook</a>
+</li>
+</ul>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+        <script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
 </body>
 </html>

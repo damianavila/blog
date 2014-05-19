@@ -1,11 +1,22 @@
-<!DOCTYPE html><html lang="en">
-<head>
-    
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+    <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="author" content="Damian Avila">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Don't write scripts, just write ipyscripts! | Damian's blog</title>
+
+                <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+
+                    <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../rss.xml">
+                <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../es/rss.xml">
+
+      <link rel="canonical" href="http://www.damian.oquanta.info/posts/dont-write-scripts-just-write-ipyscripts.html">
+
+
+
     
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -20,166 +31,88 @@ MathJax.Hub.Config({
 });
 </script>
 
-    
-        
-            <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-        
-    
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]-->
-    
-        
-            
-                <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../rss.xml">
-            
-                <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../es/rss.xml">
-            
-        
-    
-    
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
 
     
 
     
-
-
+    <meta name="author" content="Damian Avila">
+            <meta name="og:title" content="Don't write scripts, just write ipyscripts!">
+        <meta name="og:url" content="http://www.damian.oquanta.info/posts/dont-write-scripts-just-write-ipyscripts.html">
+            <meta name="og:description" content="I usually have some repetitive tasks in my daily work-flow. You probably have some of those too. To save some minutes from your day, you probably write little scripts to do these jobs. 
+I used to do t">
+        <meta name="og:site_name" content="Damian's blog">
+        <meta name="og:type" content="article">
 
     
+    
+
 </head>
-
 <body>
     <section class="social">
         <ul>
-<!--        <h1 id="blog-title">
-            <a href="http://www.damian.oquanta.info/" title="Damian's blog">Damian's blog</a>
-        </h1>
-        
-        
-        <small>
-            Also available in:&nbsp;
-            
-    
-        
-    
-        
-            <a href="/es/index.html">Español</a>
-        
-    
-
-        </small>
-        
-         -->
-        
-    
-        
-            <li><a href="../index.html" title="Home"><i class="icon-home"></i></a></li>
-        
-    
-        
+                    <li><a href="../index.html" title="Home"><i class="icon-home"></i></a></li>
             <li><a href="../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
-        
-    
-        
             <li><a href="../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
-        
-    
-        
             <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
-        
-    
-        
             <li><a href="../portfolio/portfolio.slides.html" title="Portfolio"><i class="icon-briefcase"></i></a></li>
-        
-    
-        
             <li><a href="../stories/about-me.html" title="About me"><i class="icon-user"></i></a></li>
-        
-    
-        
             <li><a href="https://twitter.com/damian_avila" title="My Twitter"><i class="icon-twitter"></i></a></li>
-        
-    
-        
             <li><a href="https://github.com/damianavila" title="My Github"><i class="icon-github"></i></a></li>
-        
-    
-        
             <li><a href="https://plus.google.com/u/0/106896109587369688379/posts" title="My Google+"><i class="icon-google-plus"></i></a></li>
-        
-    
 
-<!--         -->
         </ul>
     </section>
     <section class="page-content">
         <div class="content" rel="main">
-            
     <div class="post">
-    
-    <h1>Don't write scripts, just write ipyscripts!</h1>
-    
+        <h1 class="p-name entry-title" itemprop="headline name">Don't write scripts, just write ipyscripts!</h1>
 
         <div class="meta">
             <div class="authordate">
                 <time class="timeago" datetime="2013-12-03T21:50:05-03:00">2013-12-03 21:50</time>
-            </div>
             
-    
-        
-            
-        
-            
-        
-    
-
-            
-    
-          |  
+                      |  
         <a href="dont-write-scripts-just-write-ipyscripts.ipynb" id="sourcelink">Source</a>
           |  
         <a href="javascript:%24.getScript(%22/assets/js/miniPageNav.js%22);">Minimap</a>
-          |  
-        Note: Just click on any IPython input cell to see the output.
-    
 
-            
-    
-    <div class="tags">
+            </div>
+                    <div itemprop="keywords" class="tags">
         <ul>
-        More posts about:  
-        
-            <li><a class="tag" href="../categories/python.html">python</a></li>
-        
-            <li><a class="tag" href="../categories/ipython.html">IPython</a></li>
-        
-            <li><a class="tag" href="../categories/ipyscript.html">ipyscript</a></li>
-        
-            <li><a class="tag" href="../categories/git.html">git</a></li>
-        
-            <li><a class="tag" href="../categories/workflow.html">workflow</a></li>
-        
-            <li><a class="tag" href="../categories/magic.html">magic</a></li>
-        
+        Tags : 
+           <li><a class="tag p-category" href="../categories/ipython.html" rel="tag">IPython</a></li>
+           <li><a class="tag p-category" href="../categories/git.html" rel="tag">git</a></li>
+           <li><a class="tag p-category" href="../categories/ipyscript.html" rel="tag">ipyscript</a></li>
+           <li><a class="tag p-category" href="../categories/magic.html" rel="tag">magic</a></li>
+           <li><a class="tag p-category" href="../categories/python.html" rel="tag">python</a></li>
+           <li><a class="tag p-category" href="../categories/workflow.html" rel="tag">workflow</a></li>
         </ul>
-    </div>
-    
+        </div>
 
         </div>
         <div class="body">
-            <div class="text_cell_render border-box-sizing rendered_html">
-<p>I usually have some repetitive tasks in my daily work-flow. You probably have some of those too. To save some minutes from your day, you probably write little scripts to do these jobs.</p>
+            <div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I usually have some repetitive tasks in my daily work-flow. You probably have some of those too. To save some minutes from your day, you probably write little scripts to do these jobs. </p>
 <p>I used to do that... but now I am only writing little IPython notebooks to do these simple jobs, I call them <em>ipyscripts</em> (yes, I won a prize for originality, he he!).</p>
-<p>These <em>ipyscripts</em> are IPython-powered, so we can use all the IPython's machinery to do complex things in a simple way... <!-- TEASER_END --></p>
+<p>These <em>ipyscripts</em> are IPython-powered, so we can use all the IPython's machinery to do complex things in a simple way...
+<!-- TEASER_END --></p>
 <p>In fact, you are reading a example <em>ipyscript</em>, because this is an IPython notebook (and a blog post too), and the following example deal with a repetitive task I do frequently: the <em>git update</em> of some projects (I contribute to some of them, I follow some others).</p>
 <p>First, I load a simple list with the projects I want to update:</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In [1]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="n">list_of_projects</span> <span class="o">=</span> <span class="p">[</span><span class="s">"ipython"</span><span class="p">,</span> 
                     <span class="s">"kilink"</span><span class="p">,</span> 
                     <span class="s">"live_reveal"</span><span class="p">,</span> 
@@ -188,37 +121,55 @@ In [1]:
                     <span class="s">"reveal.js"</span><span class="p">]</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">  Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+  Click me to hide the output, if the is one ;-)</i>
+</div>
 </div>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Second, I save my current directory using the IPython bookmark system:</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In [2]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="o">%</span><span class="k">bookmark</span> <span class="n">root</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">  Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+  Click me to hide the output, if the is one ;-)</i>
+</div>
 </div>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Third, I define a function to deal with the <em>git update</em> itself:</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In [3]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">folder</span><span class="p">):</span>
     <span class="o">%</span><span class="k">cd</span> <span class="p">{</span><span class="n">folder</span><span class="p">}</span>
     <span class="err">!</span><span class="n">git</span> <span class="n">status</span>
@@ -228,39 +179,52 @@ In [3]:
     <span class="o">%</span><span class="k">cd</span> <span class="o">-</span><span class="n">b</span> <span class="n">root</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">  Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+  Click me to hide the output, if the is one ;-)</i>
+</div>
 </div>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can see here how I am using a lot of tricks from the IPython machinery to make a lot of things in a couple of lines.</p>
 <p>The main idea is <code>cd</code> into a specific project folder. I use the braces to pass python variables and expressions to the shell. In this case, I will pass an element of the <code>list_of_projects</code>, I mean the name of the folder containing the desired project. Then, I do the <em>git</em> stuff, just prepending the command with the <code>!</code> sign to pass them to the underlying shell. Finally, I <code>cd</code> into the main directory to get the things prepared to the next loop.</p>
 <p>Fourth, I do a simple <code>for</code> loop to iterate through the elements inside the <code>list_of_projects</code> and to do the <em>git update</em> in each of these projects.</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In [4]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+<div class="input_area">
 <div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">list_of_projects</span><span class="p">)):</span>
     <span class="n">update</span><span class="p">(</span><span class="n">list_of_projects</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
     <span class="k">print</span> <span class="s">"---------------------------------"</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-top:8px; margin-right:10px">  Click me!</i>
+<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+  Click me to hide the output, if the is one ;-)</i>
 </div>
 </div>
+</div>
 
-<div class="output_hidden">
+<div class="output_wrapper output_hidden">
+<div class="output">
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
 /media/datos/Desarrollos/ipython
 # En la rama master
@@ -341,15 +305,21 @@ Already up-to-date.
 </div>
 
 </div>
+</div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<p><strong>ADDENDUM</strong>:</p>
+<p><strong>ADDENDUM</strong>: </p>
 <p>You can actually do:</p>
-<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">for</span> i in list_of_projects: 
+<pre><code class="language-python"><span class="keyword">for</span> i <span class="keyword">in</span> list_of_projects: 
     update(i)
-<span class="kw">print</span> <span class="st">"---------------------------------"</span></code></pre>
+<span class="keyword">print</span> <span class="string">"---------------------------------"</span>
+</code></pre>
 <p>But, this is an example, and I wanted to emphasize the fact that you can pass complex arguments inside the braces... Thanks Lex for your comment, I forgot to add this explanation!</p>
 <hr>
 <p>And that's all! The next time you have to do this task, just run this notebook (properly customized for your projects) and you will get the job done!</p>
@@ -361,95 +331,57 @@ Already up-to-date.
 <p>See you!</p>
 <p>Damián</p>
 </div>
+</div>
+</div>
         </div>
-        <p class="gittip">Do you like the content? Great! Then help me to achieve a "Sustainable Crowdfunding"!</p>
+        <p><b>Don't forget this blog post is an ipynb file itself! So, you can download it from the "Source" link
+        at the top of the post if you want to play with it ;-)</b></p>
+        <p class="gittip"> Btw, do you like the content? Great! Then help me to achieve a
+        "Sustainable Crowdfunding"!</p>
         <script data-gittip-username="damianavila" src="//gttp.co/v1.js"></script>
-        
-    <ul class="pager">
-    
-        <li class="previous">
-            <a href="pyconar-2013.html">← Previous post</a>
-        </li>
-    
-    
-        <li class="next">
-            <a href="tweet-me-said-an-ipython-notebook-cell-and-i-did-it.html">Next post →</a>
-        </li>
-    
-    </ul>
+                <ul class="pager">
+            <li class="previous">
+                <a href="pyconar-2013.html" rel="prev" title="PyConAr 2013">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="tweet-me-said-an-ipython-notebook-cell-and-i-did-it.html" rel="next" title="Tweet me... said an IPython notebook cell and I did it">Next post</a>
+            </li>
+        </ul>
 
-        
-            
-    
-        
-    
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-        var disqus_shortname ="damianblogcomments";
-        
-            var disqus_url="http://www.damian.oquanta.info/posts/dont-write-scripts-just-write-ipyscripts.html";
-        
-        var disqus_title="Don't write scripts, just write ipyscripts!";
-        var disqus_identifier="cache/posts/dont-write-scripts-just-write-ipyscripts.html";
-        var disqus_config = function () {
+                            <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="damianblogcomments",
+            disqus_url="http://www.damian.oquanta.info/posts/dont-write-scripts-just-write-ipyscripts.html",
+        disqus_title="Don't write scripts, just write ipyscripts!",
+        disqus_identifier="cache/posts/dont-write-scripts-just-write-ipyscripts.html",
+        disqus_config = function () {
             this.language = "";
         };
         (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
-    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
-    
 
         
-        
-    
-
     </div>
-
-            Contents © 2014 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
+                    <footer id="footer" role="contentinfo">
+            <p>Contents © 2014 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
 Powered by <a href="http://getnikola.com">Nikola</a> - 
 Zen theme based in <a href="https://github.com/arusahni/website-template">Arusahni's website-template</a><br>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
-<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a></p>
             
-	
- <!-- Social buttons -->
- <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
- <a class="addthis_button_more"><i class="icon-share-sign icon-2x"></i>    Share</a>
- <ul>
- <li><a class="addthis_button_twitter"><i class="icon-twitter icon-2x"></i>    Twitter</a>
- </li><li><a class="addthis_button_google_plusone_share"><i class="icon-google-plus-sign icon-2x"></i>    Google+</a>
- </li><li><a class="addthis_button_linkedin"><i class="icon-linkedin icon-2x"></i>    Linkedin</a>
- </li><li><a class="addthis_button_facebook"><i class="icon-facebook-sign icon-2x"></i>    Facebook</a>
- </li></ul>
- </div>
- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
- <!-- End of social buttons -->
- 
+        </footer>
 
         </div>
     </section>
-    
-    
-        
-            <script src="../assets/js/all-nocdn.js" type="text/javascript"></script>
-        
-    
-
-    
-        <script type="text/javascript">
-            $(function(){
-                $('.timeago').timeago();
-            });
-        </script>
-    
     
 <script data-gittip-username="damianavila" data-gittip-widget="button" src="//gttp.co/v1.js"></script>
 <script type="text/javascript">
@@ -467,5 +399,35 @@ Zen theme based in <a href="https://github.com/arusahni/website-template">Arusah
 
 </script>
     
+    
+                <script src="../assets/js/all-nocdn.js" type="text/javascript"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more"><i class="icon-share-sign icon-2x"></i>    Share</a>
+<ul>
+<li>
+<a class="addthis_button_twitter"><i class="icon-twitter icon-2x"></i>    Twitter</a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"><i class="icon-google-plus-sign icon-2x"></i>    Google+</a>
+</li>
+<li>
+<a class="addthis_button_linkedin"><i class="icon-linkedin icon-2x"></i>    Linkedin</a>
+</li>
+<li>
+<a class="addthis_button_facebook"><i class="icon-facebook-sign icon-2x"></i>    Facebook</a>
+</li>
+</ul>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+        <script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
 </body>
 </html>

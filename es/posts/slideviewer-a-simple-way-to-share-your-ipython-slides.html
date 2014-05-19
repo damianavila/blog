@@ -1,11 +1,22 @@
-<!DOCTYPE html><html lang="es">
-<head>
-    
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="es">
+    <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="author" content="Damian Avila">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slideviewer: a simple way to share your IPython slides | Damian's blog</title>
+    <meta name="viewport" content="width=device-width">
+    <title>Slideviewer: a simple way to share your IPython slides | El blog de Damian</title>
+
+                <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+
+                    <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+                <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../rss.xml">
+
+      <link rel="canonical" href="http://www.damian.oquanta.info/es/posts/slideviewer-a-simple-way-to-share-your-ipython-slides.html">
+
+
+
     
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -20,265 +31,158 @@ MathJax.Hub.Config({
 });
 </script>
 
-    
-        
-            <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-        
-    
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]-->
-    
-        
-            
-                <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
-            
-                <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../rss.xml">
-            
-        
-    
-    
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
 
     
 
     
-
-
+    <meta name="author" content="Damian Avila">
+            <meta name="og:title" content="Slideviewer: a simple way to share your IPython slides">
+        <meta name="og:url" content="http://www.damian.oquanta.info/es/posts/slideviewer-a-simple-way-to-share-your-ipython-slides.html">
+            <meta name="og:description" content="Short Notice:
+After some months of silence, I am back... A lot of things have happened in my life lately, some of them are really good things... some others don't. And all those things kept me very bu">
+        <meta name="og:site_name" content="El blog de Damian">
+        <meta name="og:type" content="article">
 
     
+                    <link rel="alternate" hreflang="en" href="../../posts/slideviewer-a-simple-way-to-share-your-ipython-slides.html">
+
+
 </head>
-
 <body>
     <section class="social">
         <ul>
-<!--        <h1 id="blog-title">
-            <a href="http://www.damian.oquanta.info/" title="Damian's blog">Damian's blog</a>
-        </h1>
-        
-        
-        <small>
-            También disponible en:&nbsp;
-            
-    
-        
-            <a href="/index.html">English</a>
-        
-    
-        
-    
-
-        </small>
-        
-         -->
-        
-    
-        
-            <li><a href="../index.html" title="Inicio"><i class="icon-home"></i></a></li>
-        
-    
-        
+                    <li><a href="../index.html" title="Inicio"><i class="icon-home"></i></a></li>
             <li><a href="../archive.html" title="Archivos"><i class="icon-folder-open-alt"></i></a></li>
-        
-    
-        
             <li><a href="../categories/index.html" title="Etiquetas"><i class="icon-tags"></i></a></li>
-        
-    
-        
             <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
-        
-    
-        
             <li><a href="../portfolio/portfolio.slides.html" title="Portafolio"><i class="icon-briefcase"></i></a></li>
-        
-    
-        
             <li><a href="../stories/about-me.html" title="Sobre mi..."><i class="icon-user"></i></a></li>
-        
-    
-        
             <li><a href="https://twitter.com/damian_avila" title="Mi Twitter"><i class="icon-twitter"></i></a></li>
-        
-    
-        
             <li><a href="https://github.com/damianavila" title="Mi Github"><i class="icon-github"></i></a></li>
-        
-    
-        
             <li><a href="https://plus.google.com/u/0/106896109587369688379/posts" title="Mi Google+"><i class="icon-google-plus"></i></a></li>
-        
-    
 
-<!--         -->
         </ul>
     </section>
     <section class="page-content">
         <div class="content" rel="main">
-            
     <div class="post">
-    
-    <h1>Slideviewer: a simple way to share your IPython slides</h1>
-    
+        <h1 class="p-name entry-title" itemprop="headline name">Slideviewer: a simple way to share your IPython slides</h1>
 
         <div class="meta">
             <div class="authordate">
                 <time class="timeago" datetime="2014-03-30T21:51:13-03:00">2014-03-30 21:51</time>
-            </div>
-            
-    
-        
-            
-                  |  
-                <a href="../../posts/slideviewer-a-simple-way-to-share-your-ipython-slides.html">Read in English</a>
-            
-        
-            
-        
-    
+                            <a href="../../posts/slideviewer-a-simple-way-to-share-your-ipython-slides.html" rel="alternate" hreflang="en">
+                English</a>
 
-            
-    
-          |  
+                      |  
         <a href="../.././es/posts/slideviewer-a-simple-way-to-share-your-ipython-slides.ipynb" id="sourcelink">Código</a>
           |  
         <a href="javascript:%24.getScript(%22/assets/js/miniPageNav.js%22);">Minimap</a>
-          |  
-        Note: Just click on any IPython input cell to see the output.
-    
 
-            
-    
-    <div class="tags">
+            </div>
+                    <div itemprop="keywords" class="tags">
         <ul>
-        More posts about:  
-        
-            <li><a class="tag" href="../categories/python.html">python</a></li>
-        
-            <li><a class="tag" href="../categories/ipython.html">IPython</a></li>
-        
-            <li><a class="tag" href="../categories/reveal.html">reveal</a></li>
-        
-            <li><a class="tag" href="../categories/slideshow.html">slideshow</a></li>
-        
-            <li><a class="tag" href="../categories/nbconvert.html">nbconvert</a></li>
-        
-            <li><a class="tag" href="../categories/nbviewer.html">nbviewer</a></li>
-        
+        Tags : 
+           <li><a class="tag p-category" href="../categories/ipython.html" rel="tag">IPython</a></li>
+           <li><a class="tag p-category" href="../categories/nbconvert.html" rel="tag">nbconvert</a></li>
+           <li><a class="tag p-category" href="../categories/nbviewer.html" rel="tag">nbviewer</a></li>
+           <li><a class="tag p-category" href="../categories/python.html" rel="tag">python</a></li>
+           <li><a class="tag p-category" href="../categories/reveal.html" rel="tag">reveal</a></li>
+           <li><a class="tag p-category" href="../categories/slideshow.html" rel="tag">slideshow</a></li>
         </ul>
-    </div>
-    
+        </div>
 
         </div>
         <div class="body">
-            <div class="text_cell_render border-box-sizing rendered_html">
+            <div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Short Notice</strong>:</p>
 <p><strong>After some months of silence, I am back... A lot of things have happened in my life lately, some of them are really good things... some others don't. And all those things kept me very busy, but finally I have made me some time to write again! ;-)</strong></p>
-<p>OK, I have a long list of news, topics, ideas and developments I want to share with you, but we have to begin with one of them, and the chosen one is <code>Slideviewer</code>. <!-- TEASER_END --></p>
+<p>OK, I have a long list of news, topics, ideas and developments I want to share with you, but we have to begin with one of them, and the chosen one is <code>Slideviewer</code>.
+<!-- TEASER_END --></p>
 <p>When I was at <strong>SciPy 2013</strong>, one of the talks I presented was about the <strong>IPython slides</strong> (if you dont know what I am talking about, just check some of these <a href="http://www.damian.oquanta.info/categories/slideshow.html">posts</a>). And one of the last things I presented in that talk was an early prototype of <strong>Slideviewer</strong>, an <a href="http://nbviewer.ipython.org/"><strong>NBviewer</strong></a>'s clon, but able to render <strong>IPython slides</strong> instead of plain <strong>IPython notebooks</strong> (<code>.ipynb</code>).</p>
 <p>The main idea behind <strong>Slideviewer</strong> was to provide you an easy way to share your <strong>IPython slides</strong>. As I pointed out in older posts and comments, you can <em>deploy</em> your <strong>IPython slides</strong> (the slides.html file plus the <strong>reveal.js</strong> library) using <strong>Github pages</strong> or any other service, but with <strong>Slideviewer</strong>, you only need to host your <code>.ipynb</code> somewhere (ie, <strong>Github</strong> repo, gist, etc.), and just pass the url to the <strong>Slideviewer</strong> service (the same way you do it with the NBviewer service) which will render your <code>.ipynb</code> to an IPython slide <em>automagically</em>.</p>
 <p><strong>Slideviewer</strong> will follow <strong>NBviewer</strong> updates once a week, as close as it can be, essentially because some things are relevant for both apps, but others don't.</p>
 <p>And, in the future, we can probably merge the <strong>Slideviewer</strong> app onto the <strong>NBviewer</strong> app, but we need to make some things first, so I think is useful to have a separate service running right now, to help people to easily spread their <strong>IPython slides</strong>.</p>
-<p><strong>Slideviewer</strong> lives here (for now): <a href="http://slideviewer.herokuapp.com/">http://slideviewer.herokuapp.com/</a> and you can see it <em>iframed</em> below:</p>
+<p><strong>Slideviewer</strong> lives here (for now): <a href="http://slideviewer.herokuapp.com/"></a><a href="http://slideviewer.herokuapp.com/">http://slideviewer.herokuapp.com/</a> and you can see it <em>iframed</em> below:</p>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <iframe src="http://slideviewer.herokuapp.com/" width="800" height="800"></iframe>
 </div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If you have an <strong>IPython slides</strong> worth to be included in the main page, just let me know and I will add it.</p>
-<p><strong>Note</strong>: <strong>Slideviewer</strong> does not support <code>custom.css</code> from <strong>Github</strong> (because <strong>Github</strong> does not <em>serve</em> the css), but you can always use another place to host your <code>.ipynb</code> and <code>custom.css</code> or change the html source code pointing to another url where the css was deployed and served. If you need help with this issue, let me know. I will try to figure out a native solution soon.</p>
+<p><strong>Note</strong>: <strong>Slideviewer</strong> does not support <code>custom.css</code> from <strong>Github</strong> (because <strong>Github</strong> does not <em>serve</em> the css), but you can always use another place to host your <code>.ipynb</code> and <code>custom.css</code> or change the html source code pointing to another url where the css was deployed and served. If you need help with this issue, let me know. I will try to figure out a native solution soon. </p>
 <p>OK, I hope you find this service useful!</p>
 <p>See you soon.</p>
 <p>Damián</p>
 </div>
+</div>
+</div>
         </div>
-        <p class="gittip">Do you like the content? Great! Then help me to achieve a "Sustainable Crowdfunding"!</p>
+        <p><b>Don't forget this blog post is an ipynb file itself! So, you can download it from the "Source" link
+        at the top of the post if you want to play with it ;-)</b></p>
+        <p class="gittip"> Btw, do you like the content? Great! Then help me to achieve a
+        "Sustainable Crowdfunding"!</p>
         <script data-gittip-username="damianavila" src="//gttp.co/v1.js"></script>
-        
-    <ul class="pager">
-    
-        <li class="previous">
-            <a href="my-ipython-powered-semi-automatic-git-workflow.html">← Post anterior</a>
-        </li>
-    
-    
-        <li class="next">
-            <a href="loader-and-writer-ipython-nbextensions-to-easily-edit-your-text.html">Siguiente post →</a>
-        </li>
-    
-    </ul>
+                <ul class="pager">
+            <li class="previous">
+                <a href="my-ipython-powered-semi-automatic-git-workflow.html" rel="prev" title="My IPython-powered semi-automatic git workflow">Post anterior</a>
+            </li>
+            <li class="next">
+                <a href="loader-and-writer-ipython-nbextensions-to-easily-edit-your-text.html" rel="next" title="Loader and Writer, IPython nbextensions to easily edit your text.">Siguiente post</a>
+            </li>
+        </ul>
 
-        
-            
-    
-        
-    
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-        var disqus_shortname ="damianblogcomments";
-        
-            var disqus_url="http://www.damian.oquanta.info/es/posts/slideviewer-a-simple-way-to-share-your-ipython-slides.html";
-        
-        var disqus_title="Slideviewer: a simple way to share your IPython slides";
-        var disqus_identifier="cache/posts/slideviewer-a-simple-way-to-share-your-ipython-slides.html";
-        var disqus_config = function () {
+                            <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="damianblogcomments",
+            disqus_url="http://www.damian.oquanta.info/es/posts/slideviewer-a-simple-way-to-share-your-ipython-slides.html",
+        disqus_title="Slideviewer: a simple way to share your IPython slides",
+        disqus_identifier="cache/posts/slideviewer-a-simple-way-to-share-your-ipython-slides.html",
+        disqus_config = function () {
             this.language = "./es";
         };
         (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
-    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
-    
 
         
-        
-    
-
     </div>
-
-            Contents © 2014 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
+                    <footer id="footer" role="contentinfo">
+            <p>Contents © 2014 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
 Powered by <a href="http://getnikola.com">Nikola</a> - 
 Zen theme based in <a href="https://github.com/arusahni/website-template">Arusahni's website-template</a><br>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
-<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a></p>
             
-	
- <!-- Social buttons -->
- <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
- <a class="addthis_button_more"><i class="icon-share-sign icon-2x"></i>    Share</a>
- <ul>
- <li><a class="addthis_button_twitter"><i class="icon-twitter icon-2x"></i>    Twitter</a>
- </li><li><a class="addthis_button_google_plusone_share"><i class="icon-google-plus-sign icon-2x"></i>    Google+</a>
- </li><li><a class="addthis_button_linkedin"><i class="icon-linkedin icon-2x"></i>    Linkedin</a>
- </li><li><a class="addthis_button_facebook"><i class="icon-facebook-sign icon-2x"></i>    Facebook</a>
- </li></ul>
- </div>
- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
- <!-- End of social buttons -->
- 
+        </footer>
 
         </div>
     </section>
-    
-    
-        
-            <script src="../../assets/js/all-nocdn.js" type="text/javascript"></script>
-        
-    
-
-    
-        <script type="text/javascript">
-            $(function(){
-                $('.timeago').timeago();
-            });
-        </script>
-    
     
 <script data-gittip-username="damianavila" data-gittip-widget="button" src="//gttp.co/v1.js"></script>
 <script type="text/javascript">
@@ -296,5 +200,35 @@ Zen theme based in <a href="https://github.com/arusahni/website-template">Arusah
 
 </script>
     
+    
+                <script src="../../assets/js/all-nocdn.js" type="text/javascript"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more"><i class="icon-share-sign icon-2x"></i>    Share</a>
+<ul>
+<li>
+<a class="addthis_button_twitter"><i class="icon-twitter icon-2x"></i>    Twitter</a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"><i class="icon-google-plus-sign icon-2x"></i>    Google+</a>
+</li>
+<li>
+<a class="addthis_button_linkedin"><i class="icon-linkedin icon-2x"></i>    Linkedin</a>
+</li>
+<li>
+<a class="addthis_button_facebook"><i class="icon-facebook-sign icon-2x"></i>    Facebook</a>
+</li>
+</ul>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+        <script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
 </body>
 </html>
