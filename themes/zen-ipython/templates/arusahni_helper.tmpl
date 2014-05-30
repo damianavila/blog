@@ -1,5 +1,6 @@
 {#  -*- coding: utf-8 -*- #}
 {#  Override only the functions that differ from base_helper.tmpl #}
+{% import 'annotation_helper.tmpl' as notes with context %}
 {% macro html_headstart() %}
 <!DOCTYPE html>
 <html
@@ -103,6 +104,11 @@ lang="{{ lang }}">
             <script src="/assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
             <script src="/assets/js/jquery.timeago.js" type="text/javascript"></script>
         {% endif %}
+    {% endif %}
+    {% if annotations and post and not post.meta('noannotations') %}
+        {{ notes.code() }}
+    {% elif not annotations and post and post.meta('annotations') %}
+        {{ notes.code() }}
     {% endif %}
     {{ social_buttons_code }}
 {% endmacro %}

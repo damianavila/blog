@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Damian's blog (jinja)</title><link>http://www.damian.oquanta.info/</link><description></description><language>en</language><lastBuildDate>Sun, 18 May 2014 23:21:36 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Hide the input cells from your IPython slides</title><link>http://www.damian.oquanta.info/posts/hide-the-input-cells-from-your-ipython-slides.html</link><dc:creator>Damian Avila</dc:creator><description>&lt;div class="prompt input_prompt"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Damian's blog (jinja)</title><link>http://www.damian.oquanta.info/</link><description></description><language>en</language><lastBuildDate>Fri, 30 May 2014 15:43:48 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Hide the input cells from your IPython slides</title><link>http://www.damian.oquanta.info/posts/hide-the-input-cells-from-your-ipython-slides.html</link><dc:creator>Damian Avila</dc:creator><description>&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;

@@ -9,6 +9,8 @@ article: http://ogp.me/ns/article#
     <title>vIPer | Damian's blog</title>
 
                 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.2.5/annotator.min.css">
+
 
                     <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../rss.xml">
                 <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../es/rss.xml">
@@ -174,6 +176,17 @@ Zen theme based in <a href="https://github.com/arusahni/website-template">Arusah
     
     
                 <script src="../assets/js/all-nocdn.js" type="text/javascript"></script>
+            <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script src="http://assets.annotateit.org/annotator/v1.2.7/annotator-full.js"></script>
+    <script>
+    jQuery(function ($) {
+        $('body').annotator().annotator('setupPlugins', {}, {
+            // Disable filter bar
+            Filter: false
+        });
+    });
+    </script>
+
     
 <!-- Social buttons -->
 <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
