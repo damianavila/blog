@@ -1,2 +1,4 @@
 Sitemap: http://www.damian.oquanta.info/sitemapindex.xml
 
+User-Agent: *
+Host: www.damian.oquanta.info

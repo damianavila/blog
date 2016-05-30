@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Damian's blog (tutorials)</title><link>http://www.damian.oquanta.info/</link><description></description><language>en</language><lastBuildDate>Fri, 30 May 2014 15:43:49 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SciPyCon Argentina 2013</title><link>http://www.damian.oquanta.info/posts/scipycon-argentina-2013.html</link><dc:creator>Damian Avila</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Damian's blog (tutorials)</title><link>http://www.damian.oquanta.info/</link><description></description><atom:link href="http://www.damian.oquanta.info/categories/tutorials.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 30 May 2016 03:50:34 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SciPyCon Argentina 2013</title><link>http://www.damian.oquanta.info/posts/scipycon-argentina-2013.html</link><dc:creator>Damian Avila</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;This is the first &lt;strong&gt;SciPy Conference in Argentina&lt;/strong&gt; (as far as I know, it is also the first one in Latin American).&lt;/p&gt;
 &lt;p&gt;It will be held from &lt;strong&gt;16 to 18th of May in Puerto Madryn&lt;/strong&gt;, at the Patagonia Argentina (more details at SciPyCon &lt;a href="http://scipycon.com.ar"&gt;homepage&lt;/a&gt;).&lt;/p&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -14,4 +15,4 @@
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;a href="http://www.damian.oquanta.info/posts/scipycon-argentina-2013.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>IPython</category><category>SciPyCon</category><category>python</category><category>talks</category><category>tutorials</category><guid>http://www.damian.oquanta.info/posts/scipycon-argentina-2013.html</guid><pubDate>Sat, 04 May 2013 23:18:56 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://www.damian.oquanta.info/posts/scipycon-argentina-2013.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>IPython</category><category>python</category><category>SciPyCon</category><category>talks</category><category>tutorials</category><guid>http://www.damian.oquanta.info/posts/scipycon-argentina-2013.html</guid><pubDate>Sat, 04 May 2013 23:18:56 GMT</pubDate></item></channel></rss>
