@@ -15,7 +15,7 @@
 <li>I live at Cordoba now... with my fiance, and my Moon, Daniela.</li>
 <li>I have a lovely kitty called Bituinas (between us ;-)</li>
 <li>I still do Software Development (for a living and for free) and I enjoy it a lot.</li>
-<li>I am still involved with the Jupyter project. I am a Jupyter core developer and a Jupyter Steering Council member. RISE, the live Jupyter slideshow machinery, is widely used but I need to give it more love (and time).</li>
+<li>I am still involved with the <a href="http://jupyter.org/">Jupyter</a> project. I am a Jupyter core developer and a Jupyter Steering Council member. <a href="https://github.com/damianavila/RISE">RISE</a>, the live Jupyter slideshow machinery, is widely used but I need to give it more love (and time).</li>
 <li>Now, I am a gluten-free guy and because of that, I have lost weight and improved my arterial tension measurements ;-)</li>
 <li>Recently, I restarted to practice Aikido.</li>
 </ul>
