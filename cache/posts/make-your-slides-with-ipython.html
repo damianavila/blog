@@ -7,6 +7,7 @@
 <p>With the integration of nbconvert inside IPython, the last 1.0 release has the possibility to export the ipynb to other formats such as rst, markdown, latex, html and slides (<a href="http://ipython.org/ipython-doc/stable/interactive/nbconvert.html">info</a>).</p>
 <p>The slides option generates a Reveal.js-powered HTML slideshow, like this one:
 <!-- TEASER_END --></p>
+
 </div>
 </div>
 </div>
@@ -15,7 +16,8 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<iframe src="http://damianavila.github.io/scipy2013_talks/index.html" width=800 height=600></iframe>
+<p><iframe src="http://damianavila.github.io/scipy2013_talks/index.html" width=800 height=600></iframe></p>
+
 </div>
 </div>
 </div>
@@ -26,6 +28,7 @@
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>These are my slides from the talk I gave at SciPy 2013 (Texas) featuring this exporter I previously developed in the old nbconvert project and now merged (and available) in the last release (1.0) of IPython.</p>
 <p>You can also see the video of the talk:</p>
+
 </div>
 </div>
 </div>
@@ -34,7 +37,8 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<iframe width="640" height="360" src="//www.youtube.com/embed/rBS6hmiK-H8" frameborder="0" allowfullscreen></iframe>
+<p><iframe width="640" height="360" src="//www.youtube.com/embed/rBS6hmiK-H8" frameborder="0" allowfullscreen></iframe></p>
+
 </div>
 </div>
 </div>
@@ -53,6 +57,7 @@
 <p>Enjoy it!</p>
 <p>Damián</p>
 <p>PS: Please report any bug or give me you feedback to make this tool better!</p>
+
 </div>
 </div>
 </div>

@@ -8,8 +8,7 @@
 <!-- TEASER_END --></p>
 <p>Yes, I am always very original picking the names of the extensions ;-). A pic to illustrate the extension button at the toolbar:</p>
 <p><img src="http://www.damian.oquanta.info/galleries/deploy/1.png" alt=""></p>
-<blockquote>
-<p><strong>Note</strong>: Nikola supports the ipynb file as an input... and using the IPython.nbconvert machinery it is able to render the static HTML representation of your ipynbs inside the complete infrastructure of a powerful static site engine.</p>
+<blockquote><p><strong>Note</strong>: Nikola supports the ipynb file as an input... and using the IPython.nbconvert machinery it is able to render the static HTML representation of your ipynbs inside the complete infrastructure of a powerful static site engine.</p>
 </blockquote>
 <p>First, to know some things about my blogging workflow using <strong>IPython</strong>, <strong>Nikola</strong>, <strong>git</strong> and <strong>gh-pages</strong>, I suggest you to re-read these previous posts:</p>
 <ul>
@@ -17,44 +16,42 @@
 <li><a href="http://www.damian.oquanta.info/posts/one-line-deployment-of-your-site-to-gh-pages.html">One line deployment of your site to gh-pages</a></li>
 </ul>
 <p>OK, coming back to the extension, the idea behind this one is very simple: I will call the <code>nikola deploy</code> command from inside the <strong>IPython</strong> notebook using our beloved <code>IPython.notebook.kernel.execute</code> method, and also taking the advantage of <em>passing</em> commands to the underlying system just pre-pending with the <code>!</code> mark. The relevant lines are below:</p>
-<pre><code class="language-javascript"><span class="number">36</span>      <span class="keyword">if</span> (clean==<span class="string">"True"</span>) {
-<span class="number">37</span>        IPython.notebook.kernel.execute(<span class="string">'!nikola clean'</span>);
-<span class="number">38</span>      }
-<span class="number">39</span>      IPython.notebook.kernel.execute(<span class="string">'!nikola build'</span>);
-<span class="number">40</span>      IPython.notebook.kernel.execute(<span class="string">'!nikola deploy'</span>);
-</code></pre>
+<div class="highlight"><pre><span></span><span class="mi">36</span>      <span class="k">if</span> <span class="p">(</span><span class="nx">clean</span><span class="o">==</span><span class="s2">&quot;True&quot;</span><span class="p">)</span> <span class="p">{</span>
+<span class="mi">37</span>        <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">kernel</span><span class="p">.</span><span class="nx">execute</span><span class="p">(</span><span class="s1">&#39;!nikola clean&#39;</span><span class="p">);</span>
+<span class="mi">38</span>      <span class="p">}</span>
+<span class="mi">39</span>      <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">kernel</span><span class="p">.</span><span class="nx">execute</span><span class="p">(</span><span class="s1">&#39;!nikola build&#39;</span><span class="p">);</span>
+<span class="mi">40</span>      <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">kernel</span><span class="p">.</span><span class="nx">execute</span><span class="p">(</span><span class="s1">&#39;!nikola deploy&#39;</span><span class="p">);</span>
+</pre></div>
 <p>After writing the content of my post following the workflow explained in previous posts, I just click on the <em>nikola_deploy</em> extension button and the site is <em>cleaned</em> (if you choose this option to True in the config file, please set it to False if you want a quick building), <em>built</em> and <em>deployed</em> <strong>automagically</strong> ;-)</p>
-<p>And that&#39;s all... the complete code below:</p>
+<p>And that's all... the complete code below:</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[1]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
-<div class="input_area">
-<div class="highlight"><pre><span class="n">cat</span> <span class="o">-</span><span class="n">n</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">datos</span><span class="o">/</span><span class="n">Desarrollos</span><span class="o">/</span><span class="n">mIPyex</span><span class="o">/</span><span class="n">custom</span><span class="o">/</span><span class="n">nikola_deploy</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">js</span>
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cat</span> <span class="o">-</span><span class="n">n</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">datos</span><span class="o">/</span><span class="n">Desarrollos</span><span class="o">/</span><span class="n">mIPyex</span><span class="o">/</span><span class="n">custom</span><span class="o">/</span><span class="n">nikola_deploy</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">js</span>
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
-</div>
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
 </div>
 </div>
 
 <div class="output_wrapper output_hidden">
-<div class="output">
-
+  <div class="output">
+    
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-     1	/*
+<pre>     1	/*
      2	* ----------------------------------------------------------------------------
      3	* Copyright (c) 2013 - Damián Avila
      4	*
@@ -65,36 +62,36 @@ In&nbsp;[1]:
      9	*/
     10	
     11	function messager() {
-    12	  var message = $(&apos;&lt;div/&gt;&apos;).append(
-    13	                  $(&quot;&lt;p/&gt;&lt;/p&gt;&quot;).addClass(&apos;dialog&apos;).html(
-    14	                    &quot;Your ipynb-based site/blog post is being deployed now...&quot;
+    12	  var message = $(&#39;&lt;div/&gt;&#39;).append(
+    13	                  $(&#34;&lt;p/&gt;&lt;/p&gt;&#34;).addClass(&#39;dialog&#39;).html(
+    14	                    &#34;Your ipynb-based site/blog post is being deployed now...&#34;
     15	                    )
     16	                ).append(
-    17	                  $(&quot;&lt;p/&gt;&lt;/p&gt;&quot;).addClass(&apos;dialog&apos;).html(
-    18	                    &quot;We clean (configurable), build and deploy your Nikola &quot; +
-    19	                    &quot;site/blog for you!&quot;
+    17	                  $(&#34;&lt;p/&gt;&lt;/p&gt;&#34;).addClass(&#39;dialog&#39;).html(
+    18	                    &#34;We clean (configurable), build and deploy your Nikola &#34; +
+    19	                    &#34;site/blog for you!&#34;
     20	                    )
     21	                );
     22	
     23	  IPython.dialog.modal({
-    24	    title : &quot;Nikola deployment&quot;,
+    24	    title : &#34;Nikola deployment&#34;,
     25	    body : message,
     26	    buttons : {
-    27	        OK : {class: &quot;btn-danger&quot;}
+    27	        OK : {class: &#34;btn-danger&#34;}
     28	    }
     29	  });
     30	
     31	}
     32	
     33	function nikolaDeploy(path, clean) {
-    34	  IPython.notebook.kernel.execute(&apos;%bookmark root&apos;);
-    35	  IPython.notebook.kernel.execute(&apos;%cd &apos; + path);
-    36	  if (clean==&quot;True&quot;) {
-    37	    IPython.notebook.kernel.execute(&apos;!nikola clean&apos;);
+    34	  IPython.notebook.kernel.execute(&#39;%bookmark root&#39;);
+    35	  IPython.notebook.kernel.execute(&#39;%cd &#39; + path);
+    36	  if (clean==&#34;True&#34;) {
+    37	    IPython.notebook.kernel.execute(&#39;!nikola clean&#39;);
     38	  }
-    39	  IPython.notebook.kernel.execute(&apos;!nikola build&apos;);
-    40	  IPython.notebook.kernel.execute(&apos;!nikola deploy&apos;);
-    41	  IPython.notebook.kernel.execute(&apos;%cd -b root&apos;);
+    39	  IPython.notebook.kernel.execute(&#39;!nikola build&#39;);
+    40	  IPython.notebook.kernel.execute(&#39;!nikola deploy&#39;);
+    41	  IPython.notebook.kernel.execute(&#39;%cd -b root&#39;);
     42	  messager();
     43	}
     44	
@@ -103,16 +100,15 @@ In&nbsp;[1]:
     47	    parameters: function setup(param1, param2) {
     48	      IPython.toolbar.add_buttons_group([
     49	        {
-    50	        &apos;label&apos;   : &apos;Deploy Nikola site/blog&apos;,
-    51	        &apos;icon&apos;    : &apos;icon-upload-alt&apos;,
-    52	        &apos;callback&apos;: function(){nikolaDeploy(param1, param2)},
-    53	        &apos;id&apos;      : &apos;start_nikola_deploy&apos;
+    50	        &#39;label&#39;   : &#39;Deploy Nikola site/blog&#39;,
+    51	        &#39;icon&#39;    : &#39;icon-upload-alt&#39;,
+    52	        &#39;callback&#39;: function(){nikolaDeploy(param1, param2)},
+    53	        &#39;id&#39;      : &#39;start_nikola_deploy&#39;
     54	        },
     55	      ])
     56	    }
     57	  }
     58	});
-
 </pre>
 </div>
 </div>
@@ -120,7 +116,7 @@ In&nbsp;[1]:
 </div>
 </div>
 
-</div>
+  </div>
 </div>
 
 </div>
@@ -133,6 +129,7 @@ In&nbsp;[1]:
 <p>OK, as you can see... it is very simple to blog with <strong>IPython</strong> and <strong>Nikola</strong>, so I invite you to try it <em>now</em> and let me know any ideas, comments or critics.</p>
 <p>Enjoy!</p>
 <p>Damián</p>
+
 </div>
 </div>
 </div>

@@ -1,4 +1,4 @@
-Hecho con Nikola...
-powered-by-nikola
-2012/06/20 13:05
-nikola, python, blog
+.. title: Hecho con Nikola...
+.. slug: powered-by-nikola
+.. date: 2012/06/20 13:05
+.. tags: nikola, python, blog

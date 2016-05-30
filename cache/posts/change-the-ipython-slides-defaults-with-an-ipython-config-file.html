@@ -4,7 +4,7 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Some people are asking me how to change the IPython slides&#39;s defaults. You can see the description of the request <a href="http://stackoverflow.com/questions/18820253/modifying-reveal-js-defaults-in-ipython-notebook-slide-generation">here</a>. Essentially, he wants to change the default transition between the slides.</p>
+<p>Some people are asking me how to change the IPython slides's defaults. You can see the description of the request <a href="http://stackoverflow.com/questions/18820253/modifying-reveal-js-defaults-in-ipython-notebook-slide-generation">here</a>. Essentially, he wants to change the default transition between the slides.</p>
 <p>To solve this question, we introduce the notion of IPython config files, which let us easily change <em>things</em> inside <code>IPython.nbconvert</code> (the library where the IPython slides lives) to achieve our desires, at least in the slideshow generation issue ;-)</p>
 <p>First of all, you need to know some details:
 <!-- TEASER_END --></p>
@@ -14,39 +14,36 @@
 <li>The IPython machinery is very configurable through a <strong>Traitlets</strong> system! And because of this feature, <code>IPython.nbconvert</code> is able to take a custom config file and use it to render our IPython slides (or any other <code>IPython.nbconvert</code> <em>formats</em>).</li>
 </ul>
 <p>OK, can you show me an example config file? Of course, here we go:</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[1]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
-<div class="input_area">
-<div class="highlight"><pre><span class="o">!</span>cat /media/datos/Ejemplos/slides_config.py
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>cat /media/datos/Ejemplos/slides_config.py
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
-</div>
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
 </div>
 </div>
 
 <div class="output_wrapper output_hidden">
-<div class="output">
-
+  <div class="output">
+    
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-c = get_config()
+<pre>c = get_config()
 
-c.Exporter.template_file = &apos;default_transition&apos;
-
+c.Exporter.template_file = &#39;default_transition&#39;
 </pre>
 </div>
 </div>
@@ -54,7 +51,7 @@ c.Exporter.template_file = &apos;default_transition&apos;
 </div>
 </div>
 
-</div>
+  </div>
 </div>
 
 </div>
@@ -64,41 +61,38 @@ c.Exporter.template_file = &apos;default_transition&apos;
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>From the IPython docs:</p>
-<blockquote>
-<p>A configuration file is simply a pure Python file that sets the attributes of a global, pre-created configuration object. This configuration object is a Config instance. While in a configuration file, to get a reference to this object, simply call the get_config() function. We inject this function into the global name-space that the configuration file is executed in,</p>
+<blockquote><p>A configuration file is simply a pure Python file that sets the attributes of a global, pre-created configuration object. This configuration object is a Config instance. While in a configuration file, to get a reference to this object, simply call the get_config() function. We inject this function into the global name-space that the configuration file is executed in,</p>
 </blockquote>
-<p>So, we have to call the <code>get_config()</code> function and then use a custom template called <code>&#39;default_transition&#39;</code> and assign it to <code>c.Exporter.template_file</code> attribute.</p>
-<p>Oh, we need to write the <code>&#39;default_transition&#39;</code> template yet, so here we go... again:</p>
+<p>So, we have to call the <code>get_config()</code> function and then use a custom template called <code>'default_transition'</code> and assign it to <code>c.Exporter.template_file</code> attribute.</p>
+<p>Oh, we need to write the <code>'default_transition'</code> template yet, so here we go... again:</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[2]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
-<div class="input_area">
-<div class="highlight"><pre><span class="o">!</span>cat /media/datos/Ejemplos/default_transition.tpl
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>cat /media/datos/Ejemplos/default_transition.tpl
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
-</div>
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
 </div>
 </div>
 
 <div class="output_wrapper output_hidden">
-<div class="output">
-
+  <div class="output">
+    
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-{%- extends &apos;slides_reveal.tpl&apos; -%}
+<pre>{%- extends &#39;slides_reveal.tpl&#39; -%}
 
 
 {% block body %}
@@ -145,23 +139,22 @@ Reveal.initialize({
     //mouseWheel: false,
 
     // Transition style
-    transition: &apos;concave&apos;, // default/cube/page/concave/zoom/linear/fade/none
+    transition: &#39;concave&#39;, // default/cube/page/concave/zoom/linear/fade/none
 
     // Transition speed
-    //transitionSpeed: &apos;default&apos;, // default/fast/slow
+    //transitionSpeed: &#39;default&#39;, // default/fast/slow
 
     // Transition style for full page backgrounds
-    //backgroundTransition: &apos;default&apos;, // default/linear/none
+    //backgroundTransition: &#39;default&#39;, // default/linear/none
 
     // Theme
-    theme: &apos;sky&apos; // available themes are in /css/theme
+    theme: &#39;sky&#39; // available themes are in /css/theme
 
 });
 
 &lt;/script&gt;
 
 {% endblock body %}
-
 </pre>
 </div>
 </div>
@@ -169,7 +162,7 @@ Reveal.initialize({
 </div>
 </div>
 
-</div>
+  </div>
 </div>
 
 </div>
@@ -178,22 +171,22 @@ Reveal.initialize({
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the first line, <code>{%- extends &#39;slides_reveal.tpl&#39; -%}</code> tells to the <strong>Jinja</strong> system that we are going to extend <em>slides_reveal</em> template (the default one, which <code>IPython.nbconvert</code> uses to build our common slides by default). Then, inside the <code>{% block body %}</code>, we call <code>super()</code>:</p>
+<p>In the first line, <code>{%- extends 'slides_reveal.tpl' -%}</code> tells to the <strong>Jinja</strong> system that we are going to extend <em>slides_reveal</em> template (the default one, which <code>IPython.nbconvert</code> uses to build our common slides by default). Then, inside the <code>{% block body %}</code>, we call <code>super()</code>:</p>
 <p>From the <em>Jinja</em> docs:</p>
-<blockquote>
-<p>Super Blocks
-It’s possible to render the contents of the parent block by calling super. </p>
+<blockquote><p>Super Blocks
+It’s possible to render the contents of the parent block by calling super.</p>
 </blockquote>
 <p>We did it in this way because we want to render all the parent content and, after that, add our own content, essentially a config script for Reveal.js, calling <code>Reveal.initialize</code>.</p>
-<p>OK, I have written a lot of configurable options you can play with, but I only left uncommented (and hence, they will be applied) the <code>transition: &#39;concave&#39;</code> and <code>theme: &#39;sky&#39;</code> options with my new choices, you can use your own ones.</p>
+<p>OK, I have written a lot of configurable options you can play with, but I only left uncommented (and hence, they will be applied) the <code>transition: 'concave'</code> and <code>theme: 'sky'</code> options with my new choices, you can use your own ones.</p>
 <p>Finally, you have to use the <code>IPython.nbconvert</code> library from command line, as usual, but pointing to the IPython config file you pretend to apply:</p>
 <p><code>ipython nbconvert your_talk.ipynb --to slides --post serve --config slides_config.py</code></p>
 <p>And you are done!</p>
-<p><strong>NOTE</strong>: Don&#39;t forget to put your <em>ipynb</em>, <em>slides_config.py</em> and <em>default_transition.tpl</em> files in the same folder where you will run the <code>IPython.nbconvert</code> command. </p>
+<p><strong>NOTE</strong>: Don't forget to put your <em>ipynb</em>, <em>slides_config.py</em> and <em>default_transition.tpl</em> files in the same folder where you will run the <code>IPython.nbconvert</code> command.</p>
 <p>As you can see, the potentiality of this system (<strong>Jinja</strong> templating plus a powerful config system) is really big! We can achieve awesome <em>things</em> in a very easy way!</p>
 <p>Any help, just let me know!</p>
 <p><strong>Addemdum</strong>: the use of <code>default_transition.tpl</code> generates an invalid but useful final html document. The cause behind this issue is the script containing the <code>Reveal.initialize</code> function, which is located after the closing <code>body</code> tag. All modern browser render this sort of invalid html witout any difficult. But a commenter arose this issue and I think is important to make it available in the post itself.</p>
 <p>Damián</p>
+
 </div>
 </div>
 </div>

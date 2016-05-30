@@ -37,11 +37,11 @@
 <li><p><strong>Modify</strong> your <code>conf.py</code> file:</p>
 <ul>
 <li><p>add the following lines to your post_pages:</p>
-<p> <code>(&quot;posts/*.ipynb&quot;, &quot;posts&quot;, &quot;post.tmpl&quot;, True),</code>
- <code>(&quot;stories/*.ipynb&quot;, &quot;stories&quot;, &quot;story.tmpl&quot;, False),</code></p>
+<p><code>("posts/*.ipynb", "posts", "post.tmpl", True),</code>
+ <code>("stories/*.ipynb", "stories", "story.tmpl", False),</code></p>
 </li>
 <li><p>and make explicit to use the IPython theme:</p>
-<p> <code>THEME = &#39;jinja-site-ipython&#39;</code></p>
+<p><code>THEME = 'jinja-site-ipython'</code></p>
 </li>
 </ul>
 </li>
@@ -54,10 +54,11 @@
 </ul>
 </li>
 </ol>
-<p>Easier, don&#39;t you think?</p>
+<p>Easier, don't you think?</p>
 <p>Ok, if you need any help or find any bug, just let us known open an issue on github or blame on me here ;-)</p>
 <p>Cheers.</p>
 <p>Damián</p>
+
 </div>
 </div>
 </div>

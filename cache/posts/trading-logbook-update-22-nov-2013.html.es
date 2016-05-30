@@ -9,8 +9,7 @@
 Last week, I performed some <em>real account trades</em> accordingly to my models, opening positions at several currencies pairs. You can see the detailed information in the table below:
 <!-- TEASER_END --></p>
 <table>
-<thead>
-<tr>
+<thead><tr>
 <th>Ticket</th>
 <th>Date</th>
 <th>Transaction</th>
@@ -107,6 +106,7 @@ Last week, I performed some <em>real account trades</em> accordingly to my model
 <p>Finally, I have also decided to <strong>live tweet</strong> the trades from this account, so if you follow me on <a href="https://twitter.com/damian_avila">twitter</a>, you will see these trades on real time, or you can wait to the Fridays when I will post another sheet of this sort of logbook.</p>
 <p>Good weekend!</p>
 <p>Damián.</p>
+
 </div>
 </div>
 </div>

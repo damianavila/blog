@@ -10,6 +10,7 @@
 <p>So I wrote a little js extension which give me this <strong>Zen mode</strong>.</p>
 <p>You can see some screen shots below:
 <!-- TEASER_END --></p>
+
 </div>
 </div>
 </div>
@@ -19,6 +20,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="http://www.damian.oquanta.info/galleries/zenmode/pic1.png" alt=""></p>
+
 </div>
 </div>
 </div>
@@ -28,6 +30,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="http://www.damian.oquanta.info/galleries/zenmode/pic2.png" alt=""></p>
+
 </div>
 </div>
 </div>
@@ -37,6 +40,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And a little video showing the extension in action:</p>
+
 </div>
 </div>
 </div>
@@ -45,7 +49,8 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<iframe width="640" height="360" src="//www.youtube.com/embed/eVi5aXEipBQ" frameborder="0" allowfullscreen></iframe>
+<p><iframe width="640" height="360" src="//www.youtube.com/embed/eVi5aXEipBQ" frameborder="0" allowfullscreen></iframe></p>
+
 </div>
 </div>
 </div>
@@ -54,13 +59,14 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Do you want it? You can get it! </p>
+<p>Do you want it? You can get it!</p>
 <p>It is available inside the IPython-notebook-extensions <a href="https://github.com/ipython-contrib/IPython-notebook-extensions">repo</a> under the IPython-contrib organization [1].</p>
 <p>In the custom.js file you can select which background image do you want to use (there are some available inside the extension, but you can also use your own image ;-)).</p>
 <p>Enjoy it!</p>
 <p>Damián</p>
 <p>PS: As usual, open any issue (bug or idea) at the Github repo (or report me here at the comments). Thanks!</p>
-<p>[1] <a href="https://github.com/ipython-contrib/IPython-notebook-extensions"><a href="https://github.com/ipython-contrib/IPython-notebook-extensions">https://github.com/ipython-contrib/IPython-notebook-extensions</a></a></p>
+<p>[1] <a href="https://github.com/ipython-contrib/IPython-notebook-extensions">https://github.com/ipython-contrib/IPython-notebook-extensions</a></p>
+
 </div>
 </div>
 </div>

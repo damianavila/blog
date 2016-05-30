@@ -5,7 +5,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Some days ago, I presented a way to mimic the execution of <em>nbconverted</em> <strong>IPython</strong> notebooks (<em>ipynb</em>). Today, I will show you how to add a simple <em>minimap</em> to these static html documents.</p>
-<p>But, what is a <em>minimap</em>? Do you know <strong>SublimeText</strong> or <strong>Ninja-IDE</strong>? They are IDEs with a thin column to the right (of the main window) which provides an overview of the code we are working on... OK, you don&#39;t have an idea what am I talking about? Just go ahead and you will see...
+<p>But, what is a <em>minimap</em>? Do you know <strong>SublimeText</strong> or <strong>Ninja-IDE</strong>? They are IDEs with a thin column to the right (of the main window) which provides an overview of the code we are working on... OK, you don't have an idea what am I talking about? Just go ahead and you will see...
 <!-- TEASER_END --></p>
 <p><strong>Addendum note</strong>: There are some <em>performance issues</em> with <strong>Firefox</strong>, but in <strong>Chromium</strong> it is working OK! Simplicity comes with some hidden costs ;-)</p>
 <p><strong>NOTE</strong>: if you are impatient, just go the beginning of this post and press the <code>Minimap</code> link next to the <code>Source</code> link... and surprise!</p>
@@ -13,50 +13,47 @@
 <p>Mr. <strong>Google</strong> pointed me to a <a href="http://dropthebit.com/481/mini-page-navigation/">blog</a> where I found a nice js-based (working) solution.</p>
 <p>The implementation was very simple and we used the same strategy from the last blog posts: pass a template in the <code>IPython.nbconvert</code> call from the command line (but please, do not forget that you can also use a config file to pass the template name -and other things - to the <code>IPython.nbconvert</code> infrastructure).</p>
 <p>OK, but we needed to write the template before passing it, so we did it:</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[1]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
-<div class="input_area">
-<div class="highlight"><pre><span class="o">!</span>cat /media/datos/Ejemplos/minimap.tpl
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>cat /media/datos/Ejemplos/minimap.tpl
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
-</div>
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
 </div>
 </div>
 
 <div class="output_wrapper output_hidden">
-<div class="output">
-
+  <div class="output">
+    
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-{%- extends &apos;html_full.tpl&apos; -%}
+<pre>{%- extends &#39;html_full.tpl&#39; -%}
 
 {%- block header -%}
 {{ super() }}
 
-&lt;script src=&quot;http://dropthebit.com/demos/mini_page_nav/miniPageNav.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&#34;http://dropthebit.com/demos/mini_page_nav/miniPageNav.js&#34;&gt;&lt;/script&gt;
 
-&lt;style type=&quot;text/css&quot;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
 body{
 position: static;
 }
 &lt;/style&gt;
 
 {%- endblock header -%}
-
 </pre>
 </div>
 </div>
@@ -64,7 +61,7 @@ position: static;
 </div>
 </div>
 
-</div>
+  </div>
 </div>
 
 </div>
@@ -82,12 +79,13 @@ position: static;
 <p><code>ipython nbconvert 3_NumPy.ipynb --to html --template minimap.tpl --post serve</code></p>
 <p>in our console, and we saw something like <a href="http://damianavila.github.io/Python-Cientifico-HCC/3_NumPy.html">THIS</a></p>
 <p><strong>Do not forget!</strong>: There are some <em>performance issues</em> with <strong>Firefox</strong>, but in <strong>Chromium</strong> it is working OK! Simplicity comes with some hidden costs ;-)</p>
-<p>Nice, don&#39;t you think?</p>
+<p>Nice, don't you think?</p>
 <p>We also did the same (with minor modifications) with our <strong>Nikola</strong> <em>Zen</em> theme (probably you had already tested it because I assume you are impatient!).</p>
 <p>Now, with this simple feature, you not only can quickly get an idea of the length of your documents (blog post, article, lecture, whatever...) but also they are easier to scroll and navigate!</p>
-<p>NOTE: If you are thinking &quot;I want this minimap with in my <strong>IPython</strong> notebooks&quot;, you will have to hack the source code of the <code>js</code> library I used because it was designed for simple windows and not for more complex structures such as the notebook itself.</p>
+<p>NOTE: If you are thinking "I want this minimap with in my <strong>IPython</strong> notebooks", you will have to hack the source code of the <code>js</code> library I used because it was designed for simple windows and not for more complex structures such as the notebook itself.</p>
 <p>Enjoy your <em>minimaps</em>!</p>
 <p>Damián.</p>
+
 </div>
 </div>
 </div>

@@ -9,14 +9,14 @@ Importando, en un posteo del blog, un html estático (obtenido con nbconvert)
 de un notebook (ejemplo) de IPython::
 
     .. raw:: html
-       :file: /media/datos/Desarrollos/damian_blog/files/Test.html
+       :file: /media/data/devel/damian_blog/files/Test.html
 
 .. TEASER_END
 
 Funciona! Pueden verlo a continuación... pronto estarán los themes disponibles. 
 
     .. raw:: html
-      :file: /media/datos/Desarrollos/damian_blog/files/Test.html
+      :file: /media/data/devel/damian_blog/files/Test.html
 
 
 Damián.

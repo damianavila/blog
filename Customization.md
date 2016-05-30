@@ -14,7 +14,6 @@ My customizations...
         "Sustainable Crowdfunding"!</p>
         <script data-gittip-username="damianavila" src="//gttp.co/v1.js"></script>
 
-
 * create zen-ipython/templates/index.tmpl and add:
         {% block extra_head %}
             {{ super() }}

@@ -5,10 +5,9 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Some days ago, I received this message on G+:</p>
-<blockquote>
-<p>In a future release, would be handy to add custom classes to slides so that you can use CSS rules to choose certain layouts for image slides, text, multiple charts, etc. </p>
+<blockquote><p>In a future release, would be handy to add custom classes to slides so that you can use CSS rules to choose certain layouts for image slides, text, multiple charts, etc.</p>
 </blockquote>
-<p>But... we already support this kind of customization! And it is clearly my fault that you don&#39;t know about this feature... so:
+<p>But... we already support this kind of customization! And it is clearly my fault that you don't know about this feature... so:
 <!-- TEASER_END --></p>
 <ol>
 <li>I am very sorry for the lack of proper documentation (I am working on that ;-)).</li>
@@ -17,6 +16,7 @@
 </ol>
 <p>Using this message as a trigger (and following with the serie of blog posts explaining some of the IPython slides features), I will explain you how to customize your IPython slides in just two steps:</p>
 <p><strong>NOTE</strong>: I will use, as a starting point, the following slides of a talk I gave to journalist and designers at <a href="http://www.mediaparty.info">Hacks/HackersBA</a>, a story to write in another blog post...</p>
+
 </div>
 </div>
 </div>
@@ -25,7 +25,8 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<iframe src="http://damianavila.github.io/hackperiodismo" width=800 height=600></iframe>
+<p><iframe src="http://damianavila.github.io/hackperiodismo" width=800 height=600></iframe></p>
+
 </div>
 </div>
 </div>
@@ -35,36 +36,34 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Step 1</strong>. Create a <code>custom.css</code> file containing your css rules.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[2]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
-<div class="input_area">
-<div class="highlight"><pre><span class="o">!</span>cat /media/datos/Desarrollos/hackperiodismo/custom.css
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>cat /media/datos/Desarrollos/hackperiodismo/custom.css
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
-</div>
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
 </div>
 </div>
 
 <div class="output_wrapper output_hidden">
-<div class="output">
-
+  <div class="output">
+    
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-/*Some css fixes to use night theme with IPython slides*/
+<pre>/*Some css fixes to use night theme with IPython slides*/
 body {
 background-color: #111111;
 }
@@ -84,7 +83,6 @@ background: #F00;
 color: white;
 }
 
-
 </pre>
 </div>
 </div>
@@ -92,7 +90,7 @@ color: white;
 </div>
 </div>
 
-</div>
+  </div>
 </div>
 
 </div>
@@ -102,37 +100,34 @@ color: white;
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Step 2</strong>. Put this <code>custom.css</code> file in the same <code>dir</code> where your slides lives.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[3]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
-<div class="input_area">
-<div class="highlight"><pre><span class="o">!</span>ls /media/datos/Desarrollos/hackperiodismo
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ls /media/datos/Desarrollos/hackperiodismo
 </pre></div>
 
-<i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-&nbsp;&nbsp;Click me to hide the output, if the is one ;-)</i>
-</div>
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
 </div>
 </div>
 
 <div class="output_wrapper output_hidden">
-<div class="output">
-
+  <div class="output">
+    
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-custom.css  figs  index2.html  index.html
-
+<pre>custom.css  figs  index2.html  index.html
 </pre>
 </div>
 </div>
@@ -140,7 +135,7 @@ custom.css  figs  index2.html  index.html
 </div>
 </div>
 
-</div>
+  </div>
 </div>
 
 </div>
@@ -155,6 +150,7 @@ custom.css  figs  index2.html  index.html
 <p>Pretty easy! ;-)</p>
 <p>And now, the example slides rendered with a new darker style...</p>
 <p><strong>NOTE</strong>: In this case I applied the NIGHT reveal theme (adding <code>?theme=night</code> to the url) and used the <code>custom.css</code> file to adjust some details ;-) (darker reveal themes need this kind of customization to be rendered OK).</p>
+
 </div>
 </div>
 </div>
@@ -163,7 +159,8 @@ custom.css  figs  index2.html  index.html
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<iframe src="http://damianavila.github.io/hackperiodismo/index2.html?theme=night" width=800 height=600></iframe>
+<p><iframe src="http://damianavila.github.io/hackperiodismo/index2.html?theme=night" width=800 height=600></iframe></p>
+
 </div>
 </div>
 </div>
@@ -175,6 +172,7 @@ custom.css  figs  index2.html  index.html
 <p>You can change more fundamental things and make crazy stuff... just go ahead and let me know.</p>
 <p>Enjoy!</p>
 <p>Damián.</p>
+
 </div>
 </div>
 </div>

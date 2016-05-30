@@ -1,4 +1,4 @@
-Hide the input cells from your IPython slides
-hide-the-input-cells-from-your-ipython-slides
-2013/10/10 19:54:27
-python, IPython, nbconvert, config, javascript, toggle, jinja, reveal, slideshow
+.. title: Hide the input cells from your IPython slides
+.. slug: hide-the-input-cells-from-your-ipython-slides
+.. date: 2013/10/10 19:54:27
+.. tags: python, IPython, nbconvert, config, javascript, toggle, jinja, reveal, slideshow

@@ -15,7 +15,7 @@
 <ul>
 <li><code>git checkout -b gh-pages</code></li>
 <li><code>git rm -rf .</code></li>
-<li><code>git commit -am &quot;First commit to gh-pages branch&quot;</code></li>
+<li><code>git commit -am "First commit to gh-pages branch"</code></li>
 <li><code>git push origin gh-pages</code></li>
 </ul>
 </li>
@@ -23,7 +23,7 @@
 <ul>
 <li><code>git checkout master</code></li>
 <li><p><code>git push origin `git subtree split --prefix output gh-pages`:gh-pages --force</code></p>
-<p><strong>Sweet</strong> line... uhh ;-) </p>
+<p><strong>Sweet</strong> line... uhh ;-)</p>
 </li>
 </ul>
 </li>
@@ -33,7 +33,7 @@
 </ul>
 </li>
 </ol>
-<p><strong>Note</strong>: Are you getting <code>git</code> errors? Just use the <strong>sweet</strong> line again and <em>force</em> the update...  </p>
+<p><strong>Note</strong>: Are you getting <code>git</code> errors? Just use the <strong>sweet</strong> line again and <em>force</em> the update...</p>
 <p>If you are using <strong>Nikola</strong>, you can add some of this lines to the <code>DEPLOY_COMMANDS</code> in your conf.py file and just run <code>nikola deploy</code> after building your site/blog.</p>
 <p>More easier... impossible... ;-)</p>
 <p>Damián.</p>
@@ -45,6 +45,7 @@
 <li><code>git push -f origin gh-pages:gh-pages</code> # force the push of the gh-pages branch to the remote gh-pages branch at origin</li>
 <li><code>git branch -D gh-pages</code> #  delete the local gh-pages because you will need it: <a href="https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt#L203">ref</a></li>
 </ul>
+
 </div>
 </div>
 </div>

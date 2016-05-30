@@ -6,6 +6,7 @@
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This is the first <strong>SciPy Conference in Argentina</strong> (as far as I know, it is also the first one in Latin American).</p>
 <p>It will be held from <strong>16 to 18th of May in Puerto Madryn</strong>, at the Patagonia Argentina (more details at SciPyCon <a href="http://scipycon.com.ar">homepage</a>).</p>
+
 </div>
 </div>
 </div>
@@ -26,11 +27,12 @@
 <p>I am very proud to have this kind of conference in my country, and I would like to <strong>thanks</strong> to the organizers (and the sponsors) for all their hard work to make it happens.</p>
 <p>The conference will have exciting talks, tutorials and poster presentations. You can check the <strong>schedule</strong> <a href="http://scipycon.com.ar/schedule/">here</a></p>
 <p>I will be presenting a <strong>tutorial</strong> called, <strong>Python Científico: Episodio I (Scientific Python: Episode I)</strong>. You can check the details <a href="http://scipycon.com.ar/activities/">here</a>.</p>
-<p>And I will be also presenting a <strong>talk</strong> called, <strong>IPython notebook: el &quot;paper ejecutable&quot; (IPython notebook: the &quot;executable paper&quot;)</strong>.</p>
+<p>And I will be also presenting a <strong>talk</strong> called, <strong>IPython notebook: el "paper ejecutable" (IPython notebook: the "executable paper")</strong>.</p>
 <p>This conference will be a <strong>boost</strong> for our growing Scientific Pythonic Community and an exciting beginning!</p>
 <p>Why I am writing in English about a Spanish Conference? Because I want to <strong>spread</strong> the word about this conference as much as I can and because there are international speakers scheduled (and I <strong>would love</strong> to see more in the next conference!)</p>
 <p>I hope to see you there!</p>
 <p>Damián.</p>
+
 </div>
 </div>
 </div>

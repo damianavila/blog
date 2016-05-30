@@ -10,11 +10,12 @@
 <!-- TEASER_END --></p>
 <ul>
 <li>la clásica, <em>Introducción a Python Científico</em> (<a href="http://damianavila.github.io/pyconar2013_talks/1_Python_Cientifico_Intro.slides.html#/">slides</a>), </li>
-<li>la nueva, <em>IPython-fu: el camino de la &quot;nbconversión&quot;</em> (<a href="http://damianavila.github.io/pyconar2013_talks/IPython_fu_talk.slides.html#/">slides</a>).</li>
+<li>la nueva, <em>IPython-fu: el camino de la "nbconversión"</em> (<a href="http://damianavila.github.io/pyconar2013_talks/IPython_fu_talk.slides.html#/">slides</a>).</li>
 </ul>
-<p>Me sentí muy cómodo dictando las dos charlas, y encima me di el gusto de &quot;meter&quot; una charla íntegra del notebook de IPython, sobre el cual vengo &quot;pregonando&quot; hace rato.</p>
-<p>Por otro lado, gracias al esfuerzo puesto en juego por la organización del evento, tenemos <a href="http://www.youtube.com/channel/UCpufJ3XcqCGoPTxQX46W-UQ">videograbación</a> de toda la conferencia. </p>
+<p>Me sentí muy cómodo dictando las dos charlas, y encima me di el gusto de "meter" una charla íntegra del notebook de IPython, sobre el cual vengo "pregonando" hace rato.</p>
+<p>Por otro lado, gracias al esfuerzo puesto en juego por la organización del evento, tenemos <a href="http://www.youtube.com/channel/UCpufJ3XcqCGoPTxQX46W-UQ">videograbación</a> de toda la conferencia.</p>
 <p>A continuación, les adjunto los videos de mis charlas... por si se perdieron alguna:</p>
+
 </div>
 </div>
 </div>
@@ -26,7 +27,8 @@
 <ul>
 <li>Introducción a Python Científico</li>
 </ul>
-<iframe width="640" height="360" src="//www.youtube.com/embed/17DPZlKQDk8" frameborder="0" allowfullscreen></iframe>
+<p><iframe width="640" height="360" src="//www.youtube.com/embed/17DPZlKQDk8" frameborder="0" allowfullscreen></iframe></p>
+
 </div>
 </div>
 </div>
@@ -36,9 +38,10 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>IPython-fu: el camino de la &quot;nbconversión&quot;</li>
+<li>IPython-fu: el camino de la "nbconversión"</li>
 </ul>
-<iframe width="640" height="360" src="//www.youtube.com/embed/4-O5NZKD3hI" frameborder="0" allowfullscreen></iframe>
+<p><iframe width="640" height="360" src="//www.youtube.com/embed/4-O5NZKD3hI" frameborder="0" allowfullscreen></iframe></p>
+
 </div>
 </div>
 </div>
@@ -51,6 +54,7 @@
 <p>Aún resta saber dónde será la próxima edición.</p>
 <p>¡Allí estaremos!</p>
 <p>Damián</p>
+
 </div>
 </div>
 </div>

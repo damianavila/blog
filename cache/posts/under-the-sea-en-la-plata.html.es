@@ -5,6 +5,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Han pasado casi tres semanas... El 2 de abril cayeron sobre la ciudad de La Plata casi 400 mm de agua en 24 hs, concentrándose la mayor parte de dicho caudal en dos o tres horas por la tarde, lo que dio lugar a la más grande inundación que la ciudad haya registrado en toda su historia.</p>
+
 </div>
 </div>
 </div>
@@ -23,6 +24,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="http://1.bp.blogspot.com/-DbCAlLBC0aE/UWCjj2sV-4I/AAAAAAAA9nM/K9BrQc3TFIk/s1600/INUNDACION.jpg" alt=""></p>
+
 </div>
 </div>
 </div>
@@ -32,9 +34,10 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Impresionante, no les parece?</p>
-<p>Lamentablemente, en casa el agua llego a 1,60 mts. </p>
+<p>Lamentablemente, en casa el agua llego a 1,60 mts.</p>
 <p>Obviamente, la mayoría de las pertenencias quedaron bajo el agua: muebles, electrodomesticos, ropa, biblioteca, documentos, etc.</p>
 <p>Aca pueden ver la imagen con la que me encontré al día siguiente de la inundación:</p>
+
 </div>
 </div>
 </div>
@@ -44,6 +47,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="http://www.damian.oquanta.info/galleries/Inundacion/inundacion1.png" alt=""></p>
+
 </div>
 </div>
 </div>
@@ -53,6 +57,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Y Lore tratando de esbozar una sonrisa que obviamente enmascaraba una gran tristeza al ver la pieza de Facu en esas condiciones.</p>
+
 </div>
 </div>
 </div>
@@ -62,6 +67,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="http://www.damian.oquanta.info/galleries/Inundacion/inundacion2.png" alt=""></p>
+
 </div>
 </div>
 </div>
@@ -70,9 +76,9 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Gracias a Dios, no tuvimos que vivir la inundación &quot;in situ&quot; ya que estábamos volviendo de Córdoba (nos habíamos tomado unos días para descansar) en el momento en el que la tormenta se desató con mayor intensidad. Hubiese sido un momento complicadísimo, probablemente subiendo al techo con Facu a cuestas... mejor no imaginarlo, o si... para estar preparado.</p>
-<p>Hemos podido salvar algunos muebles, algunos electrodomésticos, muchas fotos y la mayoría de la ropa y el calzado. Pero hemos pérdido otras tantas cosas, por ejemplo, la biblioteca, muchos documentos y las computadoras. </p>
-<p>Ya han pasado tres semanas desde la tormenta, y aún no pudimos volver a casa. Los hongos se hacen un festín en estas situaciones y todavía quedan algunos creciendo en las paredes a pesar de la limpieza a diario. Probablemente estemos volviendo a fines de esta semana. </p>
+<p>Gracias a Dios, no tuvimos que vivir la inundación "in situ" ya que estábamos volviendo de Córdoba (nos habíamos tomado unos días para descansar) en el momento en el que la tormenta se desató con mayor intensidad. Hubiese sido un momento complicadísimo, probablemente subiendo al techo con Facu a cuestas... mejor no imaginarlo, o si... para estar preparado.</p>
+<p>Hemos podido salvar algunos muebles, algunos electrodomésticos, muchas fotos y la mayoría de la ropa y el calzado. Pero hemos pérdido otras tantas cosas, por ejemplo, la biblioteca, muchos documentos y las computadoras.</p>
+<p>Ya han pasado tres semanas desde la tormenta, y aún no pudimos volver a casa. Los hongos se hacen un festín en estas situaciones y todavía quedan algunos creciendo en las paredes a pesar de la limpieza a diario. Probablemente estemos volviendo a fines de esta semana.</p>
 <p>Y después... viene la recontrucción, la albañilería, la pintura, arreglar estufas, etc y comprar todo lo que se perdió y es necesario para la vida diaria. Para los arreglos, todas las manos son bienvenidas, jeje...</p>
 <p>Quisiera aprovechar este espacio para agradecer a todos aquellos que se preocuparon por nosotros. A todos aquellos que nos dieron una mano, no sólo física, poniendo el hombro a la hora de la limpieza, sino también dándonos su apoyo constante:</p>
 <ul>
@@ -95,6 +101,7 @@
 <p>Gracias totales!</p>
 <p>Nos vemos en el próximo post!</p>
 <p>Damián.</p>
+
 </div>
 </div>
 </div>

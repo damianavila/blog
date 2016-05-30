@@ -12,7 +12,8 @@ And now, I pretend to <em>log</em> the trades from this little account in a subs
 <!-- TEASER_END --></p>
 <table>
 <tr>
-<th>Ticket</th><br><th>Date</th>
+<th>Ticket</th>               
+<th>Date</th>
 <th>Transaction</th>
 <th>Currency Pair</th>
 <th>Price</th>
@@ -31,13 +32,12 @@ And now, I pretend to <em>log</em> the trades from this little account in a subs
 <td>AUD/USD</td>
 <td>0.94939</td>
 </tr>
-</table>
-
-<p>And is time to close them... so closing them whereas I am writing this post (just wait me a minute, I will be back!).</p>
+</table><p>And is time to close them... so closing them whereas I am writing this post (just wait me a minute, I will be back!).</p>
 <p>OK, I closed both positions:</p>
 <table>
 <tr>
-<th>Ticket</th><br><th>Date</th>
+<th>Ticket</th>               
+<th>Date</th>
 <th>Transaction</th>
 <th>Currency Pair</th>
 <th>Price</th>
@@ -56,14 +56,13 @@ And now, I pretend to <em>log</em> the trades from this little account in a subs
 <td>AUD/USD</td>
 <td>0.93063</td>
 </tr>
-</table>
-
-<p>And I added some pics to illustrate these trades:</p>
+</table><p>And I added some pics to illustrate these trades:</p>
 <p><img src="http://www.damian.oquanta.info/galleries/trades/1.png" alt="">
 <img src="http://www.damian.oquanta.info/galleries/trades/2.png" alt=""></p>
-<p>With these trades, we had a net increment of <strong>4.5%</strong> in the <em>balance</em>! </p>
-<p>Nice beginning! Let&#39;s see how far we can go...</p>
+<p>With these trades, we had a net increment of <strong>4.5%</strong> in the <em>balance</em>!</p>
+<p>Nice beginning! Let's see how far we can go...</p>
 <p>Damián</p>
+
 </div>
 </div>
 </div>
