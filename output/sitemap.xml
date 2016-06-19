@@ -87,7 +87,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/2016/05/index.html</loc>
-  <lastmod>2016-05-30T23:43:00Z</lastmod>
+  <lastmod>2016-06-19T19:58:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/2016/index.html</loc>
@@ -403,7 +403,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/2016/05/index.html</loc>
-  <lastmod>2016-05-30T23:43:00Z</lastmod>
+  <lastmod>2016-06-19T19:58:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/2016/index.html</loc>
@@ -788,6 +788,10 @@
   <xhtml:link rel="alternate" hreflang="en" href="http://www.damian.oquanta.info/posts/hide-the-input-cells-from-your-ipython-slides.html" />
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/posts/how-to-pin-the-conda.html</loc>
+  <lastmod>2016-06-19T19:58:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/posts/improving-viper-slideshows-styling.html</loc>
   <lastmod>2016-05-30T23:19:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="http://www.damian.oquanta.info/posts/improving-viper-slideshows-styling.html" />
@@ -1060,6 +1064,10 @@
  <url>
   <loc>http://www.damian.oquanta.info/posts/hide-the-input-cells-from-your-ipython-slides.html</loc>
   <lastmod>2016-05-30T23:19:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/posts/how-to-pin-the-conda.html</loc>
+  <lastmod>2016-06-19T19:58:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/improving-viper-slideshows-styling.html</loc>
