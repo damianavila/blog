@@ -8,8 +8,8 @@ article: http://ogp.me/ns/article#
 <meta name="viewport" content="width=device-width">
 <title>How to pin Conda | El blog de Damian</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../rss.xml">
 <link rel="canonical" href="http://www.damian.oquanta.info/es/posts/how-to-pin-conda.html">
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -26,9 +26,9 @@ MathJax.Hub.Config({
 <meta property="og:site_name" content="El blog de Damian">
 <meta property="og:title" content="How to pin Conda">
 <meta property="og:url" content="http://www.damian.oquanta.info/es/posts/how-to-pin-conda.html">
-<meta property="og:description" content="One interesting advance feature in Conda in the capacity to pin packages from your environments so they can not be updated at all. If you are interested in that specific version of some package and no">
+<meta property="og:description" content="One interesting advance feature in Conda is the capacity to pin packages from your environments so they can not be updated at all. If you are interested in that specific version of some package and no">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2016-06-19T15:54:52-03:00">
+<meta property="article:published_time" content="2016-06-25T12:54:52-03:00">
 <meta property="article:tag" content="conda">
 <meta property="article:tag" content="pinned">
 <meta property="article:tag" content="python">
@@ -51,7 +51,7 @@ MathJax.Hub.Config({
 
         <div class="meta">
             <div class="authordate">
-                <time class="timeago" datetime="2016-06-19T15:54:52-03:00">2016-06-19 15:54</time><a href="../../posts/how-to-pin-conda.html" rel="alternate" hreflang="en">
+                <time class="timeago" datetime="2016-06-25T12:54:52-03:00">2016-06-25 12:54</time><a href="../../posts/how-to-pin-conda.html" rel="alternate" hreflang="en">
                 English</a>
 
                       |  
@@ -76,22 +76,25 @@ MathJax.Hub.Config({
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>One interesting advance feature in Conda in the capacity to pin packages from your environments so they can not be updated at all. If you are interested in <strong>that</strong> specific version of some package and not the next one because it breaks you completely or because some other reason, you are probably pinning that package (if this is not the case, you should do the pin in the way I will describe instead of adding the specific version in every command you run). But... is it possible to pin Conda itself so it does not get updated every time you try to install/update something else?
+<p>One interesting advance feature in Conda is the capacity to pin packages from your environments so they can not be updated at all. If you are interested in <strong>that</strong> specific version of some package and not the next one because it breaks your work completely or for some other reason, you are probably <em>pinning</em> that package. If you are adding the specific version in every command you run instead of <em>pinning</em> the package, you are doing it wrong and you should keep reading ;-)</p>
+<p>But, is it possible to pin Conda itself so it does not get updated every time you try to install/update something else?
 <!-- TEASER_END --></p>
 <p>If you don't know what Conda is, you should probably go <a href="http://conda.pydata.org/docs/">here</a> and learn a little bit about it. For the lazy ones:</p>
 <blockquote>
 <p>Conda is an open source package management system and environment management system for installing multiple versions of software packages and their dependencies and switching easily between them. It works on Linux, OS X and Windows, and was created for Python programs but can package and distribute any software.</p>
 </blockquote>
-<p>One interesting behavior in Conda is that it gets updated to the latest version every time you try to install/update something else. That is a reasonable behavior in the general context but, for some specific use cases, that can be undesirable. And in the previous undesire you have the origin of the main question I raised before: is it possible to pin Conda itself so it does not get updated every time you try to install/update something else?</p>
+<p>One interesting behavior in Conda is that it gets updated to the latest version every time you try to install/update something else. That is a reasonable behavior in the general context but, for some specific use cases, that can be undesirable. This motivates the main question I raised before: is it possible to pin Conda itself so it does not get updated every time you try to install/update something else?</p>
 <p>I have heard a lot of people saying it is impossible to pin Conda, BUT that's not the case ;-)</p>
 <p>You can pin Conda the same way you pin any other package.</p>
-<p>Let me show you how you can do it... is <strong>really</strong> simple. Just one line:</p>
-<div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">"conda ==4.0.0"</span> &gt; ~/anaconda/conda-meta/pinned
+<p>Let me show you how you can do it... is <strong>really</strong> simple:</p>
+<div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">"conda ==4.0.0"</span> &gt;&gt; ~/anaconda/conda-meta/pinned
 </pre></div>
-<p>This will create a file called <code>pinned</code> containing the <code>conda</code> package version you are interested to keep (in this case, I choose the version <code>4.0.0</code>). This <code>pinned</code> file should be located in the <code>conda-meta</code> directory from your anaconda (or miniconda) installation. Then, every time you try to install or update something, this <code>pinned</code> file is read by Conda and the line with the <code>conda</code> specific version is added to the list sent to the SAT solver, hence you will always have that specification <em>enabled</em>, preventing you to update to a newer conda. Nice, don't you think?</p>
-<p>You can remove that file when you are ready to catch a new Conda version or alternative you can run <code>conda</code> install/update commands with the <code>--no-pin</code> option.</p>
+<p>This will create (or pass the string into) a file called <code>pinned</code> containing the <code>conda</code> package version you wish to keep (in this case, I choose the version <code>4.0.0</code>). This <code>pinned</code> file should be located in the <code>conda-meta</code> directory of your anaconda (or miniconda) installation. Then, every time you try to install or update something, this <code>pinned</code> file is read by Conda and the line with the <code>conda</code> specific version is added to the list sent to the SAT solver, hence you will always have that specification <em>enabled</em>, preventing you from updating to a newer Conda. Nice, don't you think?</p>
+<p>You can remove that file when you are ready to catch a new Conda version or alternatively you can run <code>conda</code> install/update commands with the <code>--no-pin</code> option.</p>
 <p>Hope this helps others! If not, at least, it was fun to play a little bit with this feature!</p>
 <p>See you next time!</p>
+<p><strong>PS1</strong>: Thanks Will for reviewing my wording!</p>
+<p><strong>PS2</strong>: Starting Conda version <code>4.0.9</code>, you have a new config option called <code>auto_update_conda</code> to disable the self update nature in Conda.</p>
 
 </div>
 </div>
@@ -99,8 +102,12 @@ MathJax.Hub.Config({
         </div>
         <p><b>Don't forget this blog post is an ipynb file itself! So, you can download it from the "Source" link
         at the top of the post if you want to play with it ;-)</b></p>
-        
-                            <div id="disqus_thread"></div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="coming-back.html" rel="prev" title="Coming back">Publicación anterior</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="damianblogcomments",
             disqus_url="http://www.damian.oquanta.info/es/posts/how-to-pin-conda.html",
