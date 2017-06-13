@@ -103,7 +103,7 @@ To ">
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
   <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n 1,7p /media/datos/Ejemplos/toggle.tpl
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n <span class="m">1</span>,7p /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
     <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -120,7 +120,10 @@ To ">
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>{%- extends 'html_full.tpl' -%}
 
@@ -156,7 +159,7 @@ To ">
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
   <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n 25,29p /media/datos/Ejemplos/toggle.tpl
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n <span class="m">25</span>,29p /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
     <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -173,7 +176,10 @@ To ">
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>$(document).ready(function(){
   $(".input").click(function(){
@@ -208,7 +214,7 @@ To ">
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
   <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n 18,21p /media/datos/Ejemplos/toggle.tpl
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n <span class="m">18</span>,21p /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
     <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -225,7 +231,10 @@ To ">
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>.output_hidden {
   display: none;
@@ -274,7 +283,10 @@ To ">
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>     1	{%- extends 'html_full.tpl' -%}
      2	
@@ -367,7 +379,7 @@ To ">
     <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-                    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><script type="text/x-mathjax-config">
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-yYfngbEKv4RENfGDvNUqJTqGFcKf31NJEe9OTnnMH3Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -380,7 +392,7 @@ MathJax.Hub.Config({
 });
 </script>
 </div>
-                    <footer id="footer"><p>Contents © 2016 <a href="mailto:info@oquanta.info">Damian Avila</a> - 
+                    <footer id="footer"><p>Contents © 2017 <a href="mailto:info@oquanta.info">Damian Avila</a> - 
 Powered by <a href="http://getnikola.com">Nikola</a> - 
 Zen theme based in <a href="https://github.com/arusahni/website-template">Arusahni's website-template</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a></p>

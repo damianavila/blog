@@ -1,6 +1,5 @@
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16,11 +15,11 @@
 <li><a href="http://www.damian.oquanta.info/posts/one-line-deployment-of-your-site-to-gh-pages.html">One line deployment of your site to gh-pages</a></li>
 </ul>
 <p>OK, coming back to the extension, the idea behind this one is very simple: I will call the <code>nikola deploy</code> command from inside the <strong>IPython</strong> notebook using our beloved <code>IPython.notebook.kernel.execute</code> method, and also taking the advantage of <em>passing</em> commands to the underlying system just pre-pending with the <code>!</code> mark. The relevant lines are below:</p>
-<div class="highlight"><pre><span></span><span class="mi">36</span>      <span class="k">if</span> <span class="p">(</span><span class="nx">clean</span><span class="o">==</span><span class="s2">&quot;True&quot;</span><span class="p">)</span> <span class="p">{</span>
-<span class="mi">37</span>        <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">kernel</span><span class="p">.</span><span class="nx">execute</span><span class="p">(</span><span class="s1">&#39;!nikola clean&#39;</span><span class="p">);</span>
-<span class="mi">38</span>      <span class="p">}</span>
-<span class="mi">39</span>      <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">kernel</span><span class="p">.</span><span class="nx">execute</span><span class="p">(</span><span class="s1">&#39;!nikola build&#39;</span><span class="p">);</span>
-<span class="mi">40</span>      <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">kernel</span><span class="p">.</span><span class="nx">execute</span><span class="p">(</span><span class="s1">&#39;!nikola deploy&#39;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><span class="mi">36</span>    <span class="k">if</span> <span class="p">(</span><span class="nx">clean</span><span class="o">==</span><span class="s2">&quot;True&quot;</span><span class="p">)</span> <span class="p">{</span>
+<span class="mi">37</span>      <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">kernel</span><span class="p">.</span><span class="nx">execute</span><span class="p">(</span><span class="s1">&#39;!nikola clean&#39;</span><span class="p">);</span>
+<span class="mi">38</span>    <span class="p">}</span>
+<span class="mi">39</span>    <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">kernel</span><span class="p">.</span><span class="nx">execute</span><span class="p">(</span><span class="s1">&#39;!nikola build&#39;</span><span class="p">);</span>
+<span class="mi">40</span>    <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">kernel</span><span class="p">.</span><span class="nx">execute</span><span class="p">(</span><span class="s1">&#39;!nikola deploy&#39;</span><span class="p">);</span>
 </pre></div>
 <p>After writing the content of my post following the workflow explained in previous posts, I just click on the <em>nikola_deploy</em> extension button and the site is <em>cleaned</em> (if you choose this option to True in the config file, please set it to False if you want a quick building), <em>built</em> and <em>deployed</em> <strong>automagically</strong> ;-)</p>
 <p>And that's all... the complete code below:</p>
@@ -49,7 +48,11 @@
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>     1	/*
      2	* ----------------------------------------------------------------------------
@@ -120,8 +123,7 @@
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -133,3 +135,5 @@
 </div>
 </div>
 </div>
+ 
+

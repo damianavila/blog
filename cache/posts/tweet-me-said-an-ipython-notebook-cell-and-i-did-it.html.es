@@ -1,6 +1,5 @@
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -20,7 +19,7 @@ Probably you know that spend a lot of time inside <strong>IPython</strong> noteb
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
   <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n 59,74p /media/datos/Desarrollos/mIPyex/custom/tweet_me/main.js
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n <span class="m">59</span>,74p /media/datos/Desarrollos/mIPyex/custom/tweet_me/main.js
 </pre></div>
 
     <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -36,7 +35,11 @@ Probably you know that spend a lot of time inside <strong>IPython</strong> noteb
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>function tweetMe(path) {
   var entry = IPython.notebook.get_selected_cell().get_text();
@@ -65,8 +68,7 @@ Probably you know that spend a lot of time inside <strong>IPython</strong> noteb
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -80,8 +82,7 @@ It is easy... just follow the README to install all the necessary tools (I used 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -90,8 +91,7 @@ It is easy... just follow the README to install all the necessary tools (I used 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -102,8 +102,7 @@ Tweet me... said an IPython notebook cell and I did it.
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -113,8 +112,7 @@ You can now send tweets from cells with multi-line content (my first implementat
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -123,3 +121,5 @@ You can now send tweets from cells with multi-line content (my first implementat
 </div>
 </div>
 </div>
+ 
+

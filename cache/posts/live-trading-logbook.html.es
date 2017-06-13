@@ -1,6 +1,5 @@
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -66,3 +65,5 @@ And now, I pretend to <em>log</em> the trades from this little account in a subs
 </div>
 </div>
 </div>
+ 
+

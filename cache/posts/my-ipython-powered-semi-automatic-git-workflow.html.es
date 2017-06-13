@@ -1,6 +1,5 @@
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16,8 +15,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -25,8 +23,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -35,8 +32,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -68,7 +64,11 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[1]:</div>
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[1]:</div>
+
+
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -84,8 +84,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -132,7 +131,11 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>/media/datos/Desarrollos/devel_example
 </pre>
@@ -146,8 +149,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -157,8 +159,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -188,8 +189,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -231,7 +231,11 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Clonar en «ipython»...
 remote: Reusing existing pack: 96757, done.
@@ -256,8 +260,7 @@ origin	git://github.com/ipython/ipython.git (push)
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -267,8 +270,7 @@ origin	git://github.com/ipython/ipython.git (push)
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -276,8 +278,7 @@ origin	git://github.com/ipython/ipython.git (push)
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -286,8 +287,7 @@ origin	git://github.com/ipython/ipython.git (push)
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -314,8 +314,7 @@ origin	git://github.com/ipython/ipython.git (push)
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -357,7 +356,11 @@ origin	git://github.com/ipython/ipython.git (push)
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Ya está en «master»
 Already up-to-date.
@@ -375,8 +378,7 @@ nothing to commit, working directory clean
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -411,7 +413,11 @@ nothing to commit, working directory clean
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>CONTRIBUTING.md  <span class="ansi-blue-intense-fg ansi-bold">examples</span>/   MANIFEST.in  setupbase.py  <span class="ansi-green-intense-fg ansi-bold">setup.py</span>*
 COPYING.txt      <span class="ansi-blue-intense-fg ansi-bold">git-hooks</span>/  README.rst   <span class="ansi-green-intense-fg ansi-bold">setupegg.py</span>*  <span class="ansi-blue-intense-fg ansi-bold">tools</span>/
@@ -698,7 +704,11 @@ container, has been removed in the ``.py`` script.
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Overwriting docs/source/interactive/nbconvert.rst
 </pre>
@@ -712,8 +722,7 @@ container, has been removed in the ``.py`` script.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -746,7 +755,11 @@ container, has been removed in the ``.py`` script.
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre># En la rama doc_post_serve
 # Cambios no preparados para el commit:
@@ -789,7 +802,11 @@ no hay cambios agregados al commit (use «git add» o «git commit -a»)
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>diff --git a/docs/source/interactive/nbconvert.rst b/docs/source/interactive/nbconvert.rst
 index 1789a62..610edf0 100644
@@ -826,8 +843,7 @@ index 1789a62..610edf0 100644
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -876,7 +892,11 @@ index 1789a62..610edf0 100644
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[doc_post_serve c87ac2f] Added --post-serve explanation into the nbconvert docs.
  1 file changed, 6 insertions(+), 3 deletions(-)
@@ -891,8 +911,7 @@ index 1789a62..610edf0 100644
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -925,7 +944,11 @@ index 1789a62..610edf0 100644
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Counting objects: 8732, done.
 Delta compression using up to 4 threads.
@@ -945,8 +968,7 @@ To git@github.com:damianavila/ipython.git
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -956,8 +978,7 @@ To git@github.com:damianavila/ipython.git
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -973,3 +994,5 @@ To git@github.com:damianavila/ipython.git
 </div>
 </div>
 </div>
+ 
+

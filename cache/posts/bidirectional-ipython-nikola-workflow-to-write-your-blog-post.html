@@ -1,6 +1,5 @@
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12,8 +11,7 @@
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -25,8 +23,7 @@ damian@damian-S400CA:/media/datos/Desarrollos/damian_blog$</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -35,8 +32,7 @@ damian@damian-S400CA:/media/datos/Desarrollos/damian_blog$</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -48,8 +44,7 @@ damian@damian-S400CA:/media/datos/Desarrollos/damian_blog$</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -58,8 +53,7 @@ damian@damian-S400CA:/media/datos/Desarrollos/damian_blog$</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -81,8 +75,7 @@ Nikola v6.1.1 -- IPython Console (conf = configuration, SITE = site engine)</cod
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -91,8 +84,7 @@ Nikola v6.1.1 -- IPython Console (conf = configuration, SITE = site engine)</cod
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -116,8 +108,7 @@ conf.IPYNB_CONFIG </code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -145,8 +136,7 @@ SITE.link </code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -210,7 +200,7 @@ In [7]: !ipython notebook --profile=myext
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
   <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n 197,208p conf.py
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n <span class="m">197</span>,208p conf.py
 </pre></div>
 
     <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -226,7 +216,11 @@ In [7]: !ipython notebook --profile=myext
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre># Commands to execute to deploy. Can be anything, for example,
 # you may use rsync:
@@ -251,8 +245,7 @@ DEPLOY_COMMANDS = [&#34;git add .&#34;,
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -281,3 +274,5 @@ DEPLOY_COMMANDS = [&#34;git add .&#34;,
 </div>
 </div>
 </div>
+ 
+

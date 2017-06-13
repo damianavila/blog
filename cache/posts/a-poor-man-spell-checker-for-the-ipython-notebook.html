@@ -1,6 +1,5 @@
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -17,15 +16,15 @@
 <p><img src="http://www.damian.oquanta.info/galleries/spellchecker/1.png" alt=""></p>
 <ul>
 <li><p>We need a way to get the content of the selected <strong>IPython</strong> notebook cell:</p>
-<div class="highlight"><pre><span></span><span class="mi">24</span>        <span class="kd">var</span> <span class="nx">input</span> <span class="o">=</span> <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">get_selected_cell</span><span class="p">().</span><span class="nx">get_text</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><span class="mi">24</span>      <span class="kd">var</span> <span class="nx">input</span> <span class="o">=</span> <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">get_selected_cell</span><span class="p">().</span><span class="nx">get_text</span><span class="p">()</span>
 </pre></div>
 </li>
 <li><p>Put the content in a common html text area, and use the spell checker capabilities from the browser:</p>
-<div class="highlight"><pre><span></span><span class="mi">26</span>        <span class="kd">var</span> <span class="nx">textarea</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;textarea/&gt;&#39;</span><span class="p">)</span>
-  <span class="mi">27</span>            <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;rows&#39;</span><span class="p">,</span><span class="s1">&#39;15&#39;</span><span class="p">)</span>
-  <span class="mi">28</span>            <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;cols&#39;</span><span class="p">,</span><span class="s1">&#39;80&#39;</span><span class="p">)</span>
-  <span class="mi">29</span>            <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;source&#39;</span><span class="p">)</span>
-  <span class="mi">30</span>            <span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="nx">input</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><span class="mi">26</span>      <span class="kd">var</span> <span class="nx">textarea</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;textarea/&gt;&#39;</span><span class="p">)</span>
+  <span class="mi">27</span>          <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;rows&#39;</span><span class="p">,</span><span class="s1">&#39;15&#39;</span><span class="p">)</span>
+  <span class="mi">28</span>          <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;cols&#39;</span><span class="p">,</span><span class="s1">&#39;80&#39;</span><span class="p">)</span>
+  <span class="mi">29</span>          <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;source&#39;</span><span class="p">)</span>
+  <span class="mi">30</span>          <span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="nx">input</span><span class="p">);</span>
 </pre></div>
 </li>
 <li><p>Make the corrections.</p>
@@ -34,9 +33,9 @@
 <p><img src="http://www.damian.oquanta.info/galleries/spellchecker/2.png" alt=""></p>
 <ul>
 <li><p>Get back the corrected content into the selected <strong>IPython</strong> notebook cell.</p>
-<div class="highlight"><pre><span></span><span class="mi">60</span>        <span class="kd">var</span> <span class="nx">corr_input</span> <span class="o">=</span> <span class="sb">`$`</span><span class="p">.</span><span class="nx">trim</span><span class="p">(</span><span class="sb">`$`</span><span class="p">(</span><span class="nx">textarea</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span> <span class="c1">// note: backticks to avoid mathjax rendering, sorry.</span>
-  <span class="mi">61</span>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">corr_input</span><span class="p">);</span>
-  <span class="mi">62</span>        <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">get_selected_cell</span><span class="p">().</span><span class="nx">set_text</span><span class="p">(</span><span class="nx">corr_input</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><span class="mi">60</span>      <span class="kd">var</span> <span class="nx">corr_input</span> <span class="o">=</span> <span class="sb">`$`</span><span class="p">.</span><span class="nx">trim</span><span class="p">(</span><span class="sb">`$`</span><span class="p">(</span><span class="nx">textarea</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span> <span class="c1">// note: backticks to avoid mathjax rendering, sorry.</span>
+  <span class="mi">61</span>      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">corr_input</span><span class="p">);</span>
+  <span class="mi">62</span>      <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">get_selected_cell</span><span class="p">().</span><span class="nx">set_text</span><span class="p">(</span><span class="nx">corr_input</span><span class="p">);</span>
 </pre></div>
 </li>
 </ul>
@@ -66,7 +65,11 @@
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>     1	/*
      2	* ----------------------------------------------------------------------------
@@ -170,8 +173,7 @@
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -184,3 +186,5 @@
 </div>
 </div>
 </div>
+ 
+

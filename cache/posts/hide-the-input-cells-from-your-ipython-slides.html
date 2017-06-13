@@ -1,13 +1,11 @@
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A tweet arrived...</p>
 <p><blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/damian_avila">@damian_avila</a> Is there a way to only show the output of a cell in an NB slideshow?</p>&mdash; Thomas Wiecki (@TWiecki) <a href="https://twitter.com/TWiecki/statuses/388378339716505601">October 10, 2013</a></blockquote></p>
-<p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p>And my answer was <strong>YES</strong>...</p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>And my answer was <strong>YES</strong>...</p>
 <p>How we can easily do it? Just follow these few steps:
 <!-- TEASER_END --></p>
 <p><strong>Rational</strong>: We are going to use the power of <code>IPython.nbconvert</code> library to use a modified <strong>jinja</strong> template which will let us hide the<code>input cells</code> in our <strong>IPython slides</strong>. To achieve this goal, we are going to use the same approach described in a previous <a href="http://www.damian.oquanta.info/posts/mimic-the-ipython-notebook-cell-execution.html">post</a>. Hence, our <code>input cells</code> will be hidden by default, but they will show up if we click on the corresponding <code>output cell</code> area.</p>
@@ -37,7 +35,11 @@
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>{%- extends &#39;slides_reveal.tpl&#39; -%}
 
@@ -82,8 +84,7 @@ $(document).ready(function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -96,18 +97,15 @@ $(document).ready(function(){
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><iframe src="http://damianavila.github.io/miscellaneus/test_slides.slides.html#/3/2" width="800" height="600"></iframe></p>
-
+<iframe src="http://damianavila.github.io/miscellaneus/test_slides.slides.html#/3/2" width="800" height="600"></iframe>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -118,3 +116,5 @@ $(document).ready(function(){
 </div>
 </div>
 </div>
+ 
+

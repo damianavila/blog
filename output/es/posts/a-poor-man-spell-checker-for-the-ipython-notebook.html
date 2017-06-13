@@ -98,16 +98,16 @@ And why it is a poor man extens">
 <ul>
 <li>
 <p>We need a way to get the content of the selected <strong>IPython</strong> notebook cell:</p>
-<div class="highlight"><pre><span></span><span class="mi">24</span>        <span class="kd">var</span> <span class="nx">input</span> <span class="o">=</span> <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">get_selected_cell</span><span class="p">().</span><span class="nx">get_text</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><span class="mi">24</span>      <span class="kd">var</span> <span class="nx">input</span> <span class="o">=</span> <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">get_selected_cell</span><span class="p">().</span><span class="nx">get_text</span><span class="p">()</span>
 </pre></div>
 </li>
 <li>
 <p>Put the content in a common html text area, and use the spell checker capabilities from the browser:</p>
-<div class="highlight"><pre><span></span><span class="mi">26</span>        <span class="kd">var</span> <span class="nx">textarea</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;textarea/&gt;'</span><span class="p">)</span>
-  <span class="mi">27</span>            <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'rows'</span><span class="p">,</span><span class="s1">'15'</span><span class="p">)</span>
-  <span class="mi">28</span>            <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'cols'</span><span class="p">,</span><span class="s1">'80'</span><span class="p">)</span>
-  <span class="mi">29</span>            <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'name'</span><span class="p">,</span><span class="s1">'source'</span><span class="p">)</span>
-  <span class="mi">30</span>            <span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="nx">input</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><span class="mi">26</span>      <span class="kd">var</span> <span class="nx">textarea</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;textarea/&gt;'</span><span class="p">)</span>
+  <span class="mi">27</span>          <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'rows'</span><span class="p">,</span><span class="s1">'15'</span><span class="p">)</span>
+  <span class="mi">28</span>          <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'cols'</span><span class="p">,</span><span class="s1">'80'</span><span class="p">)</span>
+  <span class="mi">29</span>          <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'name'</span><span class="p">,</span><span class="s1">'source'</span><span class="p">)</span>
+  <span class="mi">30</span>          <span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="nx">input</span><span class="p">);</span>
 </pre></div>
 </li>
 <li>
@@ -118,9 +118,9 @@ And why it is a poor man extens">
 <ul>
 <li>
 <p>Get back the corrected content into the selected <strong>IPython</strong> notebook cell.</p>
-<div class="highlight"><pre><span></span><span class="mi">60</span>        <span class="kd">var</span> <span class="nx">corr_input</span> <span class="o">=</span> <span class="sb">`$`</span><span class="p">.</span><span class="nx">trim</span><span class="p">(</span><span class="sb">`$`</span><span class="p">(</span><span class="nx">textarea</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span> <span class="c1">// note: backticks to avoid mathjax rendering, sorry.</span>
-  <span class="mi">61</span>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">corr_input</span><span class="p">);</span>
-  <span class="mi">62</span>        <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">get_selected_cell</span><span class="p">().</span><span class="nx">set_text</span><span class="p">(</span><span class="nx">corr_input</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><span class="mi">60</span>      <span class="kd">var</span> <span class="nx">corr_input</span> <span class="o">=</span> <span class="sb">`$`</span><span class="p">.</span><span class="nx">trim</span><span class="p">(</span><span class="sb">`$`</span><span class="p">(</span><span class="nx">textarea</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span> <span class="c1">// note: backticks to avoid mathjax rendering, sorry.</span>
+  <span class="mi">61</span>      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">corr_input</span><span class="p">);</span>
+  <span class="mi">62</span>      <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">get_selected_cell</span><span class="p">().</span><span class="nx">set_text</span><span class="p">(</span><span class="nx">corr_input</span><span class="p">);</span>
 </pre></div>
 </li>
 </ul>
@@ -151,7 +151,10 @@ And why it is a poor man extens">
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>     1	/*
      2	* ----------------------------------------------------------------------------
@@ -300,7 +303,7 @@ And why it is a poor man extens">
     <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-                    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><script type="text/x-mathjax-config">
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-yYfngbEKv4RENfGDvNUqJTqGFcKf31NJEe9OTnnMH3Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -313,7 +316,7 @@ MathJax.Hub.Config({
 });
 </script>
 </div>
-                    <footer id="footer"><p>Contents © 2016 <a href="mailto:info@oquanta.info">Damian Avila</a> - 
+                    <footer id="footer"><p>Contents © 2017 <a href="mailto:info@oquanta.info">Damian Avila</a> - 
 Powered by <a href="http://getnikola.com">Nikola</a> - 
 Zen theme based in <a href="https://github.com/arusahni/website-template">Arusahni's website-template</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a></p>

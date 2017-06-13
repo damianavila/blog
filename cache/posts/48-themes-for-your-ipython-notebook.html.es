@@ -1,6 +1,5 @@
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -9,8 +8,7 @@
 <!-- TEASER_END -->
 
 <p><blockquote class="twitter-tweet" data-partner="tweetdeck"><p>Sent PR to base16 for IPython notebook colorschemes. Check them out at <a href="https://t.co/SBbwBfLGli">https://t.co/SBbwBfLGli</a> cc <a href="https://twitter.com/oceankidbilly">@oceankidbilly</a> <a href="https://twitter.com/damian_avila">@damian_avila</a></p>&mdash; Nikhil Sonnad (@nsonnad) <a href="https://twitter.com/nsonnad/statuses/454996539992059905">April 12, 2014</a></blockquote></p>
-<p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p>Essentially, he made available 48 <strong>IPython notebook</strong> themes based in the <strong>base16</strong> color scheme generator. Thanks Nikhil for your work!!!</p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>Essentially, he made available 48 <strong>IPython notebook</strong> themes based in the <strong>base16</strong> color scheme generator. Thanks Nikhil for your work!!!</p>
 <p>Well, I want to try them all and quickly, so I wrote some little code to do it:</p>
 <p>First, some imports...</p>
 
@@ -34,8 +32,7 @@
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -106,8 +103,7 @@
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -143,7 +139,11 @@ To do it, I use some little magic <em>tricks</em> from <strong>IPython</strong>.
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[ProfileCreate] Generating default config file: u&#39;/home/damian/.ipython/profile_3024-dark/ipython_config.py&#39;
 [ProfileCreate] Generating default config file: u&#39;/home/damian/.ipython/profile_3024-dark/ipython_notebook_config.py&#39;
@@ -300,8 +300,7 @@ To do it, I use some little magic <em>tricks</em> from <strong>IPython</strong>.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -327,8 +326,7 @@ To do it, I use some little magic <em>tricks</em> from <strong>IPython</strong>.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -364,7 +362,11 @@ To do it, I use some little magic <em>tricks</em> from <strong>IPython</strong>.
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>http://127.0.0.1:9000/notebooks/48-themes-for-your-ipython-notebook.ipynb 3024-dark
 http://127.0.0.1:9001/notebooks/48-themes-for-your-ipython-notebook.ipynb 3024-light
@@ -425,8 +427,7 @@ http://127.0.0.1:9047/notebooks/48-themes-for-your-ipython-notebook.ipynb twilig
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -451,8 +452,7 @@ http://127.0.0.1:9047/notebooks/48-themes-for-your-ipython-notebook.ipynb twilig
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -464,3 +464,5 @@ http://127.0.0.1:9047/notebooks/48-themes-for-your-ipython-notebook.ipynb twilig
 </div>
 </div>
 </div>
+ 
+

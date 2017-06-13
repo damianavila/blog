@@ -1,6 +1,5 @@
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -19,7 +18,7 @@
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
   <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n 1,7p /media/datos/Ejemplos/toggle.tpl
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n <span class="m">1</span>,7p /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
     <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -35,7 +34,11 @@
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>{%- extends &#39;html_full.tpl&#39; -%}
 
@@ -55,8 +58,7 @@
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -71,7 +73,7 @@
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
   <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n 25,29p /media/datos/Ejemplos/toggle.tpl
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n <span class="m">25</span>,29p /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
     <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -87,7 +89,11 @@
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>$(document).ready(function(){
   $(&#34;.input&#34;).click(function(){
@@ -105,8 +111,7 @@
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -122,7 +127,7 @@
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
   <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n 18,21p /media/datos/Ejemplos/toggle.tpl
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n <span class="m">18</span>,21p /media/datos/Ejemplos/toggle.tpl
 </pre></div>
 
     <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -138,7 +143,11 @@
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>.output_hidden {
   display: none;
@@ -155,8 +164,7 @@
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -186,7 +194,11 @@
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>     1	{%- extends &#39;html_full.tpl&#39; -%}
      2	
@@ -231,8 +243,7 @@
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -248,3 +259,5 @@
 </div>
 </div>
 </div>
+ 
+

@@ -39,6 +39,7 @@ div.text_cell_render {
 
 .rendered_html p {
   text-align: left;
+  padding: 0.4em;
 }
 
 .rendered_html ul {

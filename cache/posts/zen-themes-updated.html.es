@@ -1,6 +1,5 @@
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -35,7 +34,11 @@ As a consequence of the update, the <code>zen-ipython</code> theme has change a 
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Themes:
 -------
@@ -64,8 +67,7 @@ zen-jinja
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -96,7 +98,11 @@ zen-jinja
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre><span class="ansi-yellow-intense-fg ansi-bold">[2014-05-30T18:28:23Z] WARNING: Nikola: Cannot load theme &#34;zen-ipython&#34;, using &#39;bootstrap&#39; instead.
 </span><span class="ansi-white-fg">[2014-05-30T18:28:24Z] INFO: install_theme: Downloading: http://themes.getnikola.com/v7/zen-ipython.zip
@@ -145,8 +151,7 @@ zen-jinja
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -157,3 +162,5 @@ zen-jinja
 </div>
 </div>
 </div>
+ 
+
