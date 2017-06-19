@@ -87,7 +87,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/javascript.xml</loc>
-  <lastmod>2017-06-12T22:49:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/jinja.xml</loc>
@@ -95,7 +95,11 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/jupyter.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.damian.oquanta.info/categories/jupyterlab.xml</loc>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/less.xml</loc>
@@ -171,15 +175,15 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/python.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/reveal.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/rise.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/scipycon.xml</loc>
@@ -187,7 +191,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/slideshow.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/spellcheck.xml</loc>
@@ -224,6 +228,10 @@
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/twitter.xml</loc>
   <lastmod>2017-06-12T22:49:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.damian.oquanta.info/categories/typescript.xml</loc>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/videos.xml</loc>
@@ -331,7 +339,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/javascript.xml</loc>
-  <lastmod>2017-06-12T22:49:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/jinja.xml</loc>
@@ -339,7 +347,11 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/jupyter.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.damian.oquanta.info/es/categories/jupyterlab.xml</loc>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/less.xml</loc>
@@ -415,15 +427,15 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/python.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/reveal.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/rise.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/scipycon.xml</loc>
@@ -431,7 +443,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/slideshow.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/spellcheck.xml</loc>
@@ -468,6 +480,10 @@
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/twitter.xml</loc>
   <lastmod>2017-06-12T22:49:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.damian.oquanta.info/es/categories/typescript.xml</loc>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/videos.xml</loc>
@@ -535,7 +551,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/rss.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/galleries/Facu_RN/rss.xml</loc>
@@ -579,10 +595,10 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/rss.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/sitemap.xml</loc>
-  <lastmod>2017-06-13T11:54:00Z</lastmod>
+  <lastmod>2017-06-19T14:30:00Z</lastmod>
  </sitemap>
 </sitemapindex>
