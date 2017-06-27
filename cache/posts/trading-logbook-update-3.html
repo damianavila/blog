@@ -29,6 +29,31 @@
 </tr>
 </tbody>
 </table>
+<p><strong>Update 27-Jun-2017</strong></p>
+<p>I have opened two more positions:</p>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Transaction</th>
+<th>Currency Pair</th>
+<th>Price      </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>06/27/2017 10:02:27</td>
+<td>BuyMarket</td>
+<td>EUR/CHF</td>
+<td>1.08908</td>
+</tr>
+<tr>
+<td>06/27/2017 10:02:09</td>
+<td>BuyMarket</td>
+<td>USD/CHF</td>
+<td>0.96524</td>
+</tr>
+</tbody>
+</table>
 <p>Let's see how things evolve in the next few days.</p>
 <p>Happy trading!</p>
 
