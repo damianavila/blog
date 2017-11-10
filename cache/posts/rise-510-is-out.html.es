@@ -31,7 +31,7 @@
 <p>BIG THANK YOU!</p>
 <p>I also want to mention and thanks to <strong>Chris Holdgraf</strong> <a href="https://github.com/choldgraf">@choldgraf</a>, one of the members of the Binder team who quickly caugth the release and made it available at <strong>Binder</strong> (add also contributed with the <code>autolaunch</code> options and docs).</p>
 <p>Enjoy it!</p>
-<p>And thanks for using RISE!</p>
+<p>And thanks for using <strong>RISE</strong>!</p>
 <p><strong>ADDENDUM</strong></p>
 <p>We have detected some issues trying to install <strong>RISE</strong> on win boxes reported <a href="https://github.com/damianavila/RISE/issues/315">here</a>. I have rebuilt the packages and they seem to be working OK by now. Let us know if you have further issues. Thanks.</p>
 
