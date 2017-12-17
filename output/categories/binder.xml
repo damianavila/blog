@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Damian's blog (Posts about Binder)</title><link>http://www.damian.oquanta.info/</link><description></description><atom:link href="http://www.damian.oquanta.info/categories/binder.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 17 Dec 2017 22:28:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Binder + Nikola + Jupyter + Github = Blogging resourceless</title><link>http://www.damian.oquanta.info/posts/binder-%2B-nikola-%2B-jupyter-%2B-github-blogging-resourceless.html</link><dc:creator>Damian Avila</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;You are in vacation time but you want to blog something nice to share with your friends.
+And your blog is powered by &lt;strong&gt;Nikola&lt;/strong&gt;.
+And you are a &lt;strong&gt;Jupyter Notebook&lt;/strong&gt; user.
+But you don't have your laptop with you, because you are on vacation time, remember? ;-)
+But you still have your phone and some connectivity.
+What do you think if I tell you you have a complete workflow to write your blogpost, build the site and deploy it just using your phone? But without using computational resources from your phone.&lt;/p&gt;
+&lt;p&gt;Don't you believe me? Just read below and I will show you how this is possible... and fun!
+&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.damian.oquanta.info/posts/binder-%2B-nikola-%2B-jupyter-%2B-github-blogging-resourceless.html"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>Binder</category><category>gh-pages</category><category>git</category><category>Github</category><category>Jupyter</category><category>nikola</category><category>workflow</category><guid>http://www.damian.oquanta.info/posts/binder-%2B-nikola-%2B-jupyter-%2B-github-blogging-resourceless.html</guid><pubDate>Sun, 17 Dec 2017 21:12:53 GMT</pubDate></item></channel></rss>
