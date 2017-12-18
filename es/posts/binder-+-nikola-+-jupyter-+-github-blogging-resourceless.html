@@ -96,6 +96,7 @@ But you don't have your laptop with yo">
 <p>What do you think if I say that you have a complete workflow to write your blogpost, build the site and deploy it just using your phone? But without using computational resources from it (that would be also interesting, btw).</p>
 <p>Don't you believe me? Just read this post and I will show you how you can make this possible... and fun!
 <!-- TEASER_END --></p>
+<p><strong>NOTE</strong>: This post is long but I promise will be interesting! Also, there are multiple cells generating a <em>lot</em> of output, remember that you can hide the output clicking on <em>"Click me to hide the output"</em> button at the bottom/right conner of each cell.</p>
 <h3 id="Ingredients">Ingredients<a class="anchor-link" href="binder-%2B-nikola-%2B-jupyter-%2B-github-blogging-resourceless.html#Ingredients">¶</a>
 </h3>
 <p>First, as with any other recipe, we need some ingredients.</p>
@@ -1726,7 +1727,7 @@ Deleted branch gh-pages (was 4fb3a46f).
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
+<div class="prompt input_prompt">In [23]:</div>
 <div class="inner_cell">
   <div class="input_area">
     <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git subtree split --prefix output -b gh-pages
@@ -1738,17 +1739,46 @@ Deleted branch gh-pages (was 4fb3a46f).
 </div>
 </div>
 
+<div class="output_wrapper output_hidden">
+  <div class="output">
+    
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Created branch 'gh-pages'
+7092c69ccde3f7cd2a5d31c2a86b74739d665ac0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+  </div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Finally, in the terminal: <code>git push -f origin gh-pages:gh-pages</code> to deploy your site</p>
+<p>Finally, in the terminal: <code>git push -f origin gh-pages:gh-pages</code> to deploy your site and remove the local <code>gh-pages</code> with <code>git branch -D gh-pages</code>.</p>
 <p>And you are done!!!</p>
+<p><strong>Note</strong>: As you probably realized, you can run all the commands I described from the terminal and use the notebook just to write the blog posts. That would be, probably, the most common pattern. But this post in nicer and more explanatory if I run most of the commands here ;-)</p>
+<h4 id="Conclusion">Conclusion<a class="anchor-link" href="binder-%2B-nikola-%2B-jupyter-%2B-github-blogging-resourceless.html#Conclusion">¶</a>
+</h4>
 <p>You have your new post <em>live</em>, in a <em>resourceless</em> sort of workflow, thanks to the <strong>Jupyter</strong> ecosystem, <strong>Nikola</strong> and <strong>Github</strong>.</p>
 <p>OK, long enough post. Sorry about that, but I need to give you the complete workflow if you want/need to use it.</p>
-<p>Happy coding! And blogging!</p>
+<p>Happy coding!</p>
+<p>And blogging!</p>
 
 </div>
 </div>
