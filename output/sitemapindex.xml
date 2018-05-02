@@ -15,7 +15,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/binder.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/blog.xml</loc>
@@ -87,7 +87,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/ipython.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/ipytmpl.xml</loc>
@@ -103,11 +103,11 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/jupyter.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/jupyterlab.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/less.xml</loc>
@@ -151,7 +151,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/opensource.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/osx.xml</loc>
@@ -183,7 +183,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/python.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/reveal.xml</loc>
@@ -275,7 +275,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/binder.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/blog.xml</loc>
@@ -347,7 +347,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/ipython.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/ipytmpl.xml</loc>
@@ -363,11 +363,11 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/jupyter.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/jupyterlab.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/less.xml</loc>
@@ -411,7 +411,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/opensource.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/osx.xml</loc>
@@ -443,7 +443,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/python.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/reveal.xml</loc>
@@ -579,7 +579,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/rss.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/galleries/.ipynb_checkpoints/rss.xml</loc>
@@ -635,10 +635,10 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/rss.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/sitemap.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-05-02T22:25:00Z</lastmod>
  </sitemap>
 </sitemapindex>
