@@ -18,6 +18,12 @@
 <p>So, thank <strong>YOU</strong> for your continuous support, contributions, and feedback!</p>
 <p><strong>PS</strong></p>
 <p>On a personal note, I would also like to thank <strong>Anaconda, Inc</strong>. I have been working here for a long time now and it was/is a great experience. I am grateful for the generous support they provided in building the next <strong>Jupyter</strong> experience, <strong>JupyterLab</strong>. And I am also grateful for the continuous support in my involvement with the <strong>Jupyter</strong> community. I really appreciate that!</p>
+<h3 id="Update-(Jun)">Update (Jun)<a class="anchor-link" href="#Update-(Jun)">&#182;</a></h3><p>Last weekend a big part of the <strong>Jupyter</strong> team received the announced prize in the <strong>ACM</strong> 2018 banquet at San Francisco, CA.
+Some pics or it did not happen!</p>
+<p><img src="http://www.damian.oquanta.info/galleries/acm/1.jpg" alt=""></p>
+<p>A better quality one ;-)</p>
+<p><img src="http://www.damian.oquanta.info/galleries/acm/2.jpg" alt=""></p>
+<p>Thanks again to all who contributes to the project!</p>
 
 </div>
 </div>

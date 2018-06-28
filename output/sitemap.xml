@@ -127,7 +127,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/2018/05/index.html</loc>
-  <lastmod>2018-05-28T18:27:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/2018/index.html</loc>
@@ -147,7 +147,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/binder.html</loc>
-  <lastmod>2018-05-02T22:25:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/blog.html</loc>
@@ -223,7 +223,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/ipython.html</loc>
-  <lastmod>2018-05-02T22:25:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/ipytmpl.html</loc>
@@ -239,11 +239,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/jupyter.html</loc>
-  <lastmod>2018-05-28T18:27:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/jupyterlab.html</loc>
-  <lastmod>2018-05-02T22:25:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/less.html</loc>
@@ -287,7 +287,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/opensource.html</loc>
-  <lastmod>2018-05-02T22:25:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/osx.html</loc>
@@ -319,7 +319,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/python.html</loc>
-  <lastmod>2018-05-28T18:27:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/reveal.html</loc>
@@ -523,7 +523,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/2018/05/index.html</loc>
-  <lastmod>2018-05-28T18:27:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/2018/index.html</loc>
@@ -543,7 +543,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/binder.html</loc>
-  <lastmod>2018-05-02T22:25:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/blog.html</loc>
@@ -619,7 +619,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/ipython.html</loc>
-  <lastmod>2018-05-02T22:25:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/ipytmpl.html</loc>
@@ -635,11 +635,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/jupyter.html</loc>
-  <lastmod>2018-05-28T18:27:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/jupyterlab.html</loc>
-  <lastmod>2018-05-02T22:25:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/less.html</loc>
@@ -683,7 +683,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/opensource.html</loc>
-  <lastmod>2018-05-02T22:25:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/osx.html</loc>
@@ -715,7 +715,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/python.html</loc>
-  <lastmod>2018-05-28T18:27:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/reveal.html</loc>
@@ -810,6 +810,10 @@
   <lastmod>2018-02-05T03:01:00Z</lastmod>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/galleries/acm/index.html</loc>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/galleries/binder/index.html</loc>
   <lastmod>2018-02-05T03:01:00Z</lastmod>
  </url>
@@ -823,7 +827,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/galleries/index.html</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/galleries/loadwrite/index.html</loc>
@@ -871,7 +875,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/index.html</loc>
-  <lastmod>2018-05-28T18:27:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/posts/48-themes-for-your-ipython-notebook.html</loc>
@@ -1094,7 +1098,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/posts/some-thoughts-about-the-2017-acm-software-system-award-for-project-jupyter.html</loc>
-  <lastmod>2018-05-28T18:27:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="http://www.damian.oquanta.info/posts/some-thoughts-about-the-2017-acm-software-system-award-for-project-jupyter.html" />
  </url>
  <url>
@@ -1170,6 +1174,10 @@
   <lastmod>2018-02-05T03:01:00Z</lastmod>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/galleries/acm/index.html</loc>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/galleries/binder/index.html</loc>
   <lastmod>2018-02-05T03:01:00Z</lastmod>
  </url>
@@ -1183,7 +1191,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/galleries/index.html</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/galleries/loadwrite/index.html</loc>
@@ -1231,7 +1239,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/index.html</loc>
-  <lastmod>2018-05-28T18:27:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/portfolio/portfolio.slides.html</loc>
@@ -1422,7 +1430,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/some-thoughts-about-the-2017-acm-software-system-award-for-project-jupyter.html</loc>
-  <lastmod>2018-05-28T18:27:00Z</lastmod>
+  <lastmod>2018-06-28T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/teasers-with-the-ipython-notebook-plugin.html</loc>
