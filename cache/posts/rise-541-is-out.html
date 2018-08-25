@@ -1,0 +1,22 @@
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We're pleased to announce the release of <strong>RISE</strong> 5.4.1!</p>
+<p><strong>RISE</strong> lets you show your <strong>Jupyter</strong> notebook rendered as an <strong>executable</strong> <code>Reveal.js</code>-based slideshow. It is your very same notebook but in a <em>slidy</em> way!
+<!-- TEASER_END --></p>
+<p><em>How you can get it?</em></p>
+<p>If you are a <strong>conda/anaconda</strong> user, you can install it with <code>conda install -c conda-forge rise</code>.</p>
+<p>For further information about other installations procedures, please check <a href="https://rise.readthedocs.io/en/docs_hot_fixes/installation.html">https://rise.readthedocs.io/en/docs_hot_fixes/installation.html</a>.</p>
+<p><em>What are the latest news?</em></p>
+<p>This released was mainly focused on <code>setup.py</code> enhancements, documentation updates (mainly in the PDF section), compatibility fixes, and two new nice features: <strong>chalkboard</strong> functionality and <strong>speaker notes</strong>!!</p>
+<p>You can see a detailed changelog at <a href="https://rise.readthedocs.io/en/docs_hot_fixes/changelog.html">https://rise.readthedocs.io/en/docs_hot_fixes/changelog.html</a></p>
+<p>Please report any issues at <a href="https://github.com/damianavila/RISE/issues">https://github.com/damianavila/RISE/issues</a></p>
+<p>And we really hope you enjoy the RISE experience!</p>
+
+</div>
+</div>
+</div>
+ 
+
