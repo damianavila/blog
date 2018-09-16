@@ -131,19 +131,27 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/2018/08/index.html</loc>
-  <lastmod>2018-08-25T20:08:00Z</lastmod>
+  <lastmod>2018-09-16T13:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/2018/09/index.html</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/2018/index.html</loc>
-  <lastmod>2018-08-25T20:05:00Z</lastmod>
+  <lastmod>2018-09-16T13:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/archive.html</loc>
-  <lastmod>2018-08-25T20:05:00Z</lastmod>
+  <lastmod>2018-09-16T13:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/aikido.html</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/categories/asaikido.html</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/base16.html</loc>
@@ -168,6 +176,10 @@
  <url>
   <loc>http://www.damian.oquanta.info/categories/connectivity.html</loc>
   <lastmod>2018-02-05T03:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/categories/cordobaaikikai.html</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/css.html</loc>
@@ -219,7 +231,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/index.html</loc>
-  <lastmod>2018-08-25T20:05:00Z</lastmod>
+  <lastmod>2018-09-16T13:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/ipyscript.html</loc>
@@ -336,6 +348,10 @@
  <url>
   <loc>http://www.damian.oquanta.info/categories/scipycon.html</loc>
   <lastmod>2018-02-05T03:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/categories/shodan.html</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/categories/slideshow.html</loc>
@@ -531,19 +547,27 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/2018/08/index.html</loc>
-  <lastmod>2018-08-25T20:08:00Z</lastmod>
+  <lastmod>2018-09-16T13:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/2018/09/index.html</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/2018/index.html</loc>
-  <lastmod>2018-08-25T20:05:00Z</lastmod>
+  <lastmod>2018-09-16T13:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/archive.html</loc>
-  <lastmod>2018-08-25T20:05:00Z</lastmod>
+  <lastmod>2018-09-16T13:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/aikido.html</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/categories/asaikido.html</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/base16.html</loc>
@@ -568,6 +592,10 @@
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/connectivity.html</loc>
   <lastmod>2018-02-05T03:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/categories/cordobaaikikai.html</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/css.html</loc>
@@ -619,7 +647,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/index.html</loc>
-  <lastmod>2018-08-25T20:05:00Z</lastmod>
+  <lastmod>2018-09-16T13:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/ipyscript.html</loc>
@@ -736,6 +764,10 @@
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/scipycon.html</loc>
   <lastmod>2018-02-05T03:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.damian.oquanta.info/es/categories/shodan.html</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/categories/slideshow.html</loc>
@@ -879,11 +911,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/index-5.html</loc>
-  <lastmod>2018-08-25T20:05:00Z</lastmod>
+  <lastmod>2018-09-16T13:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/index.html</loc>
-  <lastmod>2018-08-25T20:08:00Z</lastmod>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/posts/48-themes-for-your-ipython-notebook.html</loc>
@@ -1020,6 +1052,11 @@
   <xhtml:link rel="alternate" hreflang="en" href="http://www.damian.oquanta.info/posts/mimic-the-ipython-notebook-cell-execution.html" />
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/es/posts/my-aikido-shodan-test.html</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="http://www.damian.oquanta.info/posts/my-aikido-shodan-test.html" />
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/es/posts/my-ipython-powered-semi-automatic-git-workflow.html</loc>
   <lastmod>2018-02-05T03:01:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="http://www.damian.oquanta.info/posts/my-ipython-powered-semi-automatic-git-workflow.html" />
@@ -1086,7 +1123,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/es/posts/rise-541-is-out.html</loc>
-  <lastmod>2018-08-25T20:08:00Z</lastmod>
+  <lastmod>2018-09-16T13:53:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="http://www.damian.oquanta.info/posts/rise-541-is-out.html" />
  </url>
  <url>
@@ -1248,11 +1285,11 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/index-5.html</loc>
-  <lastmod>2018-08-25T20:05:00Z</lastmod>
+  <lastmod>2018-09-16T13:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/index.html</loc>
-  <lastmod>2018-08-25T20:08:00Z</lastmod>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/portfolio/portfolio.slides.html</loc>
@@ -1371,6 +1408,10 @@
   <lastmod>2018-02-05T03:01:00Z</lastmod>
  </url>
  <url>
+  <loc>http://www.damian.oquanta.info/posts/my-aikido-shodan-test.html</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://www.damian.oquanta.info/posts/my-ipython-powered-semi-automatic-git-workflow.html</loc>
   <lastmod>2018-02-05T03:01:00Z</lastmod>
  </url>
@@ -1427,7 +1468,7 @@
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/rise-541-is-out.html</loc>
-  <lastmod>2018-08-25T20:08:00Z</lastmod>
+  <lastmod>2018-09-16T13:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.damian.oquanta.info/posts/rise-meets-jupyterlab.html</loc>

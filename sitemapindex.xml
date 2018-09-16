@@ -7,7 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/aikido.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.damian.oquanta.info/categories/asaikido.xml</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/base16.xml</loc>
@@ -32,6 +36,10 @@
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/connectivity.xml</loc>
   <lastmod>2018-02-05T03:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.damian.oquanta.info/categories/cordobaaikikai.xml</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/categories/css.xml</loc>
@@ -198,6 +206,10 @@
   <lastmod>2018-02-05T03:01:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://www.damian.oquanta.info/categories/shodan.xml</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://www.damian.oquanta.info/categories/slideshow.xml</loc>
   <lastmod>2018-08-25T20:08:00Z</lastmod>
  </sitemap>
@@ -267,7 +279,11 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/aikido.xml</loc>
-  <lastmod>2018-02-05T03:01:00Z</lastmod>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.damian.oquanta.info/es/categories/asaikido.xml</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/base16.xml</loc>
@@ -292,6 +308,10 @@
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/connectivity.xml</loc>
   <lastmod>2018-02-05T03:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.damian.oquanta.info/es/categories/cordobaaikikai.xml</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/css.xml</loc>
@@ -458,6 +478,10 @@
   <lastmod>2018-02-05T03:01:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://www.damian.oquanta.info/es/categories/shodan.xml</loc>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://www.damian.oquanta.info/es/categories/slideshow.xml</loc>
   <lastmod>2018-08-25T20:08:00Z</lastmod>
  </sitemap>
@@ -583,7 +607,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/es/rss.xml</loc>
-  <lastmod>2018-08-25T20:08:00Z</lastmod>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/galleries/.ipynb_checkpoints/rss.xml</loc>
@@ -643,10 +667,10 @@
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/rss.xml</loc>
-  <lastmod>2018-08-25T20:08:00Z</lastmod>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.damian.oquanta.info/sitemap.xml</loc>
-  <lastmod>2018-08-25T20:08:00Z</lastmod>
+  <lastmod>2018-09-16T14:05:00Z</lastmod>
  </sitemap>
 </sitemapindex>
