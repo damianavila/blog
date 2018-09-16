@@ -1,0 +1,36 @@
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Do you want to see how an <a href="https://en.wikipedia.org/wiki/Aikido"><strong>Aikido</strong></a> Shodan test looks like?
+Well, this is your opportunity!!
+You just need to keep reading for a little bit ;-)
+<!-- TEASER_END --></p>
+<p>We had a 2 days <strong>Aikido</strong> and <strong>Iaido</strong> <a href="http://cordobaaikikai.com.ar/#!/-seminario-corbal-2018/">seminar</a> taught by <a href="http://asaikido.com.ar/ricardo-corbal-sensei/">Shihan Ricardo Corbal</a>.</p>
+<p>Yesterday, after two really nice and crowded classes, we had some kyu and dan tests.
+And I tested for the <strong>Shodan</strong> degree (1st black belt in <strong>Aikido</strong>).</p>
+<p>This is the conclusion of a long journey... or, actually the beginning!</p>
+<p>I started to practice <strong>Aikido</strong> in 1999 under <strong>Sensei Oscar Medina</strong>.
+And I practiced there for about 5 years.
+But for several reasons, included the tragic death of my <strong>Sensei</strong> and friend in a traffic accident, I discontinued my practice.
+Then, a lot of happened in my life, and after several years, in 2016 (yes, about 11 years later) I restarted to practice again in <a href="http://cordobaaikikai.com.ar/#!/-home/"><strong>Córdoba Aikikai</strong></a> (previously known as Kogarashi dojo) under the teaching of <strong>Sensei José Delgado</strong> and <strong>Sensei Eugenio Fernández</strong>, and more recently also under the teaching of <strong>Sensei Nico Coll</strong>.
+I practiced the whole 2016, but 2017 surprised me with a lot of international and national travels, so I re-restarted again in 2018.</p>
+<p>So, after about 7-8 years of discontinued practice, I finally was ready to test for the <strong>Shodan</strong> degree.</p>
+<p>I want to thank a lot of people who helped me in this phase:</p>
+<ul>
+<li><strong>Sensei Oscar Medina</strong>, who introduced me to the art of <strong>Aikido</strong> and became one of my most beloved friends (I miss you!)</li>
+<li><strong>Sensei José</strong> and <strong>Sensei Eugenio</strong>, who opened me the doors of Kogarashi and re-introduce me in the <strong>Aikido</strong> practice. Those two guys are wonderful human beings and friends</li>
+<li><strong>Sensei Nico</strong>, who recently joined José and Eugenio to start a new journey called <strong>Córdoba Aikikai</strong> (Sensei, thanks for being my uke in the test!)</li>
+<li>All the <strong>Córdoba Aikikai community</strong>, a lot of people who are transiting their own paths in <strong>Aikido</strong> helping each other on a daily basis</li>
+<li><strong>Shihan Ricardo Corbal</strong>, who kindly provided us with this teachings and took my test (thanks for the post-test tips, I will work hard on those points to make them better) </li>
+<li><strong>Daniela</strong>, my love, who is really supportive and helped me in all this process</li>
+</ul>
+<p>OK, this is video, in case you want to see some action ;-)</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qoaF-I3YznM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><p>As I said before, this is just the <strong>beginning</strong> of a new phase in my <strong>Aikido</strong> practice and I am pretty sure I will enjoy it!</p>
+
+</div>
+</div>
+</div>
+ 
+
