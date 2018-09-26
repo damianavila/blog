@@ -1,0 +1,7 @@
+<p>Este último fin de semana tuve un ratito para trabajar en el &quot;styling&quot; de las presentaciones que provee vIPer
+(a partir de los notebooks de IPython).</p>
+<p>A continuación pueden ver un ejemplo:</p>
+<!-- TEASER_END -->
+<iframe width="955" height="740" src="http://www.slideviper.oquanta.info"></iframe><p>Si presionan la tecla &quot;h&quot; verán, sobre la izquierda, las opciones disponibles en la presentación.</p>
+<p>¡Diviértanse!</p>
+<p>Damián.</p>
