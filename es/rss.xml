@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>El blog de Damian</title><link>http://www.damian.oquanta.info/</link><description>Mi lugar para compartir algunas ideas con el mundo.</description><atom:link href="http://www.damian.oquanta.info/es/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><lastBuildDate>Wed, 26 Sep 2018 16:35:00 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Mi examen de Aikido para 1er Dan</title><link>http://www.damian.oquanta.info/es/posts/my-aikido-shodan-test.html</link><dc:creator>Damian Avila</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>El blog de Damian</title><link>http://www.damian.oquanta.info/</link><description>Mi lugar para compartir algunas ideas con el mundo.</description><atom:link href="http://www.damian.oquanta.info/es/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><lastBuildDate>Mon, 21 Jan 2019 01:12:35 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Abandoning the oquanta domain name</title><link>http://www.damian.oquanta.info/es/posts/abandoning-the-oquanta-domain-name.html</link><dc:creator>Damian Avila</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;This is a very short but important post!&lt;/p&gt;
+&lt;p&gt;As you probably know, this blog can be found as a subdomain of &lt;code&gt;oquanta.info&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Starting &lt;strong&gt;Jan 23rd, 2019&lt;/strong&gt;, I will be abandoning that domain name because &lt;em&gt;GoDaddy&lt;/em&gt; is asking me &lt;strong&gt;unreasonable&lt;/strong&gt; prices for renewal... and, actually, I am not using that domain except for the blog itself.&lt;/p&gt;
+&lt;p&gt;As you probably know as well, for several years, this blog has been hosted in &lt;code&gt;gh-pages&lt;/code&gt;, so I will just use the default and expected URL provided by &lt;em&gt;Github&lt;/em&gt;: &lt;a href="http://damianavila.github.io/blog"&gt;http://damianavila.github.io/blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Please, make sure to &lt;strong&gt;bookmark/save/link&lt;/strong&gt; the correct URL if you want to keep reading about some of my stuff ;-)&lt;/p&gt;
+&lt;p&gt;Have a great start of the week!&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/abandoning-the-oquanta-domain-name.html</guid><pubDate>Mon, 21 Jan 2019 00:51:03 GMT</pubDate></item><item><title>Mi examen de Aikido para 1er Dan</title><link>http://www.damian.oquanta.info/es/posts/my-aikido-shodan-test.html</link><dc:creator>Damian Avila</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
@@ -60,11 +73,4 @@
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;OK, I have run my models again and it was time to enter the market.&lt;/p&gt;
 &lt;p&gt;Early today, I opened two positions:
-&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.damian.oquanta.info/es/posts/trading-logbook-update-3.html"&gt;Leer más…&lt;/a&gt; (quedan 1 minutos de lectura)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/trading-logbook-update-3.html</guid><pubDate>Mon, 26 Jun 2017 21:29:09 GMT</pubDate></item><item><title>RISE meets JupyterLab</title><link>http://www.damian.oquanta.info/es/posts/rise-meets-jupyterlab.html</link><dc:creator>Damian Avila</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;a href="https://github.com/jupyterlab/jupyterlab"&gt;&lt;strong&gt;JupyterLab&lt;/strong&gt;&lt;/a&gt; is the future for the notebook/authoring experience.&lt;/p&gt;
-&lt;p&gt;And people started to ask me if we will have &lt;a href="https://github.com/damianavila/RISE"&gt;&lt;strong&gt;RISE&lt;/strong&gt;&lt;/a&gt; on &lt;strong&gt;JupyterLab&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Do you want to know the answer?
-&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.damian.oquanta.info/es/posts/rise-meets-jupyterlab.html"&gt;Leer más…&lt;/a&gt; (quedan 1 minutos de lectura)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/rise-meets-jupyterlab.html</guid><pubDate>Mon, 19 Jun 2017 14:13:43 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.damian.oquanta.info/es/posts/trading-logbook-update-3.html"&gt;Leer más…&lt;/a&gt; (quedan 1 minutos de lectura)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://www.damian.oquanta.info/es/posts/trading-logbook-update-3.html</guid><pubDate>Mon, 26 Jun 2017 21:29:09 GMT</pubDate></item></channel></rss>
