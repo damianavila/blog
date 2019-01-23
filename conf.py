@@ -21,11 +21,11 @@ BLOG_AUTHOR = "Damian Avila"  # (translatable)
 BLOG_TITLE = {"en": "Damian's blog", "es": "El blog de Damian"}  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://www.damian.oquanta.info/"
+SITE_URL = "http://damianavila.github.io/blog/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://demo.damian.info/"
-BLOG_EMAIL = "info@oquanta.info"
+BLOG_EMAIL = "damianavila82@yahoo.com.ar"
 BLOG_DESCRIPTION = {"en": "My place to share some thoughts with the world.",
                     "es": "Mi lugar para compartir algunas ideas con el mundo."}  # (translatable)
 

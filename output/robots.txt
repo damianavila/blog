@@ -1,4 +1,4 @@
-Sitemap: http://www.damian.oquanta.info/sitemapindex.xml
+Sitemap: http://damianavila.github.io/blog/sitemapindex.xml
 
 User-Agent: *
-Host: www.damian.oquanta.info
+Host: damianavila.github.io
