@@ -109,7 +109,7 @@ MathJax.Hub.Config({
 <span class="p">}</span>
 </pre></div>
 <p>So after selecting a cell, I click on the <code>loader</code> button, I get this:</p>
-<p><img src="http://www.damian.oquanta.info/galleries/loadwrite/loader1.png" alt=""></p>
+<p><img src="../galleries/loadwrite/loader1.png" alt=""></p>
 <p>And if I click on <em>Seleccionar archivo</em> (Select file) I can navigate trough my file system to get the file I want to load. For instance, I will load some text, in this case a <a href="http://bokeh.pydata.org/"><strong>Bokeh</strong></a> plot, in the next cell:</p>
 
 </div>
@@ -175,9 +175,9 @@ MathJax.Hub.Config({
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Which gives me this nice plot... but I will post in detail about <strong>Bokeh</strong> soon ;-)</p>
-<p><img src="http://www.damian.oquanta.info/galleries/loadwrite/themes1.png" alt=""></p>
+<p><img src="../galleries/loadwrite/themes1.png" alt=""></p>
 <p>As you can see, the three first lines of the loaded text give you information about the file itself. Under the <code>----</code> rule, you will have the file content. Then, you can do whatever modification you want and write it to a file (the same or another one) using the <code>writer</code> <em>nbextension</em>:</p>
-<p><img src="http://www.damian.oquanta.info/galleries/loadwrite/writer1.png" alt=""></p>
+<p><img src="../galleries/loadwrite/writer1.png" alt=""></p>
 <p><code>writer</code> <em>nbextension</em> is using <code>%writefile</code> magic under the hood:</p>
 <div class="highlight"><pre><span></span><span class="nx">IPython</span><span class="p">.</span><span class="nx">dialog</span><span class="p">.</span><span class="nx">modal</span><span class="p">({</span>
     <span class="nx">title</span><span class="o">:</span> <span class="s2">"Create a file with your cell content"</span><span class="p">,</span>
@@ -257,19 +257,12 @@ Zen theme based in <a href="https://github.com/arusahni/website-template">Arusah
             
         </footer>
 </div>
-    </section><script data-gittip-username="damianavila" data-gittip-widget="button" src="//gttp.co/v1.js"></script><script type="text/javascript">
+    </section><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-139225553-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33259189-1']);
-  _gaq.push(['_setDomainName', 'oquanta.info']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+  gtag('config', 'UA-139225553-1');
 </script><script src="../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
             $(function(){
                 $('.timeago').timeago();
