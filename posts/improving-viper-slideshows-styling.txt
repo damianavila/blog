@@ -7,6 +7,8 @@
 
 The last weekend, I had some time to improve the styling of the slideshow view (of the IPython notebook) rendered by vIPer.
 
+**Note** from the future: example no longer available.
+
 You can see one example here:
 
 .. TEASER_END

@@ -1,7 +1,6 @@
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You are in vacation time but you want to blog something nice to share with your friends.</p>
 <p>And your blog is powered by <strong>Nikola</strong>.</p>
@@ -57,7 +56,7 @@ For the purpose of this post (and the next ones), I just created a new binder fi
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -133,7 +132,7 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -152,13 +151,12 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>OK, now you need to push this content and if you try to <code>git push</code> it, it will fail unless you have permissions to push to your own repo. To achieve that from a <em>binder</em> instance you need to create a <em>personal access token</em> from Github: <a href="https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/">https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/</a>. And now you will be able to push your stuff.</p>
 <p>Note this <em>personal access token</em> will be useful for further pushes down the road, so keep it close.</p>
 <p>Also, we need a <em>terminal</em> to be able to provide the <em>username</em> and the <em>token</em>. And the <strong>Jupyter</strong> interface give us that terminal pretty easily, you just go to the /tree (dashboard) and start a terminal from the dropdown menu (I can probably write a little extension to perform this step from the notebook itself... but going to the terminal is pretty easy and quick).</p>
-<p><img src="http://www.damian.oquanta.info/galleries/binder/terminal.png" alt=""></p>
+<p><img src="../galleries/binder/terminal.png" alt=""></p>
 <p>Now your repository is updated, so next time you launch a binder from it, it will contain your new post, meaning you can write your stuff iteratevely even in a <em>transient</em> platform, sweet!</p>
 <h3 id="Rebuild-your-site-with-Nikola">Rebuild your site with Nikola<a class="anchor-link" href="#Rebuild-your-site-with-Nikola">&#182;</a></h3><p>When your post is ready, you need to rebuild the site using <strong>Nikola</strong>, but how <strong>Nikola</strong> end up in my <em>binder</em> instance?
 Easy as well, you just need to provide a <code>requirements.txt</code> file with the dependencies you need and those ones will be included in your <em>binder</em> instance: <a href="https://mybinder.readthedocs.io/en/latest/using.html#simple-python-dependencies">https://mybinder.readthedocs.io/en/latest/using.html#simple-python-dependencies</a></p>
@@ -191,7 +189,7 @@ Easy as well, you just need to provide a <code>requirements.txt</code> file with
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -757,8 +755,7 @@ Scanning posts......done!
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now you have your site rebuilt, let's commit the changes so we don't loss the new content.</p>
 
@@ -803,7 +800,7 @@ Scanning posts......done!
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1165,7 +1162,7 @@ Untracked files:
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1235,8 +1232,7 @@ Untracked files:
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And I can push the content (<code>git push origin master</code>) using the terminal as we did in a previous step.</p>
 <h3 id="Visualize-your-site">Visualize your site<a class="anchor-link" href="#Visualize-your-site">&#182;</a></h3><p>This could be an issue because <strong>Nikola</strong> offers a <code>nikola serve</code> command to preview your site, but using it inside <strong>Binder</strong> is probably not trivial. And you can do a little trick to be able to explore the new content. You just need to deploy the <code>output</code> folder contaning the updated site under the same <code>gh-pages</code> branch from where you usually serve your site.</p>
@@ -1269,7 +1265,7 @@ Untracked files:
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1309,7 +1305,7 @@ HEAD is now at 658c5e23 Build the site in my binder instance
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1364,7 +1360,7 @@ Your branch is up-to-date with &#39;origin/gh-pages&#39;.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1404,10 +1400,9 @@ Your branch is up-to-date with &#39;origin/gh-pages&#39;.
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>And now, you just push the content into the <code>gh-pages</code> branch  with <code>git push origin gh-pages</code> (use the terminal as I indicarted before) and you can visit your <em>draft</em> site appeding <code>output</code> to the base url, in my case: <a href="http://www.damian.oquanta.info/output/">http://www.damian.oquanta.info/output/</a>.</p>
+<p>And now, you just push the content into the <code>gh-pages</code> branch  with <code>git push origin gh-pages</code> (use the terminal as I indicated before) and you can visit your <em>draft</em> site appeding <code>output</code> to the base url, in my <a href="../output/">case</a>.</p>
 <p>If you are not happy with it, if it does not looks like right, just iterate with more changes! Otherwise you can go to the deploy step!</p>
 <h2 id="Deploy-your-site">Deploy your site<a class="anchor-link" href="#Deploy-your-site">&#182;</a></h2><p>OK, given the previous steps, I guess you will figure out how to perform the next steps:</p>
 <p><strong>NOTE</strong>: <code>rm</code> is only needed here because I am executing git commands from this very same future blog post</p>
@@ -1453,7 +1448,7 @@ Your branch is up-to-date with &#39;origin/gh-pages&#39;.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1508,7 +1503,7 @@ Your branch is up-to-date with &#39;origin/master&#39;.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1526,8 +1521,7 @@ Your branch is up-to-date with &#39;origin/master&#39;.
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In the terminal: <code>git push origin master</code> to persist the latest content... again. And use a subtree approach to split the <code>output</code> directory and put it as a new <code>gh-pages</code> branch.</p>
 <p><strong>Note</strong>: First delete the existing <code>gh-pages</code> branch to avoid conflicts and <code>cd ..</code> because you need to subtree from the top directory.</p>
@@ -1558,7 +1552,7 @@ Your branch is up-to-date with &#39;origin/master&#39;.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1599,7 +1593,7 @@ Deleted branch gh-pages (was 4fb3a46f).
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1638,7 +1632,7 @@ Deleted branch gh-pages (was 4fb3a46f).
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1656,8 +1650,7 @@ Deleted branch gh-pages (was 4fb3a46f).
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Finally, in the terminal: <code>git push -f origin gh-pages:gh-pages</code> to deploy your site and remove the local <code>gh-pages</code> with <code>git branch -D gh-pages</code>.</p>
 <p>And you are done!!!</p>

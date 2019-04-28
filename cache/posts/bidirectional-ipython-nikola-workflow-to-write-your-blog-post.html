@@ -1,7 +1,6 @@
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The idea of this blog post is to show you how you can achieve an efficient <em>bidirectional</em> workflow to write your blog posts using great tools/features derived from <strong>IPython</strong> and <strong>Nikola</strong>.</p>
 <p>Probably, this would be interesting not only for the people using <strong>IPython</strong> and <strong>Nikola</strong> to write their blog post, but also to other people because this would be a simple but nice example of how you can integrate this two applications to better suit your needs.</p>
@@ -12,8 +11,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>damian@damian-S400CA:~$ cd /media/datos/Desarrollos/damian_blog
@@ -24,8 +22,7 @@ damian@damian-S400CA:/media/datos/Desarrollos/damian_blog$</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Then I activate my <strong>virtualenv</strong> specifically filled to build my blog:</p>
 
@@ -33,8 +30,7 @@ damian@damian-S400CA:/media/datos/Desarrollos/damian_blog$</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>damian@damian-S400CA:/media/datos/Desarrollos/damian_blog$ workon blog
@@ -45,8 +41,7 @@ damian@damian-S400CA:/media/datos/Desarrollos/damian_blog$</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now, we are ready to the next step, calling the <code>nikola console</code>:</p>
 
@@ -54,8 +49,7 @@ damian@damian-S400CA:/media/datos/Desarrollos/damian_blog$</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>(blog)damian@damian-S400CA:/media/datos/Desarrollos/damian_blog$ nikola console
@@ -76,8 +70,7 @@ Nikola v6.1.1 -- IPython Console (conf = configuration, SITE = site engine)</cod
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Yes... <strong>Nikola</strong> offers a feature called <code>nikola console</code> which immediately opens an <strong>IPython</strong> console (if you have installed IPython, of course) where you can do a lot of things, as I will show you later, but also have direct access to <strong>Nikola</strong> internals through the <code>conf</code> (configuration) and <code>SITE</code> (site engine) objects. We can explore this objects using the <em>tab completion</em> from the IPython machinery:</p>
 
@@ -85,8 +78,7 @@ Nikola v6.1.1 -- IPython Console (conf = configuration, SITE = site engine)</cod
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>In [1]: conf.&lt;TAB&gt;
@@ -109,8 +101,7 @@ conf.IPYNB_CONFIG </code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>In [1]: SITE.&lt;TAB&gt;
@@ -137,8 +128,7 @@ SITE.link </code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>But, we will probably go back to these objects in another blog post... now, we go again to the <strong>Nikola IPython</strong> console because we want to create a new post. The easiest way to do it is just calling the proper <strong>Nikola</strong> command using the <code>!</code> to pass it from the <strong>Nikola IPython</strong> console to the shell.</p>
 
@@ -218,7 +208,7 @@ In [7]: !ipython notebook --profile=myext
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -246,10 +236,9 @@ DEPLOY_COMMANDS = [&#34;git add .&#34;,
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The instructions are very easy to understand, if you need more details just read this <a href="http://www.damian.oquanta.info/posts/one-line-deployment-of-your-site-to-gh-pages.html">post</a> I wrote some weeks ago.</p>
+<p>The instructions are very easy to understand, if you need more details just read this <a href="../posts/one-line-deployment-of-your-site-to-gh-pages.html">post</a> I wrote some weeks ago.</p>
 <p>I am essentially pushing the content to master, creating a split and deploy it later to <strong>gh-pages</strong>.</p>
 <p>OK, but because I am <em>lazy</em> ;-), some weeks ago I wrote an <strong>IPython</strong> <em>javascript</em> extension which let me execute this <code>nikola deploy</code> command from a button in the <strong>IPython notebook toolbar</strong>. Essentially something like this (don't worry, I will release the extension soon):</p>
 

@@ -1,14 +1,13 @@
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It is time to release some extensions I wrote the last weeks.
 And because it is <strong>Friday</strong>, and it is a great moment to begin with the "relax" and procrastination, I will release the tweet me extension...
 <!-- TEASER_END --></p>
 <p>You don't have any idea what I am talking about? OK, a few words...
 Probably you know that spend a lot of time inside <strong>IPython</strong> notebooks and I was tired to switch windows to send or answer a tweet. So, I wrote a little <em>js</em> extension to capture the input of the selected cell and tweet it just pressing the <em>twitter</em> icon at the <strong>IPython</strong> toolbar.</p>
-<p><img src="http://www.damian.oquanta.info/galleries/twitter/1.png" alt=""></p>
+<p><img src="../galleries/twitter/1.png" alt=""></p>
 <p>But this <em>js</em> extension is <strong>IPython</strong>-powered itself, because I am using the <strong>IPython</strong> js machinery to execute <em>python</em> files calling the <em>python kernel</em>! Yes... it seems weird, but once you get the idea, you can achieve a <strong>lot</strong> of things. You can see the relevant part of the code below:</p>
 
 </div>
@@ -37,7 +36,7 @@ Probably you know that spend a lot of time inside <strong>IPython</strong> noteb
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -69,8 +68,7 @@ Probably you know that spend a lot of time inside <strong>IPython</strong> noteb
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The secret is to use the <code>IPython.notebook.kernel.execute(whatever)</code> method and pass it whatever you want, even <strong>IPython</strong> <em>magics functions</em>! Yes again... too much <em>Inception</em> movie for the last weeks ;-)</p>
 <p>OK, the extension lives in this new repo: <a href="https://github.com/damianavila/mIPyex">mIPyex</a>, where I will upload the development versions of my own extensions. When I get them enough stable, I will make a copy of them in the <a href="https://github.com/ipython-contrib/IPython-notebook-extensions">IPython notebook extensions</a> repo where you can get a lot of and useful interesting extensions.</p>
@@ -83,8 +81,7 @@ It is easy... just follow the README to install all the necessary tools (I used 
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>PD: I will use the next cell to tweet about this new blog post! ;-)</p>
 
@@ -92,8 +89,7 @@ It is easy... just follow the README to install all the necessary tools (I used 
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>New blog post!
 Tweet me... said an IPython notebook cell and I did it.
@@ -103,8 +99,7 @@ Tweet me... said an IPython notebook cell and I did it.
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Addendum: 
 You can now send tweets from cells with multi-line content (my first implementation only worked with one-line strings).</p>
@@ -113,8 +108,7 @@ You can now send tweets from cells with multi-line content (my first implementat
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Addendum 2: You have not only a button but also a keyboard shortcut to activate the Tweet me extension: ALT + T.</p>
 

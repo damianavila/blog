@@ -8,6 +8,8 @@
 I have implemented reveal.js slides for vIPer (I will publish a 
 post about that the next days...).
 
+**Note** from the future: example no longer available
+
 Then, I showed the resulting slides http://www.slideviper.oquanta.info/reveal/Example_new_slides.html
 to some IPython team members and one of them, Brian, says:
 

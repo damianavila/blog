@@ -8,6 +8,8 @@
 Este último fin de semana tuve un ratito para trabajar en el "styling" de las presentaciones que provee vIPer
 (a partir de los notebooks de IPython).
 
+**Nota** desde el futuro: ejemplo no disponible.
+
 A continuación pueden ver un ejemplo:
 
 .. TEASER_END

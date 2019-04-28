@@ -1,7 +1,6 @@
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This is the last post of this year, so I try to do my best to give you something interesting to think about...</p>
 <p>In this case, I will show you <em>my git workflow</em>... and you know there are a lot of workflows out there... and probably better than mine, but I just want to share with you the place where I find myself comfortable.</p>
@@ -16,16 +15,14 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Get-everything-ready...">Get everything ready...<a class="anchor-link" href="#Get-everything-ready...">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>First, we need to set up the environment to make our work:</p>
 
@@ -33,8 +30,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Check the current working directory:</li>
@@ -66,7 +62,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[1]:</div>
+    <div class="prompt output_prompt">Out[1]:</div>
 
 
 
@@ -85,8 +81,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Make a new folder to isolate our work and cd into it:</li>
@@ -133,7 +128,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -150,8 +145,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <blockquote><p><strong>NOTE</strong>: You can avoid these steps opening the notebook in the proper directory, but in this case I want to have the example isolated to not overwrite my current development environment.</p>
 </blockquote>
@@ -160,8 +154,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Load variables with useful information:</li>
@@ -190,8 +183,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Clone the project and connect the local repo with my <strong>Github</strong> fork:</li>
@@ -233,7 +225,7 @@ And it is a <em>semi-automatic</em> one, using the <strong>IPython</strong> note
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -261,8 +253,7 @@ origin	git://github.com/ipython/ipython.git (push)
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <blockquote><p><strong>NOTE</strong>: A lot of <em>git workflows</em> use <code>origin</code> to point to our fork and <code>upstream</code> to point to the project repo. But <em>I do not like</em> that configuration. It seems more natural to me to clone the project repo (the <code>origin</code> repo) and add a connection to my fork called <code>damianavila</code>... and the next steps take into consideration this last approach.</p>
 </blockquote>
@@ -271,16 +262,14 @@ origin	git://github.com/ipython/ipython.git (push)
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Short-cycle">Short cycle<a class="anchor-link" href="#Short-cycle">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This short cycle just create a new <em>branch</em> to work on, make the needed changes in the source code and upload the local changes to our <strong>Github</strong> fork to finally submit a <em>pull-request</em>:</p>
 
@@ -288,8 +277,7 @@ origin	git://github.com/ipython/ipython.git (push)
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Set up the <code>master</code> and <code>development</code> branch names:</li>
@@ -315,8 +303,7 @@ origin	git://github.com/ipython/ipython.git (push)
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Create a new branch from <code>master</code>:</li>
@@ -358,7 +345,7 @@ origin	git://github.com/ipython/ipython.git (push)
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -379,8 +366,7 @@ nothing to commit, working directory clean
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Make the changes you want to do:</li>
@@ -415,7 +401,7 @@ nothing to commit, working directory clean
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -458,237 +444,237 @@ COPYING.txt      <span class="ansi-blue-intense-fg ansi-bold">git-hooks</span>/ 
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
   <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">writefile</span> docs/source/interactive/nbconvert.rst
-.. _nbconvert:
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%writefile</span> docs/source/interactive/nbconvert.rst
+<span class="o">..</span> <span class="n">_nbconvert</span><span class="p">:</span>
 
-Converting notebooks to other formats
-=====================================
+<span class="n">Converting</span> <span class="n">notebooks</span> <span class="n">to</span> <span class="n">other</span> <span class="n">formats</span>
+<span class="o">=====================================</span>
 
-Newly added in the 1.0 release of IPython is the ``nbconvert`` tool, which 
-allows you to convert an ``.ipynb`` notebook document file into various static 
-formats. 
+<span class="n">Newly</span> <span class="n">added</span> <span class="ow">in</span> <span class="n">the</span> <span class="mf">1.0</span> <span class="n">release</span> <span class="n">of</span> <span class="n">IPython</span> <span class="ow">is</span> <span class="n">the</span> <span class="err">``</span><span class="n">nbconvert</span><span class="err">``</span> <span class="n">tool</span><span class="p">,</span> <span class="n">which</span> 
+<span class="n">allows</span> <span class="n">you</span> <span class="n">to</span> <span class="n">convert</span> <span class="n">an</span> <span class="err">``</span><span class="o">.</span><span class="n">ipynb</span><span class="err">``</span> <span class="n">notebook</span> <span class="n">document</span> <span class="n">file</span> <span class="n">into</span> <span class="n">various</span> <span class="n">static</span> 
+<span class="n">formats</span><span class="o">.</span> 
 
-Currently, ``nbconvert`` is provided as a command line tool, run as a script 
-using IPython. A direct export capability from within the 
-IPython Notebook web app is planned. 
+<span class="n">Currently</span><span class="p">,</span> <span class="err">``</span><span class="n">nbconvert</span><span class="err">``</span> <span class="ow">is</span> <span class="n">provided</span> <span class="k">as</span> <span class="n">a</span> <span class="n">command</span> <span class="n">line</span> <span class="n">tool</span><span class="p">,</span> <span class="n">run</span> <span class="k">as</span> <span class="n">a</span> <span class="n">script</span> 
+<span class="n">using</span> <span class="n">IPython</span><span class="o">.</span> <span class="n">A</span> <span class="n">direct</span> <span class="n">export</span> <span class="n">capability</span> <span class="kn">from</span> <span class="nn">within</span> <span class="n">the</span> 
+<span class="n">IPython</span> <span class="n">Notebook</span> <span class="n">web</span> <span class="n">app</span> <span class="ow">is</span> <span class="n">planned</span><span class="o">.</span> 
 
-The command-line syntax to run the ``nbconvert`` script is::
+<span class="n">The</span> <span class="n">command</span><span class="o">-</span><span class="n">line</span> <span class="n">syntax</span> <span class="n">to</span> <span class="n">run</span> <span class="n">the</span> <span class="err">``</span><span class="n">nbconvert</span><span class="err">``</span> <span class="n">script</span> <span class="ow">is</span><span class="p">::</span>
 
-  $ ipython nbconvert --to FORMAT notebook.ipynb
+  <span class="err">$</span> <span class="n">ipython</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">FORMAT</span> <span class="n">notebook</span><span class="o">.</span><span class="n">ipynb</span>
 
-This will convert the IPython document file ``notebook.ipynb`` into the output 
-format given by the ``FORMAT`` string.
+<span class="n">This</span> <span class="n">will</span> <span class="n">convert</span> <span class="n">the</span> <span class="n">IPython</span> <span class="n">document</span> <span class="n">file</span> <span class="err">``</span><span class="n">notebook</span><span class="o">.</span><span class="n">ipynb</span><span class="err">``</span> <span class="n">into</span> <span class="n">the</span> <span class="n">output</span> 
+<span class="nb">format</span> <span class="n">given</span> <span class="n">by</span> <span class="n">the</span> <span class="err">``</span><span class="n">FORMAT</span><span class="err">``</span> <span class="n">string</span><span class="o">.</span>
 
-The default output format is html, for which the ``--to`` argument may be 
-omitted::
+<span class="n">The</span> <span class="n">default</span> <span class="n">output</span> <span class="nb">format</span> <span class="ow">is</span> <span class="n">html</span><span class="p">,</span> <span class="k">for</span> <span class="n">which</span> <span class="n">the</span> <span class="err">``</span><span class="o">--</span><span class="n">to</span><span class="err">``</span> <span class="n">argument</span> <span class="n">may</span> <span class="n">be</span> 
+<span class="n">omitted</span><span class="p">::</span>
   
-  $ ipython nbconvert notebook.ipynb
+  <span class="err">$</span> <span class="n">ipython</span> <span class="n">nbconvert</span> <span class="n">notebook</span><span class="o">.</span><span class="n">ipynb</span>
 
-IPython provides a few templates for some output formats, and these can be
-specified via an additional ``--template`` argument.
+<span class="n">IPython</span> <span class="n">provides</span> <span class="n">a</span> <span class="n">few</span> <span class="n">templates</span> <span class="k">for</span> <span class="n">some</span> <span class="n">output</span> <span class="n">formats</span><span class="p">,</span> <span class="ow">and</span> <span class="n">these</span> <span class="n">can</span> <span class="n">be</span>
+<span class="n">specified</span> <span class="n">via</span> <span class="n">an</span> <span class="n">additional</span> <span class="err">``</span><span class="o">--</span><span class="n">template</span><span class="err">``</span> <span class="n">argument</span><span class="o">.</span>
 
-The currently supported export formats are:
+<span class="n">The</span> <span class="n">currently</span> <span class="n">supported</span> <span class="n">export</span> <span class="n">formats</span> <span class="n">are</span><span class="p">:</span>
 
-* ``--to html``
+<span class="o">*</span> <span class="err">``</span><span class="o">--</span><span class="n">to</span> <span class="n">html</span><span class="err">``</span>
 
-  - ``--template full`` (default)
+  <span class="o">-</span> <span class="err">``</span><span class="o">--</span><span class="n">template</span> <span class="n">full</span><span class="err">``</span> <span class="p">(</span><span class="n">default</span><span class="p">)</span>
   
-    A full static HTML render of the notebook.
-    This looks very similar to the interactive view.
+    <span class="n">A</span> <span class="n">full</span> <span class="n">static</span> <span class="n">HTML</span> <span class="n">render</span> <span class="n">of</span> <span class="n">the</span> <span class="n">notebook</span><span class="o">.</span>
+    <span class="n">This</span> <span class="n">looks</span> <span class="n">very</span> <span class="n">similar</span> <span class="n">to</span> <span class="n">the</span> <span class="n">interactive</span> <span class="n">view</span><span class="o">.</span>
 
-  - ``--template basic``
+  <span class="o">-</span> <span class="err">``</span><span class="o">--</span><span class="n">template</span> <span class="n">basic</span><span class="err">``</span>
   
-    Simplified HTML, useful for embedding in webpages, blogs, etc.
-    This excludes HTML headers.
+    <span class="n">Simplified</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">useful</span> <span class="k">for</span> <span class="n">embedding</span> <span class="ow">in</span> <span class="n">webpages</span><span class="p">,</span> <span class="n">blogs</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span>
+    <span class="n">This</span> <span class="n">excludes</span> <span class="n">HTML</span> <span class="n">headers</span><span class="o">.</span>
 
-* ``--to latex``
+<span class="o">*</span> <span class="err">``</span><span class="o">--</span><span class="n">to</span> <span class="n">latex</span><span class="err">``</span>
 
-  Latex export.  This generates ``NOTEBOOK_NAME.tex`` file,
-  ready for export.  You can automatically run latex on it to generate a PDF
-  by adding ``--post PDF``.
+  <span class="n">Latex</span> <span class="n">export</span><span class="o">.</span>  <span class="n">This</span> <span class="n">generates</span> <span class="err">``</span><span class="n">NOTEBOOK_NAME</span><span class="o">.</span><span class="n">tex</span><span class="err">``</span> <span class="n">file</span><span class="p">,</span>
+  <span class="n">ready</span> <span class="k">for</span> <span class="n">export</span><span class="o">.</span>  <span class="n">You</span> <span class="n">can</span> <span class="n">automatically</span> <span class="n">run</span> <span class="n">latex</span> <span class="n">on</span> <span class="n">it</span> <span class="n">to</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">PDF</span>
+  <span class="n">by</span> <span class="n">adding</span> <span class="err">``</span><span class="o">--</span><span class="n">post</span> <span class="n">PDF</span><span class="err">``</span><span class="o">.</span>
   
-  - ``--template article`` (default)
+  <span class="o">-</span> <span class="err">``</span><span class="o">--</span><span class="n">template</span> <span class="n">article</span><span class="err">``</span> <span class="p">(</span><span class="n">default</span><span class="p">)</span>
   
-    Latex article, derived from Sphinx&#39;s howto template.
+    <span class="n">Latex</span> <span class="n">article</span><span class="p">,</span> <span class="n">derived</span> <span class="kn">from</span> <span class="nn">Sphinx</span><span class="s1">&#39;s howto template.</span>
 
-  - ``--template book``
+  <span class="o">-</span> <span class="err">``</span><span class="o">--</span><span class="n">template</span> <span class="n">book</span><span class="err">``</span>
   
-    Latex book, derived from Sphinx&#39;s manual template.
+    <span class="n">Latex</span> <span class="n">book</span><span class="p">,</span> <span class="n">derived</span> <span class="kn">from</span> <span class="nn">Sphinx</span><span class="s1">&#39;s manual template.</span>
 
-  - ``--template basic``
+  <span class="o">-</span> <span class="err">``</span><span class="o">--</span><span class="n">template</span> <span class="n">basic</span><span class="err">``</span>
   
-    Very basic latex output - mainly meant as a starting point for custom templates.
+    <span class="n">Very</span> <span class="n">basic</span> <span class="n">latex</span> <span class="n">output</span> <span class="o">-</span> <span class="n">mainly</span> <span class="n">meant</span> <span class="k">as</span> <span class="n">a</span> <span class="n">starting</span> <span class="n">point</span> <span class="k">for</span> <span class="n">custom</span> <span class="n">templates</span><span class="o">.</span>
 
-* ``--to slides``
+<span class="o">*</span> <span class="err">``</span><span class="o">--</span><span class="n">to</span> <span class="n">slides</span><span class="err">``</span>
 
-  This generates a Reveal.js HTML slideshow.
-  It must be served by an HTTP server. The easiest way to do this is adding
-  ``--post serve`` on the command-line. The ``--post serve`` post-processor 
-  proxies Reveal.js requests to a CDN if no local Reveal.js library is present. 
-  For low connectivity environments, just place the Reveal.js library in the 
-  same directory where your_talk.slides.html is located or point to another 
-  directory using the ``--reveal-prefix`` alias.
+  <span class="n">This</span> <span class="n">generates</span> <span class="n">a</span> <span class="n">Reveal</span><span class="o">.</span><span class="n">js</span> <span class="n">HTML</span> <span class="n">slideshow</span><span class="o">.</span>
+  <span class="n">It</span> <span class="n">must</span> <span class="n">be</span> <span class="n">served</span> <span class="n">by</span> <span class="n">an</span> <span class="n">HTTP</span> <span class="n">server</span><span class="o">.</span> <span class="n">The</span> <span class="n">easiest</span> <span class="n">way</span> <span class="n">to</span> <span class="n">do</span> <span class="n">this</span> <span class="ow">is</span> <span class="n">adding</span>
+  <span class="err">``</span><span class="o">--</span><span class="n">post</span> <span class="n">serve</span><span class="err">``</span> <span class="n">on</span> <span class="n">the</span> <span class="n">command</span><span class="o">-</span><span class="n">line</span><span class="o">.</span> <span class="n">The</span> <span class="err">``</span><span class="o">--</span><span class="n">post</span> <span class="n">serve</span><span class="err">``</span> <span class="n">post</span><span class="o">-</span><span class="n">processor</span> 
+  <span class="n">proxies</span> <span class="n">Reveal</span><span class="o">.</span><span class="n">js</span> <span class="n">requests</span> <span class="n">to</span> <span class="n">a</span> <span class="n">CDN</span> <span class="k">if</span> <span class="n">no</span> <span class="n">local</span> <span class="n">Reveal</span><span class="o">.</span><span class="n">js</span> <span class="n">library</span> <span class="ow">is</span> <span class="n">present</span><span class="o">.</span> 
+  <span class="n">For</span> <span class="n">low</span> <span class="n">connectivity</span> <span class="n">environments</span><span class="p">,</span> <span class="n">just</span> <span class="n">place</span> <span class="n">the</span> <span class="n">Reveal</span><span class="o">.</span><span class="n">js</span> <span class="n">library</span> <span class="ow">in</span> <span class="n">the</span> 
+  <span class="n">same</span> <span class="n">directory</span> <span class="n">where</span> <span class="n">your_talk</span><span class="o">.</span><span class="n">slides</span><span class="o">.</span><span class="n">html</span> <span class="ow">is</span> <span class="n">located</span> <span class="ow">or</span> <span class="n">point</span> <span class="n">to</span> <span class="n">another</span> 
+  <span class="n">directory</span> <span class="n">using</span> <span class="n">the</span> <span class="err">``</span><span class="o">--</span><span class="n">reveal</span><span class="o">-</span><span class="n">prefix</span><span class="err">``</span> <span class="n">alias</span><span class="o">.</span>
 
-* ``--to markdown``
+<span class="o">*</span> <span class="err">``</span><span class="o">--</span><span class="n">to</span> <span class="n">markdown</span><span class="err">``</span>
 
-  Simple markdown output.  Markdown cells are unaffected,
-  and code cells are placed in triple-backtick (```````) blocks.
+  <span class="n">Simple</span> <span class="n">markdown</span> <span class="n">output</span><span class="o">.</span>  <span class="n">Markdown</span> <span class="n">cells</span> <span class="n">are</span> <span class="n">unaffected</span><span class="p">,</span>
+  <span class="ow">and</span> <span class="n">code</span> <span class="n">cells</span> <span class="n">are</span> <span class="n">placed</span> <span class="ow">in</span> <span class="n">triple</span><span class="o">-</span><span class="n">backtick</span> <span class="p">(</span><span class="err">```````</span><span class="p">)</span> <span class="n">blocks</span><span class="o">.</span>
 
-* ``--to rst``
+<span class="o">*</span> <span class="err">``</span><span class="o">--</span><span class="n">to</span> <span class="n">rst</span><span class="err">``</span>
 
-  Basic reStructuredText output. Useful as a starting point for embedding notebooks
-  in Sphinx docs.
+  <span class="n">Basic</span> <span class="n">reStructuredText</span> <span class="n">output</span><span class="o">.</span> <span class="n">Useful</span> <span class="k">as</span> <span class="n">a</span> <span class="n">starting</span> <span class="n">point</span> <span class="k">for</span> <span class="n">embedding</span> <span class="n">notebooks</span>
+  <span class="ow">in</span> <span class="n">Sphinx</span> <span class="n">docs</span><span class="o">.</span>
 
-* ``--to python``
+<span class="o">*</span> <span class="err">``</span><span class="o">--</span><span class="n">to</span> <span class="n">python</span><span class="err">``</span>
 
-  Convert a notebook to an executable Python script.
-  This is the simplest way to get a Python script out of a notebook.
-  If there were any magics in the notebook, this may only be executable from
-  an IPython session.
+  <span class="n">Convert</span> <span class="n">a</span> <span class="n">notebook</span> <span class="n">to</span> <span class="n">an</span> <span class="n">executable</span> <span class="n">Python</span> <span class="n">script</span><span class="o">.</span>
+  <span class="n">This</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">simplest</span> <span class="n">way</span> <span class="n">to</span> <span class="n">get</span> <span class="n">a</span> <span class="n">Python</span> <span class="n">script</span> <span class="n">out</span> <span class="n">of</span> <span class="n">a</span> <span class="n">notebook</span><span class="o">.</span>
+  <span class="n">If</span> <span class="n">there</span> <span class="n">were</span> <span class="nb">any</span> <span class="n">magics</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">notebook</span><span class="p">,</span> <span class="n">this</span> <span class="n">may</span> <span class="n">only</span> <span class="n">be</span> <span class="n">executable</span> <span class="kn">from</span>
+  <span class="nn">an</span> <span class="n">IPython</span> <span class="n">session</span><span class="o">.</span>
   
-.. note::
+<span class="o">..</span> <span class="n">note</span><span class="p">::</span>
 
-  nbconvert uses pandoc_ to convert between various markup languages,
-  so pandoc is a dependency of most nbconvert transforms,
-  excluding Markdown and Python.
+  <span class="n">nbconvert</span> <span class="n">uses</span> <span class="n">pandoc_</span> <span class="n">to</span> <span class="n">convert</span> <span class="n">between</span> <span class="n">various</span> <span class="n">markup</span> <span class="n">languages</span><span class="p">,</span>
+  <span class="n">so</span> <span class="n">pandoc</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">dependency</span> <span class="n">of</span> <span class="n">most</span> <span class="n">nbconvert</span> <span class="n">transforms</span><span class="p">,</span>
+  <span class="n">excluding</span> <span class="n">Markdown</span> <span class="ow">and</span> <span class="n">Python</span><span class="o">.</span>
 
-.. _pandoc: http://johnmacfarlane.net/pandoc/
+<span class="o">..</span> <span class="n">_pandoc</span><span class="p">:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">johnmacfarlane</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">pandoc</span><span class="o">/</span>
 
-The output file created by ``nbconvert`` will have the same base name as
-the notebook and will be placed in the current working directory. Any
-supporting files (graphics, etc) will be placed in a new directory with the
-same base name as the notebook, suffixed with ``_files``::
+<span class="n">The</span> <span class="n">output</span> <span class="n">file</span> <span class="n">created</span> <span class="n">by</span> <span class="err">``</span><span class="n">nbconvert</span><span class="err">``</span> <span class="n">will</span> <span class="n">have</span> <span class="n">the</span> <span class="n">same</span> <span class="n">base</span> <span class="n">name</span> <span class="k">as</span>
+<span class="n">the</span> <span class="n">notebook</span> <span class="ow">and</span> <span class="n">will</span> <span class="n">be</span> <span class="n">placed</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">current</span> <span class="n">working</span> <span class="n">directory</span><span class="o">.</span> <span class="n">Any</span>
+<span class="n">supporting</span> <span class="n">files</span> <span class="p">(</span><span class="n">graphics</span><span class="p">,</span> <span class="n">etc</span><span class="p">)</span> <span class="n">will</span> <span class="n">be</span> <span class="n">placed</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">new</span> <span class="n">directory</span> <span class="k">with</span> <span class="n">the</span>
+<span class="n">same</span> <span class="n">base</span> <span class="n">name</span> <span class="k">as</span> <span class="n">the</span> <span class="n">notebook</span><span class="p">,</span> <span class="n">suffixed</span> <span class="k">with</span> <span class="err">``</span><span class="n">_files</span><span class="err">``</span><span class="p">::</span>
 
-  $ ipython nbconvert notebook.ipynb
-  $ ls
-  notebook.ipynb   notebook.html    notebook_files/
+  <span class="err">$</span> <span class="n">ipython</span> <span class="n">nbconvert</span> <span class="n">notebook</span><span class="o">.</span><span class="n">ipynb</span>
+  <span class="err">$</span> <span class="n">ls</span>
+  <span class="n">notebook</span><span class="o">.</span><span class="n">ipynb</span>   <span class="n">notebook</span><span class="o">.</span><span class="n">html</span>    <span class="n">notebook_files</span><span class="o">/</span>
 
-For simple single-file output, such as html, markdown, etc.,
-the output may be sent to standard output with::
+<span class="n">For</span> <span class="n">simple</span> <span class="n">single</span><span class="o">-</span><span class="n">file</span> <span class="n">output</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">html</span><span class="p">,</span> <span class="n">markdown</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span><span class="p">,</span>
+<span class="n">the</span> <span class="n">output</span> <span class="n">may</span> <span class="n">be</span> <span class="n">sent</span> <span class="n">to</span> <span class="n">standard</span> <span class="n">output</span> <span class="k">with</span><span class="p">::</span>
     
-  $ ipython nbconvert --to markdown notebook.ipynb --stdout
+  <span class="err">$</span> <span class="n">ipython</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">markdown</span> <span class="n">notebook</span><span class="o">.</span><span class="n">ipynb</span> <span class="o">--</span><span class="n">stdout</span>
     
-Multiple notebooks can be specified from the command line::
+<span class="n">Multiple</span> <span class="n">notebooks</span> <span class="n">can</span> <span class="n">be</span> <span class="n">specified</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">command</span> <span class="n">line</span><span class="p">::</span>
     
-  $ ipython nbconvert notebook*.ipynb
-  $ ipython nbconvert notebook1.ipynb notebook2.ipynb
+  <span class="err">$</span> <span class="n">ipython</span> <span class="n">nbconvert</span> <span class="n">notebook</span><span class="o">*.</span><span class="n">ipynb</span>
+  <span class="err">$</span> <span class="n">ipython</span> <span class="n">nbconvert</span> <span class="n">notebook1</span><span class="o">.</span><span class="n">ipynb</span> <span class="n">notebook2</span><span class="o">.</span><span class="n">ipynb</span>
     
-or via a list in a configuration file, say ``mycfg.py``, containing the text::
+<span class="ow">or</span> <span class="n">via</span> <span class="n">a</span> <span class="nb">list</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">configuration</span> <span class="n">file</span><span class="p">,</span> <span class="n">say</span> <span class="err">``</span><span class="n">mycfg</span><span class="o">.</span><span class="n">py</span><span class="err">``</span><span class="p">,</span> <span class="n">containing</span> <span class="n">the</span> <span class="n">text</span><span class="p">::</span>
 
-  c = get_config()
-  c.NbConvertApp.notebooks = [&quot;notebook1.ipynb&quot;, &quot;notebook2.ipynb&quot;]
+  <span class="n">c</span> <span class="o">=</span> <span class="n">get_config</span><span class="p">()</span>
+  <span class="n">c</span><span class="o">.</span><span class="n">NbConvertApp</span><span class="o">.</span><span class="n">notebooks</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;notebook1.ipynb&quot;</span><span class="p">,</span> <span class="s2">&quot;notebook2.ipynb&quot;</span><span class="p">]</span>
 
-and using the command::
+<span class="ow">and</span> <span class="n">using</span> <span class="n">the</span> <span class="n">command</span><span class="p">::</span>
 
-  $ ipython nbconvert --config mycfg.py
-
-
-.. _notebook_format:
-
-LaTeX citations
----------------
-
-``nbconvert`` now has support for LaTeX citations. With this capability you
-can:
-
-* Manage citations using BibTeX.
-* Cite those citations in Markdown cells using HTML data attributes.
-* Have ``nbconvert`` generate proper LaTeX citations and run BibTeX.
-
-For an example of how this works, please see the citations example in
-the nbconvert-examples_ repository.
-
-.. _nbconvert-examples: https://github.com/ipython/nbconvert-examples
-
-Notebook JSON file format
--------------------------
-
-Notebook documents are JSON files with an ``.ipynb`` extension, formatted
-as legibly as possible with minimal extra indentation and cell content broken
-across lines to make them reasonably friendly to use in version-control
-workflows.  You should be very careful if you ever manually edit this JSON
-data, as it is extremely easy to corrupt its internal structure and make the
-file impossible to load.  In general, you should consider the notebook as a
-file meant only to be edited by the IPython Notebook app itself, not for 
-hand-editing.
-
-.. note::
-
-     Binary data such as figures are also saved directly in the JSON file.  
-     This provides convenient single-file portability, but means that the 
-     files can be large; a ``diff`` of binary data is also not very 
-     meaningful.  Since the binary blobs are encoded in a single line, they 
-     affect only one line of the ``diff`` output, but they are typically very 
-     long lines.  You can use the ``Cell | All Output | Clear`` menu option to 
-     remove all output from a notebook prior to committing it to version 
-     control, if this is a concern.
-
-The notebook server can also generate a pure Python version of your notebook, 
-using the ``File | Download as`` menu option. The resulting ``.py`` file will 
-contain all the code cells from your notebook verbatim, and all Markdown cells 
-prepended with a comment marker.  The separation between code and Markdown
-cells is indicated with special comments and there is a header indicating the
-format version.  All output is removed when exporting to Python.
-
-As an example, consider a simple notebook called ``simple.ipynb`` which 
-contains one Markdown cell, with the content ``The simplest notebook.``, one 
-code input cell with the content ``print &quot;Hello, IPython!&quot;``, and the 
-corresponding output.
-
-The contents of the notebook document ``simple.ipynb`` is the following JSON 
-container::
-
-  {
-   &quot;metadata&quot;: {
-    &quot;name&quot;: &quot;simple&quot;
-   },
-   &quot;nbformat&quot;: 3,
-   &quot;nbformat_minor&quot;: 0,
-   &quot;worksheets&quot;: [
-    {
-     &quot;cells&quot;: [
-      {
-       &quot;cell_type&quot;: &quot;markdown&quot;,
-       &quot;metadata&quot;: {},
-       &quot;source&quot;: &quot;The simplest notebook.&quot;
-      },
-      {
-       &quot;cell_type&quot;: &quot;code&quot;,
-       &quot;collapsed&quot;: false,
-       &quot;input&quot;: &quot;print \&quot;Hello, IPython\&quot;&quot;,
-       &quot;language&quot;: &quot;python&quot;,
-       &quot;metadata&quot;: {},
-       &quot;outputs&quot;: [
-        {
-         &quot;output_type&quot;: &quot;stream&quot;,
-         &quot;stream&quot;: &quot;stdout&quot;,
-         &quot;text&quot;: &quot;Hello, IPython\n&quot;
-        }
-       ],
-       &quot;prompt_number&quot;: 1
-      }
-     ],
-     &quot;metadata&quot;: {}
-    }
-   ]
-  }
+  <span class="err">$</span> <span class="n">ipython</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">config</span> <span class="n">mycfg</span><span class="o">.</span><span class="n">py</span>
 
 
-The corresponding Python script is::
+<span class="o">..</span> <span class="n">_notebook_format</span><span class="p">:</span>
 
-  # -*- coding: utf-8 -*-
-  # &lt;nbformat&gt;3.0&lt;/nbformat&gt;
+<span class="n">LaTeX</span> <span class="n">citations</span>
+<span class="o">---------------</span>
 
-  # &lt;markdowncell&gt;
+<span class="err">``</span><span class="n">nbconvert</span><span class="err">``</span> <span class="n">now</span> <span class="n">has</span> <span class="n">support</span> <span class="k">for</span> <span class="n">LaTeX</span> <span class="n">citations</span><span class="o">.</span> <span class="n">With</span> <span class="n">this</span> <span class="n">capability</span> <span class="n">you</span>
+<span class="n">can</span><span class="p">:</span>
 
-  # The simplest notebook.
+<span class="o">*</span> <span class="n">Manage</span> <span class="n">citations</span> <span class="n">using</span> <span class="n">BibTeX</span><span class="o">.</span>
+<span class="o">*</span> <span class="n">Cite</span> <span class="n">those</span> <span class="n">citations</span> <span class="ow">in</span> <span class="n">Markdown</span> <span class="n">cells</span> <span class="n">using</span> <span class="n">HTML</span> <span class="n">data</span> <span class="n">attributes</span><span class="o">.</span>
+<span class="o">*</span> <span class="n">Have</span> <span class="err">``</span><span class="n">nbconvert</span><span class="err">``</span> <span class="n">generate</span> <span class="n">proper</span> <span class="n">LaTeX</span> <span class="n">citations</span> <span class="ow">and</span> <span class="n">run</span> <span class="n">BibTeX</span><span class="o">.</span>
 
-  # &lt;codecell&gt;
+<span class="n">For</span> <span class="n">an</span> <span class="n">example</span> <span class="n">of</span> <span class="n">how</span> <span class="n">this</span> <span class="n">works</span><span class="p">,</span> <span class="n">please</span> <span class="n">see</span> <span class="n">the</span> <span class="n">citations</span> <span class="n">example</span> <span class="ow">in</span>
+<span class="n">the</span> <span class="n">nbconvert</span><span class="o">-</span><span class="n">examples_</span> <span class="n">repository</span><span class="o">.</span>
 
-  print &quot;Hello, IPython&quot;
+<span class="o">..</span> <span class="n">_nbconvert</span><span class="o">-</span><span class="n">examples</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ipython</span><span class="o">/</span><span class="n">nbconvert</span><span class="o">-</span><span class="n">examples</span>
 
-Note that indeed the output of the code cell, which is present in the JSON 
-container, has been removed in the ``.py`` script.
+<span class="n">Notebook</span> <span class="n">JSON</span> <span class="n">file</span> <span class="nb">format</span>
+<span class="o">-------------------------</span>
+
+<span class="n">Notebook</span> <span class="n">documents</span> <span class="n">are</span> <span class="n">JSON</span> <span class="n">files</span> <span class="k">with</span> <span class="n">an</span> <span class="err">``</span><span class="o">.</span><span class="n">ipynb</span><span class="err">``</span> <span class="n">extension</span><span class="p">,</span> <span class="n">formatted</span>
+<span class="k">as</span> <span class="n">legibly</span> <span class="k">as</span> <span class="n">possible</span> <span class="k">with</span> <span class="n">minimal</span> <span class="n">extra</span> <span class="n">indentation</span> <span class="ow">and</span> <span class="n">cell</span> <span class="n">content</span> <span class="n">broken</span>
+<span class="n">across</span> <span class="n">lines</span> <span class="n">to</span> <span class="n">make</span> <span class="n">them</span> <span class="n">reasonably</span> <span class="n">friendly</span> <span class="n">to</span> <span class="n">use</span> <span class="ow">in</span> <span class="n">version</span><span class="o">-</span><span class="n">control</span>
+<span class="n">workflows</span><span class="o">.</span>  <span class="n">You</span> <span class="n">should</span> <span class="n">be</span> <span class="n">very</span> <span class="n">careful</span> <span class="k">if</span> <span class="n">you</span> <span class="n">ever</span> <span class="n">manually</span> <span class="n">edit</span> <span class="n">this</span> <span class="n">JSON</span>
+<span class="n">data</span><span class="p">,</span> <span class="k">as</span> <span class="n">it</span> <span class="ow">is</span> <span class="n">extremely</span> <span class="n">easy</span> <span class="n">to</span> <span class="n">corrupt</span> <span class="n">its</span> <span class="n">internal</span> <span class="n">structure</span> <span class="ow">and</span> <span class="n">make</span> <span class="n">the</span>
+<span class="n">file</span> <span class="n">impossible</span> <span class="n">to</span> <span class="n">load</span><span class="o">.</span>  <span class="n">In</span> <span class="n">general</span><span class="p">,</span> <span class="n">you</span> <span class="n">should</span> <span class="n">consider</span> <span class="n">the</span> <span class="n">notebook</span> <span class="k">as</span> <span class="n">a</span>
+<span class="n">file</span> <span class="n">meant</span> <span class="n">only</span> <span class="n">to</span> <span class="n">be</span> <span class="n">edited</span> <span class="n">by</span> <span class="n">the</span> <span class="n">IPython</span> <span class="n">Notebook</span> <span class="n">app</span> <span class="n">itself</span><span class="p">,</span> <span class="ow">not</span> <span class="k">for</span> 
+<span class="n">hand</span><span class="o">-</span><span class="n">editing</span><span class="o">.</span>
+
+<span class="o">..</span> <span class="n">note</span><span class="p">::</span>
+
+     <span class="n">Binary</span> <span class="n">data</span> <span class="n">such</span> <span class="k">as</span> <span class="n">figures</span> <span class="n">are</span> <span class="n">also</span> <span class="n">saved</span> <span class="n">directly</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">JSON</span> <span class="n">file</span><span class="o">.</span>  
+     <span class="n">This</span> <span class="n">provides</span> <span class="n">convenient</span> <span class="n">single</span><span class="o">-</span><span class="n">file</span> <span class="n">portability</span><span class="p">,</span> <span class="n">but</span> <span class="n">means</span> <span class="n">that</span> <span class="n">the</span> 
+     <span class="n">files</span> <span class="n">can</span> <span class="n">be</span> <span class="n">large</span><span class="p">;</span> <span class="n">a</span> <span class="err">``</span><span class="n">diff</span><span class="err">``</span> <span class="n">of</span> <span class="n">binary</span> <span class="n">data</span> <span class="ow">is</span> <span class="n">also</span> <span class="ow">not</span> <span class="n">very</span> 
+     <span class="n">meaningful</span><span class="o">.</span>  <span class="n">Since</span> <span class="n">the</span> <span class="n">binary</span> <span class="n">blobs</span> <span class="n">are</span> <span class="n">encoded</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">single</span> <span class="n">line</span><span class="p">,</span> <span class="n">they</span> 
+     <span class="n">affect</span> <span class="n">only</span> <span class="n">one</span> <span class="n">line</span> <span class="n">of</span> <span class="n">the</span> <span class="err">``</span><span class="n">diff</span><span class="err">``</span> <span class="n">output</span><span class="p">,</span> <span class="n">but</span> <span class="n">they</span> <span class="n">are</span> <span class="n">typically</span> <span class="n">very</span> 
+     <span class="n">long</span> <span class="n">lines</span><span class="o">.</span>  <span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="n">the</span> <span class="err">``</span><span class="n">Cell</span> <span class="o">|</span> <span class="n">All</span> <span class="n">Output</span> <span class="o">|</span> <span class="n">Clear</span><span class="err">``</span> <span class="n">menu</span> <span class="n">option</span> <span class="n">to</span> 
+     <span class="n">remove</span> <span class="nb">all</span> <span class="n">output</span> <span class="kn">from</span> <span class="nn">a</span> <span class="n">notebook</span> <span class="n">prior</span> <span class="n">to</span> <span class="n">committing</span> <span class="n">it</span> <span class="n">to</span> <span class="n">version</span> 
+     <span class="n">control</span><span class="p">,</span> <span class="k">if</span> <span class="n">this</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">concern</span><span class="o">.</span>
+
+<span class="n">The</span> <span class="n">notebook</span> <span class="n">server</span> <span class="n">can</span> <span class="n">also</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">pure</span> <span class="n">Python</span> <span class="n">version</span> <span class="n">of</span> <span class="n">your</span> <span class="n">notebook</span><span class="p">,</span> 
+<span class="n">using</span> <span class="n">the</span> <span class="err">``</span><span class="n">File</span> <span class="o">|</span> <span class="n">Download</span> <span class="k">as</span><span class="err">``</span> <span class="n">menu</span> <span class="n">option</span><span class="o">.</span> <span class="n">The</span> <span class="n">resulting</span> <span class="err">``</span><span class="o">.</span><span class="n">py</span><span class="err">``</span> <span class="n">file</span> <span class="n">will</span> 
+<span class="n">contain</span> <span class="nb">all</span> <span class="n">the</span> <span class="n">code</span> <span class="n">cells</span> <span class="kn">from</span> <span class="nn">your</span> <span class="n">notebook</span> <span class="n">verbatim</span><span class="p">,</span> <span class="ow">and</span> <span class="nb">all</span> <span class="n">Markdown</span> <span class="n">cells</span> 
+<span class="n">prepended</span> <span class="k">with</span> <span class="n">a</span> <span class="n">comment</span> <span class="n">marker</span><span class="o">.</span>  <span class="n">The</span> <span class="n">separation</span> <span class="n">between</span> <span class="n">code</span> <span class="ow">and</span> <span class="n">Markdown</span>
+<span class="n">cells</span> <span class="ow">is</span> <span class="n">indicated</span> <span class="k">with</span> <span class="n">special</span> <span class="n">comments</span> <span class="ow">and</span> <span class="n">there</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">header</span> <span class="n">indicating</span> <span class="n">the</span>
+<span class="nb">format</span> <span class="n">version</span><span class="o">.</span>  <span class="n">All</span> <span class="n">output</span> <span class="ow">is</span> <span class="n">removed</span> <span class="n">when</span> <span class="n">exporting</span> <span class="n">to</span> <span class="n">Python</span><span class="o">.</span>
+
+<span class="n">As</span> <span class="n">an</span> <span class="n">example</span><span class="p">,</span> <span class="n">consider</span> <span class="n">a</span> <span class="n">simple</span> <span class="n">notebook</span> <span class="n">called</span> <span class="err">``</span><span class="n">simple</span><span class="o">.</span><span class="n">ipynb</span><span class="err">``</span> <span class="n">which</span> 
+<span class="n">contains</span> <span class="n">one</span> <span class="n">Markdown</span> <span class="n">cell</span><span class="p">,</span> <span class="k">with</span> <span class="n">the</span> <span class="n">content</span> <span class="err">``</span><span class="n">The</span> <span class="n">simplest</span> <span class="n">notebook</span><span class="o">.</span><span class="err">``</span><span class="p">,</span> <span class="n">one</span> 
+<span class="n">code</span> <span class="nb">input</span> <span class="n">cell</span> <span class="k">with</span> <span class="n">the</span> <span class="n">content</span> <span class="err">``</span><span class="nb">print</span> <span class="s2">&quot;Hello, IPython!&quot;</span><span class="err">``</span><span class="p">,</span> <span class="ow">and</span> <span class="n">the</span> 
+<span class="n">corresponding</span> <span class="n">output</span><span class="o">.</span>
+
+<span class="n">The</span> <span class="n">contents</span> <span class="n">of</span> <span class="n">the</span> <span class="n">notebook</span> <span class="n">document</span> <span class="err">``</span><span class="n">simple</span><span class="o">.</span><span class="n">ipynb</span><span class="err">``</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">following</span> <span class="n">JSON</span> 
+<span class="n">container</span><span class="p">::</span>
+
+  <span class="p">{</span>
+   <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;simple&quot;</span>
+   <span class="p">},</span>
+   <span class="s2">&quot;nbformat&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+   <span class="s2">&quot;nbformat_minor&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+   <span class="s2">&quot;worksheets&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+     <span class="s2">&quot;cells&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+       <span class="s2">&quot;cell_type&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+       <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;The simplest notebook.&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+       <span class="s2">&quot;cell_type&quot;</span><span class="p">:</span> <span class="s2">&quot;code&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;collapsed&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+       <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;print </span><span class="se">\&quot;</span><span class="s2">Hello, IPython</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;language&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+       <span class="s2">&quot;outputs&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+         <span class="s2">&quot;output_type&quot;</span><span class="p">:</span> <span class="s2">&quot;stream&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;stream&quot;</span><span class="p">:</span> <span class="s2">&quot;stdout&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;Hello, IPython</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="p">}</span>
+       <span class="p">],</span>
+       <span class="s2">&quot;prompt_number&quot;</span><span class="p">:</span> <span class="mi">1</span>
+      <span class="p">}</span>
+     <span class="p">],</span>
+     <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{}</span>
+    <span class="p">}</span>
+   <span class="p">]</span>
+  <span class="p">}</span>
+
+
+<span class="n">The</span> <span class="n">corresponding</span> <span class="n">Python</span> <span class="n">script</span> <span class="ow">is</span><span class="p">::</span>
+
+  <span class="c1"># -*- coding: utf-8 -*-</span>
+  <span class="c1"># &lt;nbformat&gt;3.0&lt;/nbformat&gt;</span>
+
+  <span class="c1"># &lt;markdowncell&gt;</span>
+
+  <span class="c1"># The simplest notebook.</span>
+
+  <span class="c1"># &lt;codecell&gt;</span>
+
+  <span class="nb">print</span> <span class="s2">&quot;Hello, IPython&quot;</span>
+
+<span class="n">Note</span> <span class="n">that</span> <span class="n">indeed</span> <span class="n">the</span> <span class="n">output</span> <span class="n">of</span> <span class="n">the</span> <span class="n">code</span> <span class="n">cell</span><span class="p">,</span> <span class="n">which</span> <span class="ow">is</span> <span class="n">present</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">JSON</span> 
+<span class="n">container</span><span class="p">,</span> <span class="n">has</span> <span class="n">been</span> <span class="n">removed</span> <span class="ow">in</span> <span class="n">the</span> <span class="err">``</span><span class="o">.</span><span class="n">py</span><span class="err">``</span> <span class="n">script</span><span class="o">.</span>
 </pre></div>
 
     <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -706,7 +692,7 @@ container, has been removed in the ``.py`` script.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -723,8 +709,7 @@ container, has been removed in the ``.py`` script.
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Check the status and diff of your modifications:</li>
@@ -757,7 +742,7 @@ container, has been removed in the ``.py`` script.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -804,7 +789,7 @@ no hay cambios agregados al commit (use «git add» o «git commit -a»)
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -844,8 +829,7 @@ index 1789a62..610edf0 100644
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Add the changes an commit them:</li>
@@ -894,7 +878,7 @@ index 1789a62..610edf0 100644
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -912,8 +896,7 @@ index 1789a62..610edf0 100644
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Finally, push your local development branch to your <strong>Github</strong> fork:  </li>
@@ -946,7 +929,7 @@ index 1789a62..610edf0 100644
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -969,8 +952,7 @@ To git@github.com:damianavila/ipython.git
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <blockquote><p><strong>NOTE</strong>: The merging of your <strong>Github</strong> development branch into the master is done via <em>pull-request</em> on the <strong>Github</strong> website. For reference, you can see the proposed <strong>PR</strong> here: <a href="https://github.com/ipython/ipython/pull/4751">https://github.com/ipython/ipython/pull/4751</a></p>
 </blockquote>
@@ -979,8 +961,7 @@ To git@github.com:damianavila/ipython.git
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>As you can see, this workflow is very <em>simple</em>... and with the aid of this <strong>ipytmpl</strong> is easier than <em>before</em> (before = making the same but in your traditional console).</p>
 <p>You set up the environment, fill the variables to use <em>a posteriori</em>, and you have only to be concern about the changes you want to introduce (or remove) from the source code. All the other steps, all those git calls are predetermined and will be called whereas you advance in the workflow...</p>

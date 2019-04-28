@@ -91,14 +91,14 @@ MathJax.Hub.Config({
 <p>Following the idea to release all the extensions I had working on in the last few weeks/months, today I will release an old but very useful <strong>IPython</strong> notebook extension for people blogging with <strong>Nikola</strong>: the <em>nikola_deploy</em> extension.
 <!-- TEASER_END --></p>
 <p>Yes, I am always very original picking the names of the extensions ;-). A pic to illustrate the extension button at the toolbar:</p>
-<p><img src="http://www.damian.oquanta.info/galleries/deploy/1.png" alt=""></p>
+<p><img src="../galleries/deploy/1.png" alt=""></p>
 <blockquote>
 <p><strong>Note</strong>: Nikola supports the ipynb file as an input... and using the IPython.nbconvert machinery it is able to render the static HTML representation of your ipynbs inside the complete infrastructure of a powerful static site engine.</p>
 </blockquote>
 <p>First, to know some things about my blogging workflow using <strong>IPython</strong>, <strong>Nikola</strong>, <strong>git</strong> and <strong>gh-pages</strong>, I suggest you to re-read these previous posts:</p>
 <ul>
-<li><a href="http://www.damian.oquanta.info/posts/bidirectional-ipython-nikola-workflow-to-write-your-blog-post.html">Bidirectional IPython-Nikola workflow to write your blog post</a></li>
-<li><a href="http://www.damian.oquanta.info/posts/one-line-deployment-of-your-site-to-gh-pages.html">One line deployment of your site to gh-pages</a></li>
+<li><a href="bidirectional-ipython-nikola-workflow-to-write-your-blog-post.html">Bidirectional IPython-Nikola workflow to write your blog post</a></li>
+<li><a href="one-line-deployment-of-your-site-to-gh-pages.html">One line deployment of your site to gh-pages</a></li>
 </ul>
 <p>OK, coming back to the extension, the idea behind this one is very simple: I will call the <code>nikola deploy</code> command from inside the <strong>IPython</strong> notebook using our beloved <code>IPython.notebook.kernel.execute</code> method, and also taking the advantage of <em>passing</em> commands to the underlying system just pre-pending with the <code>!</code> mark. The relevant lines are below:</p>
 <div class="highlight"><pre><span></span><span class="mi">36</span>    <span class="k">if</span> <span class="p">(</span><span class="nx">clean</span><span class="o">==</span><span class="s2">"True"</span><span class="p">)</span> <span class="p">{</span>
@@ -136,7 +136,7 @@ MathJax.Hub.Config({
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -273,19 +273,12 @@ Zen theme based in <a href="https://github.com/arusahni/website-template">Arusah
             
         </footer>
 </div>
-    </section><script data-gittip-username="damianavila" data-gittip-widget="button" src="//gttp.co/v1.js"></script><script type="text/javascript">
+    </section><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-139225553-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33259189-1']);
-  _gaq.push(['_setDomainName', 'oquanta.info']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+  gtag('config', 'UA-139225553-1');
 </script><script src="../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
             $(function(){
                 $('.timeago').timeago();

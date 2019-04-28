@@ -1,7 +1,6 @@
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Coming back to the nice practice of release my own <strong>IPython</strong> <em>nbextensions</em>, today I will release two extensions I use a lot in my daily workflow: <code>loader</code> and <code>writer</code>, useful extensions to load files into the <strong>IPython notebook</strong> and to write the content to the same (or another) file.
 <!-- TEASER_END --></p>
@@ -28,7 +27,7 @@
 <span class="p">}</span>
 </pre></div>
 <p>So after selecting a cell, I click on the <code>loader</code> button, I get this:</p>
-<p><img src="http://www.damian.oquanta.info/galleries/loadwrite/loader1.png" alt=""></p>
+<p><img src="../galleries/loadwrite/loader1.png" alt=""></p>
 <p>And if I click on <em>Seleccionar archivo</em> (Select file) I can navigate trough my file system to get the file I want to load. For instance, I will load some text, in this case a <a href="http://bokeh.pydata.org/"><strong>Bokeh</strong></a> plot, in the next cell:</p>
 
 </div>
@@ -89,13 +88,12 @@
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Which gives me this nice plot... but I will post in detail about <strong>Bokeh</strong> soon ;-)</p>
-<p><img src="http://www.damian.oquanta.info/galleries/loadwrite/themes1.png" alt=""></p>
+<p><img src="../galleries/loadwrite/themes1.png" alt=""></p>
 <p>As you can see, the three first lines of the loaded text give you information about the file itself. Under the <code>----</code> rule, you will have the file content. Then, you can do whatever modification you want and write it to a file (the same or another one) using the <code>writer</code> <em>nbextension</em>:</p>
-<p><img src="http://www.damian.oquanta.info/galleries/loadwrite/writer1.png" alt=""></p>
+<p><img src="../galleries/loadwrite/writer1.png" alt=""></p>
 <p><code>writer</code> <em>nbextension</em> is using <code>%writefile</code> magic under the hood:</p>
 <div class="highlight"><pre><span></span><span class="nx">IPython</span><span class="p">.</span><span class="nx">dialog</span><span class="p">.</span><span class="nx">modal</span><span class="p">({</span>
     <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Create a file with your cell content&quot;</span><span class="p">,</span>

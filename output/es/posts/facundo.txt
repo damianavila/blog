@@ -42,57 +42,57 @@ Damián.
 
 PD: algunas fotitos para que se deleiten... las primeras con el celu... las últimas con la cámara...
 
-.. figure:: http://www.damian.oquanta.info/galleries/Facu_RN/Facu1.png
-   :target: http://www.damian.oquanta.info/galleries/Facu_RN/Facu1.png
+.. figure:: ../galleries/Facu_RN/Facu1.png
+   :target: ../galleries/Facu_RN/Facu1.png
 
    ¡Qué largo y flaco que soy!
 
-.. figure:: http://www.damian.oquanta.info/galleries/Facu_RN/Facu2.png
-   :target: http://www.damian.oquanta.info/galleries/Facu_RN/Facu2.png
+.. figure:: ../galleries/Facu_RN/Facu2.png
+   :target: ../galleries/Facu_RN/Facu2.png
 
    Y ahora de costadete...
 
-.. figure:: http://www.damian.oquanta.info/galleries/Facu_RN/Facu3.png
-   :target: http://www.damian.oquanta.info/galleries/Facu_RN/Facu3.png
+.. figure:: ../galleries/Facu_RN/Facu3.png
+   :target: ../galleries/Facu_RN/Facu3.png
 
    Parece que tenía hambre...
 
-.. figure:: http://www.damian.oquanta.info/galleries/Facu_RN/Facu4.png
-   :target: http://www.damian.oquanta.info/galleries/Facu_RN/Facu4.png
+.. figure:: ../galleries/Facu_RN/Facu4.png
+   :target: ../galleries/Facu_RN/Facu4.png
 
    Durmiendo en brazos del papi.
 
-.. figure:: http://www.damian.oquanta.info/galleries/Facu_RN/Facu5.png
-   :target: http://www.damian.oquanta.info/galleries/Facu_RN/Facu5.png
+.. figure:: ../galleries/Facu_RN/Facu5.png
+   :target: ../galleries/Facu_RN/Facu5.png
 
    ¡Uy! Me olvidé de avisar...
 
-.. figure:: http://www.damian.oquanta.info/galleries/Facu_RN/DSC05901.JPG
-   :target: http://www.damian.oquanta.info/galleries/Facu_RN/DSC05901.JPG
+.. figure:: ../galleries/Facu_RN/DSC05901.JPG
+   :target: ../galleries/Facu_RN/DSC05901.JPG
 
    ¡Otra vez sopa... digo, teta!
 
-.. figure:: http://www.damian.oquanta.info/galleries/Facu_RN/DSC05903.JPG
-   :target: http://www.damian.oquanta.info/galleries/Facu_RN/DSC05903.JPG
+.. figure:: ../galleries/Facu_RN/DSC05903.JPG
+   :target: ../galleries/Facu_RN/DSC05903.JPG
 
    ¡Qué lindo es dormir! Episodio I
 
-.. figure:: http://www.damian.oquanta.info/galleries/Facu_RN/DSC05917.JPG
-   :target: http://www.damian.oquanta.info/galleries/Facu_RN/DSC05917.JPG
+.. figure:: ../galleries/Facu_RN/DSC05917.JPG
+   :target: ../galleries/Facu_RN/DSC05917.JPG
 
    ¡Qué lindo es dormir! Episodio II
 
-.. figure:: http://www.damian.oquanta.info/galleries/Facu_RN/DSC05918.JPG
-   :target: http://www.damian.oquanta.info/galleries/Facu_RN/DSC05918.JPG
+.. figure:: ../galleries/Facu_RN/DSC05918.JPG
+   :target: ../galleries/Facu_RN/DSC05918.JPG
 
    ¡Qué lindo es dormir! Episodio III
 
-.. figure:: http://www.damian.oquanta.info/galleries/Facu_RN/DSC05925.JPG
-   :target: http://www.damian.oquanta.info/galleries/Facu_RN/DSC05925.JPG
+.. figure:: ../galleries/Facu_RN/DSC05925.JPG
+   :target: ../galleries/Facu_RN/DSC05925.JPG
 
    ¡Cómo podría ser de otra manera... jeje!
 
-.. figure:: http://www.damian.oquanta.info/galleries/Facu_RN/DSC05928.JPG
-   :target: http://www.damian.oquanta.info/galleries/Facu_RN/DSC05928.JPG
+.. figure:: ../galleries/Facu_RN/DSC05928.JPG
+   :target: ../galleries/Facu_RN/DSC05928.JPG
 
    Cuna improvisada... se nota que llegó un mes antes, ¿no? jeje!

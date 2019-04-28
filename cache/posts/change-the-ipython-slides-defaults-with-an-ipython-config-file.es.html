@@ -1,7 +1,6 @@
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Some people are asking me how to change the IPython slides's defaults. You can see the description of the request <a href="http://stackoverflow.com/questions/18820253/modifying-reveal-js-defaults-in-ipython-notebook-slide-generation">here</a>. Essentially, he wants to change the default transition between the slides.</p>
 <p>To solve this question, we introduce the notion of IPython config files, which let us easily change <em>things</em> inside <code>IPython.nbconvert</code> (the library where the IPython slides lives) to achieve our desires, at least in the slideshow generation issue ;-)</p>
@@ -40,7 +39,7 @@
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -59,8 +58,7 @@ c.Exporter.template_file = &#39;default_transition&#39;
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>From the IPython docs:</p>
 <blockquote><p>A configuration file is simply a pure Python file that sets the attributes of a global, pre-created configuration object. This configuration object is a Config instance. While in a configuration file, to get a reference to this object, simply call the get_config() function. We inject this function into the global name-space that the configuration file is executed in,</p>
@@ -94,7 +92,7 @@ c.Exporter.template_file = &#39;default_transition&#39;
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -173,8 +171,7 @@ Reveal.initialize({
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In the first line, <code>{%- extends 'slides_reveal.tpl' -%}</code> tells to the <strong>Jinja</strong> system that we are going to extend <em>slides_reveal</em> template (the default one, which <code>IPython.nbconvert</code> uses to build our common slides by default). Then, inside the <code>{% block body %}</code>, we call <code>super()</code>:</p>
 <p>From the <em>Jinja</em> docs:</p>

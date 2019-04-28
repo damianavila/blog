@@ -99,7 +99,7 @@ How we can easily do it? Just ">
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>And my answer was <strong>YES</strong>...</p>
 <p>How we can easily do it? Just follow these few steps:
 <!-- TEASER_END --></p>
-<p><strong>Rational</strong>: We are going to use the power of <code>IPython.nbconvert</code> library to use a modified <strong>jinja</strong> template which will let us hide the<code>input cells</code> in our <strong>IPython slides</strong>. To achieve this goal, we are going to use the same approach described in a previous <a href="http://www.damian.oquanta.info/posts/mimic-the-ipython-notebook-cell-execution.html">post</a>. Hence, our <code>input cells</code> will be hidden by default, but they will show up if we click on the corresponding <code>output cell</code> area.</p>
+<p><strong>Rational</strong>: We are going to use the power of <code>IPython.nbconvert</code> library to use a modified <strong>jinja</strong> template which will let us hide the<code>input cells</code> in our <strong>IPython slides</strong>. To achieve this goal, we are going to use the same approach described in a previous <a href="mimic-the-ipython-notebook-cell-execution.html">post</a>. Hence, our <code>input cells</code> will be hidden by default, but they will show up if we click on the corresponding <code>output cell</code> area.</p>
 <p>OK, I first wrote a custom template and named it as <code>output_toggle.tpl</code>:</p>
 
 </div>
@@ -128,7 +128,7 @@ How we can easily do it? Just ">
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -180,7 +180,7 @@ $(document).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The code is simple, but for a detailed explanation see my previous <a href="http://www.damian.oquanta.info/posts/mimic-the-ipython-notebook-cell-execution.htm">post</a>.</p>
+<p>The code is simple, but for a detailed explanation see my previous <a href="mimic-the-ipython-notebook-cell-execution.htm">post</a>.</p>
 <p>Briefly, I just changed obvious things such as the encompassing of the <code>input_group</code> and the calling of <code>.prev()</code> method (instead of <code>.next(</code>) one) inside the little <em>javascript</em> snippet.</p>
 <p>Now, the second and last step was:</p>
 <p><code>ipython nbconvert your_slides.ipynb --to slides --template output_toggle --post serve</code></p>
@@ -261,19 +261,12 @@ Zen theme based in <a href="https://github.com/arusahni/website-template">Arusah
             
         </footer>
 </div>
-    </section><script data-gittip-username="damianavila" data-gittip-widget="button" src="//gttp.co/v1.js"></script><script type="text/javascript">
+    </section><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-139225553-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33259189-1']);
-  _gaq.push(['_setDomainName', 'oquanta.info']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+  gtag('config', 'UA-139225553-1');
 </script><script src="../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
             $(function(){
                 $('.timeago').timeago();
