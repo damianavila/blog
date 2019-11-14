@@ -6,11 +6,11 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>RISE 5.5.0 is out! | El blog de Damian</title>
+<title>RISE 5.6.0 is out! | El blog de Damian</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../rss.xml">
-<link rel="canonical" href="http://damianavila.github.io/blog/es/posts/rise-550-is-out.html">
+<link rel="canonical" href="http://damianavila.github.io/blog/es/posts/rise-560-is-out.html">
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -24,13 +24,13 @@ MathJax.Hub.Config({
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Damian Avila">
 <meta property="og:site_name" content="El blog de Damian">
-<meta property="og:title" content="RISE 5.5.0 is out!">
-<meta property="og:url" content="http://damianavila.github.io/blog/es/posts/rise-550-is-out.html">
-<meta property="og:description" content="We're pleased to announce the release of RISE 5.5.0!
+<meta property="og:title" content="RISE 5.6.0 is out!">
+<meta property="og:url" content="http://damianavila.github.io/blog/es/posts/rise-560-is-out.html">
+<meta property="og:description" content="We're pleased to announce the release of RISE 5.6.0!
 What is RISE?¶RISE lets you show your Jupyter notebook rendered as an executable Reveal.js-based slideshow.
 It is your very same notebook but in a ">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2019-04-27T13:39:26-03:00">
+<meta property="article:published_time" content="2019-11-14T16:08:38-03:00">
 <meta property="article:tag" content="conda">
 <meta property="article:tag" content="Jupyter">
 <meta property="article:tag" content="linux">
@@ -41,7 +41,7 @@ It is your very same notebook but in a ">
 <meta property="article:tag" content="RISE">
 <meta property="article:tag" content="slideshow">
 <meta property="article:tag" content="win">
-<link rel="alternate" hreflang="en" href="../../posts/rise-550-is-out.html">
+<link rel="alternate" hreflang="en" href="../../posts/rise-560-is-out.html">
 </head>
 <body>
     <section class="social"><ul>
@@ -56,15 +56,15 @@ It is your very same notebook but in a ">
 
         </ul></section><section class="page-content"><div class="content" rel="main">
     <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">RISE 5.5.0 is out!</h1>
+        <h1 class="p-name entry-title" itemprop="headline name">RISE 5.6.0 is out!</h1>
 
         <div class="meta">
             <div class="authordate">
-                <time class="timeago" datetime="2019-04-27T13:39:26-03:00">2019-04-27 13:39</time><a href="../../posts/rise-550-is-out.html" rel="alternate" hreflang="en">
+                <time class="timeago" datetime="2019-11-14T16:08:38-03:00">2019-11-14 16:08</time><a href="../../posts/rise-560-is-out.html" rel="alternate" hreflang="en">
                 English</a>
 
                       |  
-        <a href="rise-550-is-out.ipynb" id="sourcelink">Código fuente</a>
+        <a href="rise-560-is-out.ipynb" id="sourcelink">Código fuente</a>
           |  
         <a href="javascript:%24.getScript(%22/assets/js/miniPageNav.js%22);">Minimap</a>
 
@@ -92,36 +92,35 @@ It is your very same notebook but in a ">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We're pleased to announce the release of <strong>RISE</strong> 5.5.0!</p>
+<p>We're pleased to announce the release of <strong>RISE</strong> 5.6.0!</p>
 <h4 id="What-is-RISE?">
-<em>What is RISE?</em><a class="anchor-link" href="rise-550-is-out.html#What-is-RISE?">¶</a>
+<em>What is RISE?</em><a class="anchor-link" href="rise-560-is-out.html#What-is-RISE?">¶</a>
 </h4>
 <p><strong>RISE</strong> lets you show your <strong>Jupyter</strong> notebook rendered as an <strong>executable</strong> <code>Reveal.js</code>-based slideshow.</p>
 <p>It is your very same notebook but in a <em>slidy</em> way!
 <!-- TEASER_END --></p>
 <h4 id="How-you-can-get-it?">
-<em>How you can get it?</em><a class="anchor-link" href="rise-550-is-out.html#How-you-can-get-it?">¶</a>
+<em>How you can get it?</em><a class="anchor-link" href="rise-560-is-out.html#How-you-can-get-it?">¶</a>
 </h4>
 <p>If you are a <strong>conda/anaconda</strong> user, you can install it with <code>conda install -c conda-forge rise</code>.</p>
 <p>If you are a <strong>pip</strong> user, you can install it with <code>pip install rise</code>.</p>
-<blockquote>
-<p>Starting from this release, <code>pip install rise</code> will install everything you need, no more additional steps such as <code>jupyter nbextension install</code>.</p>
-</blockquote>
-<p>For further information about the installation process, please check <a href="https://rise.readthedocs.io/en/stable/installation.html">https://rise.readthedocs.io/en/stable/installation.html</a>.</p>
+<p>For further information about the installation process, please check <a href="https://rise.readthedocs.io/en/maint-5.6/installation.html">here</a>.</p>
 <h4 id="What-are-the-latest-news?">
-<em>What are the latest news?</em><a class="anchor-link" href="rise-550-is-out.html#What-are-the-latest-news?">¶</a>
+<em>What are the latest news?</em><a class="anchor-link" href="rise-560-is-out.html#What-are-the-latest-news?">¶</a>
 </h4>
 <p>This released was mainly focused on:</p>
 <ul>
-<li>support nbextension installation straight from <code>setup.py</code> </li>
-<li>fix versioning issues and support compatible versions for npm and python</li>
-<li>documentation updates (chalkboard and speaker notes) and some other documentation fixes</li>
-<li>improvements on keyboard shortcuts and fixes for the "auto-select" feature</li>
-<li>and more!!!</li>
+<li>We now rely on <code>reveal.js</code> 3.8.0</li>
+<li>We now support "dark" reveal.js themes (nice... isn't it ;-)</li>
 </ul>
-<p>You can see a detailed changelog at <a href="https://rise.readthedocs.io/en/stable/changelog.html#changes">https://rise.readthedocs.io/en/stable/changelog.html#changes</a>.</p>
-<p>Please report any issues at <a href="https://github.com/damianavila/RISE/issues">https://github.com/damianavila/RISE/issues</a></p>
+<p><img src="../galleries/rise/dark_slides.png" alt=""></p>
+<ul>
+<li>other minor bug fixes and enhancements (CSS, build, docs)!</li>
+</ul>
+<p>You can see a detailed changelog <a href="https://rise.readthedocs.io/en/maint-5.6/changelog.html#changes">here</a>.</p>
+<p>Please report any issues at <a href="https://github.com/damianavila/RISE/issues">https://github.com/damianavila/RISE/issues</a>.</p>
 <p>Finally, we <strong>really</strong> hope you continue enjoying the <strong>RISE</strong> experience!</p>
+<p><strong>PS</strong>: We just realized we never ANN'ed the release of <strong>RISE</strong> 5.5.1 on July. I was a really minor patch release to fix an annoying bug with some keyboard shortcuts. Very sorry about that missed ANN!</p>
 
 </div>
 </div>
@@ -131,18 +130,15 @@ It is your very same notebook but in a ">
         at the top of the post if you want to play with it ;-)</b></p>
                 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="abandoning-the-oquanta-domain-name.html" rel="prev" title="Abandoning the oquanta domain name">Publicación anterior</a>
-            </li>
-            <li class="next">
-                <a href="rise-560-is-out.html" rel="next" title="RISE 5.6.0 is out!">Siguiente publicación</a>
+                <a href="rise-550-is-out.html" rel="prev" title="RISE 5.5.0 is out!">Publicación anterior</a>
             </li>
         </ul>
 <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="damianblogcomments",
-            disqus_url="http://damianavila.github.io/blog/es/posts/rise-550-is-out.html",
-        disqus_title="RISE 5.5.0 is out!",
-        disqus_identifier="cache/posts/rise-550-is-out.html",
+            disqus_url="http://damianavila.github.io/blog/es/posts/rise-560-is-out.html",
+        disqus_title="RISE 5.6.0 is out!",
+        disqus_identifier="cache/posts/rise-560-is-out.html",
         disqus_config = function () {
             this.language = "es_ES";
         };
