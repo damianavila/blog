@@ -13,7 +13,6 @@ My customizations...
         <p class="gittip"> Btw, do you like the content? Great! Then help me to achieve a
         "Sustainable Crowdfunding"!</p>
         <script data-gittip-username="damianavila" src="//gttp.co/v1.js"></script>
-
 * create zen-ipython/templates/index.tmpl and add:
         {% block extra_head %}
             {{ super() }}
@@ -31,3 +30,5 @@ My customizations...
         assets/css/all-nocdn.css=bitter.css,main.css,rst.css,code.css,ipython.min.css,nikola_ipython.css,custom.css
         assets/css/all.css=main.css,rst.css,code.css,ipython.min.css,nikola_ipython.css,custom.css
         assets/js/all-nocdn.js=jquery-1.10.2.min.js,jquery.timeago.js,toggle.js,miniPageNav.js
+* Fontawesome through https
+        https://github.com/getnikola/nikola-themes/commit/c9039ee96cd2322de435f526f3eb384d6234649b

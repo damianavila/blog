@@ -654,10 +654,10 @@ RSS_LINKS_APPEND_QUERY = False
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
 LICENSE = LICENSE = """
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
 <img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
+src="https://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
 # LICENSE = """
