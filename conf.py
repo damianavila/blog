@@ -131,9 +131,9 @@ NAVIGATION_LINKS = {
         ('/categories/index.html', 'Tags', 'icon-tags'),
         ('/rss.xml', 'RSS', 'icon-rss'),
         ('/stories/about-me.html', 'About me', 'icon-user'),
+        ('/stories/support-me.html', 'Support me', 'icon-usd'),
         ('https://twitter.com/damian_avila', 'My Twitter', 'icon-twitter'),
         ('https://github.com/damianavila', 'My Github', 'icon-github'),
-        ('https://plus.google.com/u/0/106896109587369688379/posts', 'My Google+', 'icon-google-plus'),
     ),
     'es': (
         ('/es/index.html', 'Inicio', 'icon-home'),
@@ -141,9 +141,9 @@ NAVIGATION_LINKS = {
         ('/es/categories/index.html', 'Etiquetas', 'icon-tags'),
         ('/es/rss.xml', 'RSS', 'icon-rss'),
         ('/es/stories/about-me.html', 'Sobre mi...', 'icon-user'),
+        ('/es/stories/support-me.html', 'Dame tu apoyo..', 'icon-usd'),
         ('https://twitter.com/damian_avila', 'Mi Twitter', 'icon-twitter'),
         ('https://github.com/damianavila', 'Mi Github', 'icon-github'),
-        ('https://plus.google.com/u/0/106896109587369688379/posts', 'Mi Google+', 'icon-google-plus'),
     ),
 }
 

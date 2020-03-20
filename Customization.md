@@ -8,11 +8,13 @@ My customizations...
         &nbsp;&nbsp;|&nbsp;&nbsp;
         <a href='javascript:$.getScript("/assets/js/miniPageNav.js");'>Minimap</a>
 * create zen-ipython/templates/post.tmpl and add:
-        <p><b>Don't forget this blog post is an ipynb file itself! So, you can download it from the "Source" link
-        at the top of the post if you want to play with it ;-)</b></p>
-        <p class="gittip"> Btw, do you like the content? Great! Then help me to achieve a
-        "Sustainable Crowdfunding"!</p>
-        <script data-gittip-username="damianavila" src="//gttp.co/v1.js"></script>
+        <p>Did you like the content? Great!</p>
+        <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+        <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#2e2e2e', 'F1F41HSJ8');kofiwidget2.draw();</script>
+        <p>Or visit my <a href="https://damianavila.github.io/blog/stories/support-me.html">support</a> page for more information.</p>
+        <br>
+        <p>Btw, don't forget this blog post is an ipynb file itself! So, you can download it from the "Source" link
+        at the top of the post if you want to play with it ;-)</p>
 * create zen-ipython/templates/index.tmpl and add:
         {% block extra_head %}
             {{ super() }}

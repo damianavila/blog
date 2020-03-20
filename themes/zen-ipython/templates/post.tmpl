@@ -29,8 +29,13 @@
         <div class="body">
             {{ post.text() }}
         </div>
-        <p><b>Don't forget this blog post is an ipynb file itself! So, you can download it from the "Source" link
-        at the top of the post if you want to play with it ;-)</b></p>
+        <p>Did you like the content? Great!</p>
+        <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+        <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#2e2e2e', 'F1F41HSJ8');kofiwidget2.draw();</script>
+        <p>Or visit my <a href="https://damianavila.github.io/blog/stories/support-me.html">support</a> page for more information.</p>
+        <br>
+        <p>Btw, don't forget this blog post is an ipynb file itself! So, you can download it from the "Source" link
+        at the top of the post if you want to play with it ;-)</p>
         {{ helper.html_pager(post) }}
         {% if not post.meta('nocomments') and site_has_comments %}
             {{ comments.comment_form(post.permalink(absolute=True), post.title(), post.base_path) }}
