@@ -9,14 +9,14 @@ Importing a static view (rendered by nbconvert) of
 one IPython example notebook into a nikola blog post::
 
     .. raw:: html
-       :file: /home/damian/devel/blog/files/Test.html
+       :file: /Users/damian/devel/blog/files/Test.html
 
 .. TEASER_END
 
 It works! You can see below... the themes will be available soon.
 
     .. raw:: html
-      :file: /home/damian/devel/blog/files/Test.html
+      :file: /Users/damian/devel/blog/files/Test.html
 
 
 Damián.
