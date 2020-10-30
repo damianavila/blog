@@ -159,19 +159,23 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/2020/02/index.html</loc>
-  <lastmod>2020-04-03T17:01:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/2020/04/index.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://damianavila.github.io/blog/2020/10/index.html</loc>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/2020/index.html</loc>
-  <lastmod>2020-04-03T17:54:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/archive.html</loc>
-  <lastmod>2020-04-03T17:54:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/aikido.html</loc>
@@ -195,7 +199,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/conda.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/config.html</loc>
@@ -259,7 +263,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/index.html</loc>
-  <lastmod>2020-04-03T17:54:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/ipyscript.html</loc>
@@ -283,7 +287,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/jupyter.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/jupyterlab.html</loc>
@@ -303,7 +307,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/linux.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/local.html</loc>
@@ -339,7 +343,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/osx.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/pdf.html</loc>
@@ -355,7 +359,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/pip.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/politics.html</loc>
@@ -367,15 +371,15 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/python.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/reveal.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/rise.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/scipycon.html</loc>
@@ -387,7 +391,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/slideshow.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/spellcheck.html</loc>
@@ -443,7 +447,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/win.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/workflow.html</loc>
@@ -611,19 +615,23 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/2020/02/index.html</loc>
-  <lastmod>2020-04-03T17:01:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/2020/04/index.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://damianavila.github.io/blog/es/2020/10/index.html</loc>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/2020/index.html</loc>
-  <lastmod>2020-04-03T17:54:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/archive.html</loc>
-  <lastmod>2020-04-03T17:54:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/aikido.html</loc>
@@ -647,7 +655,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/conda.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/config.html</loc>
@@ -711,7 +719,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/index.html</loc>
-  <lastmod>2020-04-03T17:54:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/ipyscript.html</loc>
@@ -735,7 +743,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/jupyter.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/jupyterlab.html</loc>
@@ -755,7 +763,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/linux.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/local.html</loc>
@@ -791,7 +799,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/osx.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/pdf.html</loc>
@@ -807,7 +815,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/pip.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/politics.html</loc>
@@ -819,15 +827,15 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/python.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/reveal.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/rise.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/scipycon.html</loc>
@@ -839,7 +847,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/slideshow.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/spellcheck.html</loc>
@@ -895,7 +903,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/win.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/workflow.html</loc>
@@ -983,11 +991,11 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/index-6.html</loc>
-  <lastmod>2020-04-03T17:54:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/index.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/posts/48-themes-for-your-ipython-notebook.html</loc>
@@ -1211,8 +1219,13 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/posts/rise-561-is-out.html</loc>
-  <lastmod>2020-04-03T17:54:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="http://damianavila.github.io/blog/posts/rise-561-is-out.html" />
+ </url>
+ <url>
+  <loc>http://damianavila.github.io/blog/es/posts/rise-571-is-out.html</loc>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="http://damianavila.github.io/blog/posts/rise-571-is-out.html" />
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/posts/rise-meets-jupyterlab.html</loc>
@@ -1241,7 +1254,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/posts/supporting-rise.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="http://damianavila.github.io/blog/posts/supporting-rise.html" />
  </url>
  <url>
@@ -1383,11 +1396,11 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/index-6.html</loc>
-  <lastmod>2020-04-03T17:54:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/index.html</loc>
-  <lastmod>2020-04-03T17:57:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/portfolio/portfolio.slides.html</loc>
@@ -1579,7 +1592,11 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/posts/rise-561-is-out.html</loc>
-  <lastmod>2020-04-03T17:54:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://damianavila.github.io/blog/posts/rise-571-is-out.html</loc>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/posts/rise-meets-jupyterlab.html</loc>
@@ -1603,7 +1620,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/posts/supporting-rise.html</loc>
-  <lastmod>2020-04-03T17:58:00Z</lastmod>
+  <lastmod>2020-10-30T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/posts/teasers-with-the-ipython-notebook-plugin.html</loc>
