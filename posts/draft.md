@@ -13,7 +13,7 @@ flavor of Markdown meant for technical documentation and publishing. It supports
 extensions to CommonMark adding extra syntax features for technical writing, such as the
 roles and directives used by Sphinx in the rST world!
 
-When I looked into this project, I quickly realized it would interesting to explore how
+When I looked into this project, I realized it would interesting to explore how
 this flavor of Markdown could potentially integrate with the [Nikola](https://getnikola.com/)
 ecosystem. If you look into my previous blog posts, you will see I am a Nikola
 user and contributor and I am always interested in how we can improve the
