@@ -36,8 +36,8 @@ So, all the pieces were asking me to explore this space and I could not resist ;
 The first idea that came to my mind was to somehow implement MyST support in Nikola.
 But, hey, somebody probably already thought about this before me. So I made a search to
 see if this was not previously explored by others. And indeed that was the case!
-Roberto, the Nikola creator, wrote a plugin for MyST about a year ago (there is a brief
-blog post talking about it [here](https://ralsina.me/tr/es/weblog/posts/new-plugins-for-nikola.html)).
+Roberto, the Nikola creator, wrote a plugin for MyST about a year ago (there is [a brief
+blog post talking about it](https://ralsina.me/tr/es/weblog/posts/new-plugins-for-nikola.html)).
 That's great, isn't it? Obviously, I quickly jumped into looking at the codebase for that
 plugin and the core of the implementation was quite simple actually:
 
