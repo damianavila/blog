@@ -144,7 +144,6 @@ MyST-Parser is actually a collection of markdown-it-py plugins:
         .use(footnote_plugin)
         .use(wordcount_plugin, per_minute=config.words_per_minute)
         .disable("footnote_inline")
-        # disable this for now, because it need a new implementation in the renderer
         .disable("footnote_tail")
     )
 ```
