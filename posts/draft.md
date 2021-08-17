@@ -6,7 +6,7 @@ inside the **Nikola** world.*
 Hey, a lot of time without writing, you know... (lack of) time, but let's go back to the
 important things... or at least, interesting stuff to share with you!
 
-Recently, I have been involved with the [EBP](https://executablebooks.org/en/latest/)
+Recently, I have been involved with the [Executable Books](https://executablebooks.org/en/latest/)
 project and community (you can learn more about them [here](https://executablebooks.org/en/latest/about.html)). One of the major projects inside that community is the
 [MyST-Parser](https://github.com/executablebooks/MyST-Parser), a *rich* and *extensible*
 flavor of Markdown meant for technical documentation and publishing. It supports all thesyntax of CommonMark Markdown at its base but, in addition, it includes several
