@@ -51,7 +51,7 @@ output the Nikola machinery is going to write to build the blog post.
 Problem solved! Someone else had the idea, implemented it and now I can use it, right?
 Well... actually it was not that simple...
 
-# Current limitations (there is always a but...)
+## Current limitations (there is always a but...)
 
 One of the key concepts in the MyST (and rST) world is the support for [roles](https://myst-parser.readthedocs.io/en/latest/sphinx/intro.html#reference-a-section-label-with-a-role) and [directives](https://myst-parser.readthedocs.io/en/latest/sphinx/intro.html#extend-markdown-with-a-directive). People coming from the rST world would be
 tempted to use MyST and the MyST plugin for Nikola if they have support for the main
