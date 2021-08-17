@@ -129,7 +129,7 @@ can learn about those [here](https://myst-parser.readthedocs.io/en/latest/api/re
 Those are an integral part of the Myst-Parser project. But when you look at the `html`
 renderer, that [RendererHTML] class (https://markdown-it-py.readthedocs.io/en/latest/api/markdown_it.renderer.html#markdown_it.renderer.RendererHTML)
 is coming from another EBP project called markdown-it-py. This is a Python port of the
-well-used [markdown-it](https://github.com/markdown-it/markdown-it), plus some of itsassociated plugins.
+well-used [markdown-it](https://github.com/markdown-it/markdown-it), plus some of its associated plugins.
 
 If you indeed keep looking at the `default_parser` implementation, you will find the
 MyST-Parser is actually a collection of markdown-it-py plugins:
