@@ -17,8 +17,8 @@ When I looked into this project, I realized it would interesting to explore how
 this flavor of Markdown could potentially integrate with the [Nikola](https://getnikola.com/)
 ecosystem. If you look into my previous blog posts, you will see I am a Nikola
 user and contributor and I am always interested in how we can improve the
-"blogging story" for those using Jupyter Notebooks. And the whole **EBP** project circle
-around an excel pipeline for publishing Jupyter Notebook being the Myst-Parser one of
+"blogging story" for those using Jupyter Notebooks. And the whole **EBP** project circles
+around an excellent pipeline for publishing Jupyter Notebook, with the MyST-Parser being one of
 the central building blocks. They are even [interested](https://github.com/executablebooks/jupyter-book/issues/900)
 in a sane blog story for one of the key pieces the community has, the
 [Jupyter Book](https://jupyterbook.org/intro.html) project that indeed uses the
