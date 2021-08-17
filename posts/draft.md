@@ -165,7 +165,7 @@ does not understand how to parse nor render these concepts as we saw previously.
 # Overcome the limitations (don't worry I will stop here... for now)
 
 OK, this is long enough for now, the next post will deep dive a little bit more in the
-Myst-parser and the markdown-it-py codebases in the context of potentially supporting
+MyST-parser and the markdown-it-py codebases in the context of potentially supporting
 roles and directives through the Myst-parser Python API. That will led us into some
 fundamental question for the MyST ecosystem. We will also introduce some exciting new
 projects from the EBP community that are closely related with these ideas.
