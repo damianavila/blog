@@ -9,7 +9,7 @@ important things... or at least, interesting stuff to share with you!
 Recently, I have been involved with the [Executable Books](https://executablebooks.org/en/latest/)
 project and community (you can learn more about them [here](https://executablebooks.org/en/latest/about.html)). One of the major projects inside that community is the
 [MyST-Parser](https://github.com/executablebooks/MyST-Parser), a *rich* and *extensible*
-flavor of Markdown meant for technical documentation and publishing. It supports all thesyntax of CommonMark Markdown at its base but, in addition, it includes several
+flavor of Markdown meant for technical documentation and publishing. It supports all the syntax of CommonMark Markdown at its base but, in addition, it includes several
 extensions to CommonMark adding extra syntax features for technical writing, such as the
 roles and directives used by Sphinx in the rST world!
 
