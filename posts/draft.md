@@ -1,7 +1,7 @@
 # A deep dive into MyST, Part 1: The MyST-Parser Python API usage in Nikola
 
 > *This is a series of blog posts inviting you to join me in a little journey I have
-experienced in the last few weeks at the time to figure it out a nice story for **MyST**
+experienced in the last few weeks to figure out a nice story for **MyST**
 inside the **Nikola** world.*
 
 Hey, a lot of time without writing, you know... (lack of) time, but let's go back to the
