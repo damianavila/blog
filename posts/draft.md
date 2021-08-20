@@ -154,7 +154,7 @@ objects using the Sphinx machinery.
 In this model, it actually makes sense to see roles and directives supported when you go
 through the Docutils/Sphinx path (those concepts are core-supported in the
 Docutils/Sphinx ecosystem) and those unsupported when you use the MyST Python API which
-does not understand how to parse nor render these concepts as we previously shown.
+does not understand how to parse nor render these concepts as we've previously shown.
 
 # Overcome the limitations (don't worry I will stop here... for now)
 
