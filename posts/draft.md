@@ -16,7 +16,7 @@ addition, it includes several extensions to CommonMark adding extra syntax featu
 technical writing, such as the roles and directives used by Sphinx in the rST world!
 
 The whole Executable Books project is about providing an excellent pipeline for
-publishing Jupyter Notebook, with the MyST-Parser being one of the central building
+publishing Jupyter Notebooks, with the MyST-Parser being one of the central building
 blocks. They are even [interested](https://github.com/executablebooks/jupyter-book/issues/900)
 in a sane blog story for one of the key pieces the community has, the
 [Jupyter Book](https://jupyterbook.org/intro.html) project that indeed uses the
