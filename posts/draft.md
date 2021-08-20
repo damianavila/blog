@@ -86,7 +86,7 @@ Python API, but I learnt things are a little bit more complex than that!
 
 I started digging into the codebase and some MyST documentation.
 
-If you look at the `to_html` function I shown before: 
+If you look at the `to_html` function I showed before: 
 
 ```python
 def to_html(text: str, env=None, config: Optional[MdParserConfig] = None):
