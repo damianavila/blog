@@ -1,7 +1,7 @@
 # A deep dive into MyST, Part 2: TBD
 
 > *This is a series of blog posts inviting you to join me in a little journey I have
-experienced in the last few weeks at the time to figure it out a nice story for **MyST**
+experienced in the last few weeks to figure it out a nice story for **MyST**
 inside the **Nikola** world.*
 
 In the previous blog [post](https://damianavila.github.io/blog/posts/a-deep-dive-into-myst-part-1-the-myst-parser-python-api-usage-in-nikola.html),
