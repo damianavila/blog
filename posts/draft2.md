@@ -230,7 +230,7 @@ for roles and directives. Several questions now arise:
     If we decide to write some minimal support, what pieces are we interested to bring first?
     Where those pieces should end up? The `markdown-it-docutils` package I referenced above is
     actually a `markdown-it` (JS) plugin. If we follow that pattern, we should create a new
-    `markdown-it-py-docutils` plugin and we are not longer in the MyST-Parser territory.
+    `markdown-it-py-docutils` plugin and we are no longer in the MyST-Parser territory.
     But the MyST-Parser has, in fact, some [parsing directive functions](https://github.com/executablebooks/MyST-Parser/blob/master/myst_parser/parse_directives.py).
     We may need to move that toward `markdown-it-py` as the [JS plugin does](https://github.com/executablebooks/markdown-it-docutils/blob/main/src/directives/main.ts).
     That sounds nice, but... is there any other suitable (simpler) alternatives besides the
