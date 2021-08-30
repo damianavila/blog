@@ -218,7 +218,7 @@ for roles and directives. Several questions now arise:
     Docutils actually introduces the roles and directives concept (that Sphinx extend) so if
     we want to go docutils-free, then we will need to re-implement those concepts.
 
-3. Does it makes sense to create a docutils alternative in Python? At what extend?
+3. Does it makes sense to create a docutils alternative in Python? How much of its functionality would need to be replicated? How should it be extended or enhanced?
 
     There is currently a nice example about an alternative implementation from the
     Executable Books community, but in the Javascript world: https://github.com/executablebooks/markdown-it-docutils ;-).
