@@ -205,36 +205,36 @@ for roles and directives. Several questions now arise:
 
 * Do we want to have Sphinx-free support for rendering roles and directives in the MyST-Parser 
 
-Nikola (among other projects) already have their own machinery (based in Docutils) to
-build the final HTML output. Getting the docutils object from the Python API would be
-a super interesting way to easily expose and provide that object to the downstream
-projects!
+    Nikola (among other projects) already have their own machinery (based in Docutils) to
+    build the final HTML output. Getting the docutils object from the Python API would be
+    a super interesting way to easily expose and provide that object to the downstream
+    projects!
 
-One caveat with this approach would be missing some Sphinx features (ie. cross-linking
-between documents) based on custom roles and directives that we may need to re-implement.
+    One caveat with this approach would be missing some Sphinx features (ie. cross-linking
+    between documents) based on custom roles and directives that we may need to re-implement.
 
 2. Do we want to have docutils-free support for roles and directives in the MyST Python API?
 
-Docutils actually introduces the roles and directives concept (that Sphinx extend) so if
-we want to go docutils-free, then we will need to re-implement those concepts.
+    Docutils actually introduces the roles and directives concept (that Sphinx extend) so if
+    we want to go docutils-free, then we will need to re-implement those concepts.
 
 3. Does it makes sense to create a docutils alternative in Python? At what extend?
 
-There is currently a nice example about an alternative implementation from the
-Executable Books community, but in the Javascript world: https://github.com/executablebooks/markdown-it-docutils ;-).
-Since we do not have Docutils there, it actually makes a lot of sense to write something
-new. But, what is the value/need/place for an alternative implementation in Python?
-Maybe, we do not need the whole Docutils stuff... but we maybe need some core
-functionality?
+    There is currently a nice example about an alternative implementation from the
+    Executable Books community, but in the Javascript world: https://github.com/executablebooks/markdown-it-docutils ;-).
+    Since we do not have Docutils there, it actually makes a lot of sense to write something
+    new. But, what is the value/need/place for an alternative implementation in Python?
+    Maybe, we do not need the whole Docutils stuff... but we maybe need some core
+    functionality?
 
-If we decide to write some minimal support, what pieces are we interested to bring first?
-Where those pieces should end up? The `markdown-it-docutils` package I referenced above is
-actually a `markdown-it` (JS) plugin. If we follow that pattern, we should create a new
-`markdown-it-py-docutils` plugin and we are not longer in the MyST-Parser territory.
-But the MyST-Parser has, in fact, some [parsing directive functions](https://github.com/executablebooks/MyST-Parser/blob/master/myst_parser/parse_directives.py).
-We may need to move that toward `markdown-it-py` as the [JS plugin does](https://github.com/executablebooks/markdown-it-docutils/blob/main/src/directives/main.ts).
-That sounds nice, but... is there any other suitable (simpler) alternatives besides the
-one I proposed above?
+    If we decide to write some minimal support, what pieces are we interested to bring first?
+    Where those pieces should end up? The `markdown-it-docutils` package I referenced above is
+    actually a `markdown-it` (JS) plugin. If we follow that pattern, we should create a new
+    `markdown-it-py-docutils` plugin and we are not longer in the MyST-Parser territory.
+    But the MyST-Parser has, in fact, some [parsing directive functions](https://github.com/executablebooks/MyST-Parser/blob/master/myst_parser/parse_directives.py).
+    We may need to move that toward `markdown-it-py` as the [JS plugin does](https://github.com/executablebooks/markdown-it-docutils/blob/main/src/directives/main.ts).
+    That sounds nice, but... is there any other suitable (simpler) alternatives besides the
+    one I proposed above?
 
 Finally,in the MyST community, there are some ongoing discussions about developing a
 MyST specification that represent what we understand as the MyST language. Having one
