@@ -4,7 +4,7 @@
 experienced in the last few weeks to figure it out a nice story for **MyST**
 inside the **Nikola** world.*
 
-In the previous blog [post](https://damianavila.github.io/blog/posts/a-deep-dive-into-myst-part-1-the-myst-parser-python-api-usage-in-nikola.html),
+In the previous [blog post](https://damianavila.github.io/blog/posts/a-deep-dive-into-myst-part-1-the-myst-parser-python-api-usage-in-nikola.html),
 we have identified some limitations in the MyST-Parser Python API and we started to
 understand why roles and directives were not supported by the API as we expected.
 
