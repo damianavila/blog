@@ -36,7 +36,7 @@ the syntax rules and additional options for the parser and renderer. In addition
 several plugins are activated to load a collection of additional syntax rules and render
 methods into the parser.
 
-When the input data is parsed via a nested chains of rules, it generates a list (stream)
+When the input data is parsed via nested chains of rules, it generates a list (stream)
 of tokens, that will be eventually passed to the renderer to generate a Docutils object.
 
 In the previous post, we highlighted some [MyST specific markdown-it-py plugins](https://mdit-py-plugins.readthedocs.io/en/latest/#myst-plugins),
