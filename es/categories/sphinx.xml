@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>El blog de Damian (Publicaciones sobre sphinx)</title><link>http://damianavila.github.io/blog/</link><description></description><atom:link href="http://damianavila.github.io/blog/es/categories/sphinx.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><lastBuildDate>Tue, 31 Aug 2021 14:48:05 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A deep dive into MyST, Part 2: The MyST-Parser, Docutils and Sphinx</title><link>http://damianavila.github.io/blog/es/posts/a-deep-dive-into-myst-part-2-the-myst-parser-docutils-and-sphinx.html</link><dc:creator>Damian Avila</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;em&gt;This is a series of blog posts inviting you to join me in a little journey I have
+experienced in the last few weeks to figure it out a nice story for &lt;strong&gt;MyST&lt;/strong&gt;
+inside the &lt;strong&gt;Nikola&lt;/strong&gt; world.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In the previous &lt;a href="https://damianavila.github.io/blog/posts/a-deep-dive-into-myst-part-1-the-myst-parser-python-api-usage-in-nikola.html"&gt;blog post&lt;/a&gt;,
+we have identified some limitations in the MyST-Parser Python API and we started to
+understand why roles and directives were not supported by the API as we expected.&lt;/p&gt;
+&lt;p&gt;In this post, we will explore the machinery underneath the MyST-Parser with the goal to
+deepen our understanding and being able to propose some alternatives to provide the
+expected support.
+&lt;/p&gt;&lt;p&gt;&lt;a href="http://damianavila.github.io/blog/es/posts/a-deep-dive-into-myst-part-2-the-myst-parser-docutils-and-sphinx.html"&gt;Leer más…&lt;/a&gt; (quedan 5 minutos de lectura)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://damianavila.github.io/blog/es/posts/a-deep-dive-into-myst-part-2-the-myst-parser-docutils-and-sphinx.html</guid><pubDate>Tue, 31 Aug 2021 14:35:28 GMT</pubDate></item></channel></rss>
