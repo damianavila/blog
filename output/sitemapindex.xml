@@ -50,6 +50,10 @@
   <lastmod>2020-04-03T17:01:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://damianavila.github.io/blog/categories/docutils.xml</loc>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://damianavila.github.io/blog/categories/extension.xml</loc>
   <lastmod>2020-04-03T17:01:00Z</lastmod>
  </sitemap>
@@ -111,7 +115,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/jupyter.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/jupyterlab.xml</loc>
@@ -151,7 +155,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/myst.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/nbconvert.xml</loc>
@@ -163,11 +167,11 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/nikola.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/opensource.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/osx.xml</loc>
@@ -199,7 +203,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/python.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/reveal.xml</loc>
@@ -224,6 +228,10 @@
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/spellcheck.xml</loc>
   <lastmod>2020-04-03T17:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://damianavila.github.io/blog/categories/sphinx.xml</loc>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/support.xml</loc>
@@ -334,6 +342,10 @@
   <lastmod>2020-04-03T17:01:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://damianavila.github.io/blog/es/categories/docutils.xml</loc>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/extension.xml</loc>
   <lastmod>2020-04-03T17:01:00Z</lastmod>
  </sitemap>
@@ -395,7 +407,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/jupyter.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/jupyterlab.xml</loc>
@@ -435,7 +447,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/myst.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/nbconvert.xml</loc>
@@ -447,11 +459,11 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/nikola.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/opensource.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/osx.xml</loc>
@@ -483,7 +495,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/python.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/reveal.xml</loc>
@@ -508,6 +520,10 @@
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/spellcheck.xml</loc>
   <lastmod>2020-04-03T17:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://damianavila.github.io/blog/es/categories/sphinx.xml</loc>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/support.xml</loc>
@@ -627,7 +643,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/rss.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/Facu_RN/rss.xml</loc>
@@ -683,10 +699,10 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/rss.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/sitemap.xml</loc>
-  <lastmod>2021-08-23T19:40:00Z</lastmod>
+  <lastmod>2021-08-31T14:48:00Z</lastmod>
  </sitemap>
 </sitemapindex>

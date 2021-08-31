@@ -1,0 +1,454 @@
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p><em>This is a series of blog posts inviting you to join me in a little journey I have
+experienced in the last few weeks to figure it out a nice story for <strong>MyST</strong>
+inside the <strong>Nikola</strong> world.</em></p>
+</blockquote>
+<p>In the previous <a href="https://damianavila.github.io/blog/posts/a-deep-dive-into-myst-part-1-the-myst-parser-python-api-usage-in-nikola.html">blog post</a>,
+we have identified some limitations in the MyST-Parser Python API and we started to
+understand why roles and directives were not supported by the API as we expected.</p>
+<p>In this post, we will explore the machinery underneath the MyST-Parser with the goal to
+deepen our understanding and being able to propose some alternatives to provide the
+expected support.
+<!-- TEASER_END --></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Markdown-it-py-and-its-plugins">Markdown-it-py and its plugins<a class="anchor-link" href="#Markdown-it-py-and-its-plugins">&#182;</a></h2><p>Coming back to the MyST-Parser <code>default_parser</code> implementation, you can see the Parser
+as a <a href="https://mdit-py-plugins.readthedocs.io/en/latest/">collection of <code>markdown-it-py</code> plugins</a>:</p>
+<div class="highlight"><pre><span></span><span class="n">md</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">MarkdownIt</span><span class="p">(</span><span class="s2">&quot;commonmark&quot;</span><span class="p">,</span> <span class="n">renderer_cls</span><span class="o">=</span><span class="n">renderer_cls</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">enable</span><span class="p">(</span><span class="s2">&quot;table&quot;</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="n">front_matter_plugin</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="n">myst_block_plugin</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="n">myst_role_plugin</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="n">footnote_plugin</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="n">wordcount_plugin</span><span class="p">,</span> <span class="n">per_minute</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">words_per_minute</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">disable</span><span class="p">(</span><span class="s2">&quot;footnote_inline&quot;</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">disable</span><span class="p">(</span><span class="s2">&quot;footnote_tail&quot;</span><span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+<p>The <code>MarkdownIt</code> class is instantiated with some parsing configuration options, dictating
+the syntax rules and additional options for the parser and renderer. In addition,
+several plugins are activated to load a collection of additional syntax rules and render
+methods into the parser.</p>
+<p>When the input data is parsed via nested chains of rules, it generates a list (stream)
+of tokens, that will be eventually passed to the renderer to generate a Docutils object.</p>
+<p>In the previous post, we highlighted some <a href="https://mdit-py-plugins.readthedocs.io/en/latest/#myst-plugins">MyST specific markdown-it-py plugins</a>,
+such as the <code>myst_block_plugin</code> and the <code>myst_role_plugin</code>. Let's take a brief look at
+the latest one for the sake of simplicity:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">myst_role_plugin</span><span class="p">(</span><span class="n">md</span><span class="p">:</span> <span class="n">MarkdownIt</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Parse ``{role-name}`content```&quot;&quot;&quot;</span>
+    <span class="n">md</span><span class="o">.</span><span class="n">inline</span><span class="o">.</span><span class="n">ruler</span><span class="o">.</span><span class="n">before</span><span class="p">(</span><span class="s2">&quot;backticks&quot;</span><span class="p">,</span> <span class="s2">&quot;myst_role&quot;</span><span class="p">,</span> <span class="n">myst_role</span><span class="p">)</span>
+    <span class="n">md</span><span class="o">.</span><span class="n">add_render_rule</span><span class="p">(</span><span class="s2">&quot;myst_role&quot;</span><span class="p">,</span> <span class="n">render_myst_role</span><span class="p">)</span>
+</pre></div>
+<p>The <code>myst_role_plugin</code> is essentially adding a new syntax rule to the parser that now is
+able to the parse roles from the input and a new method for the renderer to render
+the now role-associated tokens:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">render_myst_role</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tokens</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">tokens</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">meta</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;unknown&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="s1">&#39;&lt;code class=&quot;sphinx-role&quot;&gt;&#39;</span>
+        <span class="sa">f</span><span class="s2">&quot;</span><span class="se">{{</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="se">}}</span><span class="s2">[</span><span class="si">{</span><span class="n">escapeHtml</span><span class="p">(</span><span class="n">token</span><span class="o">.</span><span class="n">content</span><span class="p">)</span><span class="si">}</span><span class="s2">]&quot;</span>
+        <span class="s2">&quot;&lt;/code&gt;&quot;</span>
+    <span class="p">)</span>
+</pre></div>
+<p>We now understand the output the MyST-Parser Python API is giving us at the time to
+parse and render a simple role input:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">myst_parser.main</span> <span class="kn">import</span> <span class="n">to_html</span>
+</pre></div>
+
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="si">{emphasis}</span><span class="s2">`content`</span>
+<span class="s2">&quot;&quot;&quot;</span>
+</pre></div>
+
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="n">to_html</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
+</div>
+</div>
+
+<div class="output_wrapper output_hidden">
+  <div class="output">
+    
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;&lt;p&gt;&lt;code class=&#34;sphinx-role&#34;&gt;{emphasis}[content]&lt;/code&gt;&lt;/p&gt;\n&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We previously showed the <code>to_html</code> function using the <code>default_parser</code> configured with
+the <code>html</code> renderer (provided by the <code>markdown-it-py</code> RendererHTML class).
+But, what happens when we use other renderers provided by the MyST-Parser Python API?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-Docutils-and-Sphinx-renderers">The Docutils and Sphinx renderers<a class="anchor-link" href="#The-Docutils-and-Sphinx-renderers">&#182;</a></h2><p>Let's first explore the <code>to_docutils</code> function:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">myst_parser.main</span> <span class="kn">import</span> <span class="n">to_docutils</span>
+</pre></div>
+
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="si">{emphasis}</span><span class="s2">`content`</span>
+
+<span class="s2">```</span><span class="si">{admonition}</span><span class="s2"> This is my admonition</span>
+<span class="s2">This is my note</span>
+<span class="s2">```</span>
+<span class="s2">&quot;&quot;&quot;</span>
+</pre></div>
+
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">to_docutils</span><span class="p">(</span><span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">pformat</span><span class="p">())</span>
+</pre></div>
+
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
+</div>
+</div>
+
+<div class="output_wrapper output_hidden">
+  <div class="output">
+    
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;document source=&#34;notset&#34;&gt;
+    &lt;paragraph&gt;
+        &lt;emphasis&gt;
+            content
+    &lt;admonition classes=&#34;admonition-this-is-my-admonition&#34;&gt;
+        &lt;title&gt;
+            This is my admonition
+        &lt;paragraph&gt;
+            This is my note
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The <a href="https://github.com/executablebooks/MyST-Parser/blob/master/myst_parser/docutils_renderer.py#L72">DocutilsRenderer</a>
+converts a token directly to the docutils.document representation of the document,
+converting roles and directives to a docutils.nodes if a converter can be found for the
+given name.</p>
+<p>The <a href="https://github.com/executablebooks/MyST-Parser/blob/master/myst_parser/sphinx_renderer.py#L31">SphinxRenderer</a>
+builds on the DocutilsRenderer to add sphinx specific nodes, e.g. for cross-referencing
+between documents.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">myst_parser.main</span> <span class="kn">import</span> <span class="n">to_docutils</span>
+</pre></div>
+
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="si">{ref}</span><span class="s2">`target`</span>
+<span class="s2">&quot;&quot;&quot;</span>
+</pre></div>
+
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+  <div class="input_area">
+    <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">to_docutils</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">in_sphinx_env</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">pformat</span><span class="p">())</span>
+</pre></div>
+
+    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
+    &nbsp;&nbsp;Click me to hide the output</i>
+  </div>
+</div>
+</div>
+
+<div class="output_wrapper output_hidden">
+  <div class="output">
+    
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;document source=&#34;notset&#34;&gt;
+    &lt;paragraph&gt;
+        &lt;pending_xref refdoc=&#34;mock_docname&#34; refdomain=&#34;std&#34; refexplicit=&#34;False&#34; reftarget=&#34;target&#34; reftype=&#34;ref&#34; refwarn=&#34;True&#34;&gt;
+            &lt;inline classes=&#34;xref std std-ref&#34;&gt;
+                target
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice the sphinx-specific roles (and directives) needs the <code>in_sphinx_env</code> option enabled.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-MystParser-class">The MystParser class<a class="anchor-link" href="#The-MystParser-class">&#182;</a></h2><p>Previously, we presented the <code>MystParser</code> as a Sphinx parser:</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sphinx.parsers</span> <span class="kn">import</span> <span class="n">Parser</span> <span class="k">as</span> <span class="n">SphinxParser</span>
+<span class="o">...</span>
+<span class="k">class</span> <span class="nc">MystParser</span><span class="p">(</span><span class="n">SphinxParser</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Sphinx parser for Markedly Structured Text (MyST).&quot;&quot;&quot;</span>
+</pre></div>
+<p>using a set of general and some specific <code>markdown-it-py</code> plugins (notice the
+<code>default_parser</code> configured - by default - with the "sphinx" renderer):</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inputstring</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">document</span><span class="p">:</span> <span class="n">nodes</span><span class="o">.</span><span class="n">document</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Parse source text.</span>
+<span class="sd">        :param inputstring: The source string to parse</span>
+<span class="sd">        :param document: The root docutils node to add AST elements to</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">config</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">settings</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">myst_config</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="n">default_parser</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;document&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">document</span>
+        <span class="n">env</span> <span class="o">=</span> <span class="n">AttrDict</span><span class="p">()</span>
+</pre></div>
+<p>to parse the input text into a token stream and then rendering those (via the
+SphinxRenderer which is a subclass of the DocutilsRenderer):</p>
+<div class="highlight"><pre><span></span><span class="n">tokens</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">inputstring</span><span class="p">,</span> <span class="n">env</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">tokens</span> <span class="ow">or</span> <span class="n">tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">type</span> <span class="o">!=</span> <span class="s2">&quot;front_matter&quot;</span><span class="p">:</span>
+            <span class="c1"># we always add front matter, so that we can merge it with global keys,</span>
+            <span class="c1"># specified in the sphinx configuration</span>
+            <span class="n">tokens</span> <span class="o">=</span> <span class="p">[</span><span class="n">Token</span><span class="p">(</span><span class="s2">&quot;front_matter&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">content</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">map</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])]</span> <span class="o">+</span> <span class="n">tokens</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">renderer</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">parser</span><span class="o">.</span><span class="n">options</span><span class="p">,</span> <span class="n">env</span><span class="p">)</span>
+</pre></div>
+<p>into a Docutils' document representation:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="n">app</span><span class="p">:</span> <span class="n">Sphinx</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">docname</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;index&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">nodes</span><span class="o">.</span><span class="n">document</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Parse a string as MystMarkdown with Sphinx application.&quot;&quot;&quot;</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">temp_data</span><span class="p">[</span><span class="s2">&quot;docname&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">docname</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">all_docs</span><span class="p">[</span><span class="n">docname</span><span class="p">]</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="n">reader</span> <span class="o">=</span> <span class="n">SphinxStandaloneReader</span><span class="p">()</span>
+    <span class="n">reader</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">MystParser</span><span class="p">()</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">set_application</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">sphinx_domains</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">publish_doctree</span><span class="p">(</span>
+            <span class="n">text</span><span class="p">,</span>
+            <span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">srcdir</span><span class="p">,</span> <span class="n">docname</span> <span class="o">+</span> <span class="s2">&quot;.md&quot;</span><span class="p">),</span>
+            <span class="n">reader</span><span class="o">=</span><span class="n">reader</span><span class="p">,</span>
+            <span class="n">parser</span><span class="o">=</span><span class="n">parser</span><span class="p">,</span>
+            <span class="n">parser_name</span><span class="o">=</span><span class="s2">&quot;markdown&quot;</span><span class="p">,</span>
+            <span class="n">settings_overrides</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;env&quot;</span><span class="p">:</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="p">,</span> <span class="s2">&quot;gettext_compact&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+        <span class="p">)</span>
+</pre></div>
+<p>Finally, those objects are passed to the built-in Sphinx machinery to write the html output.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-big-questions">The big questions<a class="anchor-link" href="#The-big-questions">&#182;</a></h2><p>This is great! We now understand why we need Sphinx to generate the expected HTML output
+for roles and directives. Several questions now arise:</p>
+<ul>
+<li><p>Do we want to have Sphinx-free support for rendering roles and directives in the MyST-Parser</p>
+<p>Nikola (among other projects) already have their own machinery (based in Docutils) to
+  build the final HTML output. Getting the docutils object from the Python API would be
+  a super interesting way to easily expose and provide that object to the downstream
+  projects!</p>
+<p>One caveat with this approach would be missing some Sphinx features (ie. cross-linking
+  between documents) based on custom roles and directives that we may need to re-implement.</p>
+</li>
+</ul>
+<ol>
+<li><p>Do we want to have docutils-free support for roles and directives in the MyST Python API?</p>
+<p>Docutils actually introduces the roles and directives concept (that Sphinx extend) so if
+ we want to go docutils-free, then we will need to re-implement those concepts.</p>
+</li>
+<li><p>Does it makes sense to create a docutils alternative in Python? How much of its functionality would need to be replicated? How should it be extended or enhanced?</p>
+<p>There is currently a nice example about an alternative implementation from the
+ Executable Books community, but in the Javascript world: <a href="https://github.com/executablebooks/markdown-it-docutils">https://github.com/executablebooks/markdown-it-docutils</a> ;-).
+ Since we do not have Docutils there, it actually makes a lot of sense to write something
+ new. But, what is the value/need/place for an alternative implementation in Python?
+ Maybe, we do not need the whole Docutils stuff... but we maybe need some core
+ functionality?</p>
+<p>If we decide to write some minimal support, what pieces are we interested to bring first?
+ Where those pieces should end up? The <code>markdown-it-docutils</code> package I referenced above is
+ actually a <code>markdown-it</code> (JS) plugin. If we follow that pattern, we should create a new
+ <code>markdown-it-py-docutils</code> plugin and we are no longer in the MyST-Parser territory.
+ But the MyST-Parser has, in fact, some <a href="https://github.com/executablebooks/MyST-Parser/blob/master/myst_parser/parse_directives.py">parsing directive functions</a>.
+ We may need to move that toward <code>markdown-it-py</code> as the <a href="https://github.com/executablebooks/markdown-it-docutils/blob/main/src/directives/main.ts">JS plugin does</a>.
+ That sounds nice, but... is there any other suitable (simpler) alternatives besides the
+ one I proposed above?</p>
+</li>
+</ol>
+<p>Finally,in the MyST community, there are some ongoing discussions about developing a
+MyST specification that represent what we understand as the MyST language. Having one
+specification could be interesting and super useful because different actors interested
+in writing a MyST parser for their own space can check their stuff against that
+specification. Those actors could be different programming languages such as JS or Python
+or even more, it could be different flavors in the same programming language, such as
+Docutils, Sphinx, or a theoretical <code>markdown-it-py-docutils</code> ;-)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Show-time...-not-really-;-)">Show time... not really ;-)<a class="anchor-link" href="#Show-time...-not-really-;-)">&#182;</a></h2><p>OK, again, this is long enough! In the next post I will try to start answering some of
+these questions showcasing alternative approaches for the Nikola use case.</p>
+<p>I hope you enjoyed the ride and I will see you soon with the third part!</p>
+
+</div>
+</div>
+</div>
+ 
+
