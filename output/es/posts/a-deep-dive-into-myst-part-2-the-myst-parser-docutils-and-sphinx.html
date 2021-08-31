@@ -518,31 +518,29 @@ for roles and directives. Several questions now arise:</p>
 <p>One caveat with this approach would be missing some Sphinx features (ie. cross-linking
   between documents) based on custom roles and directives that we may need to re-implement.</p>
 </li>
-</ul>
-<ol>
 <li>
 <p>Do we want to have docutils-free support for roles and directives in the MyST Python API?</p>
 <p>Docutils actually introduces the roles and directives concept (that Sphinx extend) so if
- we want to go docutils-free, then we will need to re-implement those concepts.</p>
+  we want to go docutils-free, then we will need to re-implement those concepts.</p>
 </li>
 <li>
 <p>Does it makes sense to create a docutils alternative in Python? How much of its functionality would need to be replicated? How should it be extended or enhanced?</p>
 <p>There is currently a nice example about an alternative implementation from the
- Executable Books community, but in the Javascript world: <a href="https://github.com/executablebooks/markdown-it-docutils">https://github.com/executablebooks/markdown-it-docutils</a> ;-).
- Since we do not have Docutils there, it actually makes a lot of sense to write something
- new. But, what is the value/need/place for an alternative implementation in Python?
- Maybe, we do not need the whole Docutils stuff... but we maybe need some core
- functionality?</p>
+  Executable Books community, but in the Javascript world: <a href="https://github.com/executablebooks/markdown-it-docutils">https://github.com/executablebooks/markdown-it-docutils</a> ;-).
+  Since we do not have Docutils there, it actually makes a lot of sense to write something
+  new. But, what is the value/need/place for an alternative implementation in Python?
+  Maybe, we do not need the whole Docutils stuff... but we maybe need some core
+  functionality?</p>
 <p>If we decide to write some minimal support, what pieces are we interested to bring first?
- Where those pieces should end up? The <code>markdown-it-docutils</code> package I referenced above is
- actually a <code>markdown-it</code> (JS) plugin. If we follow that pattern, we should create a new
- <code>markdown-it-py-docutils</code> plugin and we are no longer in the MyST-Parser territory.
- But the MyST-Parser has, in fact, some <a href="https://github.com/executablebooks/MyST-Parser/blob/master/myst_parser/parse_directives.py">parsing directive functions</a>.
- We may need to move that toward <code>markdown-it-py</code> as the <a href="https://github.com/executablebooks/markdown-it-docutils/blob/main/src/directives/main.ts">JS plugin does</a>.
- That sounds nice, but... is there any other suitable (simpler) alternatives besides the
- one I proposed above?</p>
+  Where those pieces should end up? The <code>markdown-it-docutils</code> package I referenced above is
+  actually a <code>markdown-it</code> (JS) plugin. If we follow that pattern, we should create a new
+  <code>markdown-it-py-docutils</code> plugin and we are no longer in the MyST-Parser territory.
+  But the MyST-Parser has, in fact, some <a href="https://github.com/executablebooks/MyST-Parser/blob/master/myst_parser/parse_directives.py">parsing directive functions</a>.
+  We may need to move that toward <code>markdown-it-py</code> as the <a href="https://github.com/executablebooks/markdown-it-docutils/blob/main/src/directives/main.ts">JS plugin does</a>.
+  That sounds nice, but... is there any other suitable (simpler) alternatives besides the
+  one I proposed above?</p>
 </li>
-</ol>
+</ul>
 <p>Finally,in the MyST community, there are some ongoing discussions about developing a
 MyST specification that represent what we understand as the MyST language. Having one
 specification could be interesting and super useful because different actors interested
