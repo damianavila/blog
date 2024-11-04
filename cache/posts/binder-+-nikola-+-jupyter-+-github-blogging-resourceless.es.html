@@ -7,63 +7,52 @@
 <p>But you don't have your laptop with you, because you are on <em>vacation</em> time, remember? ;-)</p>
 <p>But you still have your phone and some connectivity.</p>
 <p>What do you think if I say that you have a complete workflow to write your blogpost, build the site and deploy it just using your phone? But without using computational resources from it (that would be also interesting, btw).</p>
-<p>Don't you believe me? Just read this post and I will show you how you can make this possible... and fun!
-<!-- TEASER_END --></p>
+<p>Don't you believe me? Just read this post and I will show you how you can make this possible... and fun!</p>
+<!-- TEASER_END -->
 <p><strong>NOTE</strong>: This post is long but I promise will be interesting! Also, there are multiple cells generating a <em>lot</em> of output, remember that you can hide the output clicking on <em>"Click me to hide the output"</em> button at the bottom/right conner of each cell.</p>
-<h2 id="Ingredients">Ingredients<a class="anchor-link" href="#Ingredients">&#182;</a></h2><p>First, as with any other recipe, we need some ingredients.</p>
+<h2 id="Ingredients">Ingredients<a class="anchor-link" href="#Ingredients">¶</a></h2><p>First, as with any other recipe, we need some ingredients.</p>
 <ol>
 <li><strong>Jupyter Notebook</strong>, as our UI to write and manage the computational resources</li>
 <li><strong>Nikola</strong>, to build the static site</li>
 <li><strong>Binder</strong>, to provide the computational resources, and secondarily, the UI mentioned in the first item</li>
 <li><strong>Github</strong>, to persist the whole site</li>
 </ol>
-<h2 id="Method">Method<a class="anchor-link" href="#Method">&#182;</a></h2><p>Let's summarize the whole idea:</p>
-<blockquote><p>We launch a <em>binder</em> instance from a <strong>Github</strong> repo containing my <strong>Nikola</strong>-powered blog site and write some content into a new blog post (using the <strong>Jupyter Notebook</strong>), then I rebuild the site using <strong>Nikola</strong> (already installed in my <em>binder</em> instance) and finally push the updated site to <strong>Github</strong>'s <em>gh-pages</em> to finally publish the new content (from my <em>binder</em> instance as well).</p>
+<h2 id="Method">Method<a class="anchor-link" href="#Method">¶</a></h2><p>Let's summarize the whole idea:</p>
+<blockquote>
+<p>We launch a <em>binder</em> instance from a <strong>Github</strong> repo containing my <strong>Nikola</strong>-powered blog site and write some content into a new blog post (using the <strong>Jupyter Notebook</strong>), then I rebuild the site using <strong>Nikola</strong> (already installed in my <em>binder</em> instance) and finally push the updated site to <strong>Github</strong>'s <em>gh-pages</em> to finally publish the new content (from my <em>binder</em> instance as well).</p>
 </blockquote>
 <p>Sounds good, isn't it?</p>
-<h3 id="Create-a-binder-for-my-blog-site">Create a binder for my blog site<a class="anchor-link" href="#Create-a-binder-for-my-blog-site">&#182;</a></h3><p>Do you know <a href="https://mybinder.org/"><strong>Binder</strong></a>, right? In simple words it <em>Turn a GitHub repo into a collection of interactive notebooks</em>. You can find more info about <strong>Binder</strong> at <a href="https://mybinder.readthedocs.io/en/latest/">https://mybinder.readthedocs.io/en/latest/</a>.
+<h3 id="Create-a-binder-for-my-blog-site">Create a binder for my blog site<a class="anchor-link" href="#Create-a-binder-for-my-blog-site">¶</a></h3><p>Do you know <a href="https://mybinder.org/"><strong>Binder</strong></a>, right? In simple words it <em>Turn a GitHub repo into a collection of interactive notebooks</em>. You can find more info about <strong>Binder</strong> at <a href="https://mybinder.readthedocs.io/en/latest/">https://mybinder.readthedocs.io/en/latest/</a>.
 For the purpose of this post (and the next ones), I just created a new binder filling my blog site <strong>Github</strong> repo url into the URL field at mybinder.org (and the path to a specific notebook file) and I got a new url to access my <em>binder</em> instance at <a href="https://mybinder.org/v2/gh/damianavila/damian_blog/master?filepath=Start.ipynb">https://mybinder.org/v2/gh/damianavila/damian_blog/master?filepath=Start.ipynb</a></p>
-<blockquote><p>In fact, I am writing this blog post in a binder instance (I love to do meta stuff ;-)</p>
+<blockquote>
+<p>In fact, I am writing this blog post in a binder instance (I love to do meta stuff ;-)</p>
 </blockquote>
 <p>That url pointed me to a <code>Start.ipynb</code> notebook file where I have some cells to create a new post with some <strong>Nikola</strong> tags. I run those cells and I have a new <code>ipynb</code> file under the <code>posts</code> directory, in this case: <code>binder-+-nikola-+-jupyter-+-github-blogging-resourceless.ipynb</code> where I can write my new content.</p>
-<h3 id="Write-the-new-content">Write the new content<a class="anchor-link" href="#Write-the-new-content">&#182;</a></h3><p>OK, this is one is easy, it is this very same post ;-) as you probably expected.</p>
+<h3 id="Write-the-new-content">Write the new content<a class="anchor-link" href="#Write-the-new-content">¶</a></h3><p>OK, this is one is easy, it is this very same post ;-) as you probably expected.</p>
 <p>BTW, one interesting note, since your binder is using <code>git</code> for internal stuff, you have <code>git</code> installed and ready to do your stuff as well. For instance, if my connection is flaky and given that my <em>binder</em> in <em>transient</em>. I can commit the work done so far. Just save the notebook file and run:</p>
-
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git status
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>status
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>On branch master
-Your branch is up-to-date with &#39;origin/master&#39;.
+Your branch is up-to-date with 'origin/master'.
 Changes not staged for commit:
-  (use &#34;git add &lt;file&gt;...&#34; to update what will be committed)
-  (use &#34;git checkout -- &lt;file&gt;...&#34; to discard changes in working directory)
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
 
 	<span class="ansi-red-fg">modified:   ../.ipynb_checkpoints/Start-checkpoint.ipynb</span>
 	<span class="ansi-red-fg">modified:   ../Start.ipynb</span>
@@ -71,7 +60,7 @@ Changes not staged for commit:
 	<span class="ansi-red-fg">modified:   ../plugins/upgrade_metadata/__pycache__/upgrade_metadata.cpython-35.pyc</span>
 
 Untracked files:
-  (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed)
+  (use "git add &lt;file&gt;..." to include in what will be committed)
 
 	<span class="ansi-red-fg">../.bash_logout</span>
 	<span class="ansi-red-fg">../.bashrc</span>
@@ -81,59 +70,38 @@ Untracked files:
 	<span class="ansi-red-fg">.ipynb_checkpoints/binder-+-nikola-+-jupyter-+-github-blogging-resourceless-checkpoint.ipynb</span>
 	<span class="ansi-red-fg">binder-+-nikola-+-jupyter-+-github-blogging-resourceless.ipynb</span>
 
-no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;)
+no changes added to commit (use "git add" and/or "git commit -a")
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add <span class="s2">&quot;binder-+-nikola-+-jupyter-+-github-blogging-resourceless.ipynb&quot;</span>
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>add<span class="w"> </span><span class="s2">"binder-+-nikola-+-jupyter-+-github-blogging-resourceless.ipynb"</span>
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git commit -m <span class="s2">&quot;Add (incomplete) new post&quot;</span>
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Add (incomplete) new post"</span>
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[master 7c7f9890] Add (incomplete) new post
  1 file changed, 146 insertions(+)
@@ -141,13 +109,8 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -155,42 +118,29 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 <p>OK, now you need to push this content and if you try to <code>git push</code> it, it will fail unless you have permissions to push to your own repo. To achieve that from a <em>binder</em> instance you need to create a <em>personal access token</em> from Github: <a href="https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/">https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/</a>. And now you will be able to push your stuff.</p>
 <p>Note this <em>personal access token</em> will be useful for further pushes down the road, so keep it close.</p>
 <p>Also, we need a <em>terminal</em> to be able to provide the <em>username</em> and the <em>token</em>. And the <strong>Jupyter</strong> interface give us that terminal pretty easily, you just go to the /tree (dashboard) and start a terminal from the dropdown menu (I can probably write a little extension to perform this step from the notebook itself... but going to the terminal is pretty easy and quick).</p>
-<p><img src="../galleries/binder/terminal.png" alt=""></p>
+<p><img alt="" src="../galleries/binder/terminal.png"/></p>
 <p>Now your repository is updated, so next time you launch a binder from it, it will contain your new post, meaning you can write your stuff iteratevely even in a <em>transient</em> platform, sweet!</p>
-<h3 id="Rebuild-your-site-with-Nikola">Rebuild your site with Nikola<a class="anchor-link" href="#Rebuild-your-site-with-Nikola">&#182;</a></h3><p>When your post is ready, you need to rebuild the site using <strong>Nikola</strong>, but how <strong>Nikola</strong> end up in my <em>binder</em> instance?
+<h3 id="Rebuild-your-site-with-Nikola">Rebuild your site with Nikola<a class="anchor-link" href="#Rebuild-your-site-with-Nikola">¶</a></h3><p>When your post is ready, you need to rebuild the site using <strong>Nikola</strong>, but how <strong>Nikola</strong> end up in my <em>binder</em> instance?
 Easy as well, you just need to provide a <code>requirements.txt</code> file with the dependencies you need and those ones will be included in your <em>binder</em> instance: <a href="https://mybinder.readthedocs.io/en/latest/using.html#simple-python-dependencies">https://mybinder.readthedocs.io/en/latest/using.html#simple-python-dependencies</a></p>
 <p>In my case, the <code>requirement.txt</code> file is pretty easy: <a href="https://github.com/damianavila/damian_blog/blob/master/requirements.txt">https://github.com/damianavila/damian_blog/blob/master/requirements.txt</a>. Because all the other pieces I need are already included by default: <strong>Jupyter</strong> stuff and <code>git</code>.</p>
 <p>OK, now to rebuild your site you just need to run:</p>
-
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>nikola build
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>nikola<span class="w"> </span>build
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre><span class="ansi-yellow-intense-fg ansi-bold">[2017-12-17T22:28:50Z] WARNING: Nikola: The RSS_LINKS_APPEND_QUERY option is deprecated, use FEED_LINKS_APPEND_QUERY instead.</span>
 <span class="ansi-yellow-intense-fg ansi-bold">[2017-12-17T22:28:50Z] WARNING: Nikola: The RSS_READ_MORE_LINK option is deprecated, use FEED_READ_MORE_LINK instead.</span>
@@ -337,7 +287,13 @@ Scanning posts......done!
 .  render_taxonomies:output/categories/life.html
 .  render_taxonomies:output/categories/facu.html
 .  render_taxonomies:output/categories/ipython.html
-.  render_taxonomies:output/categories/slideshow.html
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>.  render_taxonomies:output/categories/slideshow.html
 .  render_taxonomies:output/categories/conda.html
 .  render_taxonomies:output/categories/nbviewer.html
 .  render_taxonomies:output/categories/format.html
@@ -499,7 +455,13 @@ Scanning posts......done!
 .  render_taxonomies:output/es/2016/index.html
 .  render_taxonomies:output/es/2013/index.html
 .  render_taxonomies:output/es/categories/index.html
-.  render_taxonomies:output/categories/jinja.xml
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>.  render_taxonomies:output/categories/jinja.xml
 .  render_taxonomies:output/categories/trading.xml
 .  render_taxonomies:output/categories/css.xml
 .  render_taxonomies:output/categories/minimap.xml
@@ -639,7 +601,13 @@ Scanning posts......done!
 .  render_pages:output/posts/different-ways-to-lead-an-open-source-project.html
 .  render_pages:output/es/posts/paraguay.html
 .  render_taxonomies:output/es/categories/css.xml
-.  render_taxonomies:output/es/categories/minimap.xml
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>.  render_taxonomies:output/es/categories/minimap.xml
 .  render_pages:output/posts/a-new-nikolas-theme-for-my-site-zen.html
 .  render_pages:output/es/posts/powered-by-nikola.html
 .  render_pages:output/posts/customizing-your-ipython-slides.html
@@ -745,68 +713,46 @@ Scanning posts......done!
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now you have your site rebuilt, let's commit the changes so we don't loss the new content.</p>
-
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add -u
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>add<span class="w"> </span>-u
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git status
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>status
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>On branch master
-Your branch is up-to-date with &#39;origin/master&#39;.
+Your branch is up-to-date with 'origin/master'.
 Changes to be committed:
-  (use &#34;git reset HEAD &lt;file&gt;...&#34; to unstage)
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
 
 	<span class="ansi-green-fg">modified:   ../.doit.db.bak</span>
 	<span class="ansi-green-fg">modified:   ../.doit.db.dat</span>
@@ -1034,7 +980,7 @@ Changes to be committed:
 	<span class="ansi-green-fg">modified:   binder-+-nikola-+-jupyter-+-github-blogging-resourceless.ipynb</span>
 
 Untracked files:
-  (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed)
+  (use "git add &lt;file&gt;..." to include in what will be committed)
 
 	<span class="ansi-red-fg">../.bash_logout</span>
 	<span class="ansi-red-fg">../.bashrc</span>
@@ -1085,85 +1031,56 @@ Untracked files:
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add ../cache/*
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>add<span class="w"> </span>../cache/*
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add ../output/*
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>add<span class="w"> </span>../output/*
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add binder-+-nikola-+-jupyter-+-github-blogging-resourceless.ipynb
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>add<span class="w"> </span>binder-+-nikola-+-jupyter-+-github-blogging-resourceless.ipynb
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git commit -m <span class="s2">&quot;Build the site in my binder instance&quot;</span>
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Build the site in my binder instance"</span>
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[master 658c5e23] Build the site in my binder instance
  263 files changed, 5378 insertions(+), 2102 deletions(-)
@@ -1222,146 +1139,90 @@ Untracked files:
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And I can push the content (<code>git push origin master</code>) using the terminal as we did in a previous step.</p>
-<h3 id="Visualize-your-site">Visualize your site<a class="anchor-link" href="#Visualize-your-site">&#182;</a></h3><p>This could be an issue because <strong>Nikola</strong> offers a <code>nikola serve</code> command to preview your site, but using it inside <strong>Binder</strong> is probably not trivial. And you can do a little trick to be able to explore the new content. You just need to deploy the <code>output</code> folder contaning the updated site under the same <code>gh-pages</code> branch from where you usually serve your site.</p>
+<h3 id="Visualize-your-site">Visualize your site<a class="anchor-link" href="#Visualize-your-site">¶</a></h3><p>This could be an issue because <strong>Nikola</strong> offers a <code>nikola serve</code> command to preview your site, but using it inside <strong>Binder</strong> is probably not trivial. And you can do a little trick to be able to explore the new content. You just need to deploy the <code>output</code> folder contaning the updated site under the same <code>gh-pages</code> branch from where you usually serve your site.</p>
 <p>And you can do that quite easily with:</p>
 <p><strong>Note</strong>: <code>git stash</code> is only needed here because I am executing git commands from this very same future blog post</p>
-
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In [11]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git stash
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>stash
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Saved working directory and index state WIP on master: 658c5e23 Build the site in my binder instance
 HEAD is now at 658c5e23 Build the site in my binder instance
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In [12]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git checkout gh-pages
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>checkout<span class="w"> </span>gh-pages
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Switched to branch &#39;gh-pages&#39;
-Your branch is up-to-date with &#39;origin/gh-pages&#39;.
+<pre>Switched to branch 'gh-pages'
+Your branch is up-to-date with 'origin/gh-pages'.
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In [14]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git checkout master -- ../output
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>checkout<span class="w"> </span>master<span class="w"> </span>--<span class="w"> </span>../output
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In [15]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git commit -m <span class="s2">&quot;Add output dir to gh-pages to pre-visualize the changes&quot;</span>
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Add output dir to gh-pages to pre-visualize the changes"</span>
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[gh-pages 4fb3a46f] Add output dir to gh-pages to pre-visualize the changes
  490 files changed, 3060 insertions(+), 1162 deletions(-)
@@ -1390,263 +1251,163 @@ Your branch is up-to-date with &#39;origin/gh-pages&#39;.
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And now, you just push the content into the <code>gh-pages</code> branch  with <code>git push origin gh-pages</code> (use the terminal as I indicated before) and you can visit your <em>draft</em> site appeding <code>output</code> to the base url, in my <a href="../output/">case</a>.</p>
 <p>If you are not happy with it, if it does not looks like right, just iterate with more changes! Otherwise you can go to the deploy step!</p>
-<h2 id="Deploy-your-site">Deploy your site<a class="anchor-link" href="#Deploy-your-site">&#182;</a></h2><p>OK, given the previous steps, I guess you will figure out how to perform the next steps:</p>
+<h2 id="Deploy-your-site">Deploy your site<a class="anchor-link" href="#Deploy-your-site">¶</a></h2><p>OK, given the previous steps, I guess you will figure out how to perform the next steps:</p>
 <p><strong>NOTE</strong>: <code>rm</code> is only needed here because I am executing git commands from this very same future blog post</p>
-
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In [17]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>rm binder-+-nikola-+-jupyter-+-github-blogging-resourceless.ipynb 
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>rm<span class="w"> </span>binder-+-nikola-+-jupyter-+-github-blogging-resourceless.ipynb<span class="w"> </span>
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In [18]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git checkout master
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>checkout<span class="w"> </span>master
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Switched to branch &#39;master&#39;
-Your branch is up-to-date with &#39;origin/master&#39;.
+<pre>Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In [19]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add -u
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>add<span class="w"> </span>-u
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In [20]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git commit -m <span class="s2">&quot;Add new stuff to the blog post (mostly deploy section)&quot;</span>
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Add new stuff to the blog post (mostly deploy section)"</span>
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[master 7927ad63] Add new stuff to the blog post (mostly deploy section)
  1 file changed, 291 insertions(+), 25 deletions(-)
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In the terminal: <code>git push origin master</code> to persist the latest content... again. And use a subtree approach to split the <code>output</code> directory and put it as a new <code>gh-pages</code> branch.</p>
 <p><strong>Note</strong>: First delete the existing <code>gh-pages</code> branch to avoid conflicts and <code>cd ..</code> because you need to subtree from the top directory.</p>
-
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In [21]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git branch -d gh-pages
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>branch<span class="w"> </span>-d<span class="w"> </span>gh-pages
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>warning: deleting branch &#39;gh-pages&#39; that has been merged to
-         &#39;refs/remotes/origin/gh-pages&#39;, but not yet merged to HEAD.
+<pre>warning: deleting branch 'gh-pages' that has been merged to
+         'refs/remotes/origin/gh-pages', but not yet merged to HEAD.
 Deleted branch gh-pages (was 4fb3a46f).
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In [22]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cd</span> <span class="o">..</span>
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">cd</span> <span class="o">..</span>
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>/home/jovyan
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In [23]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git subtree split --prefix output -b gh-pages
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>git<span class="w"> </span>subtree<span class="w"> </span>split<span class="w"> </span>--prefix<span class="w"> </span>output<span class="w"> </span>-b<span class="w"> </span>gh-pages
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Created branch &#39;gh-pages&#39;
+<pre>Created branch 'gh-pages'
 7092c69ccde3f7cd2a5d31c2a86b74739d665ac0
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -1654,13 +1415,10 @@ Deleted branch gh-pages (was 4fb3a46f).
 <p>Finally, in the terminal: <code>git push -f origin gh-pages:gh-pages</code> to deploy your site and remove the local <code>gh-pages</code> with <code>git branch -D gh-pages</code>.</p>
 <p>And you are done!!!</p>
 <p><strong>Note</strong>: As you probably realized, you can run all the commands I described from the terminal and use the notebook just to write the blog posts. That would be, probably, the most common pattern. But this post in nicer and more explanatory if I run most of the commands here ;-)</p>
-<h3 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h3><p>You have your new post <em>live</em>, in a <em>resourceless</em> sort of workflow, thanks to the <strong>Jupyter</strong> ecosystem, <strong>Nikola</strong> and <strong>Github</strong>.</p>
+<h3 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">¶</a></h3><p>You have your new post <em>live</em>, in a <em>resourceless</em> sort of workflow, thanks to the <strong>Jupyter</strong> ecosystem, <strong>Nikola</strong> and <strong>Github</strong>.</p>
 <p>OK, long enough post. Sorry about that, but I need to give you the complete workflow if you want/need to use it.</p>
 <p>Happy coding!</p>
 <p>And blogging!</p>
-
 </div>
 </div>
 </div>
- 
-

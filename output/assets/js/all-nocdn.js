@@ -3280,3 +3280,4 @@ function extendJQuery($){
 		head.appendChild(script);
 	}
 }(document, window));
+

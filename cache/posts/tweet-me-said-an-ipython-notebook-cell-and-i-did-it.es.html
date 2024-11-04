@@ -2,42 +2,29 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It is time to release some extensions I wrote the last weeks.
-And because it is <strong>Friday</strong>, and it is a great moment to begin with the "relax" and procrastination, I will release the tweet me extension...
-<!-- TEASER_END --></p>
+And because it is <strong>Friday</strong>, and it is a great moment to begin with the "relax" and procrastination, I will release the tweet me extension...</p>
+<!-- TEASER_END -->
 <p>You don't have any idea what I am talking about? OK, a few words...
 Probably you know that spend a lot of time inside <strong>IPython</strong> notebooks and I was tired to switch windows to send or answer a tweet. So, I wrote a little <em>js</em> extension to capture the input of the selected cell and tweet it just pressing the <em>twitter</em> icon at the <strong>IPython</strong> toolbar.</p>
-<p><img src="../galleries/twitter/1.png" alt=""></p>
+<p><img alt="" src="../galleries/twitter/1.png"/></p>
 <p>But this <em>js</em> extension is <strong>IPython</strong>-powered itself, because I am using the <strong>IPython</strong> js machinery to execute <em>python</em> files calling the <em>python kernel</em>! Yes... it seems weird, but once you get the idea, you can achieve a <strong>lot</strong> of things. You can see the relevant part of the code below:</p>
-
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n <span class="m">59</span>,74p /media/datos/Desarrollos/mIPyex/custom/tweet_me/main.js
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed<span class="w"> </span>-n<span class="w"> </span><span class="m">59</span>,74p<span class="w"> </span>/media/datos/Desarrollos/mIPyex/custom/tweet_me/main.js
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>function tweetMe(path) {
   var entry = IPython.notebook.get_selected_cell().get_text();
@@ -45,10 +32,10 @@ Probably you know that spend a lot of time inside <strong>IPython</strong> noteb
     zeroMessager(); 
   }
   if (entry.length &gt; 0 &amp;&amp; entry.length &lt;= 140) {
-    IPython.notebook.kernel.execute(&#39;%bookmark root&#39;);
-    IPython.notebook.kernel.execute(&#39;%cd &#39; + path);
-    IPython.notebook.kernel.execute(&#39;%run tweet_helper.py &#34;&#39; + entry + &#39;&#34;&#39;);
-    IPython.notebook.kernel.execute(&#39;%cd -b root&#39;);
+    IPython.notebook.kernel.execute('%bookmark root');
+    IPython.notebook.kernel.execute('%cd ' + path);
+    IPython.notebook.kernel.execute('%run tweet_helper.py "' + entry + '"');
+    IPython.notebook.kernel.execute('%cd -b root');
     sucessMessager();
   }
   if (entry.length &gt; 140) {
@@ -58,13 +45,8 @@ Probably you know that spend a lot of time inside <strong>IPython</strong> noteb
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -75,7 +57,6 @@ Probably you know that spend a lot of time inside <strong>IPython</strong> noteb
 It is easy... just follow the README to install all the necessary tools (I used the <a href="http://mike.verdone.ca/twitter/">PTT</a> library to deal with the Twitter API) and then just <em>click</em> the <em>twitter</em> button when you want to share something with the world!</p>
 <p>Hope you enjoy it a lot!</p>
 <p>Damián</p>
-
 </div>
 </div>
 </div>
@@ -83,7 +64,6 @@ It is easy... just follow the README to install all the necessary tools (I used 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>PD: I will use the next cell to tweet about this new blog post! ;-)</p>
-
 </div>
 </div>
 </div>
@@ -93,16 +73,14 @@ It is easy... just follow the README to install all the necessary tools (I used 
 <p>New blog post!
 Tweet me... said an IPython notebook cell and I did it.
 <a href="http://goo.gl/ry9Umi">http://goo.gl/ry9Umi</a></p>
-
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Addendum: 
+<p>Addendum:
 You can now send tweets from cells with multi-line content (my first implementation only worked with one-line strings).</p>
-
 </div>
 </div>
 </div>
@@ -110,9 +88,6 @@ You can now send tweets from cells with multi-line content (my first implementat
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Addendum 2: You have not only a button but also a keyboard shortcut to activate the Tweet me extension: ALT + T.</p>
-
 </div>
 </div>
 </div>
- 
-

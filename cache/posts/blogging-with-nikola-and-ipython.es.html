@@ -1,9 +1,9 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Alert!</strong> This post is outdated, please <code>goto</code> ;-) this <a href="../posts/ipython-plugin-for-nikola-updated.html">link</a> to get updated information.</p>
+<blockquote>
+<p><strong>Alert!</strong> This post is outdated, please <code>goto</code> ;-) this <a href="../posts/ipython-plugin-for-nikola-updated.html">link</a> to get updated information.</p>
 </blockquote>
-
 </div>
 </div>
 </div>
@@ -11,7 +11,6 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>NOTE</strong>: Obviously, this post was written in the IPython notebook and was rendered by Nikola (helped by nbconvert).</p>
-
 </div>
 </div>
 </div>
@@ -19,7 +18,6 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>INGREDIENTS</strong>:</p>
-
 </div>
 </div>
 </div>
@@ -32,10 +30,9 @@
 <p><strong>NOTE: The theme was tested with Nikola version <a href="https://github.com/ralsina/nikola/tags">5.1</a></strong></p>
 <ul>
 <li><a href="https://github.com/ipython/ipython">IPython</a></li>
-<li><a href="https://github.com/damianavila/site-ipython-theme-for-Nikola.git">site-ipython</a> theme for Nikola </li>
-<li><a href="https://github.com/damianavila/compile_ipynb-for-Nikola.git">compile_ipynb</a> for Nikola </li>
+<li><a href="https://github.com/damianavila/site-ipython-theme-for-Nikola.git">site-ipython</a> theme for Nikola</li>
+<li><a href="https://github.com/damianavila/compile_ipynb-for-Nikola.git">compile_ipynb</a> for Nikola</li>
 </ul>
-
 </div>
 </div>
 </div>
@@ -50,7 +47,6 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>STEPS</strong>:</p>
-
 </div>
 </div>
 </div>
@@ -74,27 +70,23 @@
 <li>Create a plugins folder inside your_site</li>
 <li>Copy the compile_ipynb plugin (compile_ipynb.plugin file and the compile_ipynb folder, which are is located inside the extra-plugins folder in the Nikola master) in your_site/plugins/ folder.</li>
 <li>Then, download the custom nbconvert and nbformat from <a href="https://github.com/damianavila/compile_ipynb-for-Nikola.git">here</a> and put them inside your_site/plugins/compile_ipynb/ folder.</li>
-<li>Finally, you have to put: </li>
+<li>Finally, you have to put:</li>
 </ul>
-
 <pre><code>post_pages = (
     ("posts/*.ipynb", "posts", "post.tmpl", True),
     ("stories/*.ipynb", "stories", "story.tmpl", False),
-)</code></pre>
-<p>and</p>
-
-<pre><code>THEME = 'site-ipython'
-
+)
 </code></pre>
+<p>and</p>
+<pre><code>THEME = 'site-ipython'</code></pre>
 <p>in your conf.py file of your_site (you can modified the other pieces inside conf.py according to your needs).</p>
-
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="NOTE:-This-setup-is-done-only-once-time-a-life...-hehe">NOTE: This setup is done only once time a life... hehe<a class="anchor-link" href="#NOTE:-This-setup-is-done-only-once-time-a-life...-hehe">&#182;</a></h3>
+<h3 id="NOTE:-This-setup-is-done-only-once-time-a-life...-hehe">NOTE: This setup is done only once time a life... hehe<a class="anchor-link" href="#NOTE:-This-setup-is-done-only-once-time-a-life...-hehe">¶</a></h3>
 </div>
 </div>
 </div>
@@ -102,7 +94,6 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>USE</strong>:</p>
-
 </div>
 </div>
 </div>
@@ -110,10 +101,9 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>First create a new post: </li>
+<li>First create a new post:</li>
 </ul>
 <p><code>nikola new_post -f ipynb</code></p>
-
 </div>
 </div>
 </div>
@@ -121,7 +111,6 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>NOTE</strong>: <strong>IGNORE</strong> the -2 option in nikola new_page (it is no sense with the current implementation).</p>
-
 </div>
 </div>
 </div>
@@ -129,7 +118,6 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You will be asked for a title (you can also add the title and tags in the previous call).</p>
-
 </div>
 </div>
 </div>
@@ -137,7 +125,6 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Then, two files will be created by Nikola in the /posts folder of your_site: a meta file containing title, slug, time, tags (you can modified them with any text processor) and a <strong>naive</strong> ipynb file with the corresponding title.</p>
-
 </div>
 </div>
 </div>
@@ -145,7 +132,6 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can init the <code>ipython notebook</code> inside this folder and modified the <em>"post"</em> notebook as you wish (do not forget to save the changes inside your notebook).</p>
-
 </div>
 </div>
 </div>
@@ -153,10 +139,9 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Finally, just: </li>
+<li>Finally, just:</li>
 </ul>
 <p><code>nikola build</code></p>
-
 </div>
 </div>
 </div>
@@ -165,7 +150,6 @@
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>and deploy the output folder containing your_site... to see it locally:</p>
 <p><code>nikola serve</code></p>
-
 </div>
 </div>
 </div>
@@ -173,7 +157,6 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>That's it all, my friend!</strong></p>
-
 </div>
 </div>
 </div>
@@ -183,7 +166,6 @@
 <p>If you have any doubt, just tell me: <a href="https://twitter.com/damian_avila">@damianavila</a></p>
 <p>Cheers,</p>
 <p>Damián</p>
-
 </div>
 </div>
 </div>
@@ -191,124 +173,72 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>PS: And now some cells to show you this is areal notebook...</p>
-
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pwd</span>
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">pwd</span>
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt output_prompt">Out[1]:</div>
-
-
-
-
+<div class="prompt output_prompt">Out[1]:</div>
 <div class="output_text output_subarea output_execute_result">
-<pre>u&#39;/home/damian/Desarrollos/To_PR/SITIOS/Damian_blog_nikola/posts&#39;</pre>
-</div>
-
-</div>
-
+<pre>u'/home/damian/Desarrollos/To_PR/SITIOS/Damian_blog_nikola/posts'</pre>
 </div>
 </div>
-
-  </div>
 </div>
-
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pylab</span> inline
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pylab</span> inline
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 Welcome to pylab, a matplotlib-based Python environment [backend: module://IPython.zmq.pylab.backend_inline].
-For more information, type &#39;help(pylab)&#39;.
+For more information, type 'help(pylab)'.
 </pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
-<span class="n">title</span><span class="p">(</span><span class="s1">&#39;A simple chirp&#39;</span><span class="p">);</span>
+<span class="n">title</span><span class="p">(</span><span class="s1">'A simple chirp'</span><span class="p">);</span>
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAX0AAAEICAYAAACzliQjAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+<div class="prompt"></div>
+<div class="output_png output_subarea">
+<img alt="No description has been provided for this image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAX0AAAEICAYAAACzliQjAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJztfXl0VuWd/+fNwpawJZA9gJgwIaKgYG1p0VhBi0vqLo5F
 qpYyHWk7bU/n9HTOTPXM1MJ0etRzaC16phU6Vmn7q0JRcW2U1iKtIlqlslQ0C0sgC9nX+/vj8cl7
 c3OXZ733vsnzOScHktxned+89/N87uf7fb5PwrIsCwYGBgYGYwJpUU/AwMDAwCA8GNI3MDAwGEMw
@@ -663,47 +593,28 @@ nn322ainFTlqamqsa665JuppRIq33nrLWrJkiXXeeedZ1113ndXS0hL1lCLDxo0bh1I2b7/9dqu3
 tzfqKYWGVatWWYWFhVZmZqZVUlJi/exnP7NOnz5tXXbZZVwpmwnLGuOmqYGBgcEYwthOjTAwMDAY
 YzCkb2BgYDCGYEjfwMDAYAzBkL6BgYHBGIIhfQMDA4MxBEP6BgYGBmMI/x+/EYpeAMQykQAAAABJ
 RU5ErkJggg==
-"
->
-</div>
-
-</div>
-
+"/>
 </div>
 </div>
-
-  </div>
 </div>
-
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">z</span> <span class="o">=</span> <span class="n">y</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
-
+<div class="prompt"></div>
 <div class="output_subarea output_text output_error">
 <pre>
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
@@ -716,122 +627,66 @@ RU5ErkJggg==
 <span class="ansi-red-intense-fg ansi-bold">ZeroDivisionError</span>: integer division or modulo by zero</pre>
 </div>
 </div>
-
 </div>
 </div>
-
-  </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Courtesy of MathJax, you can include mathematical expressions both inline: 
+<p>Courtesy of MathJax, you can include mathematical expressions both inline:
 $e^{i\pi} + 1 = 0$  and displayed:</p>
-$$e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i$$
+<p>$$e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i$$</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
-<span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;http://python.org/images/python-logo.gif&#39;</span><span class="p">)</span>
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">'http://python.org/images/python-logo.gif'</span><span class="p">)</span>
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt output_prompt">Out[5]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<img src="http://python.org/images/python-logo.gif" />
-</div>
-
-</div>
-
+<div class="prompt output_prompt">Out[5]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result"><img alt="No description has been provided for this image" src="http://python.org/images/python-logo.gif"/></div>
 </div>
 </div>
-
-  </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
-  <div class="input_area">
-    <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
 <span class="c1"># a talk about IPython at Sage Days at U. Washington, Seattle.</span>
 <span class="c1"># Video credit: William Stein.</span>
-<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;1j_HxD4iLn8&#39;</span><span class="p">)</span>
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">'1j_HxD4iLn8'</span><span class="p">)</span>
 </pre></div>
-
-    <i class="icon-hand-up icon-large" style="float:right; margin-bottom:8px; margin-right:10px">
-    &nbsp;&nbsp;Click me to hide the output</i>
-  </div>
 </div>
 </div>
-
-<div class="output_wrapper output_hidden">
-  <div class="output">
-    
+</div>
 <div class="output_wrapper">
 <div class="output">
-
-
 <div class="output_area">
-
-    <div class="prompt output_prompt">Out[6]:</div>
-
-
-
+<div class="prompt output_prompt">Out[6]:</div>
 <div class="output_html rendered_html output_subarea output_execute_result">
-
-            <iframe
-                width="400"
-                height="300"
-                src="http://www.youtube.com/embed/1j_HxD4iLn8"
-                frameborder="0"
-                allowfullscreen
-            ></iframe>
-        
-</div>
-
-</div>
-
+<iframe allowfullscreen="" frameborder="0" height="300" src="http://www.youtube.com/embed/1j_HxD4iLn8" width="400"></iframe>
 </div>
 </div>
-
-  </div>
 </div>
-
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>OK, enough... see you soon!</p>
-
 </div>
 </div>
 </div>
- 
-

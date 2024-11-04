@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<html prefix="
-og: http://ogp.me/ns#
-article: http://ogp.me/ns/article#
-" lang="es">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
@@ -10,7 +7,7 @@ article: http://ogp.me/ns/article#
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../rss.xml">
-<link rel="canonical" href="http://damianavila.github.io/blog/es/galleries/zenmode/index.html">
+<link rel="canonical" href="http://damianavila.github.io/blog/es/galleries/zenmode/">
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -24,14 +21,14 @@ MathJax.Hub.Config({
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <style type="text/css">
+    #gallery_container {
+        position: relative;
+    }
     .image-block {
-        display: inline-block;
+        position: absolute;
     }
-    .flowr_row {
-        width: 100%;
-    }
-    </style>
-<link rel="alternate" hreflang="en" href="../../../galleries/zenmode/index.html">
+</style>
+<link rel="alternate" hreflang="en" href="../../../galleries/zenmode/">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 </head>
 <body>
@@ -55,16 +52,16 @@ MathJax.Hub.Config({
 <noscript>
 <ul class="thumbnails">
 <li>
-<a href="../../../galleries/zenmode/pic1.png" class="thumbnail image-reference" title="Pic1">
-            <img src="../../../galleries/zenmode/pic1.thumbnail.png" alt="Pic1"></a>
+<a href="../../../galleries/zenmode/pic2.png" class="thumbnail image-reference" title="Pic2">
+            <img src="../../../galleries/zenmode/pic2.thumbnail.png" alt="Pic2" loading="lazy"></a>
         </li>
 <li>
-<a href="../../../galleries/zenmode/pic2.png" class="thumbnail image-reference" title="Pic2">
-            <img src="../../../galleries/zenmode/pic2.thumbnail.png" alt="Pic2"></a>
+<a href="../../../galleries/zenmode/pic1.png" class="thumbnail image-reference" title="Pic1">
+            <img src="../../../galleries/zenmode/pic1.thumbnail.png" alt="Pic1" loading="lazy"></a>
 </li>
 </ul>
 </noscript>
-                    <footer id="footer"><p>Contents © 2021 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
+                    <footer id="footer"><p>Contents © 2024 <a href="mailto:damianavila82@yahoo.com.ar">Damian Avila</a> - 
 Powered by <a href="http://getnikola.com">Nikola</a> - 
 Zen theme based in <a href="https://github.com/arusahni/website-template">Arusahni's website-template</a><br><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a></p>
@@ -77,45 +74,11 @@ Zen theme based in <a href="https://github.com/arusahni/website-template">Arusah
   gtag('js', new Date());
 
   gtag('config', 'UA-139225553-1');
-</script><script src="../../../assets/js/all-nocdn.js" type="text/javascript"></script><script src="../../../assets/js/flowr.js"></script><script>
-jsonContent = [{"size": {"h": 768, "w": 1366}, "title": "Pic1", "url": "../../../galleries/zenmode/pic1.png", "url_thumb": "../../../galleries/zenmode/pic1.thumbnail.png"}, {"size": {"h": 101, "w": 180}, "title": "Pic2", "url": "../../../galleries/zenmode/pic2.png", "url_thumb": "../../../galleries/zenmode/pic2.thumbnail.png"}];
-flowr(document.querySelectorAll("#gallery_container")[0], {
-        data : jsonContent,
-        height : 180*.6,
-        padding: 5,
-        rows: -1,
-        render : function(params) {
-            // Just return a div, string or a dom object, anything works fine
-            var img = document.createElement("img");
-            img.setAttribute('src', params.itemData.url_thumb);
-            img.setAttribute('width', params.width);
-            img.setAttribute('height', params.height);
-            img.setAttribute('alt', params.itemData.title);
-            img.style.maxWidth = '100%';
-            link = document.createElement("a");
-            link.setAttribute('href', params.itemData.url);
-            link.setAttribute('class', 'image-reference');
-            div = document.createElement("div");
-            div.setAttribute('class', 'image-block');
-            div.setAttribute('title', params.itemData.title);
-            div.setAttribute('data-toggle', "tooltip")
-            link.append(img);
-            div.append(link);
-            //div.hover(div.tooltip());
-            return div;
-        },
-        itemWidth : function(data) { return data.size.w; },
-        itemHeight : function(data) { return data.size.h; },
-        complete : function(params) {
-            if( jsonContent.length > params.renderedItems ) {
-                nextRenderList = jsonContent.slice( params.renderedItems );
-            }
-        }
-    });
-    baguetteBox.run('#gallery_container', {
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+</script><script src="../../../assets/js/all-nocdn.js" type="text/javascript"></script><script src="../../../assets/js/justified-layout.min.js"></script><script src="../../../assets/js/gallery.min.js"></script><script>
+var jsonContent = [{"height": 768, "size": {"h": 768, "w": 1366}, "title": "Pic2", "url": "../../../galleries/zenmode/pic2.png", "url_thumb": "../../../galleries/zenmode/pic2.thumbnail.png", "width": 1366}, {"height": 101, "size": {"h": 101, "w": 180}, "title": "Pic1", "url": "../../../galleries/zenmode/pic1.png", "url_thumb": "../../../galleries/zenmode/pic1.thumbnail.png", "width": 180}];
+var thumbnailSize = 180;
+renderGallery(jsonContent, thumbnailSize);
+window.addEventListener('resize', function(){renderGallery(jsonContent, thumbnailSize)});
 </script>
 </body>
 </html>
