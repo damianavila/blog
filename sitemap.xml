@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://damianavila.github.io/blog/</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T00:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/2012/</loc>
@@ -186,12 +186,24 @@
   <lastmod>2024-11-04T22:07:00Z</lastmod>
  </url>
  <url>
+  <loc>http://damianavila.github.io/blog/2024/</loc>
+  <lastmod>2024-11-12T00:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://damianavila.github.io/blog/2024/11/</loc>
+  <lastmod>2024-11-12T00:34:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://damianavila.github.io/blog/archive.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T00:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://damianavila.github.io/blog/categories/2i2c/</loc>
+  <lastmod>2024-11-12T00:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/categories/aikido/</loc>
@@ -487,7 +499,7 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T00:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/2012/</loc>
@@ -666,12 +678,24 @@
   <lastmod>2024-11-04T22:07:00Z</lastmod>
  </url>
  <url>
+  <loc>http://damianavila.github.io/blog/es/2024/</loc>
+  <lastmod>2024-11-12T00:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://damianavila.github.io/blog/es/2024/11/</loc>
+  <lastmod>2024-11-12T00:34:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://damianavila.github.io/blog/es/archive.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T00:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://damianavila.github.io/blog/es/categories/2i2c/</loc>
+  <lastmod>2024-11-12T00:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/categories/aikido/</loc>
@@ -1019,27 +1043,27 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/index-1.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/index-2.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/index-3.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/index-4.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/index-5.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/index-6.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/posts/48-themes-for-your-ipython-notebook/</loc>
@@ -1135,6 +1159,11 @@
   <loc>http://damianavila.github.io/blog/es/posts/dont-write-scripts-just-write-ipyscripts/</loc>
   <lastmod>2024-11-04T22:07:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="http://damianavila.github.io/blog/posts/dont-write-scripts-just-write-ipyscripts/" />
+ </url>
+ <url>
+  <loc>http://damianavila.github.io/blog/es/posts/ended-a-chapter-and-starting-a-new-one/</loc>
+  <lastmod>2024-11-12T00:34:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="http://damianavila.github.io/blog/posts/ended-a-chapter-and-starting-a-new-one/" />
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/es/posts/facundo/</loc>
@@ -1430,27 +1459,27 @@
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/index-1.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/index-2.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/index-3.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/index-4.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/index-5.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/index-6.html</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/portfolio/portfolio.slides.html</loc>
@@ -1533,6 +1562,10 @@
  <url>
   <loc>http://damianavila.github.io/blog/posts/dont-write-scripts-just-write-ipyscripts/</loc>
   <lastmod>2024-11-04T22:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://damianavila.github.io/blog/posts/ended-a-chapter-and-starting-a-new-one/</loc>
+  <lastmod>2024-11-12T00:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://damianavila.github.io/blog/posts/facundo/</loc>
