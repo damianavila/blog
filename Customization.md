@@ -38,6 +38,8 @@ My customizations...
 Last iteration (Nov 2024)
 
 I commented out the toogle piece from the conf.py file becuase it is curerntly broken and less useful for now.
+I commented out the kofi support on each page.
+I commented out the support link from the left bar.
 TODO: Remove all these toogle pieces.
 TODO: Remove all the minipage nav as well (not working with Github).
 TODO: Use newer font awesome or some alternative.

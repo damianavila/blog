@@ -6,6 +6,10 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://damianavila.github.io/blog/categories/2i2c.xml</loc>
+  <lastmod>2024-11-12T02:53:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://damianavila.github.io/blog/categories/aikido.xml</loc>
   <lastmod>2024-11-04T22:07:00Z</lastmod>
  </sitemap>
@@ -115,7 +119,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/jupyter.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T02:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/jupyterlab.xml</loc>
@@ -131,7 +135,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/life.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T02:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/linux.xml</loc>
@@ -171,7 +175,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/opensource.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T02:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/categories/osx.xml</loc>
@@ -298,6 +302,10 @@
   <lastmod>2024-11-04T22:07:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://damianavila.github.io/blog/es/categories/2i2c.xml</loc>
+  <lastmod>2024-11-12T02:53:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/aikido.xml</loc>
   <lastmod>2024-11-04T22:07:00Z</lastmod>
  </sitemap>
@@ -407,7 +415,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/jupyter.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T02:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/jupyterlab.xml</loc>
@@ -423,7 +431,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/life.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T02:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/linux.xml</loc>
@@ -463,7 +471,7 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/opensource.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T02:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/categories/osx.xml</loc>
@@ -591,118 +599,118 @@
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/Facu_RN/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/Inundacion/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/acm/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/binder/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/bokehmagic/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/deploy/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/loadwrite/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/rise/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/spellchecker/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/trades/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/twitter/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/galleries/zenmode/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/es/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T02:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/Facu_RN/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/Inundacion/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/acm/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/binder/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/bokehmagic/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/deploy/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/loadwrite/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/rise/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/spellchecker/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/trades/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/twitter/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/galleries/zenmode/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/rss.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T02:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://damianavila.github.io/blog/sitemap.xml</loc>
-  <lastmod>2024-11-04T22:07:00Z</lastmod>
+  <lastmod>2024-11-12T13:10:00Z</lastmod>
  </sitemap>
 </sitemapindex>

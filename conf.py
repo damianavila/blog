@@ -131,8 +131,8 @@ NAVIGATION_LINKS = {
         ('/categories/index.html', 'Tags', 'icon-tags'),
         ('/rss.xml', 'RSS', 'icon-rss'),
         ('/stories/about-me/index.html', 'About me', 'icon-user'),
-        ('/stories/support-me/index.html', 'Support me', 'icon-usd'),
-        ('https://x.com/damian_avila', 'My x', 'icon-remove'),
+#        ('/stories/support-me/index.html', 'Support me', 'icon-usd'),
+        ('https://x.com/damian_avila', 'My X', 'icon-remove'),
         ('https://github.com/damianavila', 'My Github', 'icon-github'),
     ),
     'es': (
@@ -141,8 +141,8 @@ NAVIGATION_LINKS = {
         ('/es/categories/index.html', 'Etiquetas', 'icon-tags'),
         ('/es/rss.xml', 'RSS', 'icon-rss'),
         ('/es/stories/about-me.html', 'Sobre mi...', 'icon-user'),
-        ('/es/stories/support-me.html', 'Dame tu apoyo..', 'icon-usd'),
-        ('https://twitter.com/damian_avila', 'Mi Twitter', 'icon-twitter'),
+#        ('/es/stories/support-me.html', 'Dame tu apoyo..', 'icon-usd'),
+        ('https://x.com/damian_avila', 'Mi X', 'icon-remove'),
         ('https://github.com/damianavila', 'Mi Github', 'icon-github'),
     ),
 }
